@@ -5,18 +5,18 @@
     <title>Awesome-pyecharts</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
         <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/westeros.js"></script>
-	<style>
-	body
-	{
-		background-color:#161d6f;
-		color: #ffffff;
-	}
+
     
 </head>
 <body>
     <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  }; </style>
     <div class="box">
                         <style>
+							body
+		{
+			background-color:#161d6f;
+			color: #ffffff;
+		}
             .fl-table {
                 margin: 20px;
                 border-radius: 5px;
@@ -68,9 +68,12 @@
                 # background: #F8F8F8;
             }
         </style>
-        <div id="635e97edd14e49f08cad377e3bcff788" class="chart-container" style>
-            <p class="title" style="font-size: 18px; font-weight:bold;"> 一、根据美林投资时钟-分析经济数据</p>
-            <p class="subtitle" style="font-size: 12px;">              <br>GDP为环比增长，CPI为同比增长，PMI以50%任务“荣枯线”<br>GDP(国民生产总值)为环比增长，疫情后期，当前处于经济复苏阶段<br>CPI(消费者物价指数)为同比增长，当前价格增速正增长，消费品物价相对较低<br>PMI(制造业经理采购指数)以50%任务“荣枯线”，当前处于下行期受需求不足和成本上升的双重挤压，装备制造业、高技术制造业、消费品在56%以上，供给侧由于原材料上涨成本上升<br>数据来源：国家统计局<br>                                      </p>
+        <div id="e08dd4da71744ce38a101b8037f8124f" class="chart-container" style>
+            <p class="title" style="color:#516B91" ,'font_size="16'"> 一、根据美林投资时钟-分析经济数据</p>
+            <p class="subtitle">            
+GDP环比增长，CPI同比增长，PMI“荣枯线”下方，
+数据来源：国家统计局
+                                      </p>
             <table class="fl-table">
     <thead>
         <tr>
@@ -87,6 +90,18 @@
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td>202203</td>
+            <td>101.5</td>
+            <td>122.1</td>
+            <td>nan</td>
+            <td>49.5</td>
+            <td>下降</td>
+            <td>上升</td>
+            <td>下降</td>
+            <td>滞胀</td>
+            <td>现金,大宗商品</td>
+        </tr>
         <tr>
             <td>202202</td>
             <td>100.9</td>
@@ -147,90 +162,6 @@
             <td>过热</td>
             <td>大宗商品,股票</td>
         </tr>
-        <tr>
-            <td>202109</td>
-            <td>100.7</td>
-            <td>119.7</td>
-            <td>0.7</td>
-            <td>49.6</td>
-            <td>下降</td>
-            <td>下降</td>
-            <td>下降</td>
-            <td>衰退</td>
-            <td>债券,现金</td>
-        </tr>
-        <tr>
-            <td>202108</td>
-            <td>100.8</td>
-            <td>118.0</td>
-            <td>0.7</td>
-            <td>50.1</td>
-            <td>下降</td>
-            <td>下降</td>
-            <td>上升</td>
-            <td>衰退</td>
-            <td>债券,现金</td>
-        </tr>
-        <tr>
-            <td>202107</td>
-            <td>101.0</td>
-            <td>119.2</td>
-            <td>0.7</td>
-            <td>50.4</td>
-            <td>下降</td>
-            <td>上升</td>
-            <td>上升</td>
-            <td>滞胀</td>
-            <td>现金,大宗商品</td>
-        </tr>
-        <tr>
-            <td>202106</td>
-            <td>101.1</td>
-            <td>118.0</td>
-            <td>1.3</td>
-            <td>50.9</td>
-            <td>上升</td>
-            <td>上升</td>
-            <td>上升</td>
-            <td>过热</td>
-            <td>大宗商品,股票</td>
-        </tr>
-        <tr>
-            <td>202105</td>
-            <td>101.3</td>
-            <td>116.1</td>
-            <td>1.3</td>
-            <td>51.0</td>
-            <td>上升</td>
-            <td>上升</td>
-            <td>上升</td>
-            <td>过热</td>
-            <td>大宗商品,股票</td>
-        </tr>
-        <tr>
-            <td>202104</td>
-            <td>100.9</td>
-            <td>114.0</td>
-            <td>1.3</td>
-            <td>51.1</td>
-            <td>上升</td>
-            <td>下降</td>
-            <td>上升</td>
-            <td>复苏</td>
-            <td>股票,债券</td>
-        </tr>
-        <tr>
-            <td>202103</td>
-            <td>100.4</td>
-            <td>108.3</td>
-            <td>0.3</td>
-            <td>51.9</td>
-            <td>下降</td>
-            <td>下降</td>
-            <td>上升</td>
-            <td>衰退</td>
-            <td>债券,现金</td>
-        </tr>
     </tbody>
 </table>
         </div>
@@ -287,13 +218,15 @@
                # background: #F8F8F8;
             }
         </style>
-        <div id="cccd3c730466439c964aeefe709138a5" class="chart-container" style>
-            <p class="title" style="font-size: 18px; font-weight:bold;"> 二、21Q3行业利润</p>
-            <p class="subtitle" style="font-size: 12px;"> <br>21Q3-周期板块利润涨幅靠前<br>对周期板块而言，经济的稳定复苏意味着需求端的持续向好。宏观经济持续稳健复苏是本轮周期行情的主导因素。<br>在本轮周期行情中，仍然存在供给端增长受限、供需矛盾难以在短期内缓解的矛盾。<br>不仅新建产能受到限制，现有产能也频频受到疫情等因素冲击。<br>在此背景下，大宗商品价格频频创出历史新高，煤炭、钢铁、电解铝、磷化工、工业硅等细分行业也在2021年度实现大涨。<br>                    </p>
+        <div id="69ffb26448114e19adceefff26d7c55e" class="chart-container" style>
+            <p class="title" style="color:#516B91" ,'font_size="16'"> 二、21Q3行业利润</p>
+            <p class="subtitle"> 
+21Q3-周期板块利润涨幅靠前
+                    </p>
             <table class="fl-table">
     <thead>
         <tr>
-            <th>industry</th>
+            <th>行业</th>
             <th>21Q2利润同比%</th>
             <th>21Q3利润同比%</th>
             <th>21Q2价格同比%</th>
@@ -361,11 +294,11 @@
 </table>
         </div>
 
-<br>                <div id="567c6da09f1f4075861590529a33c763" class="chart-container" style="width:900px; height:500px;"></div>
+<br>                <div id="8603741bbf8f47479e091fe9b38849ab" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_567c6da09f1f4075861590529a33c763 = echarts.init(
-            document.getElementById('567c6da09f1f4075861590529a33c763'), 'westeros', {renderer: 'canvas'});
-        var option_567c6da09f1f4075861590529a33c763 = {
+        var chart_8603741bbf8f47479e091fe9b38849ab = echarts.init(
+            document.getElementById('8603741bbf8f47479e091fe9b38849ab'), 'westeros', {renderer: 'canvas'});
+        var option_8603741bbf8f47479e091fe9b38849ab = {
     "backgroundColor": "#161d6f",
     "animation": true,
     "animationThreshold": 2000,
@@ -2969,7 +2902,7 @@
             "itemGap": 10,
             "subtextStyle": {
                 "color": "white",
-                "fontSize": 11
+                "fontSize": 12
             }
         }
     ],
@@ -2987,13 +2920,13 @@
     ],
     "color": []
 };
-        chart_567c6da09f1f4075861590529a33c763.setOption(option_567c6da09f1f4075861590529a33c763);
+        chart_8603741bbf8f47479e091fe9b38849ab.setOption(option_8603741bbf8f47479e091fe9b38849ab);
     </script>
-<br>                <div id="bcf0afa37b6244188c3e553392634cc2" class="chart-container" style="width:900px; height:500px;"></div>
+<br>                <div id="a96fd84ef7a44a1695bfa516f78ea650" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_bcf0afa37b6244188c3e553392634cc2 = echarts.init(
-            document.getElementById('bcf0afa37b6244188c3e553392634cc2'), 'westeros', {renderer: 'canvas'});
-        var option_bcf0afa37b6244188c3e553392634cc2 = {
+        var chart_a96fd84ef7a44a1695bfa516f78ea650 = echarts.init(
+            document.getElementById('a96fd84ef7a44a1695bfa516f78ea650'), 'westeros', {renderer: 'canvas'});
+        var option_a96fd84ef7a44a1695bfa516f78ea650 = {
     "backgroundColor": "#161d6f",
     "animation": true,
     "animationThreshold": 2000,
@@ -3306,13 +3239,13 @@
     ],
     "color": []
 };
-        chart_bcf0afa37b6244188c3e553392634cc2.setOption(option_bcf0afa37b6244188c3e553392634cc2);
+        chart_a96fd84ef7a44a1695bfa516f78ea650.setOption(option_a96fd84ef7a44a1695bfa516f78ea650);
     </script>
-<br>                <div id="04145dec9bac4d7bafc8451bea30c5fc" class="chart-container" style="width:900px; height:500px;"></div>
+<br>                <div id="85eef9f531274785ad4a1ca892654226" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_04145dec9bac4d7bafc8451bea30c5fc = echarts.init(
-            document.getElementById('04145dec9bac4d7bafc8451bea30c5fc'), 'westeros', {renderer: 'canvas'});
-        var option_04145dec9bac4d7bafc8451bea30c5fc = {
+        var chart_85eef9f531274785ad4a1ca892654226 = echarts.init(
+            document.getElementById('85eef9f531274785ad4a1ca892654226'), 'westeros', {renderer: 'canvas'});
+        var option_85eef9f531274785ad4a1ca892654226 = {
     "backgroundColor": "#161d6f",
     "animation": true,
     "animationThreshold": 2000,
@@ -4608,13 +4541,617 @@
     ],
     "color": []
 };
-        chart_04145dec9bac4d7bafc8451bea30c5fc.setOption(option_04145dec9bac4d7bafc8451bea30c5fc);
+        chart_85eef9f531274785ad4a1ca892654226.setOption(option_85eef9f531274785ad4a1ca892654226);
     </script>
-<br>                <div id="fad685dc78dd4f26bfbdcbdbb2024261" class="chart-container" style="width:900px; height:500px;"></div>
+<br>                <div id="1d017b979f3e472491543368e4a4a203" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_fad685dc78dd4f26bfbdcbdbb2024261 = echarts.init(
-            document.getElementById('fad685dc78dd4f26bfbdcbdbb2024261'), 'westeros', {renderer: 'canvas'});
-        var option_fad685dc78dd4f26bfbdcbdbb2024261 = {
+        var chart_1d017b979f3e472491543368e4a4a203 = echarts.init(
+            document.getElementById('1d017b979f3e472491543368e4a4a203'), 'westeros', {renderer: 'canvas'});
+        var option_1d017b979f3e472491543368e4a4a203 = {
+    "backgroundColor": "#161d6f",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "treemap",
+            "name": "\u677f\u5757\u4e2a\u80a1",
+            "data": [
+                {
+                    "value": 159587.47999999998,
+                    "name": "\u4ea4\u901a\u8fd0\u8f93",
+                    "children": [
+                        {
+                            "value": 21406.08,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u4e07\u6797\u7269\u6d41",
+                                2.55681818181818
+                            ]
+                        },
+                        {
+                            "value": 9049.86,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u4fdd\u7a0e\u79d1\u6280",
+                                2.58064516129032
+                            ]
+                        },
+                        {
+                            "value": 31011.01,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u7545\u8054\u80a1\u4efd",
+                                8.74251497005988
+                            ]
+                        },
+                        {
+                            "value": 18528.8,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u98de\u9a6c\u56fd\u9645",
+                                33.4128878281623
+                            ]
+                        },
+                        {
+                            "value": 18832.56,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u98de\u529b\u8fbe",
+                                22.2863741339492
+                            ]
+                        },
+                        {
+                            "value": 14009.51,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u957f\u4e45\u7269\u6d41",
+                                5.51301684532925
+                            ]
+                        },
+                        {
+                            "value": 46749.66,
+                            "name": [
+                                "\u4ea4\u901a\u8fd0\u8f93",
+                                "\u76db\u822a\u80a1\u4efd",
+                                8.25174825174825
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 39015.87,
+                    "name": "\u4f11\u95f2\u670d\u52a1",
+                    "children": [
+                        {
+                            "value": 39015.87,
+                            "name": [
+                                "\u4f11\u95f2\u670d\u52a1",
+                                "\u51ef\u6492\u65c5\u4e1a",
+                                8.69565217391305
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 23541.14,
+                    "name": "\u4f20\u5a92",
+                    "children": [
+                        {
+                            "value": 7324.31,
+                            "name": [
+                                "\u4f20\u5a92",
+                                "\u4e1c\u65b9\u7f51\u7edc",
+                                3.10344827586206
+                            ]
+                        },
+                        {
+                            "value": 16216.83,
+                            "name": [
+                                "\u4f20\u5a92",
+                                "\u51b0\u5ddd\u7f51\u7edc",
+                                18.0839612486545
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 8378.52,
+                    "name": "\u516c\u7528\u4e8b\u4e1a",
+                    "children": [
+                        {
+                            "value": 8378.52,
+                            "name": [
+                                "\u516c\u7528\u4e8b\u4e1a",
+                                "\u5357\u4eac\u516c\u7528",
+                                4.81400437636763
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 26733.66,
+                    "name": "\u519c\u6797\u7267\u6e14",
+                    "children": [
+                        {
+                            "value": 26733.66,
+                            "name": [
+                                "\u519c\u6797\u7267\u6e14",
+                                "\u65b0\u519c\u5f00\u53d1",
+                                5.37084398976982
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 140458.33,
+                    "name": "\u5316\u5de5",
+                    "children": [
+                        {
+                            "value": 50602.02,
+                            "name": [
+                                "\u5316\u5de5",
+                                "\u6c5f\u82cf\u535a\u4e91",
+                                13.4412385643913
+                            ]
+                        },
+                        {
+                            "value": 53606.35,
+                            "name": [
+                                "\u5316\u5de5",
+                                "\u516d\u56fd\u5316\u5de5",
+                                -13.5734072022161
+                            ]
+                        },
+                        {
+                            "value": 21975.84,
+                            "name": [
+                                "\u5316\u5de5",
+                                "\u6676\u96ea\u8282\u80fd",
+                                10.4405286343612
+                            ]
+                        },
+                        {
+                            "value": 14274.12,
+                            "name": [
+                                "\u5316\u5de5",
+                                "\u96ea\u5cf0\u79d1\u6280",
+                                17.6470588235294
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 125565.88,
+                    "name": "\u533b\u836f\u751f\u7269",
+                    "children": [
+                        {
+                            "value": 92768.55,
+                            "name": [
+                                "\u533b\u836f\u751f\u7269",
+                                "\u745e\u5eb7\u533b\u836f",
+                                1.41242937853107
+                            ]
+                        },
+                        {
+                            "value": 12537.39,
+                            "name": [
+                                "\u533b\u836f\u751f\u7269",
+                                "\u7b2c\u4e00\u533b\u836f",
+                                3.54090354090353
+                            ]
+                        },
+                        {
+                            "value": 20259.94,
+                            "name": [
+                                "\u533b\u836f\u751f\u7269",
+                                "\u5927\u7406\u836f\u4e1a",
+                                6.04781997187061
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 99253.61,
+                    "name": "\u5546\u4e1a\u8d38\u6613",
+                    "children": [
+                        {
+                            "value": 60660.45,
+                            "name": [
+                                "\u5546\u4e1a\u8d38\u6613",
+                                "\u6b65\u6b65\u9ad8",
+                                1.06060606060605
+                            ]
+                        },
+                        {
+                            "value": 11468.76,
+                            "name": [
+                                "\u5546\u4e1a\u8d38\u6613",
+                                "\u53cb\u597d\u96c6\u56e2",
+                                8.78859857482186
+                            ]
+                        },
+                        {
+                            "value": 24880.74,
+                            "name": [
+                                "\u5546\u4e1a\u8d38\u6613",
+                                "\u4e1c\u767e\u96c6\u56e2",
+                                1.51133501259446
+                            ]
+                        },
+                        {
+                            "value": 2243.66,
+                            "name": [
+                                "\u5546\u4e1a\u8d38\u6613",
+                                "\u9000\u5e02\u65b0\u4ebf",
+                                -22.5352112676056
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 287897.25999999995,
+                    "name": "\u5efa\u7b51\u88c5\u9970",
+                    "children": [
+                        {
+                            "value": 132943.83,
+                            "name": [
+                                "\u5efa\u7b51\u88c5\u9970",
+                                "\u65b0\u7586\u4ea4\u5efa",
+                                3.20284697508896
+                            ]
+                        },
+                        {
+                            "value": 105615.34,
+                            "name": [
+                                "\u5efa\u7b51\u88c5\u9970",
+                                "\u5317\u65b0\u8def\u6865",
+                                0.913242009132421
+                            ]
+                        },
+                        {
+                            "value": 29675.44,
+                            "name": [
+                                "\u5efa\u7b51\u88c5\u9970",
+                                "\u534e\u84dd\u96c6\u56e2",
+                                16.6666666666667
+                            ]
+                        },
+                        {
+                            "value": 4899.63,
+                            "name": [
+                                "\u5efa\u7b51\u88c5\u9970",
+                                "ST\u4e91\u6295",
+                                4.21994884910486
+                            ]
+                        },
+                        {
+                            "value": 8921.41,
+                            "name": [
+                                "\u5efa\u7b51\u88c5\u9970",
+                                "\u540d\u96d5\u80a1\u4efd",
+                                10.7178968655207
+                            ]
+                        },
+                        {
+                            "value": 5841.61,
+                            "name": [
+                                "\u5efa\u7b51\u88c5\u9970",
+                                "\u8bda\u90a6\u80a1\u4efd",
+                                11.2621359223301
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 1128723.2100000002,
+                    "name": "\u623f\u5730\u4ea7",
+                    "children": [
+                        {
+                            "value": 53864.22,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u65b0\u534e\u8054",
+                                4.89130434782609
+                            ]
+                        },
+                        {
+                            "value": 264770.02,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u5929\u4fdd\u57fa\u5efa",
+                                1.69491525423729
+                            ]
+                        },
+                        {
+                            "value": 30882.84,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u4e2d\u534e\u4f01\u4e1a",
+                                -5.51470588235294
+                            ]
+                        },
+                        {
+                            "value": 246446.7,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u4e2d\u4ea4\u5730\u4ea7",
+                                4.55445544554455
+                            ]
+                        },
+                        {
+                            "value": 80133.42,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u6e1d\u5f00\u53d1",
+                                3.54838709677419
+                            ]
+                        },
+                        {
+                            "value": 83477.54,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u84dd\u5149\u53d1\u5c55",
+                                0.588235294117648
+                            ]
+                        },
+                        {
+                            "value": 69034.27,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u4e2d\u56fd\u6b66\u5937",
+                                1.56862745098039
+                            ]
+                        },
+                        {
+                            "value": 12136.17,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u5929\u623f\u53d1\u5c55",
+                                6.41711229946525
+                            ]
+                        },
+                        {
+                            "value": 113239.28,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u5357\u5c71\u63a7\u80a1",
+                                6.02006688963211
+                            ]
+                        },
+                        {
+                            "value": 30098.55,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u4eac\u80fd\u7f6e\u4e1a",
+                                5.08982035928144
+                            ]
+                        },
+                        {
+                            "value": 144640.2,
+                            "name": [
+                                "\u623f\u5730\u4ea7",
+                                "\u5357\u56fd\u7f6e\u4e1a",
+                                4.83870967741936
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 22024.61,
+                    "name": "\u6709\u8272\u91d1\u5c5e",
+                    "children": [
+                        {
+                            "value": 22024.61,
+                            "name": [
+                                "\u6709\u8272\u91d1\u5c5e",
+                                "\u5b8f\u8fbe\u80a1\u4efd",
+                                -4.49438202247191
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 17825.5,
+                    "name": "\u673a\u68b0\u8bbe\u5907",
+                    "children": [
+                        {
+                            "value": 17825.5,
+                            "name": [
+                                "\u673a\u68b0\u8bbe\u5907",
+                                "\u5b87\u73af\u6570\u63a7",
+                                10.812390414962
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 39303.35,
+                    "name": "\u91c7\u6398",
+                    "children": [
+                        {
+                            "value": 31234.66,
+                            "name": [
+                                "\u91c7\u6398",
+                                "\u5b89\u6e90\u7164\u4e1a",
+                                -8.48056537102473
+                            ]
+                        },
+                        {
+                            "value": 8068.69,
+                            "name": [
+                                "\u91c7\u6398",
+                                "\u4e91\u7ef4\u80a1\u4efd",
+                                13.5467980295566
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 70509.28,
+                    "name": "\u94f6\u884c",
+                    "children": [
+                        {
+                            "value": 70509.28,
+                            "name": [
+                                "\u94f6\u884c",
+                                "\u9f50\u9c81\u94f6\u884c",
+                                0.907441016333935
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 14682.19,
+                    "name": "\u975e\u94f6\u91d1\u878d",
+                    "children": [
+                        {
+                            "value": 14682.19,
+                            "name": [
+                                "\u975e\u94f6\u91d1\u878d",
+                                "\u65b0\u529b\u91d1\u878d",
+                                35.1083032490975
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "value": 27321.24,
+                    "name": "\u98df\u54c1\u996e\u6599",
+                    "children": [
+                        {
+                            "value": 27321.24,
+                            "name": [
+                                "\u98df\u54c1\u996e\u6599",
+                                "\u7687\u53f0\u9152\u4e1a",
+                                -3.75647668393783
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "width": "80%",
+            "height": "80%",
+            "label": {
+                "show": true,
+                "position": "insideBottomLeft",
+                "margin": 8,
+                "formatter": function( params ){return params.name[1] +'\n'+ ''+ params.name[2].toFixed(0) + '%';}
+            },
+            "upperlabel": {
+                "show": true,
+                "position": "inside",
+                "margin": 8
+            },
+            "drillDownIcon": "\u25b6",
+            "roam": true,
+            "nodeClick": "zoomToNode",
+            "zoomToNodeRatio": 0.1024,
+            "levels": [
+                {
+                    "colorMappingBy": "index",
+                    "itemStyle": {
+                        "gapWidth": 3,
+                        "borderColor": "#555",
+                        "borderWidth": 4
+                    }
+                },
+                {
+                    "colorSaturation": [
+                        0.3,
+                        0.6
+                    ],
+                    "colorMappingBy": "value",
+                    "itemStyle": {
+                        "colorSaturation": [
+                            0.3,
+                            0.6
+                        ],
+                        "gapWidth": 2,
+                        "borderWidth": 2,
+                        "borderColorSaturation": 0.7
+                    },
+                    "upperLabel": {
+                        "show": true,
+                        "position": "inside",
+                        "margin": 8
+                    }
+                }
+            ],
+            "colorMappingBy": "index",
+            "visibleMin": 10,
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": function( params ){    return params.name[1]            + '<br>' + 'Sector: ' + params.name[0]            + '<br>' + 'Market Cap: ' + window.parseFloat(params.value).toFixed(0) + ' Buy' ;},
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u677f\u5757\u4e2a\u80a1"
+            ],
+            "selected": {
+                "\u677f\u5757\u4e2a\u80a1": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "\u516d\u3001\u9f99\u864e\u699c",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_1d017b979f3e472491543368e4a4a203.setOption(option_1d017b979f3e472491543368e4a4a203);
+    </script>
+<br>                <div id="d3e0579a6a114d9e897be765b4559ec1" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_d3e0579a6a114d9e897be765b4559ec1 = echarts.init(
+            document.getElementById('d3e0579a6a114d9e897be765b4559ec1'), 'westeros', {renderer: 'canvas'});
+        var option_d3e0579a6a114d9e897be765b4559ec1 = {
     "backgroundColor": "#161d6f",
     "animation": true,
     "animationThreshold": 2000,
@@ -4627,7 +5164,7 @@
     "series": [
         {
             "type": "candlestick",
-            "name": "SH-KLine",
+            "name": "sh-kLine",
             "data": [
                 [
                     "3490.4091",
@@ -4886,6 +5423,30 @@
                     "3251.0724",
                     "3023.3045",
                     "3297.7973"
+                ],
+                [
+                    "3255.6152",
+                    "3212.2399",
+                    "3211.6445",
+                    "3279.8868"
+                ],
+                [
+                    "3185.1668",
+                    "3282.7166",
+                    "3159.8348",
+                    "3287.2285"
+                ],
+                [
+                    "3269.4270",
+                    "3251.8502",
+                    "3208.3521",
+                    "3290.2561"
+                ],
+                [
+                    "3239.8550",
+                    "3211.2448",
+                    "3140.8998",
+                    "3240.0014"
                 ]
             ],
             "markLine": {
@@ -4919,10 +5480,10 @@
     "legend": [
         {
             "data": [
-                "SH-KLine"
+                "sh-kLine"
             ],
             "selected": {
-                "SH-KLine": true
+                "sh-kLine": true
             },
             "show": true,
             "padding": 5,
@@ -5012,7 +5573,11 @@
                 "2022-02-25",
                 "2022-03-04",
                 "2022-03-11",
-                "2022-03-18"
+                "2022-03-18",
+                "2022-03-25",
+                "2022-04-01",
+                "2022-04-08",
+                "2022-04-15"
             ]
         }
     ],
@@ -5047,19 +5612,19 @@
     ],
     "title": [
         {
-            "text": "SH-KLine",
+            "text": "\u4e03\u3001\u4e0a\u8bc1\u6307\u6570",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_fad685dc78dd4f26bfbdcbdbb2024261.setOption(option_fad685dc78dd4f26bfbdcbdbb2024261);
+        chart_d3e0579a6a114d9e897be765b4559ec1.setOption(option_d3e0579a6a114d9e897be765b4559ec1);
     </script>
-<br>                <div id="3b2086a04cf44263a7acbe60632237c9" class="chart-container" style="width:900px; height:500px;"></div>
+<br>                <div id="93c17586f6f14f7685b4472317ae4025" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_3b2086a04cf44263a7acbe60632237c9 = echarts.init(
-            document.getElementById('3b2086a04cf44263a7acbe60632237c9'), 'westeros', {renderer: 'canvas'});
-        var option_3b2086a04cf44263a7acbe60632237c9 = {
+        var chart_93c17586f6f14f7685b4472317ae4025 = echarts.init(
+            document.getElementById('93c17586f6f14f7685b4472317ae4025'), 'westeros', {renderer: 'canvas'});
+        var option_93c17586f6f14f7685b4472317ae4025 = {
     "backgroundColor": "#161d6f",
     "animation": true,
     "animationThreshold": 2000,
@@ -5072,7 +5637,7 @@
     "series": [
         {
             "type": "candlestick",
-            "name": "Cyb_kline",
+            "name": "cyb_kline",
             "data": [
                 [
                     "3049.0194",
@@ -5331,6 +5896,30 @@
                     "2713.7948",
                     "2478.4379",
                     "2764.2487"
+                ],
+                [
+                    "2730.2093",
+                    "2637.9440",
+                    "2637.9440",
+                    "2756.3514"
+                ],
+                [
+                    "2622.4676",
+                    "2666.9696",
+                    "2576.2332",
+                    "2696.8260"
+                ],
+                [
+                    "2662.2808",
+                    "2569.9108",
+                    "2546.5145",
+                    "2662.6220"
+                ],
+                [
+                    "2536.1486",
+                    "2460.3624",
+                    "2416.7039",
+                    "2536.1486"
                 ]
             ],
             "markLine": {
@@ -5364,10 +5953,10 @@
     "legend": [
         {
             "data": [
-                "Cyb_kline"
+                "cyb_kline"
             ],
             "selected": {
-                "Cyb_kline": true
+                "cyb_kline": true
             },
             "show": true,
             "padding": 5,
@@ -5457,7 +6046,11 @@
                 "2022-02-25",
                 "2022-03-04",
                 "2022-03-11",
-                "2022-03-18"
+                "2022-03-18",
+                "2022-03-25",
+                "2022-04-01",
+                "2022-04-08",
+                "2022-04-15"
             ]
         }
     ],
@@ -5492,424 +6085,16 @@
     ],
     "title": [
         {
-            "text": "Cyb-KLine",
+            "text": "\u516b\u3001\u521b\u4e1a\u677f\u6307\u6570",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_3b2086a04cf44263a7acbe60632237c9.setOption(option_3b2086a04cf44263a7acbe60632237c9);
-    </script>
-<br>                <div id="6f0aa5a8164944c9ba7c1c572ede93c4" class="chart-container" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_6f0aa5a8164944c9ba7c1c572ede93c4 = echarts.init(
-            document.getElementById('6f0aa5a8164944c9ba7c1c572ede93c4'), 'westeros', {renderer: 'canvas'});
-        var option_6f0aa5a8164944c9ba7c1c572ede93c4 = {
-    "backgroundColor": "#161d6f",
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "series": [
-        {
-            "type": "treemap",
-            "name": "Stock Tree Map",
-            "data": [
-                {
-                    "value": 10610.35,
-                    "name": "\u516c\u7528\u4e8b\u4e1a",
-                    "children": [
-                        {
-                            "value": 10610.35,
-                            "name": [
-                                "\u516c\u7528\u4e8b\u4e1a",
-                                "\u676d\u5dde\u70ed\u7535",
-                                -20.3483432455395
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 77858.34,
-                    "name": "\u5316\u5de5",
-                    "children": [
-                        {
-                            "value": 32609.56,
-                            "name": [
-                                "\u5316\u5de5",
-                                "\u6c5f\u5316\u5fae",
-                                23.156146179402
-                            ]
-                        },
-                        {
-                            "value": 20798.82,
-                            "name": [
-                                "\u5316\u5de5",
-                                "\u6676\u96ea\u8282\u80fd",
-                                10.4405286343612
-                            ]
-                        },
-                        {
-                            "value": 24449.96,
-                            "name": [
-                                "\u5316\u5de5",
-                                "\u6cb3\u5316\u80a1\u4efd",
-                                11.9496855345912
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 1052741.79,
-                    "name": "\u533b\u836f\u751f\u7269",
-                    "children": [
-                        {
-                            "value": 182109.55,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u7ea2\u65e5\u836f\u4e1a",
-                                4.24528301886794
-                            ]
-                        },
-                        {
-                            "value": 93688.61,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u4f17\u751f\u836f\u4e1a",
-                                30.3527481542248
-                            ]
-                        },
-                        {
-                            "value": 317613.42,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u4e5d\u5b89\u533b\u7597",
-                                62.6037013401404
-                            ]
-                        },
-                        {
-                            "value": 226157.84,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u7cbe\u534e\u5236\u836f",
-                                10.445205479452
-                            ]
-                        },
-                        {
-                            "value": 143684.67,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u5317\u5927\u533b\u836f",
-                                4.17310664605873
-                            ]
-                        },
-                        {
-                            "value": 23431.79,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u8bfa\u6cf0\u751f\u7269",
-                                22.0
-                            ]
-                        },
-                        {
-                            "value": 66055.91,
-                            "name": [
-                                "\u533b\u836f\u751f\u7269",
-                                "\u5170\u536b\u533b\u5b66",
-                                38.8
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 43574.74,
-                    "name": "\u5efa\u7b51\u88c5\u9970",
-                    "children": [
-                        {
-                            "value": 33152.93,
-                            "name": [
-                                "\u5efa\u7b51\u88c5\u9970",
-                                "\u676d\u5dde\u56ed\u6797",
-                                4.98381877022654
-                            ]
-                        },
-                        {
-                            "value": 10421.81,
-                            "name": [
-                                "\u5efa\u7b51\u88c5\u9970",
-                                "\u534e\u84dd\u96c6\u56e2",
-                                16.6666666666667
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 119601.14,
-                    "name": "\u623f\u5730\u4ea7",
-                    "children": [
-                        {
-                            "value": 67308.55,
-                            "name": [
-                                "\u623f\u5730\u4ea7",
-                                "\u9633\u5149\u57ce",
-                                -19.3333333333333
-                            ]
-                        },
-                        {
-                            "value": 52292.59,
-                            "name": [
-                                "\u623f\u5730\u4ea7",
-                                "\u9ed1\u7261\u4e39",
-                                9.63244613434727
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 19631.04,
-                    "name": "\u673a\u68b0\u8bbe\u5907",
-                    "children": [
-                        {
-                            "value": 19631.04,
-                            "name": [
-                                "\u673a\u68b0\u8bbe\u5907",
-                                "\u5317\u73bb\u80a1\u4efd",
-                                7.9646017699115
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 23372.95,
-                    "name": "\u7535\u5b50",
-                    "children": [
-                        {
-                            "value": 23372.95,
-                            "name": [
-                                "\u7535\u5b50",
-                                "\u529b\u82af\u5fae",
-                                13.9006342494714
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 43181.17,
-                    "name": "\u7eba\u7ec7\u670d\u88c5",
-                    "children": [
-                        {
-                            "value": 43181.17,
-                            "name": [
-                                "\u7eba\u7ec7\u670d\u88c5",
-                                "\u6c5f\u82cf\u9633\u5149",
-                                9.9585062240664
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 25501.28,
-                    "name": "\u7efc\u5408",
-                    "children": [
-                        {
-                            "value": 17432.26,
-                            "name": [
-                                "\u7efc\u5408",
-                                "\u4e2d\u8def\u80a1\u4efd",
-                                12.348401323043
-                            ]
-                        },
-                        {
-                            "value": 8069.02,
-                            "name": [
-                                "\u7efc\u5408",
-                                "\u5eca\u574a\u53d1\u5c55",
-                                5.16129032258065
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 58724.62,
-                    "name": "\u8ba1\u7b97\u673a",
-                    "children": [
-                        {
-                            "value": 30506.33,
-                            "name": [
-                                "\u8ba1\u7b97\u673a",
-                                "\u8fea\u5a01\u8fc5",
-                                12.7731092436975
-                            ]
-                        },
-                        {
-                            "value": 28218.29,
-                            "name": [
-                                "\u8ba1\u7b97\u673a",
-                                "\u534e\u5e73\u80a1\u4efd",
-                                14.4329896907217
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 297870.64999999997,
-                    "name": "\u901a\u4fe1",
-                    "children": [
-                        {
-                            "value": 37203.47,
-                            "name": [
-                                "\u901a\u4fe1",
-                                "\u4e2d\u5bcc\u901a",
-                                10.3934669636229
-                            ]
-                        },
-                        {
-                            "value": 33258.31,
-                            "name": [
-                                "\u901a\u4fe1",
-                                "\u7cbe\u4f26\u7535\u5b50",
-                                6.6225165562914
-                            ]
-                        },
-                        {
-                            "value": 210888.83,
-                            "name": [
-                                "\u901a\u4fe1",
-                                "\u6052\u5b9d\u80a1\u4efd",
-                                12.8205128205128
-                            ]
-                        },
-                        {
-                            "value": 16520.04,
-                            "name": [
-                                "\u901a\u4fe1",
-                                "\u4e2d\u901a\u56fd\u8109",
-                                6.53266331658291
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "value": 18525.55,
-                    "name": "\u91c7\u6398",
-                    "children": [
-                        {
-                            "value": 18525.55,
-                            "name": [
-                                "\u91c7\u6398",
-                                "\u51c6\u6cb9\u80a1\u4efd",
-                                1.59010600706714
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "width": "80%",
-            "height": "80%",
-            "label": {
-                "show": true,
-                "position": "insideBottomLeft",
-                "margin": 8,
-                "formatter": function( params ){return params.name[1] +'\n'+ ''+ params.name[2].toFixed(0) + '%';}
-            },
-            "upperlabel": {
-                "show": true,
-                "position": "inside",
-                "margin": 8
-            },
-            "drillDownIcon": "\u25b6",
-            "roam": true,
-            "nodeClick": "zoomToNode",
-            "zoomToNodeRatio": 0.1024,
-            "levels": [
-                {
-                    "colorMappingBy": "index",
-                    "itemStyle": {
-                        "gapWidth": 3,
-                        "borderColor": "#555",
-                        "borderWidth": 4
-                    }
-                },
-                {
-                    "colorSaturation": [
-                        0.3,
-                        0.6
-                    ],
-                    "colorMappingBy": "value",
-                    "itemStyle": {
-                        "colorSaturation": [
-                            0.3,
-                            0.6
-                        ],
-                        "gapWidth": 2,
-                        "borderWidth": 2,
-                        "borderColorSaturation": 0.7
-                    },
-                    "upperLabel": {
-                        "show": true,
-                        "position": "inside",
-                        "margin": 8
-                    }
-                }
-            ],
-            "colorMappingBy": "index",
-            "visibleMin": 10,
-            "tooltip": {
-                "show": true,
-                "trigger": "item",
-                "triggerOn": "mousemove|click",
-                "axisPointer": {
-                    "type": "line"
-                },
-                "showContent": true,
-                "alwaysShowContent": false,
-                "showDelay": 0,
-                "hideDelay": 100,
-                "formatter": function( params ){    return params.name[1]            + '<br>' + 'Sector: ' + params.name[0]            + '<br>' + 'Market Cap: ' + window.parseFloat(params.value).toFixed(0) + ' Buy' ;},
-                "textStyle": {
-                    "fontSize": 14
-                },
-                "borderWidth": 0,
-                "padding": 5
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [
-                "Stock Tree Map"
-            ],
-            "selected": {
-                "Stock Tree Map": true
-            }
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
-        },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "textStyle": {
-            "fontSize": 14
-        },
-        "borderWidth": 0,
-        "padding": 5
-    }
-};
-        chart_6f0aa5a8164944c9ba7c1c572ede93c4.setOption(option_6f0aa5a8164944c9ba7c1c572ede93c4);
+        chart_93c17586f6f14f7685b4472317ae4025.setOption(option_93c17586f6f14f7685b4472317ae4025);
     </script>
 <br>    </div>
     <script>
     </script>
-
-</head></html>
+</body>
+</html>
