@@ -1,20 +1,396 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好学闻道 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="C:\Users\24407\OneDrive\Read  HTML {font-size: small; font-family: sans-serif} BODY {background: #F8F8FA} A {text-decoration: none} A:hover {color: #FFF; background: #006699; border-radius: 8px;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好学闻道">
+<meta property="og:url" content="https://kewbing.github.io/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="C:\Users\24407\OneDrive\Read  HTML {font-size: small; font-family: sans-serif} BODY {background: #F8F8FA} A {text-decoration: none} A:hover {color: #FFF; background: #006699; border-radius: 8px;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-21T15:55:15.350Z">
+<meta property="article:modified_time" content="2023-06-18T14:10:31.000Z">
+<meta property="article:author" content="BinQ">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好学闻道',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-06-18 22:10:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #page
-    if top_img === false
-      h1.page-title= page.title
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    case page.type
-      when 'tags'
-        include includes/page/tags.pug
-      when 'link'
-        include includes/page/flink.pug
-      when 'categories'
-        include includes/page/categories.pug
-      default
-        include includes/page/default-page.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">好学闻道</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>C:\Users\24407\OneDrive\Read</title>
+<style type="text/css">
+HTML {font-size: small; font-family: sans-serif}
+BODY {background: #F8F8FA}
+A {text-decoration: none}
+A:hover {color: #FFF; background: #006699; border-radius: 8px; padding-left: 3px; padding-right: 3px;}
+TABLE.fancy {background: #DFDFDF; border-left: 1px solid;
+   border-top: 1px solid; border-bottom: 0px solid; border-color: #FFF}
+TABLE.fancy TD {border-right: 1px solid; border-bottom: 1px solid;
+  border-color: #FFF; text-align: center; padding-right: 5px}
+TABLE.fancy TD.no-right {border-right: 0px}
+TABLE.fancy TD.right {text-align: right}
+TABLE.fancy TD.left {text-align: left}
+TABLE.fancy TD.center {text-align: center}
+TABLE.fancy TH {border-right: 1px solid; border-bottom: 1px solid; text-align: center;
+   background: #488CB1; color: #FFF; border-color: #FFF; font-weight: bold}
+.anchor {font-weight: bold; border-top: 0px solid; text-align: center;
+   border-bottom: 1px solid; background: #006699; color: #FFF}
+.dark-blue {font-weight: bold; border-top: 0px solid; text-align: center;
+   border-bottom: 1px solid; background:#00537D; color: #FFF}
+.no-top-border {border-top: 0px}
+.centered {margin: auto}
+.rZ {text-align: right}
+.row2 {background: #D3D3E1}
+</style>
+</head>
+
+<body>
+
+<table border="0" cellspacing="0" cellpadding="3" summary="anchor table" class="fancy centered">
+<tr><td colspan="1" class="dark-blue" style="text-align: center"><b>Anchors</b></td></tr>
+<tr><td><a href="#ID_">&lt;root&gt;</a></td></tr>
+</table>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="3" summary="file table" class="fancy centered">
+<tr><td colspan="8" class="anchor center" ><a id="ID_"></a>&lt;root&gt;</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="index.html">C:\Users\24407\OneDrive\Read</a></td><td class="right" align="right">48&nbsp;K</td><td class="left"><a href="My%20Clippings_编辑后.txt">My Clippings_编辑后.txt</a></td><td class="right" align="right">287&nbsp;K</td><td class="left"></td><td></td><td class="left"></td><td></td></tr>
+<tr><td colspan="8" class="anchor center">产品</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="产品/Ceph+SQL.pdf">Ceph+SQL.pdf</a></td><td class="right" align="right">13,245&nbsp;K</td><td class="left"><a href="产品/useHelp.pdf">useHelp.pdf</a></td><td class="right" align="right">13,278&nbsp;K</td><td class="left"><a href="产品/通过Python进行时间序列的分析与预测.pdf">通过Python进行时间序列的分析与预测.pdf</a></td><td class="right" align="right">11,528&nbsp;K</td><td class="left"><a href="产品/陆奇-大模型带来的新范式.pdf">陆奇-大模型带来的新范式.pdf</a></td><td class="right" align="right">10,228&nbsp;K</td></tr>
+<tr><td colspan="8" class="anchor center">人物</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="人物/乾隆皇帝.mobi">乾隆皇帝.mobi</a></td><td class="right" align="right">6,412&nbsp;K</td><td class="left"><a href="人物/曾國藩第二部%20野焚.mobi">曾國藩第二部 野焚.mobi</a></td><td class="right" align="right">879&nbsp;K</td><td class="left"><a href="人物/毛泽东传（含图版）.mobi">毛泽东传（含图版）.mobi</a></td><td class="right" align="right">7,468&nbsp;K</td><td class="left"><a href="人物/胡雪岩1：胡雪岩.mobi">胡雪岩1：胡雪岩.mobi</a></td><td class="right" align="right">2,105&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="人物/大秦帝国.mobi">大秦帝国.mobi</a></td><td class="right" align="right">11,443&nbsp;K</td><td class="left"><a href="人物/曾文正公集-曾国藩.epub">曾文正公集-曾国藩.epub</a></td><td class="right" align="right">912&nbsp;K</td><td class="left"><a href="人物/毛泽东传（文字版）.mobi">毛泽东传（文字版）.mobi</a></td><td class="right" align="right">1,256&nbsp;K</td><td class="left"><a href="人物/胡雪岩2：红顶商人.mobi">胡雪岩2：红顶商人.mobi</a></td><td class="right" align="right">710&nbsp;K</td></tr>
+<tr><td class="left"><a href="人物/康熙大帝.mobi">康熙大帝.mobi</a></td><td class="right" align="right">3,621&nbsp;K</td><td class="left"><a href="人物/朱鎔基傳.mobi">朱鎔基傳.mobi</a></td><td class="right" align="right">419&nbsp;K</td><td class="left"><a href="人物/毛泽东最后七年风雨路.mobi">毛泽东最后七年风雨路.mobi</a></td><td class="right" align="right">257&nbsp;K</td><td class="left"><a href="人物/胡雪岩3：灯火楼台.mobi">胡雪岩3：灯火楼台.mobi</a></td><td class="right" align="right">1,410&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="人物/张居正.mobi">张居正.mobi</a></td><td class="right" align="right">3,019&nbsp;K</td><td class="left"><a href="人物/李开复自传：世界因你不同.mobi">李开复自传：世界因你不同.mobi</a></td><td class="right" align="right">323&nbsp;K</td><td class="left"><a href="人物/毛泽东选集.mobi">毛泽东选集.mobi</a></td><td class="right" align="right">4,529&nbsp;K</td><td class="left"><a href="人物/蒋介石传.mobi">蒋介石传.mobi</a></td><td class="right" align="right">648&nbsp;K</td></tr>
+<tr><td class="left"><a href="人物/曾国藩文集.mobi">曾国藩文集.mobi</a></td><td class="right" align="right">576&nbsp;K</td><td class="left"><a href="人物/李鴻章.mobi">李鴻章.mobi</a></td><td class="right" align="right">616&nbsp;K</td><td class="left"><a href="人物/毛澤東專政始末.mobi">毛澤東專政始末.mobi</a></td><td class="right" align="right">490&nbsp;K</td><td class="left"><a href="人物/蒋氏家族全传.mobi">蒋氏家族全传.mobi</a></td><td class="right" align="right">1,635&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="人物/曾國藩第一部%20血祭.mobi">曾國藩第一部 血祭.mobi</a></td><td class="right" align="right">937&nbsp;K</td><td class="left"><a href="人物/毛泽东%20鲜为人知的故事.prc">毛泽东 鲜为人知的故事.prc</a></td><td class="right" align="right">2,092&nbsp;K</td><td class="left"><a href="人物/硅谷钢铁侠：埃隆%C2%B7马斯克的冒险人生%20-%20[美]阿什利%C2%B7万斯.epub">硅谷钢铁侠：埃隆&#183;马斯克的冒险人生 - [美]阿什利&#183;万斯.epub</a></td><td class="right" align="right">4,677&nbsp;K</td><td class="left"><a href="人物/雍正皇帝.mobi">雍正皇帝.mobi</a></td><td class="right" align="right">3,528&nbsp;K</td></tr>
+<tr><td class="left"><a href="人物/曾國藩第三部%20黑雨.mobi">曾國藩第三部 黑雨.mobi</a></td><td class="right" align="right">1,052&nbsp;K</td><td class="left"></td><td></td><td class="left"></td><td></td><td class="left"></td><td></td></tr>
+<tr><td colspan="8" class="anchor center">修身</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="修身/15个颠覆性创新.pdf">15个颠覆性创新.pdf</a></td><td class="right" align="right">7,439&nbsp;K</td><td class="left"><a href="修身/创新引领，粤港澳大湾区的产业新机会.pdf">创新引领，粤港澳大湾区的产业新机会.pdf</a></td><td class="right" align="right">3,629&nbsp;K</td><td class="left"><a href="修身/心理洞察高手(上下册全集).pdf">心理洞察高手(上下册全集).pdf</a></td><td class="right" align="right">9,416&nbsp;K</td><td class="left"><a href="修身/秘密：十周年纪念版.mobi">秘密：十周年纪念版.mobi</a></td><td class="right" align="right">1,719&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/2019年技术趋势报告.pdf">2019年技术趋势报告.pdf</a></td><td class="right" align="right">2,334&nbsp;K</td><td class="left"><a href="修身/剑雨浮生.docx">剑雨浮生.docx</a></td><td class="right" align="right">13&nbsp;K</td><td class="left"><a href="修身/意志力.mobi">意志力.mobi</a></td><td class="right" align="right">568&nbsp;K</td><td class="left"><a href="修身/精美句子仿写100例.doc">精美句子仿写100例.doc</a></td><td class="right" align="right">62&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/7habitsC.pdf">7habitsC.pdf</a></td><td class="right" align="right">7,234&nbsp;K</td><td class="left"><a href="修身/卓越领导之路—从管理他人到管理经理.pdf">卓越领导之路—从管理他人到管理经理.pdf</a></td><td class="right" align="right">1,134&nbsp;K</td><td class="left"><a href="修身/拆掉思维里的墙.mobi">拆掉思维里的墙.mobi</a></td><td class="right" align="right">259&nbsp;K</td><td class="left"><a href="修身/经典思维50法-麦冬.pdf">经典思维50法-麦冬.pdf</a></td><td class="right" align="right">7,372&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/《秘密》（力量+魔力+秘密实践版+英雄）（朗达%C2%B7拜恩）.epub">《秘密》（力量+魔力+秘密实践版+英雄）（朗达&#183;拜恩）.epub</a></td><td class="right" align="right">6,397&nbsp;K</td><td class="left"><a href="修身/古城听雨0-2012年写于凤凰.docx">古城听雨0-2012年写于凤凰.docx</a></td><td class="right" align="right">15&nbsp;K</td><td class="left"><a href="修身/数字推理题的解题技巧大全.doc">数字推理题的解题技巧大全.doc</a></td><td class="right" align="right">530&nbsp;K</td><td class="left"><a href="修身/美丽衡阳-www.wenqujingdian.com.pdf">美丽衡阳-www.wenqujingdian.com.pdf</a></td><td class="right" align="right">19,101&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/也许你该找个人聊聊%20by%20洛莉%C2%B7戈特利布%20(z-lib.org).epub">也许你该找个人聊聊 by 洛莉&#183;戈特利布 (z-lib.org).epub</a></td><td class="right" align="right">888&nbsp;K</td><td class="left"><a href="修身/古文观止%20(吴楚材、吴调侯选注%20施适校点).epub">古文观止 (吴楚材、吴调侯选注 施适校点).epub</a></td><td class="right" align="right">1,078&nbsp;K</td><td class="left"><a href="修身/李开复写给中国学生的七封信.pdf">李开复写给中国学生的七封信.pdf</a></td><td class="right" align="right">821&nbsp;K</td><td class="left"><a href="修身/腾讯团队.docx">腾讯团队.docx</a></td><td class="right" align="right">18&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/亲密关系-罗兰%C2%B7米勒.epub">亲密关系-罗兰&#183;米勒.epub</a></td><td class="right" align="right">0&nbsp;K</td><td class="left"><a href="修身/可复制的领导力：樊登的9堂商业课-樊登.epub">可复制的领导力：樊登的9堂商业课-樊登.epub</a></td><td class="right" align="right">570&nbsp;K</td><td class="left"><a href="修身/林肯传（2012）.docx">林肯传（2012）.docx</a></td><td class="right" align="right">281&nbsp;K</td><td class="left"><a href="修身/菜根谭-奇书.epub">菜根谭-奇书.epub</a></td><td class="right" align="right">24,587&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/人性的弱点.mobi">人性的弱点.mobi</a></td><td class="right" align="right">452&nbsp;K</td><td class="left"><a href="修身/可复制的领导力：樊登的9堂商业课-樊登.mobi">可复制的领导力：樊登的9堂商业课-樊登.mobi</a></td><td class="right" align="right">771&nbsp;K</td><td class="left"><a href="修身/每周工作四小时-蒂姆费里斯.PDF">每周工作四小时-蒂姆费里斯.PDF</a></td><td class="right" align="right">395&nbsp;K</td><td class="left"><a href="修身/营销方式.pdf">营销方式.pdf</a></td><td class="right" align="right">350&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/体育健身训练丛书：营养+训练+放松+损伤预防.epub">体育健身训练丛书：营养+训练+放松+损伤预防.epub</a></td><td class="right" align="right">113,993&nbsp;K</td><td class="left"><a href="修身/哈佛商学院管理与MBA案例全书（套装十册）.azw3">哈佛商学院管理与MBA案例全书（套装十册）.azw3</a></td><td class="right" align="right">46,546&nbsp;K</td><td class="left"><a href="修身/每天应该问自己的10个问题档.doc">每天应该问自己的10个问题档.doc</a></td><td class="right" align="right">1,549&nbsp;K</td><td class="left"><a href="修身/薄世宁医学通识讲义.azw3">薄世宁医学通识讲义.azw3</a></td><td class="right" align="right">2,088&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/体育健身训练丛书：营养+训练+放松+损伤预防.mobi">体育健身训练丛书：营养+训练+放松+损伤预防.mobi</a></td><td class="right" align="right">133,484&nbsp;K</td><td class="left"><a href="修身/哈佛商学院管理与MBA案例全书（套装十册）.epub">哈佛商学院管理与MBA案例全书（套装十册）.epub</a></td><td class="right" align="right">34,374&nbsp;K</td><td class="left"><a href="修身/沉默的病人-亚历克斯麦克利兹.mobi">沉默的病人-亚历克斯麦克利兹.mobi</a></td><td class="right" align="right">1,463&nbsp;K</td><td class="left"><a href="修身/薄世宁医学通识讲义.epub">薄世宁医学通识讲义.epub</a></td><td class="right" align="right">1,771&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/倪海厦%20天纪%20天机道（终稿）%20(倪海厦)%20(Z-Library).pdf">倪海厦 天纪 天机道（终稿） (倪海厦) (Z-Library).pdf</a></td><td class="right" align="right">58,327&nbsp;K</td><td class="left"><a href="修身/在路上.mobi">在路上.mobi</a></td><td class="right" align="right">517&nbsp;K</td><td class="left"><a href="修身/沟通-优米（重要）.docx">沟通-优米（重要）.docx</a></td><td class="right" align="right">15&nbsp;K</td><td class="left"><a href="修身/认知：人行为背后的思维与智能%20.epub">认知：人行为背后的思维与智能 .epub</a></td><td class="right" align="right">2,514&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/倪海厦-天纪-天机道-听课笔记.pdf%20(倪海厦)%20(Z-Library).pdf">倪海厦-天纪-天机道-听课笔记.pdf (倪海厦) (Z-Library).pdf</a></td><td class="right" align="right">344&nbsp;K</td><td class="left"><a href="修身/天才在左疯子在右.mobi">天才在左疯子在右.mobi</a></td><td class="right" align="right">651&nbsp;K</td><td class="left"><a href="修身/活法.epub">活法.epub</a></td><td class="right" align="right">9,251&nbsp;K</td><td class="left"><a href="修身/让大象飞-史蒂文%C2%B7霍夫曼.epub">让大象飞-史蒂文&#183;霍夫曼.epub</a></td><td class="right" align="right">851&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/倪海厦教授养生演讲稿%20(倪海厦)%20(Z-Library).epub">倪海厦教授养生演讲稿 (倪海厦) (Z-Library).epub</a></td><td class="right" align="right">79&nbsp;K</td><td class="left"><a href="修身/少有人走的路.mobi">少有人走的路.mobi</a></td><td class="right" align="right">527&nbsp;K</td><td class="left"><a href="修身/渔家傲www.wenqujingdian.com.pdf">渔家傲www.wenqujingdian.com.pdf</a></td><td class="right" align="right">7,773&nbsp;K</td><td class="left"><a href="修身/让大象飞-史蒂文%C2%B7霍夫曼.mobi">让大象飞-史蒂文&#183;霍夫曼.mobi</a></td><td class="right" align="right">1,050&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/健身营养全书-克里斯蒂安•冯•勒费尔霍尔茨.pdf">健身营养全书-克里斯蒂安•冯•勒费尔霍尔茨.pdf</a></td><td class="right" align="right">64,289&nbsp;K</td><td class="left"><a href="修身/幽默.docx">幽默.docx</a></td><td class="right" align="right">27&nbsp;K</td><td class="left"><a href="修身/漫谈产品经理%20201906%20俞军.pdf">漫谈产品经理 201906 俞军.pdf</a></td><td class="right" align="right">1,079&nbsp;K</td><td class="left"><a href="修身/逻辑思维训练500题.doc">逻辑思维训练500题.doc</a></td><td class="right" align="right">283&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/健身营养全书.pdf">健身营养全书.pdf</a></td><td class="right" align="right">64,353&nbsp;K</td><td class="left"><a href="修身/当我谈跑步时，我谈些什么.mobi">当我谈跑步时，我谈些什么.mobi</a></td><td class="right" align="right">341&nbsp;K</td><td class="left"><a href="修身/爱情，是什么.docx">爱情，是什么.docx</a></td><td class="right" align="right">17&nbsp;K</td><td class="left"><a href="修身/那些荡气回肠的日子.doc">那些荡气回肠的日子.doc</a></td><td class="right" align="right">40&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/像火箭科学家一样思考：将不可能变为可能（美）奥赞•%20瓦罗尔)%20.mobi">像火箭科学家一样思考：将不可能变为可能（美）奥赞• 瓦罗尔) .mobi</a></td><td class="right" align="right">1,484&nbsp;K</td><td class="left"><a href="修身/影响力.mobi">影响力.mobi</a></td><td class="right" align="right">424&nbsp;K</td><td class="left"><a href="修身/白蛇传说.txt">白蛇传说.txt</a></td><td class="right" align="right">0&nbsp;K</td><td class="left"><a href="修身/高级运动营养学%20(（美）贝纳多特著)%20.epub">高级运动营养学 (（美）贝纳多特著) .epub</a></td><td class="right" align="right">6,980&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="修身/全世界成功人士都在用的100个博弈智慧.pdf">全世界成功人士都在用的100个博弈智慧.pdf</a></td><td class="right" align="right">38,101&nbsp;K</td><td class="left"><a href="修身/心理定律.docx">心理定律.docx</a></td><td class="right" align="right">13&nbsp;K</td><td class="left"><a href="修身/社会心理学%20([美]戴维%C2%B7迈尔斯)%20(Z-Library).mobi">社会心理学 ([美]戴维&#183;迈尔斯) (Z-Library).mobi</a></td><td class="right" align="right">1,317&nbsp;K</td><td class="left"><a href="修身/高级运动营养学-贝纳多特著%20.epub">高级运动营养学-贝纳多特著 .epub</a></td><td class="right" align="right">6,980&nbsp;K</td></tr>
+<tr><td class="left"><a href="修身/关于爱情、关于伴侣、关于承诺、关于人生、关于友情、关于微笑.doc">关于爱情、关于伴侣、关于承诺、关于人生、关于友情、关于微笑.doc</a></td><td class="right" align="right">27&nbsp;K</td><td class="left"></td><td></td><td class="left"></td><td></td><td class="left"></td><td></td></tr>
+<tr><td colspan="8" class="anchor center">历史</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="历史/Yan%20Zhou%20Cheng%20Ji%20-Lin%20Shu%20Sen%20-%20Wei%20Zhi.azw3">Yan Zhou Cheng Ji -Lin Shu Sen - Wei Zhi.azw3</a></td><td class="right" align="right">155,208&nbsp;K</td><td class="left"><a href="历史/剑桥中国晚清史（上卷）.mobi">剑桥中国晚清史（上卷）.mobi</a></td><td class="right" align="right">1,289&nbsp;K</td><td class="left"><a href="历史/春秋左传.mobi">春秋左传.mobi</a></td><td class="right" align="right">823&nbsp;K</td><td class="left"><a href="历史/细说民国创立.mobi">细说民国创立.mobi</a></td><td class="right" align="right">580&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/Yan-Zhou-Cheng-Ji-Lin-Shu-Sen-Wei-Zhi.epub">Yan-Zhou-Cheng-Ji-Lin-Shu-Sen-Wei-Zhi.epub</a></td><td class="right" align="right">152,885&nbsp;K</td><td class="left"><a href="历史/剑桥中国晚清史（下卷）.mobi">剑桥中国晚清史（下卷）.mobi</a></td><td class="right" align="right">1,273&nbsp;K</td><td class="left"><a href="历史/最寒冷的冬天－美国人眼中的朝鲜战争(节选).mobi">最寒冷的冬天－美国人眼中的朝鲜战争(节选).mobi</a></td><td class="right" align="right">365&nbsp;K</td><td class="left"><a href="历史/细说清朝.mobi">细说清朝.mobi</a></td><td class="right" align="right">1,039&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/一口气读完世界历史.mobi">一口气读完世界历史.mobi</a></td><td class="right" align="right">365&nbsp;K</td><td class="left"><a href="历史/北洋裂变：军阀与五四.mobi">北洋裂变：军阀与五四.mobi</a></td><td class="right" align="right">312&nbsp;K</td><td class="left"><a href="历史/未来简史.mobi">未来简史.mobi</a></td><td class="right" align="right">4,971&nbsp;K</td><td class="left"><a href="历史/细说秦汉.mobi">细说秦汉.mobi</a></td><td class="right" align="right">743&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/万历十五年.azw">万历十五年.azw</a></td><td class="right" align="right">2,517&nbsp;K</td><td class="left"><a href="历史/半小时漫画中国史+世界史（共4册）.azw3">半小时漫画中国史+世界史（共4册）.azw3</a></td><td class="right" align="right">106,424&nbsp;K</td><td class="left"><a href="历史/枪炮、病菌和钢铁.mobi">枪炮、病菌和钢铁.mobi</a></td><td class="right" align="right">4,875&nbsp;K</td><td class="left"><a href="历史/细说隋唐.mobi">细说隋唐.mobi</a></td><td class="right" align="right">880&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/万历十五年.pdf">万历十五年.pdf</a></td><td class="right" align="right">2,249&nbsp;K</td><td class="left"><a href="历史/半小时漫画中国史.mobi">半小时漫画中国史.mobi</a></td><td class="right" align="right">28,459&nbsp;K</td><td class="left"><a href="历史/武则天正传.mobi">武则天正传.mobi</a></td><td class="right" align="right">328&nbsp;K</td><td class="left"><a href="历史/经史百家杂钞（套装共8册）.mobi">经史百家杂钞（套装共8册）.mobi</a></td><td class="right" align="right">20,298&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/世界的逻辑%20(哈维)%20(z-lib.org).mobi">世界的逻辑 (哈维) (z-lib.org).mobi</a></td><td class="right" align="right">5,049&nbsp;K</td><td class="left"><a href="历史/古文观止译注.azw3">古文观止译注.azw3</a></td><td class="right" align="right">4,164&nbsp;K</td><td class="left"><a href="历史/民主的细节.mobi">民主的细节.mobi</a></td><td class="right" align="right">386&nbsp;K</td><td class="left"><a href="历史/美国历史www.wenqujingdian.com.pdf">美国历史www.wenqujingdian.com.pdf</a></td><td class="right" align="right">2,292&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/中国历史通俗演义.mobi">中国历史通俗演义.mobi</a></td><td class="right" align="right">19,681&nbsp;K</td><td class="left"><a href="历史/吴晓波%20-%20大败局I.mobi">吴晓波 - 大败局I.mobi</a></td><td class="right" align="right">2,062&nbsp;K</td><td class="left"><a href="历史/活着就为改变世界.mobi">活着就为改变世界.mobi</a></td><td class="right" align="right">793&nbsp;K</td><td class="left"><a href="历史/菊与刀(增订版).azw3">菊与刀(增订版).azw3</a></td><td class="right" align="right">2,154&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/中国大历史.mobi">中国大历史.mobi</a></td><td class="right" align="right">591&nbsp;K</td><td class="left"><a href="历史/吴晓波%20-%20大败局II.mobi">吴晓波 - 大败局II.mobi</a></td><td class="right" align="right">3,516&nbsp;K</td><td class="left"><a href="历史/流血的仕途.mobi">流血的仕途.mobi</a></td><td class="right" align="right">1,833&nbsp;K</td><td class="left"><a href="历史/袁氏當國.mobi">袁氏當國.mobi</a></td><td class="right" align="right">399&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/中国最美的100风情小镇.mobi">中国最美的100风情小镇.mobi</a></td><td class="right" align="right">5,026&nbsp;K</td><td class="left"><a href="历史/吴晓波--激荡三十年.mobi">吴晓波--激荡三十年.mobi</a></td><td class="right" align="right">895&nbsp;K</td><td class="left"><a href="历史/浮生六记.mobi">浮生六记.mobi</a></td><td class="right" align="right">263&nbsp;K</td><td class="left"><a href="历史/论中国+世界秩序(套装共2册)%20(Henry%20Kissinger).epub">论中国+世界秩序(套装共2册) (Henry Kissinger).epub</a></td><td class="right" align="right">3,417&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/中国近代史.prc">中国近代史.prc</a></td><td class="right" align="right">4,867&nbsp;K</td><td class="left"><a href="历史/哥德尔、艾舍尔、巴赫——集异璧之大成%20(侯世达).epub">哥德尔、艾舍尔、巴赫——集异璧之大成 (侯世达).epub</a></td><td class="right" align="right">14,301&nbsp;K</td><td class="left"><a href="历史/看见.epub">看见.epub</a></td><td class="right" align="right">6,201&nbsp;K</td><td class="left"><a href="历史/论中国+世界秩序.mobi">论中国+世界秩序.mobi</a></td><td class="right" align="right">6,400&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/中国通史-吕思勉.epub">中国通史-吕思勉.epub</a></td><td class="right" align="right">2,752&nbsp;K</td><td class="left"><a href="历史/如果这是宋史（1-4全集）.azw">如果这是宋史（1-4全集）.azw</a></td><td class="right" align="right">3,734&nbsp;K</td><td class="left"><a href="历史/真相与自白.mobi">真相与自白.mobi</a></td><td class="right" align="right">814&nbsp;K</td><td class="left"><a href="历史/论中国.mobi">论中国.mobi</a></td><td class="right" align="right">1,372&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/二月河帝王系列.mobi">二月河帝王系列.mobi</a></td><td class="right" align="right">13,518&nbsp;K</td><td class="left"><a href="历史/广州城记-林树森.pdf">广州城记-林树森.pdf</a></td><td class="right" align="right">28,522&nbsp;K</td><td class="left"><a href="历史/科学迷宫里的顽童与大师.epub">科学迷宫里的顽童与大师.epub</a></td><td class="right" align="right">3,245&nbsp;K</td><td class="left"><a href="历史/货币战争.mobi">货币战争.mobi</a></td><td class="right" align="right">516&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/人类简史-尤瓦尔%C2%B7赫拉利.mobi">人类简史-尤瓦尔&#183;赫拉利.mobi</a></td><td class="right" align="right">2,623&nbsp;K</td><td class="left"><a href="历史/我们台湾这些年_讲述台湾老百姓自己的故事.mobi">我们台湾这些年_讲述台湾老百姓自己的故事.mobi</a></td><td class="right" align="right">2,746&nbsp;K</td><td class="left"><a href="历史/第二次世界大战回忆录.mobi">第二次世界大战回忆录.mobi</a></td><td class="right" align="right">8,714&nbsp;K</td><td class="left"><a href="历史/货币战争2：金权天下.mobi">货币战争2：金权天下.mobi</a></td><td class="right" align="right">220&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/人类简史：从动物到上帝-哈拉瑞.epub">人类简史：从动物到上帝-哈拉瑞.epub</a></td><td class="right" align="right">2,172&nbsp;K</td><td class="left"><a href="历史/战天京.mobi">战天京.mobi</a></td><td class="right" align="right">596&nbsp;K</td><td class="left"><a href="历史/细说三国.mobi">细说三国.mobi</a></td><td class="right" align="right">714&nbsp;K</td><td class="left"><a href="历史/货币战争3：金融高边疆.mobi">货币战争3：金融高边疆.mobi</a></td><td class="right" align="right">254&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/你一定爱读的极简欧洲史.mobi">你一定爱读的极简欧洲史.mobi</a></td><td class="right" align="right">5,175&nbsp;K</td><td class="left"><a href="历史/文学回忆录(套装共2册)%20(木心,%20陈丹青)%20(Z-Library).mobi">文学回忆录(套装共2册) (木心, 陈丹青) (Z-Library).mobi</a></td><td class="right" align="right">4,570&nbsp;K</td><td class="left"><a href="历史/细说两晋南北朝.mobi">细说两晋南北朝.mobi</a></td><td class="right" align="right">974&nbsp;K</td><td class="left"><a href="历史/趣读史记：不可不知的49个史记人物.mobi">趣读史记：不可不知的49个史记人物.mobi</a></td><td class="right" align="right">395&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/剑桥中华民国史（上卷）.mobi">剑桥中华民国史（上卷）.mobi</a></td><td class="right" align="right">1,691&nbsp;K</td><td class="left"><a href="历史/时间简史.mobi">时间简史.mobi</a></td><td class="right" align="right">932&nbsp;K</td><td class="left"><a href="历史/细说元朝.mobi">细说元朝.mobi</a></td><td class="right" align="right">478&nbsp;K</td><td class="left"><a href="历史/近距离看美国（全集）.mobi">近距离看美国（全集）.mobi</a></td><td class="right" align="right">2,453&nbsp;K</td></tr>
+<tr><td class="left"><a href="历史/剑桥中华民国史（下卷）.mobi">剑桥中华民国史（下卷）.mobi</a></td><td class="right" align="right">1,836&nbsp;K</td><td class="left"><a href="历史/明朝那些事儿.mobi">明朝那些事儿.mobi</a></td><td class="right" align="right">5,321&nbsp;K</td><td class="left"><a href="历史/细说宋朝.mobi">细说宋朝.mobi</a></td><td class="right" align="right">1,138&nbsp;K</td><td class="left"><a href="历史/闲话文人www.wenqujingdian.com.pdf">闲话文人www.wenqujingdian.com.pdf</a></td><td class="right" align="right">4,746&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="历史/剑桥中国史.mobi">剑桥中国史.mobi</a></td><td class="right" align="right">14,634&nbsp;K</td><td class="left"><a href="历史/易经(白话全译)%20(时光文库)%20(文史哲)%20(z-lib.org).mobi">易经(白话全译) (时光文库) (文史哲) (z-lib.org).mobi</a></td><td class="right" align="right">1,353&nbsp;K</td><td class="left"><a href="历史/细说明朝.mobi">细说明朝.mobi</a></td><td class="right" align="right">544&nbsp;K</td><td class="left"><a href="历史/霍金经典著作套装：时间简史插图版+果壳中%20(霍金)%20.mobi">霍金经典著作套装：时间简史插图版+果壳中 (霍金) .mobi</a></td><td class="right" align="right">34,543&nbsp;K</td></tr>
+<tr><td colspan="8" class="anchor center">小说</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="小说/三体.mobi">三体.mobi</a></td><td class="right" align="right">3,816&nbsp;K</td><td class="left"><a href="小说/后宫甄嬛传（全集）.mobi">后宫甄嬛传（全集）.mobi</a></td><td class="right" align="right">5,197&nbsp;K</td><td class="left"><a href="小说/杀手系列_九把刀.mobi">杀手系列_九把刀.mobi</a></td><td class="right" align="right">1,448&nbsp;K</td><td class="left"><a href="小说/红手指%20(东野圭吾)%20(z-lib.org).mobi">红手指 (东野圭吾) (z-lib.org).mobi</a></td><td class="right" align="right">505&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="小说/三体全集-刘慈欣.mobi">三体全集-刘慈欣.mobi</a></td><td class="right" align="right">3,190&nbsp;K</td><td class="left"><a href="小说/回到明朝当王爷.mobi">回到明朝当王爷.mobi</a></td><td class="right" align="right">9,673&nbsp;K</td><td class="left"><a href="小说/杀死一只知更鸟.mobi">杀死一只知更鸟.mobi</a></td><td class="right" align="right">557&nbsp;K</td><td class="left"><a href="小说/解忧杂货店-东野圭吾.mobi">解忧杂货店-东野圭吾.mobi</a></td><td class="right" align="right">740&nbsp;K</td></tr>
+<tr><td class="left"><a href="小说/亲爱的安德烈.mobi">亲爱的安德烈.mobi</a></td><td class="right" align="right">472&nbsp;K</td><td class="left"><a href="小说/大生意人（套装共7册）.azw3">大生意人（套装共7册）.azw3</a></td><td class="right" align="right">6,148&nbsp;K</td><td class="left"><a href="小说/浮生六记-沈复.mobi">浮生六记-沈复.mobi</a></td><td class="right" align="right">2,391&nbsp;K</td><td class="left"><a href="小说/诛仙.mobi">诛仙.mobi</a></td><td class="right" align="right">5,339&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="小说/人间值得%20(中村恒子)%20(z-lib.org).epub">人间值得 (中村恒子) (z-lib.org).epub</a></td><td class="right" align="right">1,234&nbsp;K</td><td class="left"><a href="小说/大生意人（套装共7册）.mobi">大生意人（套装共7册）.mobi</a></td><td class="right" align="right">5,946&nbsp;K</td><td class="left"><a href="小说/白夜行-东野圭吾.mobi">白夜行-东野圭吾.mobi</a></td><td class="right" align="right">880&nbsp;K</td><td class="left"><a href="小说/追风筝的人%20-%20[美]%20卡勒德%C2%B7胡赛尼.epub">追风筝的人 - [美] 卡勒德&#183;胡赛尼.epub</a></td><td class="right" align="right">214&nbsp;K</td></tr>
+<tr><td class="left"><a href="小说/你当像鸟飞往你的山%20-塔拉%C2%B7韦斯特弗.epub">你当像鸟飞往你的山 -塔拉&#183;韦斯特弗.epub</a></td><td class="right" align="right">407&nbsp;K</td><td class="left"><a href="小说/寻秦记.mobi">寻秦记.mobi</a></td><td class="right" align="right">4,628&nbsp;K</td><td class="left"><a href="小说/百年孤独%20by%20加西亚%C2%B7马尔克斯%20(z-lib.org).mobi">百年孤独 by 加西亚&#183;马尔克斯 (z-lib.org).mobi</a></td><td class="right" align="right">4,729&nbsp;K</td><td class="left"><a href="小说/金庸小说全集（精制插图版，连载初回本）.epub">金庸小说全集（精制插图版，连载初回本）.epub</a></td><td class="right" align="right">31,293&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="小说/佣兵天下.mobi">佣兵天下.mobi</a></td><td class="right" align="right">6,942&nbsp;K</td><td class="left"><a href="小说/小王子%20(【法国】圣埃克苏佩里)%20(z-lib.org).epub">小王子 (【法国】圣埃克苏佩里) (z-lib.org).epub</a></td><td class="right" align="right">2,370&nbsp;K</td><td class="left"><a href="小说/百年孤独-加西亚•马尔克斯,%20范晔.epub">百年孤独-加西亚•马尔克斯, 范晔.epub</a></td><td class="right" align="right">466&nbsp;K</td><td class="left"><a href="小说/金庸小说全集（精制插图版，连载初回本）.mobi">金庸小说全集（精制插图版，连载初回本）.mobi</a></td><td class="right" align="right">62,573&nbsp;K</td></tr>
+<tr><td class="left"><a href="小说/叛逆者-畀愚.epub">叛逆者-畀愚.epub</a></td><td class="right" align="right">355&nbsp;K</td><td class="left"><a href="小说/小王子%20(插图版).mobi">小王子 (插图版).mobi</a></td><td class="right" align="right">4,451&nbsp;K</td><td class="left"><a href="小说/百年孤独（50周年纪念版）+.mobi">百年孤独（50周年纪念版）+.mobi</a></td><td class="right" align="right">799&nbsp;K</td><td class="left"><a href="小说/霍乱时期的爱情%20(加西亚•马尔克斯)%20(z-lib.org).epub">霍乱时期的爱情 (加西亚•马尔克斯) (z-lib.org).epub</a></td><td class="right" align="right">621&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="小说/叛逆者-畀愚.mobi">叛逆者-畀愚.mobi</a></td><td class="right" align="right">1,154&nbsp;K</td><td class="left"><a href="小说/斗罗大陆.mobi">斗罗大陆.mobi</a></td><td class="right" align="right">8,119&nbsp;K</td><td class="left"><a href="小说/神墓.mobi">神墓.mobi</a></td><td class="right" align="right">8,053&nbsp;K</td><td class="left"><a href="小说/霍乱时期的爱情_加西亚%C2%B7马尔克斯.azw3">霍乱时期的爱情_加西亚&#183;马尔克斯.azw3</a></td><td class="right" align="right">891&nbsp;K</td></tr>
+<tr><td class="left"><a href="小说/史上最全的冷笑话集锦.mobi">史上最全的冷笑话集锦.mobi</a></td><td class="right" align="right">195&nbsp;K</td><td class="left"><a href="小说/斯蒂芬%C2%B7金_经典系列.mobi">斯蒂芬&#183;金_经典系列.mobi</a></td><td class="right" align="right">9,300&nbsp;K</td><td class="left"><a href="小说/红手指%20(东野圭吾)%20(z-lib.org).epub">红手指 (东野圭吾) (z-lib.org).epub</a></td><td class="right" align="right">857&nbsp;K</td><td class="left"><a href="小说/鬼吹灯全集.mobi">鬼吹灯全集.mobi</a></td><td class="right" align="right">2,525&nbsp;K</td></tr>
+<tr><td colspan="8" class="anchor center">社会</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="社会/20大报告.pdf">20大报告.pdf</a></td><td class="right" align="right">2,881&nbsp;K</td><td class="left"><a href="社会/“十四五”近看什么？远看什么？-西南证券-20201029.pdf">&ldquo;十四五&rdquo;近看什么？远看什么？-西南证券-20201029.pdf</a></td><td class="right" align="right">1,083&nbsp;K</td><td class="left"><a href="社会/中国社会学经典文库.epub">中国社会学经典文库.epub</a></td><td class="right" align="right">44,262&nbsp;K</td><td class="left"><a href="社会/美国反对美国%20（America%20against%20America）%20(王沪宁).epub">美国反对美国 （America against America） (王沪宁).epub</a></td><td class="right" align="right">304&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="社会/Mei%20Guo%20Fan%20Dui%20Mei%20Guo%20-%20Wang%20Hu%20Ning.epub">Mei Guo Fan Dui Mei Guo - Wang Hu Ning.epub</a></td><td class="right" align="right">369&nbsp;K</td><td class="left"></td><td></td><td class="left"></td><td></td><td class="left"></td><td></td></tr>
+<tr><td colspan="8" class="anchor center">股票</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="股票/21_Candlesticks.pdf">21_Candlesticks.pdf</a></td><td class="right" align="right">2,391&nbsp;K</td><td class="left"><a href="股票/The_Ultimate_Guide_To_Price_Action_Tradi.pdf">The_Ultimate_Guide_To_Price_Action_Tradi.pdf</a></td><td class="right" align="right">2,351&nbsp;K</td><td class="left"><a href="股票/常见的K线组合图.docx">常见的K线组合图.docx</a></td><td class="right" align="right">2,242&nbsp;K</td><td class="left"><a href="股票/股民的眼泪.mobi">股民的眼泪.mobi</a></td><td class="right" align="right">1,962&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="股票/Chart%20Patterns%20Cheat%20Sheet.pdf">Chart Patterns Cheat Sheet.pdf</a></td><td class="right" align="right">2,016&nbsp;K</td><td class="left"><a href="股票/Trade%20Chart%20Patterns%20Like%20The%20Pros-Suri%20Duddella.pdf">Trade Chart Patterns Like The Pros-Suri Duddella.pdf</a></td><td class="right" align="right">5,882&nbsp;K</td><td class="left"><a href="股票/炒股就这几招.pdf">炒股就这几招.pdf</a></td><td class="right" align="right">7,758&nbsp;K</td><td class="left"><a href="股票/股票作手回忆录.pdf">股票作手回忆录.pdf</a></td><td class="right" align="right">12,822&nbsp;K</td></tr>
+<tr><td class="left"><a href="股票/Chart%20Patterns.pptx">Chart Patterns.pptx</a></td><td class="right" align="right">740&nbsp;K</td><td class="left"><a href="股票/《盘口》.pdf">《盘口》.pdf</a></td><td class="right" align="right">48,209&nbsp;K</td><td class="left"><a href="股票/现金流量表（自动生成）模板.xls">现金流量表（自动生成）模板.xls</a></td><td class="right" align="right">77&nbsp;K</td><td class="left"><a href="股票/胡立阳股票投资100招.pdf">胡立阳股票投资100招.pdf</a></td><td class="right" align="right">21,350&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="股票/Idenitfying-Chart-Patterns.pdf">Idenitfying-Chart-Patterns.pdf</a></td><td class="right" align="right">1,643&nbsp;K</td><td class="left"><a href="股票/一买就涨-买在走起涨点的126个信号.pdf">一买就涨-买在走起涨点的126个信号.pdf</a></td><td class="right" align="right">31,161&nbsp;K</td><td class="left"><a href="股票/移动平均线(MA).docx">移动平均线(MA).docx</a></td><td class="right" align="right">16&nbsp;K</td><td class="left"><a href="股票/财务报表分析.xlsx">财务报表分析.xlsx</a></td><td class="right" align="right">200&nbsp;K</td></tr>
+<tr><td class="left"><a href="股票/Meeting%20with李岳.pdf">Meeting with李岳.pdf</a></td><td class="right" align="right">33,872&nbsp;K</td><td class="left"><a href="股票/中国股神林园炒股秘籍%20(1).pdf">中国股神林园炒股秘籍 (1).pdf</a></td><td class="right" align="right">1,372&nbsp;K</td><td class="left"><a href="股票/聪明的投资者(原本第四版)%20(格雷厄姆)%20(z-lib.org).pdf">聪明的投资者(原本第四版) (格雷厄姆) (z-lib.org).pdf</a></td><td class="right" align="right">17,285&nbsp;K</td><td class="left"><a href="股票/财务自由之路-从投资入门到精通技巧-共8册.azw3">财务自由之路-从投资入门到精通技巧-共8册.azw3</a></td><td class="right" align="right">49,273&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="股票/Python_Chart.pptx">Python_Chart.pptx</a></td><td class="right" align="right">1,445&nbsp;K</td><td class="left"><a href="股票/信号与噪声：大数据时代预测的科学与艺术-纳特%C2%B7西尔弗.epub">信号与噪声：大数据时代预测的科学与艺术-纳特&#183;西尔弗.epub</a></td><td class="right" align="right">2,746&nbsp;K</td><td class="left"><a href="股票/股民的眼泪.epub">股民的眼泪.epub</a></td><td class="right" align="right">1,424&nbsp;K</td><td class="left"><a href="股票/货币战争.pdf">货币战争.pdf</a></td><td class="right" align="right">1,265&nbsp;K</td></tr>
+<tr><td class="left"><a href="股票/Statistics.pptx">Statistics.pptx</a></td><td class="right" align="right">306&nbsp;K</td><td class="left"></td><td></td><td class="left"></td><td></td><td class="left"></td><td></td></tr>
+<tr><td colspan="8" class="anchor center">财经</td></tr>
+<tr><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th><th><b>File</b></th><th><b>Size</b></th></tr>
+<tr><td class="left"><a href="财经/MBA工商管理案例800例.PDF">MBA工商管理案例800例.PDF</a></td><td class="right" align="right">771&nbsp;K</td><td class="left"><a href="财经/哈佛商学院管理与MBA案例全书（套装十册）.epub">哈佛商学院管理与MBA案例全书（套装十册）.epub</a></td><td class="right" align="right">32,811&nbsp;K</td><td class="left"><a href="财经/沃伦巴菲特之路.docx">沃伦巴菲特之路.docx</a></td><td class="right" align="right">76&nbsp;K</td><td class="left"><a href="财经/薛兆丰经济学讲义%20(薛兆丰)%20(z-lib.org).epub">薛兆丰经济学讲义 (薛兆丰) (z-lib.org).epub</a></td><td class="right" align="right">1,335&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="财经/The%20Intelligent%20Investor-Benjamin%20Graham.mobi">The Intelligent Investor-Benjamin Graham.mobi</a></td><td class="right" align="right">3,236&nbsp;K</td><td class="left"><a href="财经/安全边际%20(塞思．卡拉曼)%20(Z-Library).mobi">安全边际 (塞思．卡拉曼) (Z-Library).mobi</a></td><td class="right" align="right">468&nbsp;K</td><td class="left"><a href="财经/漫步华尔街.docx">漫步华尔街.docx</a></td><td class="right" align="right">238&nbsp;K</td><td class="left"><a href="财经/薛兆丰经济学讲义-薛兆丰.epub">薛兆丰经济学讲义-薛兆丰.epub</a></td><td class="right" align="right">1,335&nbsp;K</td></tr>
+<tr><td class="left"><a href="财经/The-Lean-Startup-精益创业实战.epub">The-Lean-Startup-精益创业实战.epub</a></td><td class="right" align="right">1,964&nbsp;K</td><td class="left"><a href="财经/安全边际%20-%20有思想投资者的价值投资避险策略%20(塞思%C2%B7卡拉曼).epub">安全边际 - 有思想投资者的价值投资避险策略 (塞思&#183;卡拉曼).epub</a></td><td class="right" align="right">449&nbsp;K</td><td class="left"><a href="财经/牛奶可乐经济学.mobi">牛奶可乐经济学.mobi</a></td><td class="right" align="right">1,303&nbsp;K</td><td class="left"><a href="财经/重来-更为简单有效的商业-思维-%20贾森-弗里德.epub">重来-更为简单有效的商业-思维- 贾森-弗里德.epub</a></td><td class="right" align="right">2,706&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="财经/[安全边际].Margin.of.Safety-Seth.Klarman.(1991).epub">[安全边际].Margin.of.Safety-Seth.Klarman.(1991).epub</a></td><td class="right" align="right">1,410&nbsp;K</td><td class="left"><a href="财经/富爸爸穷爸爸.mobi">富爸爸穷爸爸.mobi</a></td><td class="right" align="right">389&nbsp;K</td><td class="left"><a href="财经/穷查理宝典.azw3">穷查理宝典.azw3</a></td><td class="right" align="right">53,283&nbsp;K</td><td class="left"><a href="财经/金融炼金术%20完整版.doc">金融炼金术 完整版.doc</a></td><td class="right" align="right">2,575&nbsp;K</td></tr>
+<tr><td class="left"><a href="财经/价值-张磊.azw3">价值-张磊.azw3</a></td><td class="right" align="right">8,471&nbsp;K</td><td class="left"><a href="财经/投资高手系列经典著作（套装共11册）.epub">投资高手系列经典著作（套装共11册）.epub</a></td><td class="right" align="right">73,512&nbsp;K</td><td class="left"><a href="财经/聪明的投资者(原本第四版)%20(格雷厄姆)%20(z-lib.org).pdf">聪明的投资者(原本第四版) (格雷厄姆) (z-lib.org).pdf</a></td><td class="right" align="right">17,285&nbsp;K</td><td class="left"><a href="财经/金融炼金术-乔治%C2%B7索罗斯.epub">金融炼金术-乔治&#183;索罗斯.epub</a></td><td class="right" align="right">15,048&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="财经/伟大的时代：深度解读价值投资.mobi">伟大的时代：深度解读价值投资.mobi</a></td><td class="right" align="right">3,144&nbsp;K</td><td class="left"><a href="财经/改良的中国投资时钟：周期轮动和大类资产表现.docx">改良的中国投资时钟：周期轮动和大类资产表现.docx</a></td><td class="right" align="right">10,002&nbsp;K</td><td class="left"><a href="财经/聪明的投资者（第4版注疏点评版）.mobi">聪明的投资者（第4版注疏点评版）.mobi</a></td><td class="right" align="right">498&nbsp;K</td><td class="left"><a href="财经/非理性繁荣(第二版).mobi">非理性繁荣(第二版).mobi</a></td><td class="right" align="right">1,735&nbsp;K</td></tr>
+<tr><td class="left"><a href="财经/华尔街.mobi">华尔街.mobi</a></td><td class="right" align="right">256&nbsp;K</td><td class="left"><a href="财经/斯坦福极简经济学-泰勒.mobi">斯坦福极简经济学-泰勒.mobi</a></td><td class="right" align="right">773&nbsp;K</td><td class="left"><a href="财经/苏世民我的经验与教训.epub">苏世民我的经验与教训.epub</a></td><td class="right" align="right">475&nbsp;K</td><td class="left"><a href="财经/高瓴发布首份价值投资影响力报告-高瓴资本集团-202011.pdf">高瓴发布首份价值投资影响力报告-高瓴资本集团-202011.pdf</a></td><td class="right" align="right">8,346&nbsp;K</td></tr>
+<tr class="row2"><td class="left"><a href="财经/原则-Ray%20Dalio.mobi">原则-Ray Dalio.mobi</a></td><td class="right" align="right">2,930&nbsp;K</td><td class="left"><a href="财经/斯坦福极简经济学（美）泰勒.mobi">斯坦福极简经济学（美）泰勒.mobi</a></td><td class="right" align="right">773&nbsp;K</td><td class="left"><a href="财经/苏世民我的经验与教训.mobi">苏世民我的经验与教训.mobi</a></td><td class="right" align="right">783&nbsp;K</td><td class="left"><a href="财经/鲁致远对投资的八点感悟.docx">鲁致远对投资的八点感悟.docx</a></td><td class="right" align="right">15&nbsp;K</td></tr>
+<tr><td class="left"><a href="财经/变革中国：市场经济的中国之路%20(罗纳德•哈里•科斯%20%20王宁)%20.mobi">变革中国：市场经济的中国之路 (罗纳德•哈里•科斯  王宁) .mobi</a></td><td class="right" align="right">1,185&nbsp;K</td><td class="left"><a href="财经/沃伦.巴菲特的投资组合.pdf">沃伦.巴菲特的投资组合.pdf</a></td><td class="right" align="right">3,936&nbsp;K</td><td class="left"></td><td></td><td class="left"></td><td></td></tr>
+</table>
+
+
+</body>
+</html></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: '223ba9517467e31b78e9af29d727249b',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,32 +1,657 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>从0到1：开启商业与未来的秘密-彼得·蒂尔 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="彼得·蒂尔，硅谷著名的创业者，曾在1998年创办了 PayPal，并在2002年以15亿美元出售给 eBay。后专注于金融投资和创业投资，曾投资过 Facebook 等著名企业。这本《从0到1》不是一本单纯讲述创业方法论的工具书，而是一本创业哲学书，书中对创业圈的很多流行观念做了深刻的反思。 彼得·蒂尔闯入硅谷投资界，本身就以一个颠覆者的形象出现。他有一句非常著名的对硅谷投资者的批评：“We w">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从0到1：开启商业与未来的秘密-彼得·蒂尔">
+<meta property="og:url" content="https://kewbing.github.io/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/index.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="彼得·蒂尔，硅谷著名的创业者，曾在1998年创办了 PayPal，并在2002年以15亿美元出售给 eBay。后专注于金融投资和创业投资，曾投资过 Facebook 等著名企业。这本《从0到1》不是一本单纯讲述创业方法论的工具书，而是一本创业哲学书，书中对创业圈的很多流行观念做了深刻的反思。 彼得·蒂尔闯入硅谷投资界，本身就以一个颠覆者的形象出现。他有一句非常著名的对硅谷投资者的批评：“We w">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png">
+<meta property="article:published_time" content="2022-11-20T05:56:00.000Z">
+<meta property="article:modified_time" content="2023-06-18T07:32:02.000Z">
+<meta property="article:author" content="BinQ">
+<meta property="article:tag" content="经典">
+<meta property="article:tag" content="产品">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '从0到1：开启商业与未来的秘密-彼得·蒂尔',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-18 15:32:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    if theme.reward.enable && theme.reward.QR_code
-      !=partial('includes/post/reward', {}, {cache: true})
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">从0到1：开启商业与未来的秘密-彼得·蒂尔</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-18T07:32:02.000Z" title="更新于 2023-06-18 15:32:02">2023-06-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225115.png"></p>
+<p>彼得·蒂尔，硅谷著名的创业者，曾在1998年创办了 PayPal，并在2002年以15亿美元出售给 eBay。后专注于金融投资和创业投资，曾投资过 Facebook 等著名企业。<br>这本《从0到1》不是一本单纯讲述创业方法论的工具书，而是一本创业哲学书，书中对创业圈的很多流行观念做了深刻的反思。</p>
+<p>彼得·蒂尔闯入硅谷投资界，本身就以一个颠覆者的形象出现。他有一句非常著名的对硅谷投资者的批评：“We wanted flying cars, instead we got 140 characters.”（我们需要能飞的汽车，但结果却得到了140个字符——指技术含量不高的推特。）</p>
+<p>《从0到1》在传统时代，成功企业的商业模式是一个从1到 N 的过程，也就是在现有的基础上，复制之前的经验，通过竞<br>争不断扩大自己的市场影响力。而在互联网时代，成功的企业却是一个从无到有、从0到1创造市场的过程，要实现这个过程，必须规避竞争、建立垄断。</p>
+<p>有一个笑话说，如果你发现路上所有的车都在违规逆行，那大概是你自己开反了。而彼得·蒂尔就像这样一辆车，他不仅一往无前、无所畏惧地逆向而行，还让路上所有其他的车困惑和怀疑是不是自己开反了方向。这就是为什么彼得·蒂尔的Founders Fund在硅谷资金规模并不是最大，历史也并非最长，但它的影响力却超越了国界与时代，直接照亮了世界与未来。</p>
+<p>“道生一”的商业智慧</p>
+<p>“从0到1”与“从1到n”的对比 </p>
+<table>
+<thead>
+<tr>
+<th align="left">从0到1</th>
+<th align="left">从1到n</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><div>创新</div></td>
+<td align="left">复制</td>
+</tr>
+<tr>
+<td align="left">质变</td>
+<td align="left">量变</td>
+</tr>
+<tr>
+<td align="left">垂直</td>
+<td align="left">水平</td>
+</tr>
+<tr>
+<td align="left">蓝海</td>
+<td align="left">红海</td>
+</tr>
+<tr>
+<td align="left">垄断</td>
+<td align="left">竞争</td>
+</tr>
+<tr>
+<td align="left">唯一</td>
+<td align="left">第一</td>
+</tr>
+<tr>
+<td align="left">非零和</td>
+<td align="left">零和</td>
+</tr>
+<tr>
+<td align="left">厚利</td>
+<td align="left">薄利</td>
+</tr>
+</tbody></table>
+<p>以此为维度去审视当代的企业，我们可以把企业的经营境界分为三层。</p>
+<p>第一层境界：企业只是制造满足市场需求的产品，只要有原型，工业流水线可以让产品大量地复制生产出来。但产品有生命周期，市场有饱和度，利润空间也有限，这就是典型的从1到n的过程，只是一个量变的过程，只是企业追求赢利的过程。</p>
+<p>第二层境界：企业创造了良好的组织基因，因而可以与时俱进地不断进化，实现纵向的传承，企业最好的产品就是企业自身。比如IBM公司，早期创立时主要业务是商用打字机，昔日和今日的产品完全风马牛不相及。但创建百余年来，IBM建立的文化和制度基因是不断传承的，这推动IBM不断进化，持续创造商业的辉煌。不过这样的纵向传承仍然还是在企业内部，仍然属于从1到n的过程。</p>
+<p>第三层境界：企业创造了社会基因或者思想基因，这可以跨越企业的边界，影响到整个行业乃至社会，实现横向的传承。比如苹果，它的成功远远超过了电脑或者手机单纯产品的范畴，影响也绝不仅仅限于苹果公司内部。甚至可以说，我们这个时代深深打上了苹果的烙印，这就是从0到1，企业创造的基因影响了社会文化和观念，乃至改变社会进程，这就是质变。</p>
+<ol>
+<li>eBay 是全球最早做电子商务的网站之一，为什么今天和亚马逊差这么多？</li>
+<li>谷歌的座右铭是“不作恶”，这仅仅是一个品牌营销策略吗？</li>
+<li>微软一个做操作系统的公司，为什么中途会去做必应搜索？</li>
+<li>苹果的股价为什么一度比谷歌和微软加起来都高？<br><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120140757.png"></li>
+</ol>
+<h1 id="第一章-未来的挑战"><a href="#第一章-未来的挑战" class="headerlink" title="第一章 未来的挑战"></a>第一章 未来的挑战</h1><h2 id="反主流的问题"><a href="#反主流的问题" class="headerlink" title="反主流的问题"></a>反主流的问题</h2><p>当我面试应聘者时，都会问这样一个问题：“在什么重要问题上你与其他人有不同看法？”</p>
+<p>这个反主流的问题和未来有什么关系呢？从小处看，未来只是还没有到来的时刻的集合。但是真正使未来如此独特和重要的并非因为未来没有发生，而是未来的世界会与此刻不同。这样看来，如果我们的社会在之后100年都没有发生变化，那未来就在100多年之后。如果在之后10年世界改天换地，那未来就触手可及。没有人能精准地预测未来，但我们知道两件事：世界必然会变得不同，但变化必须基于当今的世界。针对这个反主流问题的多数回答都是对现在的不同看法，而好的回答应该尽可能地使我们看到未来。</p>
+<h2 id="从0到1：进步的未来"><a href="#从0到1：进步的未来" class="headerlink" title="从0到1：进步的未来"></a>从0到1：进步的未来</h2><p>如果你根据一台打字机造出了100台打字机，那就是水平进步。而如果你有一台打字机，又造出了一台文字处理器，那你就取得了垂直进步。</p>
+<p>我们期待的未来是进步的。进步可以呈两种形式。</p>
+<p>第一，水平进步(复制)，也称广泛进步，意思是照搬已取得成就的经验<br>第二，垂直进步(创新)，也称深入进步，意思是要探索新的道路——从0到1的进步。垂直进步较难想象，人们需要尝试从未做过的事</p>
+<p>从宏观层次看，可用一个词代替<br>水平进步，即全球化——把某地的有用之物推广到世界各地。<br>垂直进步，即科技——任何新方法，任何可以使事情更易完成的方法都是科技，这才是对科技的正确理解</p>
+<h2 id="创业思维"><a href="#创业思维" class="headerlink" title="创业思维"></a>创业思维</h2><p>初创公司往往是新科技的诞生地。从政界开国元勋到科学界的英国皇家学会，到商界的飞兆半导体公司的“叛逆八徒”，人们肩负着让世界更美好的使命而聚成小团体。对“小团体”这种现象最简单的解释很消极：因为在大组织中发展新事物很难，而单打独斗更是难上加难。官僚阶层行动迟缓，效率低下，既得利益者不愿意冒险。在功能极端失调的组织中，要想获得晋升机会，告诉别人你在工作比挽起袖子做事更重要。（如果你所在的公司就是这样，你应该现在就辞职。）从另一个极端说，如果舍弃团体，一个孤独的天才可能会创造出经典的文学艺术作品，却不能创造出整个产业。初创公司遵守这样一个原则，你需要和其他人合作来完成工作，但也需要控制规模，使组织有效运转。</p>
+<p>从积极的角度说，一个初创公司就是说服一群人，一起规划并铸就新的未来。一个新公司最重要的力量是新思想，新思想甚至比灵活性更重要，而规模小才有思考的空间。这本书提出了在创新之路上获得成功必须要解答的问题：它并不是一本指南，也不是单纯提供知识，而是一场思维运动。而恰恰每个初创公司都不得不做这场思维运动：质疑现有观念，从零开始重新审视自己所从事的业务。</p>
+<p><strong>思考一个基本命题</strong>：“企业的目的就是赢利，不是赔钱。</p>
+<h1 id="第2章-像1999年那样狂欢"><a href="#第2章-像1999年那样狂欢" class="headerlink" title="第2章 像1999年那样狂欢"></a>第2章 像1999年那样狂欢</h1><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120020936.png"></p>
+<h2 id="从基本的问题开始"><a href="#从基本的问题开始" class="headerlink" title="从基本的问题开始"></a>从基本的问题开始</h2><p>相对于几乎没有人认同的事实，大家都赞同的观点是什么？<br>90年代的互联网热潮是自1929年经济危机以来最大的泡沫，人们从中获得的教训决定了，也扭曲了人们今天对科技的所有观念。要想对此有一个清楚的认识，<strong>我们第一步要做的就是问自己对过去了解多少</strong>。</p>
+<h2 id="20世纪90年代的互联网热潮"><a href="#20世纪90年代的互联网热潮" class="headerlink" title="20世纪90年代的互联网热潮"></a>20世纪90年代的互联网热潮</h2><p>1989年11月柏林墙被推倒<br>1990年年中，美国经济陷入低迷<br>1992~1994年底的美国，弥漫着令人抑郁的氛围。美国士兵死在索马里摩加迪沙的画面在电视新闻中循环播放<br>1992年，这股消极暗潮把时任美国第41任总统的老布什拉下了台，并为罗斯·佩罗赢得近20% 的民众选票<br>马赛克浏览器在1993年11月由官方发布<br>马赛克后来更名为网景，并在1994年后期发布了自己的浏览器——导航者（Navigator）<br>1996年4月雅虎公司刚上市就估值8.48亿美元。<br>亚马逊紧接着也在1997年5月以4.38亿美元的估值上市。</p>
+<p>1996年末，即互联网泡沫破灭前3年，美联储主席艾伦·格林斯潘曾警告说“非理性繁荣”可能会导致“资产价格虚增”。科技投资者摩拳擦掌，但并未表现出明显的不理性。这确实太容易让人们忽视世界其他地方发展的不顺。</p>
+<p>1997年7月东亚金融危机爆发。裙带资本主义和巨额外债使泰国、印尼、韩国的经济一落千丈。<br>卢布危机在1998年8月接踵而来，俄罗斯那时已长期陷入财政赤字，货币贬值，负债累累。</p>
+<p>卢布危机引发的一系列反应，击垮了美国高杠杆对冲基金——长期资本管理公司（LTCM）。美国长期资本管理公司1998年后半年设法将损失控制在了46亿美元，但仍负债1 000亿美元。面对巨额债务，美联储为了避免系统性灾难，斥巨资紧急援助，并且削减了贷款利率。欧洲也同遭浩劫。</p>
+<h2 id="硅谷淘金热：1998年9月-2000年3月"><a href="#硅谷淘金热：1998年9月-2000年3月" class="headerlink" title="硅谷淘金热：1998年9月 ~2000年3月"></a>硅谷淘金热：1998年9月 ~2000年3月</h2><p>互联网热潮虽很热却短暂，只维持了18个月。这是一场硅谷淘金热：到处都是金子，也不乏热情高涨却草率行事的淘金者。每周，都有数十个新企业竞相举办豪华开业派对（而庆祝成功的派对却很少见）。这些纸上百万富翁为上千美元的宴会埋单，并企图用初创公司的股票来支付（有时甚至成功了）。大批的人放弃了收入不菲的工作，去开办公司，或进入初创公司上班。我认识一个40多岁的研究生，他在1999年开了6家不同的公司。（通常，40岁的研究生就很让人感觉奇怪，一次开6家公司更是疯狂，但是在90年代末，人们却认为这些特质是成功的组合。）每个人都本应知道热潮无法长久持续，那时最“成功”的公司好像拥有一种反商业模式，在这种模式下，公司虽然在发展，却一直在亏损。但是音乐在播放，我们没法责备那些随音乐舞动的人。想想公司名字里加一个“.com”，价值就能一夜翻倍，不合理的便都变成了合理的。</p>
+<h2 id="PayPal狂热"><a href="#PayPal狂热" class="headerlink" title="PayPal狂热"></a>PayPal狂热</h2><p>每位新用户一注册即可得到10美元，每推荐一个朋友来注册就能再得10美元。这个方法帮我们招来数十万新用户，呈指数级增长。当然，这个揽客战略本身并不持久——你要付钱让用户注册，呈指数级增长的用户就意味着呈指数级增长的成本。天价成本在当时的硅谷司空见惯，但是我们的脑袋还是清醒的，我们认为这一战略还是理性的。考虑到巨大的用户基数及我们从顾客的交易中收取的小额手续费，我们肯定会获利。</p>
+<p>我们知道达到目标还需要更多资金，我们也清楚繁荣景象即将逝去。我们并不指望投资者会相信我们能渡过即将到来的难关，所以在冲击到来前公司尽力筹资。2000年2月16日，《华尔街日报》发表了一篇报道，称赞我们公司发展迅速，并且暗示PayPal公司已经价值5亿美元。报道发表的第二个月，我们筹资已达1亿美元，而我们最重要的投资者把《华尔街日报》对我公司的估价视为权威。其他投资者更是忙不迭地向我们公司投资。一家韩国公司甚至没有经过协商签合同，直接电汇给我们500万美元。我想把钱还回去，他们也不告诉我地址。2000年3月那轮融资给了我们取得成功的时间。我们刚一完成交易，网络泡沫就破灭了。</p>
+<p>获得的经验教训<br>“他们说派对在2000年午夜12点结束，哎呀！没时间了！</p>
+<p>所以，今晚我就要办一个派对，像1999年那样狂欢！”<br>——王子（Prince）</p>
+<p>纳斯达克指数在2000年3月中旬达到了峰值5 048点，然后在4月中旬跌至3 321点。在2002年10月降到1 114点触底反弹之前，市场崩溃一直被解读为对90年代科技乐观主义的审判。而这之后，曾经充满希望的90年代又重新被定义成疯狂贪婪的时代。纳斯达克的崩溃宣告了这个时代的终结。</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120021133.png"></p>
+<p>每个人都慢慢开始用不确定的眼光去看待未来，任何提出年度计划而非季度计划的人都该被当作极端分子避之唯恐不及。全球化代替科技成为未来的希望。90年代从“砖块到网络”的转变没有取得预期的成果，投资者又重新把目光放到了砖块（房地产）和金砖国家（全球化）上，结果造成了另一场泡沫——这次发生在房地产市场。</p>
+<p>遭受硅谷之劫的企业家们从中学到4点经验，这些经验直到今天仍在主导商业思想：<br>① 循序渐进。</p>
+<p>不能沉溺在宏大的愿景中，否则会使泡沫膨胀。自称可以成大事的人都不可信，因为心存改变世界之雄心的人通常要更加谦逊。小幅地循序渐进地成长是安全前进的唯一道路。</p>
+<p>② 保持精简和灵活性。</p>
+<p>所有的公司都必须留出一定空间，不要事事都严格计划。你不知道你的事业会变成什么样，事先规划通常既死板又不现实。相反，你应该做些尝试，反复实践，把创业当成未知的实验。</p>
+<p>③ 在改进中竞争。</p>
+<p>不要贸然创造一个新市场。以现成的客户作为出发点创业才更有保障。成功者已经创造出被认可的产品，在此基础上加以改进，才是可取之道。</p>
+<p>④ 专注于产品，而非营销。</p>
+<p>如果你的产品需要广告或营销人员去推销，就说明你的产品还不够好：科技应用于商业应该主打产品开发，而不是分销。在泡沫年代打广告显然都是浪费，唯一持久的成长是爆发式成长。</p>
+<p>这些经验教训在创业领域成了信条；忽视它们的人被认为会遭受2000年美股大崩盘、科技股重挫那样的厄运。然而这些法则的对立面可能更正确：</p>
+<ol>
+<li><p>大胆尝试胜过平庸保守。</p>
+</li>
+<li><p>坏计划也好过没有计划。</p>
+</li>
+<li><p>竞争性市场很难赚钱。</p>
+</li>
+<li><p>营销和产品同样重要。</p>
+</li>
+</ol>
+<p>确实，科技发展中存在泡沫现象。90年代后期人们狂妄自大，相信自己可以实现从0到1的跨越。结果，只有少之又少的初创企业实现了这个跨越，许多公司只是空谈而已。但是人们明白，我们别无选择，必须找到事半功倍的方法。2000年3月，市场显然已经达到了疯狂之巅。虽不明显但更重要的是，人们这时也最为清醒，他们放眼未来，考虑未来发展需要哪些有价值的新科技，并相信有能力创造新科技。</p>
+<p>我们仍然需要新科技，甚至还可能需要用1999年的那种狂热去寻求新科技。要想建立新一代企业，我们必须扔掉之前陈旧的教条。但这并非意味着那些教条的对立面就一定是正确的，因为就算你有心逃脱，大众洪流也会裹挟着你向前。相反，要问自己：你对企业的认识有多少是基于对以往过错的错误反应形成的？最反主流的行动不是抵制潮流，而是在潮流中不丢弃自己的独立思考。</p>
+<h1 id="第3章-所有成功的企业都是不同的"><a href="#第3章-所有成功的企业都是不同的" class="headerlink" title="第3章 所有成功的企业都是不同的"></a>第3章 所有成功的企业都是不同的</h1><h2 id="反主流问题用在商业上"><a href="#反主流问题用在商业上" class="headerlink" title="反主流问题用在商业上"></a>反主流问题用在商业上</h2><p>还有什么有价值的公司没有成立？<br>这个问题同样比看起来要难回答，因为虽然你的公司自身还不是很有价值，但是已经可以创造价值了。创造价值还不够，你还必须抓得住自己创造的部分价值。</p>
+<p>这就意味着即使大公司也可能经营不善。比如，美国航空公司每年都要接待几百万乘客，创造数千亿美元的价值。但在2012年，飞机票价平均178美元，每次飞行航空公司只能从每位乘客身上赚到37美分。而谷歌，创造的价值相对少，但是从中赢利却多得多。谷歌2012年只创造了500亿美元的价值（而航空公司创造了1 600亿美元），却从中获利21%——利润率是当年航空业的100多倍。谷歌的巨额利润使它的市值是所有美国航空公司市值之和的3倍多。</p>
+<p>多家航空公司之间存在竞争，但是谷歌却只有一家。经济学家用两个简单模型解释了这两种现象：一是完全竞争，二是垄断。在经济学入门的第一课中，“完全竞争”是一种理想的、默认的状态。所谓的完全竞争市场在供求相当时达到平衡。处于竞争市场中的每个公司之间没有差别，卖的都是同质产品。因为这些公司都没有市场支配力，其产品价格必须由市场定。如果有钱可赚，就会有新公司入市。这样供给量上升，价格下落，起先吸引这些新公司的利润又荡然无存。如果进入市场的公司太多，这些公司就会亏损，一些还会倒闭。最终价格会回升到可维持的水平。在完全竞争下，从长远来看，没有公司会获得经济利益。</p>
+<p>与完全竞争相反的是垄断。竞争性公司的产品由市场定价，而垄断公司拥有自己的市场，所以可以自己定价。没有了竞争，垄断公司可以自由决定供给量和价格，以实现利益最大化。</p>
+<p>在经济学家眼中，无论垄断企业是靠什么方式成立的，是耍手段消灭了竞争对手，还是从政府那儿弄到了许可证，抑或是靠创新一步步攀到了顶峰，它们都是一样的。在本书里，我们不讨论非法强霸，也不涉及政府宠儿。这里的“垄断企业”指的仅仅是一种企业，它供给消费者的产品其他企业无法供给。谷歌就是从0到1的范例：自21世纪初谷歌就已经将微软和雅虎远远抛在身后了，在网络搜索领域无人可敌。</p>
+<p>美国人神话了竞争，赞颂竞争使他们免于排队领面包的窘境。事实上，资本主义和竞争的概念恰恰相反。资本主义基于资本的累积，而如果处于完全竞争之下，利润就会消失。企业家们从中获得的教训很清楚：如果你想创造并获得持久的价值，不要只是跟风建立一个没有特色的企业。</p>
+<h2 id="世界上有多少真正垄断的市场？又有多少真正完全竞争的市场？"><a href="#世界上有多少真正垄断的市场？又有多少真正完全竞争的市场？" class="headerlink" title="世界上有多少真正垄断的市场？又有多少真正完全竞争的市场？"></a>世界上有多少真正垄断的市场？又有多少真正完全竞争的市场？</h2><p>企业的谎言</p>
+<p>这很难说，因为我们对垄断和竞争的认识本身就很模糊。在旁观者看来，所有企业都一样，他们只能看出两者间的一些细微差别。</p>
+<p>但是事实要更为两极分化。完全竞争和垄断之间存在巨大差别，因此大多数企业都比我们想象中的更靠近这两个极端之一。</p>
+<p>我们对两者的模糊概念源于企业从对己有利的角度描述市场：不管是垄断者还是竞争者，都乐于歪曲事实来维护自己的利益。</p>
+<h2 id="垄断者的谎言"><a href="#垄断者的谎言" class="headerlink" title="垄断者的谎言"></a>垄断者的谎言</h2><p>垄断者为了自我保护而撒谎。他们知道炫耀垄断会招致检查、审核，甚至遭受打击，所以为了继续不受干扰地获得垄断利润，他们会想方设法来隐瞒垄断这个事实，通常的方法是夸大（并不存在的）竞争。</p>
+<p>可想而知，对外，谷歌当然不会宣称自己是垄断企业。但它到底是不是垄断企业？这取决于：它垄断了什么？我们一起来分析一下。谷歌以做搜索引擎起家。到2014年5月，它占有了68% 的市场。（它最强劲的对手，微软和雅虎，分别占有大约19% 和10%。）如果这还没有足够显示出它的优越，还有一个事实——“谷歌”已经作为一个动词被编入《牛津英语大词典》。而这是必应（微软推出的一款搜索引擎）做不到的。</p>
+<p>但是假设谷歌刚开始是一家广告公司，那情形就不同了。美国搜索引擎广告市场的规模是每年170亿美元，网络广告是每年370亿美元。整个美国广告市场是1 500亿美元，而全球达到了4 950亿美元。所以即使谷歌完全垄断了美国搜索引擎广告市场，也只占全球的3.4%。从这个角度来说，谷歌只是这场竞技赛中一名不起眼的小卒。</p>
+<p>如果我们把谷歌定位为多元科技公司会怎么样呢？这个假定很合理，因为除了搜索引擎，谷歌还做其他十几款不同的软件产品，比如自动驾驶汽车、安卓手机、可穿戴装置。但是95% 的收益仍来自搜索引擎广告；其他产品的收益在2012年只达到了23.5亿美元，而且针对科技消费者的产品的收益只占了其中一小部分。全球科技类消费品市场的规模达到了9 640亿美元，谷歌只占了不到0.24%——与垄断简直相差了十万八千里。谷歌把自己定位成一家科技公司，可以躲开注意力，省去麻烦。</p>
+<h2 id="非垄断者的谎言"><a href="#非垄断者的谎言" class="headerlink" title="非垄断者的谎言"></a>非垄断者的谎言</h2><p>非垄断者的谎言与垄断者相反，他们不会夸大竞争对立，而是会说：“我们结成了自己的联盟。”创业家通常倾向于对市场竞争轻描淡写，但这却是初创公司犯下的最大错误。而最致命的诱惑就是将市场描述得太狭小，好像你可以理所当然地驾驭它一样。</p>
+<p>创意产业也遵循同样的原则。没有一个编剧愿意承认他的新电影剧本只是新瓶装旧酒。相反，他们更乐于听到：“这部电影用一种崭新的手法将各种激动人心的要素融合在一起。”这或许是真话。假设他的想法是让说唱歌手杰斯在糅合了电影《黑客》和《大白鲨》的一部影片中担任角色：一个说唱歌手加入了黑客精英组织，然后去捉一头杀害了他朋友的鲨鱼。这绝对是前所未有的，但就像帕洛阿尔托缺少英式餐厅一样，那可能是有原因的。</p>
+<p>非垄断者通过把他们的市场定义成各种更小市场的交集来夸大自己的独特性<br>隐瞒垄断这个事实，通常的方法是夸大（并不存在的）竞争。</p>
+<p>英式食品∩餐厅∩帕洛阿尔托</p>
+<p>说唱歌手∩黑客∩鲨鱼</p>
+<p>相反，垄断者通过把他们的市场描述成若干大市场的并集来伪装他们的垄断性：</p>
+<p>搜索引擎∪手机∪可穿戴装置</p>
+<p>电脑∪自动驾驶汽车</p>
+<h2 id="冷酷无情的市场：获取垄断利润"><a href="#冷酷无情的市场：获取垄断利润" class="headerlink" title="冷酷无情的市场：获取垄断利润"></a>冷酷无情的市场：获取垄断利润</h2><p>竞争企业的问题远不只利润问题。竞争生态系统把人变得冷酷无情，甚至剥夺了人的生命。<br>获取垄断利润。</p>
+<p>谷歌那样的垄断企业则与众不同。因为不用担心和别的企业竞争，它有更大的自主权去关心自己的员工、产品和在更广阔世界里的影响力。谷歌的座右铭——“不作恶”，在某种程度上是品牌策略，同时也显示了成功企业的特性——即使严守道德，也不会影响公司的发展。在商界，钱就是一切，或至少是非常重要。垄断者除了想着赚钱外还有余力想其他事情，而非垄断者就不行。在完全竞争中，企业着眼于短期利益，不可能对未来进行长期规划。要想将企业从每日的生存竞赛中解脱出来，唯一的方法就是：<strong>获取垄断利润</strong>。</p>
+<h2 id="垄断资本主义"><a href="#垄断资本主义" class="headerlink" title="垄断资本主义"></a>垄断资本主义</h2><p>富有创意的垄断者创造出崭新的事物，给消费者更多的选择。有创意的垄断企业不仅对外界社会没有坏影响，相反，它们是使社会更美好的推动力。</p>
+<p>垄断企业推动社会进步，因为数年甚至数十年的垄断利润是有力的创新动机。之后垄断企业会不断创新，因为利润给了它们规划长远未来的资本，它们有能力投资雄心勃勃的研究项目，这些是困在竞争之中的企业想都不敢想的。</p>
+<h3 id="为什么经济学家却痴迷于企业间的竞争，把竞争当成一种理想状态呢？"><a href="#为什么经济学家却痴迷于企业间的竞争，把竞争当成一种理想状态呢？" class="headerlink" title="为什么经济学家却痴迷于企业间的竞争，把竞争当成一种理想状态呢？"></a>为什么经济学家却痴迷于企业间的竞争，把竞争当成一种理想状态呢？</h3><p>这是历史遗留下来的问题。经济学家的想法来自19世纪的物理学家：他们把个人和企业看成可互换的原子，而非独特的创造者。他们的理论描述了完全竞争的平衡态，因为这种平衡态模型很容易建立，而不是因为它代表了企业发展的最佳状态。但是值得一提的是，在这种由19世纪物理学衍生出来的长期平衡态中，所有能源都是平均分配的，而且所有事物都趋于静止——也被称为宇宙热寂（当宇宙的熵达到最大值时，宇宙中的其他有效能量已经全数转化为热能，所有物质温度达到热平衡）。不管你怎么看热力学，这都是一个很好的比较：在商界，平衡态即静态，静态就是死亡。如果你的公司处在竞争平衡中，那它的消失对世界丝毫没有影响，而和你公司相差无几的其他竞争企业随时都准备取代你的位置。</p>
+<p>完美的均衡可能描述了大部分宇宙的虚无状态，甚至也是许多企业的特点。但是每个新发明的出现都和均衡相差甚远。在经济理论之外的现实世界中，每个企业的成功恰恰就是因为它做了其他企业不能做的事情。因此垄断并不是商界的症结，也不是异常存在，而是每个成功企业的写照。</p>
+<p>托尔斯泰在《安娜·卡列尼娜》中以下面这段文字作为开头：</p>
+<h3 id="幸福的家庭总是相似的，不幸的家庭各有各的不幸。"><a href="#幸福的家庭总是相似的，不幸的家庭各有各的不幸。" class="headerlink" title="幸福的家庭总是相似的，不幸的家庭各有各的不幸。"></a>幸福的家庭总是相似的，不幸的家庭各有各的不幸。</h3><p>而在商业中，情形恰恰相反。</p>
+<h3 id="企业成功的原因"><a href="#企业成功的原因" class="headerlink" title="企业成功的原因"></a>企业成功的原因</h3><p>各有不同，每个垄断企业都是靠解决一个独一无二的问题获得垄断地位；而企业失败的原因却相同：它们都无法逃脱竞争。</p>
+<h1 id="第4章-竞争意识：我们把自己困在了竞争中"><a href="#第4章-竞争意识：我们把自己困在了竞争中" class="headerlink" title="第4章 竞争意识：我们把自己困在了竞争中"></a>第4章 竞争意识：我们把自己困在了竞争中</h1><p>创造性垄断就是新产品既让大众受益，又可以给创造者带来长期利润。竞争意味着大家都没有利润，产品没有实质差异，而且还要挣扎求生。</p>
+<h2 id="为什么人们相信竞争才是健康状态呢？"><a href="#为什么人们相信竞争才是健康状态呢？" class="headerlink" title="为什么人们相信竞争才是健康状态呢？"></a>为什么人们相信竞争才是健康状态呢？</h2><p>回答是：竞争并不只是一种经济概念，也不只是个人和企业必须在市场中解决的麻烦。重要的是，竞争是一种观念——这种观念在整个社会中蔓延，扭曲了我们的思想。我们宣扬竞争，内化竞争的必要性，颁布竞争的条律；结果就是，尽管竞争越来越激烈，我们实际获得的却越来越少，我们把自己困在了竞争中。</p>
+<h2 id="战争与和平：微软与谷歌竞争，最后苹果出来了"><a href="#战争与和平：微软与谷歌竞争，最后苹果出来了" class="headerlink" title="战争与和平：微软与谷歌竞争，最后苹果出来了"></a>战争与和平：微软与谷歌竞争，最后苹果出来了</h2><p>为什么人们非要一较高下呢？马克思和莎士比亚给出的回答有助于我们理解几乎每种冲突的原因。按照马克思所说，人们因为差异才会斗争。无产阶级和资产阶级因为观点与目标截然不同（来自于不同的物质环境）而斗争。差异越大，冲突就越大。</p>
+<p>对莎士比亚来说则恰恰相反，所有的斗争者都或多或少有些相似。由于没有什么好争的，所以他们为什么而争斗不得而知。《罗密欧与朱丽叶》开篇就说：“两家人，同样尊贵体面。”这两家人差不多，但是他们互相敌对。随着矛盾升级，他们甚至变得更相似。直到最后，他们自己也忘记了最初矛盾产生的原因。</p>
+<p>至少在商界，莎士比亚的理论更为高明。在公司内部，人们为了升职，时刻关注对手动态。而公司为获得市场也留意着竞争者。在所有人类冲突的戏码中，人们往往忽视了真正重要的事情，只把精力放在竞争对手身上。<br>时刻关注对手动态。而公司为获得市场也留意着竞争者。在所有人类冲突的戏码中，人们往往忽视了真正重要的事情，只把精力放在竞争对手身上。</p>
+<p>微软和谷歌竞争的结果是：苹果公司冒出来，压倒了它们的优势。2013年1月，苹果的市值是5 000亿美元，谷歌和微软加起来是4 670亿美元。而仅在3年前，微软和谷歌还都比苹果有价值得多。可见，竞争是一场高成本的买卖。</p>
+<p>竞争使我们过分重视过去的机会，一味重复过去的模式。</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120024221.png"></p>
+<pre><code>                  图4–1移动信用卡读卡器的几何图形战争
+</code></pre>
+<p>模仿性竞争的危害也许能解释为什么患有像阿斯伯格综合征（患者有社交障碍）这种病的人目前在硅谷更占优势。这些人对社会动态没那么敏感，因此不会盲从跟风。如果你对发明创造和电脑编程有兴趣，你就有勇气全身心投入其中，最终成为这些领域的精英。把技能运用到实际中时，你就不会那么容易放弃自己的信念：这可以使你免于陷入追求虚名浮利的竞争当中。</p>
+<p>竞争使人出现幻觉，徒劳去抓一些并不存在的“机会”。</p>
+<p>网上宠物商店这些公司都忽视了更重要的问题——该不该涉足网络宠物用品市场？胜利肯定比失败好，但是如果这场战役不值得打，那每个参与者就都是输家。</p>
+<p>有时你不得不投入战斗。需要的时候，你不仅要战斗，还必须得赢，没有中间选择：要么和风细雨润物无声，要么暴风骤雨速战速决。</p>
+<p>这个建议也许很难做到，因为自尊和荣誉会拦着你。因此哈姆雷特说：</p>
+<p>他仗着勃勃之勇气与天命之雄心 , 罔顾不测之凶险 ,</p>
+<p>拼着血肉之躯奋然和命运、死神与危机挑战。</p>
+<p>这全为了小小一块弹丸之地 !</p>
+<p>真正的伟大，并不只是肯为轰轰烈烈之大事奋斗 ,</p>
+<p>而是肯为区区草芥力争一份荣耀。</p>
+<p>对于哈姆雷特，伟大是肯为了微不足道的理由抗争：每个人都会为重要的事进行斗争；而真正的英雄把他们个人的荣誉看得更重要，即使事情不重要，他们也会一争到底。这个扭曲的逻辑是人的天性，但是用在商业上却很致命。如果你能看出竞争不能带来价值的提升，而是充满破坏力，那你就比大多数人要理智。</p>
+<h1 id="第5章-后发优势"><a href="#第5章-后发优势" class="headerlink" title="第5章 后发优势"></a>第5章 后发优势</h1><h2 id="我们就来讨论一下如何以清醒的头脑去打造垄断的事业。"><a href="#我们就来讨论一下如何以清醒的头脑去打造垄断的事业。" class="headerlink" title="我们就来讨论一下如何以清醒的头脑去打造垄断的事业。"></a>我们就来讨论一下如何以清醒的头脑去打造垄断的事业。</h2><p>规避竞争会帮助你打造垄断企业，但是只有经受住未来考验的企业才是成功的企业。比较一下纽约时报公司和推特（Twitter）公司的价值，这两家公司都雇用着几千名员工，都给数百万人提供了解时事的渠道。但是2013年，推特刚一上市，市值就达到40亿美元，是纽约时报市值的12倍还多。这之前，2012年，纽约时报刚赚了1.33亿美元，而推特处于亏损状态。那么，</p>
+<h2 id="怎么解释推特公司的高溢价呢？"><a href="#怎么解释推特公司的高溢价呢？" class="headerlink" title="怎么解释推特公司的高溢价呢？"></a>怎么解释推特公司的高溢价呢？</h2><p><strong>答案是现金流</strong>。这听上去很奇怪，因为纽约时报是赢利的，而推特是亏损的。但是一个企业成功与否要看它在未来生成现金流的能力。投资者认为推特在之后的10年中可以获得垄断利润，而报纸的垄断时代却会结束。</p>
+<p>简单地说，一个企业今天的价值是它以后创造利润的总和。（正确估价一家企业，还要把未来现金流折算成今天的价值，因为相同额度的资金现值要比期值更有价值。）</p>
+<p>通过比较现金流现值，我们能看出低增长企业和高增长的初创公司的明显区别。一家老公司（如报纸公司）如果能维持目前的现金流五六年，就可以保持自己的价值。但是任何公司在与同等实力的竞争者竞争时都会造成利润流失。夜总会和餐馆就是典型的例子：成功者今天可能收入不菲，但是现金流可能会在几年之内减少，因为顾客总会选择更新更潮的地方去消费。</p>
+<p>科技公司则走相反的道路——通常是开始几年亏损。因为创造有价值的东西需要时间，所以收益延迟。一家科技公司的大部分价值都会在未来至少10~15年得到体现。</p>
+<p>这种对未来利润的看重即使在硅谷也违反常理。一个公司要想有价值，不但必须成长，还必须能持续发展，但是许多企业家只看到短期发展。他们有自己的理由：增长很好量化，但是没人知道一个公司能持续多久。热衷于量化的人痴迷于周活跃用户、月收益目标和季度收入报告。但是，你虽然可以得到这些数字，却忽视了更深层、更难量化的问题，而这些问题会威胁你公司的持久性。</p>
+<p>例如，星佳（Zynga，一家社交游戏公司）和Groupon（一家全球性的团购公司）短期的快速增长使管理者和投资者忽视了长远的挑战。星佳很早就在虚拟农场软件上获得优势，而且自称有“心理引擎”可以严格测评新版本的受欢迎程度，但是它们最后破产了，原因和每个好莱坞制片厂一样：</p>
+<h2 id="你怎么能确定你创造的流行文化可以一直满足变幻无常的观众口味？"><a href="#你怎么能确定你创造的流行文化可以一直满足变幻无常的观众口味？" class="headerlink" title="你怎么能确定你创造的流行文化可以一直满足变幻无常的观众口味？"></a>你怎么能确定你创造的流行文化可以一直满足变幻无常的观众口味？</h2><p>（没人知道。）Groupon的产品被当地成百上千的企业试用，因此得到了飞速发展，但是让这些企业成为回头客比想象中要难得多。</p>
+<p>如果你把短期增长看成重中之重，就会错过最重要的问题： 10年之后，你的公司还能存在吗？仅凭数字不能告诉你答案： 你必须认真思考公司的本质特征。</p>
+<h2 id="垄断企业的特征"><a href="#垄断企业的特征" class="headerlink" title="垄断企业的特征"></a>垄断企业的特征</h2><p>一家在未来具有大额现金流的公司是什么样的呢？每个垄断企业都有自己的特色，但是它们通常会综合以下几个特点：专利技术、网络效应、规模经济以及品牌优势。</p>
+<h3 id="专利技术"><a href="#专利技术" class="headerlink" title="专利技术"></a>专利技术</h3><p>专利技术是一家公司最实质性的优势，它使你的产品很难或不能被别的公司复制。例如谷歌的搜索算法，搜索效果比其他的搜索引擎都好。超短的页面加载时间和超精准的自动查询增加了核心搜索产品的稳健性和防御力。谷歌在21世纪初所向披靡，而现在很难有搜索引擎公司做得到谷歌那时做到的事。</p>
+<p>一般而言，专利技术在某些方面必须比它最相近的替代品好上10倍才能拥有真正的垄断优势。人们会认为，那些优势微不足道的产品只是有了一点改进而已，就很少有人买，特别是在这个已经很拥挤的市场里。</p>
+<p>要做出10倍改进，最明确的方法就是创造全新的事物。如果你在一个领域创造了前所未有的有价值的事物，理论上，公司价值就会无限增长。例如能安全消除睡眠需求的药物，或是秃顶的治疗方法，都会支撑起一家垄断公司。</p>
+<p>或者你可以彻底改进一种已经存在的事物：如果你能做到10倍好，你就可以避开竞争。举个例子，PayPal使eBay上的业务提升了至少10倍。之前邮寄一张支票至少7~10天，而PayPal使买家一拍下商品就能付款。卖家立刻就能得到收益，而且他们知道现金比支票更好。</p>
+<p>亚马逊做出的10倍改进人人可见：他们提供的书至少是其他书店的10倍。1995年上市时，亚马逊就宣布要做成“全世界最大的书店”。不同于只能储存10万本书的零售书店，它不需要储存任何实体书——只要在顾客下单后从供应商那里得到书就行。这种对库存量的改进收到很好的效果，以致Barnes&amp;Noble（巴诺书店，美国最大的实体书店）在亚马逊上市的前三天提起诉讼——称亚马逊不是个“书店”，而是“图书掮客”。</p>
+<p>你也能通过出众的综合设计做出10倍的改进。2010年前，平板电脑在生活中并不实用，几乎没有市场。微软在2002年首次推出了“微软Windows XP版平板电脑”，诺基亚2005年发布了“网络平板电脑”，但是都不好用。之后苹果公司发行了iPad。设计上改进的幅度很难衡量，但是苹果公司在所有方面做到了大幅改善：平板电脑从不好用变成了很有用。</p>
+<h3 id="网络效应"><a href="#网络效应" class="headerlink" title="网络效应"></a>网络效应</h3><p>网络效应使一项产品随着越来越多的人使用变得更加有用。例如，如果你所有的朋友都用Facebook，那你注册个Facebook账号就有意义。而如果你只是单方面用一个与众不同的网络社交工具，那就显得奇怪了。</p>
+<p>享有网络效应的企业必须从非常小的市场做起。</p>
+<h3 id="规模经济"><a href="#规模经济" class="headerlink" title="规模经济"></a>规模经济</h3><p>垄断企业越大越强：开发一项产品的固定成本（设计、管理、办公地点）需要更高的销量来分摊。软件开发就享有非常大的规模经济效应，因为如果只是对产品重复生产，边际成本趋近于零。</p>
+<p>许多企业在扩大规模的过程中也只获得了有限利益，服务性企业尤其难做成垄断企业。比如你开了家瑜伽馆，你只能拥有一定数量的顾客。你可以雇更多的瑜伽老师，扩大训练场地，但利润还是有限，你永远不可能像软件工程师那样，以优秀的人才组成核心团队，为上百万顾客提供有价值的产品，他们所获得的利润，可望而不可即。</p>
+<p>一个好的初创企业在刚开始设计时就应该考虑到之后的大规模发展潜能。推特现在已经拥有了2.5亿用户，它不需要为了得到更多用户再添加定制化的特色，也没有内在固有的原因可以让它停止增长。</p>
+<h3 id="品牌优势"><a href="#品牌优势" class="headerlink" title="品牌优势"></a>品牌优势</h3><p>一家公司最显而易见的垄断是对自己品牌的垄断，因此打造一个强势品牌是形成垄断的有力方式。当今最强势的科技品牌是苹果：像iPhone和MacBook那样的产品，具有吸引人的外观、精心挑选的材质、时尚的简约设计、对消费者体验的细心调查、无所不在的广告、优质产品该有的价格和乔布斯的个人魅力，这些都使苹果打造出了属于自己的品牌。</p>
+<p>许多公司都想效仿苹果：<strong>花钱做广告，开品牌店，使用奢华的材料，做幽默的主题演讲，设定高价格，甚至模仿它的简约设计</strong>。但是这些表面光鲜却没有强大的内在实质支持的科技根本不起作用。苹果在硬件（如超级触屏材料）、软件（如为特定材料而设计的触屏界面）上都有一套复杂的专利技术。它的生产规模很大，足以主导原料的市价。而且其内容生态系统带来很强的网络效应： 成千上万的开发者为苹果产品编写软件，因为苹果拥有亿万用户，而这些用户之所以选择苹果的平台，是因为这里有好的应用程序。比起耀眼的标识，苹果的其他垄断优势都黯然失色，但是其他优势却使品牌优势更耀眼，加强了苹果公司对市场的垄断。</p>
+<p>如果先从品牌而不是靠实力来经营，也有很大隐患。自从玛丽莎·梅耶尔2012年中旬成为雅虎公司的首席执行官，她就在努力复苏这个曾经风行一时的网络巨擘。在一篇推文中，雅虎总结了梅耶尔的链式计划：“人先于产品，产品先于交易，交易先于收益。”消费者照理说会冲着这种很酷的理念而来，要知道，雅虎不仅通过改变企业标识来展现这种理念，而且收购了如汤博乐（Tumblr，目前全球最大的轻博客网站，也是轻博客网站的始祖）这样的热门初创企业，以此来表示自己仍然朝气蓬勃。同时，梅耶尔的个人明星效应也为雅虎吸引了媒体的注意力。但是有一个大问题：雅虎究竟要创造什么产品？当乔布斯返回苹果时，他并不只是把苹果打造成一个很酷的工作场所，他还削减了生产线，只专注于少数能得到10倍改进的机会。没有科技公司可以只靠品牌发展。</p>
+<h2 id="建立垄断企业的方法"><a href="#建立垄断企业的方法" class="headerlink" title="建立垄断企业的方法"></a>建立垄断企业的方法</h2><p>品牌、规模、网络效应和科技的组合可以打造一家垄断公司，但是要想使公司运行起来，还需要仔细选择市场，谨慎扩大范围。</p>
+<h3 id="占领小市场"><a href="#占领小市场" class="headerlink" title="占领小市场"></a>占领小市场</h3><p>如果侥幸获得了一个小小的立足之处，你应该为能够维持下去而感到高兴：因为残酷的竞争会吞噬掉你全部的利润。</p>
+<h3 id="扩大规模"><a href="#扩大规模" class="headerlink" title="扩大规模"></a>扩大规模</h3><p>一旦你成功创造了或是主导了一个利基市场，就要逐步打入稍大些的相关市场。比如亚马逊，杰夫·贝佐斯的愿景是使亚马逊成为在线零售业的主宰，但是他很谨慎，以图书作为起步。虽然有无数的书要登记，但是书都是相同的形状，很好装运，而且一些很难被卖出的书也会吸引热情的顾客（而任何一家零售书店都不会为了这一点利益而把这些书存着）。亚马逊为那些家离书店远或是需要淘稀有书籍的人提供了一个绝好的去处。之后亚马逊有两个选择：增加读书人的数量，或是扩大到相近的市场。他们选择了后者，并且从最相近的光盘、影像和软件市场开始，然后继续增加种类直到成为世界级的“综合商店”。亚马逊这个名字来源于世界流域面积最大的河流——亚马孙河，它巧妙地暗示了这家公司的扩展策略。而生长在亚马孙河流域的亚马孙热带雨林，其生物的多样性也反映了亚马逊公司的第一个目标——提供这世界上所有的书。而现在，它则是要提供这世界上所有的东西。</p>
+<p>Bay也是从主导小的利基市场起步。当1995年向拍卖市场进军时，它不需要整个世界都立即接受它；因为针对兴趣浓厚的顾客群，产品卖得很好，比如曾出现的比尼宝宝（一种玩具）热。垄断了比尼宝宝的交易后，eBay并没有直接跳到跑车或工业二手货上，而是依旧迎合小型收藏家，一直到它成为人们最信赖的可以交易任何物品的网上交易市场。</p>
+<h3 id="不要搞破坏"><a href="#不要搞破坏" class="headerlink" title="不要搞破坏"></a>不要搞破坏</h3><p>硅谷迷上了“破坏”。“破坏”是指一家公司可以用科技创新低价推出一种低端产品，然后逐步对产品做出改进，最终取代现存公司用旧科技生产的优质产品。个人电脑的出现瓦解了大型计算机市场，起初其毫不起眼，之后却成为主导。同样，现在的移动设备也许正在“瓦解”个人电脑市场。</p>
+<p>但是，“破坏”最近已经被曲解成了形容因所谓新事物、新趋势而沾沾自喜的流行词。这个看上去无关紧要的流行词其实很有影响，它以内在的竞争性扭曲了企业家的自我认识。这个概念被用来描述现存公司所受的威胁，而初创公司痴迷于这种“破坏”，这意味着它们是透过旧企业的眼光看待自身的。如果你认为自己是对抗黑暗势力的起义者，就很容易过分专注于道路上的阻碍。但如果你真想创造新的事物，那就去创造，创新的行为远比旧产业不喜欢你的创新来得重要。确实，如果可以将你的公司归结为已有公司的敌对者，那你的公司就不是全新的，也不会成为一个垄断企业。</p>
+<h3 id="后来者居上"><a href="#后来者居上" class="headerlink" title="后来者居上"></a>后来者居上</h3><p>你可能听说过“先发优势”：如果你是第一个进入市场的，在其他竞争者还在艰难起步的时候，你可以独自占据可观的市场份额。但先行一步只是个策略，不是目标。真正重要的是在未来产生现金流，因此如果有别的公司出现并取代了你，那么就算你是第一个做的也捞不到一点好处，反而那个最后下手的人更好——最终可以在一个特定的市场里取得重大进展，获得几年甚至几十年的垄断利润。要实现这个目标就要先主导一个小的利基市场，在这个基础上扩大，直到达到你预想的长远目标。至少在这一点上，经商就像下棋。国际象棋大师卡帕布兰卡说过：“要想赢，首要工作就是研究残局。”</p>
+<h1 id="第6章-成功不是中彩票"><a href="#第6章-成功不是中彩票" class="headerlink" title="第6章 成功不是中彩票"></a>第6章 成功不是中彩票</h1><p>商界最有争议的问题是——成功是靠运气还是靠技能？</p>
+<p>成功人士怎么说呢？马尔科姆·格拉德威尔，一位写成功人士传记的畅销书作家，在他的书《异类》[1]中说成功源于“运气和偶然的优势”。沃伦·巴菲特认为自己是“幸运精子俱乐部里的一员”，是“卵巢彩票”的赢家。杰夫·贝佐斯把亚马逊的成功看成与“行星连珠”一样令人难以置信，而且还开玩笑地说这成功靠的“一半是运气，一半是时机，剩下的则是智慧”。比尔·盖茨甚至宣称自己“太幸运了，生来就具有一定的技能”，虽然这是否可能还不清楚。</p>
+<p>2013年1月，推特和Square的创始人杰克·多西在推特上向其200万关注者发表推文：《成功绝非偶然》。</p>
+<p>从文艺复兴、启蒙运动到20世纪中期，运气是可以被掌握支配的；大家都认为一个人应该做力所能及的事，而不是纠结于做不到的事。拉尔夫·瓦尔多·爱默生捕捉到了这种社会思潮，他写道：“浅薄的人才会相信运气和境遇……强者只相信因果。”1912年，罗尔德·阿蒙森成为第一个探索南极的人，他说：“胜利只等待那些有准备的人，也许这就是人们说的运气吧！”没有人会假装坏运气不存在，但是前辈们相信努力会换来好运气。</p>
+<h2 id="你能掌控自己的未来吗？"><a href="#你能掌控自己的未来吗？" class="headerlink" title="你能掌控自己的未来吗？"></a>你能掌控自己的未来吗？</h2><p>而一个明确的愿景可以坚定人的信念。与其努力成为一个各方面都一知半解的庸才，还美其名曰“全能人才”，一个目标明确的人往往会选择一件最该做的事，并专心去做好这一件事。与其不知疲倦地工作，最终却只把自己变得毫无特色，不如努力培养实力，以求独霸一方。现今的年轻人并没有做到这些，因为他们周围的每个人都已经对明确的世界丧失信心。没有人会因为仅仅一方面特别杰出而进入斯坦福大学，除非他擅长的那一方面碰巧和传接球有关。</p>
+<h3 id="对未来不明确的悲观主义"><a href="#对未来不明确的悲观主义" class="headerlink" title="对未来不明确的悲观主义"></a>对未来不明确的悲观主义</h3><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120102306.png"></p>
+<p>每种文化都有从黄金时期走向衰败的故事，而几乎历史上所有民族都是悲观的。<br>一个对未来不明确的悲观者看到的未来是阴郁的，但是他束手无策。<br>对未来不明确的悲观主义者不知道不可避免的衰退会加快还是放慢，是毁灭性的还是平缓的。他们只知道等着事情发生。</p>
+<h3 id="对未来明确的悲观主义"><a href="#对未来明确的悲观主义" class="headerlink" title="对未来明确的悲观主义"></a>对未来明确的悲观主义</h3><p>一个对未来明确的悲观主义者相信未来是可知的，但却是暗淡的，所以他必须提前做好准备。也许当今的中国是最典型的对未来明确的悲观主义者。美国人看见中国的经济迅猛增长（自从2000年以来，每年都有10% 的增长），便认为中国是一个自信能够掌握自己未来的国家。但这是因为美国人仍然很乐观，并以同样的乐观看待中国。从中国的角度来看，经济增长得还不够快。其他国家都害怕中国将要统治整个世界，而中国是唯一一个认为自己不会统治世界的国家。</p>
+<p>中国之所以增长得如此迅速是因为它的起步基础很低。对中国来说，最容易的发展方式就是不断学习已经在西方行之有效的模式。中国现在就在做这样的事情：燃烧更多的煤，建更多的工厂和摩天大楼。因为人口数量巨大，资源价格不断攀升，没有什么办法能使中国人民的生活水平完全赶上世界那些最富有的国家，中国人也知道这一点。</p>
+<p>这就是为什么中国仍执着地选择了这条有风险的道路。老一辈的中国人孩童时都经历过饥荒，因此展望未来时，总会考虑到天灾。中国公众也知道“冬天”即将来临。局外人着迷于中国内部的巨大财富，但是他们没有注意到，富有的中国人正努力把自己的财产转移出国，贫穷一些的则能省就省，以求储备充足。中国各阶层人士都对未来严阵以待。</p>
+<h3 id="对未来明确的乐观主义者"><a href="#对未来明确的乐观主义者" class="headerlink" title="对未来明确的乐观主义者"></a>对未来明确的乐观主义者</h3><p>在对未来明确的乐观主义者眼中，如果计划缜密，工作努力，未来会比现在更好。从17世纪一直到20世纪五六十年代，对未来明确的乐观主义者都领导着西方世界。科学家、工程师、医生、商人使西方世界的人们比所想象的更富裕、更健康、更长寿。卡尔·马克思和弗里德里希·恩格斯就看得非常清楚。</p>
+<p>19世纪资产阶级创造的生产力比之前所有时代加起来还要大。人定胜天，机械化、工农业的化学应用、蒸汽轮船、铁路、电报、整个大陆的全面开发、开凿运河等，仿佛用法术从地底召唤出大量人口——之前哪个世纪的人会想到社会劳动会蕴藏着如此巨大的生产力？</p>
+<p>美国被视为高瞻远瞩的乐观主义者的聚集地。帝国大厦在1929年动工，1931年竣工。金门大桥1933年开始建造，1937年建成。曼哈顿计划（美国开发核武器计划的代号）1941年发布，到1945年就已经生产出了世界上第一枚核弹。在和平年代，美国人仍继续改造世界：州际高速路1956年投入建设，1965年两万英里的公路就已经投入使用。美国人明确的计划甚至超出了地球：美国航天航空局的阿波罗计划1961年开始，1972年还没有结束时就把12个人送上了月球。</p>
+<p>当今的世界——对未来不明确却很乐观<br>不明确的金融<br>不明确的政治<br>不明确的哲学<br>不明确的人生</p>
+<h3 id="对未来不明确的乐观主义"><a href="#对未来不明确的乐观主义" class="headerlink" title="对未来不明确的乐观主义"></a>对未来不明确的乐观主义</h3><p>与其努力数年开发一种新产品，迷茫的乐观主义者选择改进已有产品。银行家调整现有公司的资金结构，从而获利。律师解决旧议题引发的争端或是帮助其他人打理事务。私募基金投资人和管理顾问也没有开创新事业，他们持续地调整经营流程，提高旧业务的效率。毫不意外，这些领域吸引了大量优秀的常春藤盟校的高才生；这样一份既可以使你成为精英，又承诺你拥有自由选择权的以过程为导向的职业，难道不是对你这20多年来苦心打造超强简历的嘉奖吗？</p>
+<h2 id="当今的世界——对未来不明确却很乐观"><a href="#当今的世界——对未来不明确却很乐观" class="headerlink" title="当今的世界——对未来不明确却很乐观"></a>当今的世界——对未来不明确却很乐观</h2><h3 id="不明确的金融"><a href="#不明确的金融" class="headerlink" title="不明确的金融"></a>不明确的金融</h3><p>在一个明确乐观的未来中，会有工程师设计水下城市和太空定居地，<br>而在一个不明确的乐观未来中，会有更多的银行家和律师。</p>
+<p>在这样的循环中，人们都不知道拿钱在实体经济中做什么。但是在一个未来不明确的世界中，人们就是喜欢无限的可选择性；钱比其他任何用钱能得到的东西更有价值。只有在一个明确的未来中，钱才是达到最终目的的手段，而非最终目的。</p>
+<h3 id="不明确的政治"><a href="#不明确的政治" class="headerlink" title="不明确的政治"></a>不明确的政治</h3><p>西方国家的政客总是在选举期间才会对民众负责，而现在他们已经调整到时时刻刻都会留意民众的意见。</p>
+<p><strong>政府过去有能力协调解决复杂的问题</strong>，如原子能武器和月球探索。而经过40年目的不明的缓慢前行，<strong>政府现在的作用只是提供保险</strong>；<br>我们对重大问题的解决方法就是国家医疗保险、社会保障，和一系列让人眼花缭乱的失业救济项目。自1975年起，这些福利支出每年都在侵蚀政府的自由支配开支。为了增加可自由支配开支，我们需要明确的计划来解决具体的问题。但是依据福利开支的不明确逻辑，我们只能寄出更多的支票，才能把事情办好。</p>
+<h3 id="不明确的哲学"><a href="#不明确的哲学" class="headerlink" title="不明确的哲学"></a>不明确的哲学</h3><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120103939.png"></p>
+<p>古代世界的哲学是悲观的：柏拉图、亚里士多德、伊壁鸠鲁和卢克莱修都接受人性潜力应该受到严格限制之说。<br>唯一的问题是怎样坦然接受我们的悲剧命运。<br>而现代大多数哲学家都变得乐观了。19世纪的哲学家从思想右倾的赫伯特·斯宾塞到保持中立的黑格尔，再到左倾的马克思，都相信进步的力量。（想想前文中马克思和恩格斯对资本主义科技胜利的赞扬。）这些思想家们期待物质进步能够极大地改变人类生活，使其向更好的方向转变：他们是明确的乐观主义者。</p>
+<h3 id="不明确的人生"><a href="#不明确的人生" class="headerlink" title="不明确的人生"></a>不明确的人生</h3><p>随机的态度也给生物学本身带来了影响。1928年，苏格兰细菌学家亚历山大·弗莱明在实验室忘记盖上培养皿的盖子，后来在培养皿中发现了一种神秘的能够对抗其他菌种的霉菌：就这样，他很偶然地发现了青霉素。</p>
+<p>但是结果往往不如从前。除了在过去200年中取得的令人瞩目的进展外，在最近的几十年中生物技术一直没有满足投资者或患者的期望。“倒摩尔定律”（Eroom’s Law），揭示了药物开发面临的困境，自1950年起，批准投资10亿美元研发的新药数量每9年就会减半。信息技术这些年发展得越来越快，而生物技术面临的问题是可否与信息技术同步发展。表6–3将生物技术初创企业与计算机软件初创企业进行了比较。</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120104108.png"></p>
+<p>生物技术初创公司的创办人是教授，但他们往往不做全职的雇员，而去做兼职顾问——甚至在那些以自己的研究项目为起点的生物技术公司，情况亦是如此。之后人人都去效仿教授的不明确态度。自由主义者通常会说是繁杂的规则限制了生物技术的发展，情况的确如此，但是不明确的乐观可能会对未来生物技术的发展构成更大的挑战。</p>
+<h2 id="对未来不明确的乐观主义可能持久吗？"><a href="#对未来不明确的乐观主义可能持久吗？" class="headerlink" title="对未来不明确的乐观主义可能持久吗？"></a>对未来不明确的乐观主义可能持久吗？</h2><p>我们对未来不明确的乐观决定会带来什么样的未来？不去投资新项目，因为它们对未来没有任何切实的计划。</p>
+<p>另外三种对未来的态度都有一定作用。<br>对未来明确的乐观主义可以使你创造出你想要的未来。<br>对未来明确的悲观主义可以对已经存在的东西进行复制，毫无新意。<br>对未来不明确的悲观主义也有作用，因为这样的未来会自我实现：</p>
+<p>如果你是一个对生活要求不高的懒人，你的要求很容易就达到了。但是对未来不明确的乐观主义看起来根本无法持续：如果没有规划未来，未来怎么可能越变越好呢？</p>
+<p>没有计划的进步就叫“演化”。达尔文写道：生命就算没有准备，也会自己“演化”。每个生命都只是某些有机体随机变异的结果，而最佳版本会在最后胜出。</p>
+<h2 id="长期规划仍是最重要的"><a href="#长期规划仍是最重要的" class="headerlink" title="长期规划仍是最重要的"></a>长期规划仍是最重要的</h2><p>规划优先于机遇是什么意思呢？现在，“好的设计”是一种审美需求，任何人，从懒人到雅皮士，都对自己的外在形象非常在意。</p>
+<p>乔布斯最好的设计是他的企业。苹果公司发挥想象，并多年执行明确的未来计划，去创造新产品，有效分销。忘掉“基本的可用产品”吧——自从乔布斯在1976年创立了苹果之后，他就意识到只有对未来精确地规划，才可以改变整个世界，而非倾听焦点团体的意见或是复制其他人的成功。</p>
+<h2 id="你不是一张彩票"><a href="#你不是一张彩票" class="headerlink" title="你不是一张彩票"></a>你不是一张彩票</h2><p>我们必须重新找回明确的未来道路，但在西方世界，需要一场文化革命才能真正做到。</p>
+<p>初创企业是你可以明确掌握尽最大努力的机会。你不只拥有自己生命的代理权，还拥有这世界上某个重要角落的代理权。而这一切都要从抵制不公平的概率主宰开始，因为你并不是一张被概率决定命运的彩票。</p>
+<h1 id="第7章-向钱看"><a href="#第7章-向钱看" class="headerlink" title="第7章 向钱看"></a>第7章 向钱看</h1><p>钱能生钱。“凡是有的，还要加给他，叫他有余。凡没有的，连他所有的，也要夺过来。”（《马太福音》第25章29节）当爱因斯坦宣称复利是“世界第八大奇迹”，是“有史以来最伟大的数学发现”，甚至是“宇宙最强大的力量”时，他同样对这句《圣经》箴言产生了共鸣。</p>
+<p>1906年，经济学家维尔弗雷多·帕累托提出了后来的“帕累托法则”，也叫80–20法则。这是因为他发现意大利80% 的土地掌握在20% 的人手里——这个现象就好像他花园里20% 的豌豆荚产出了占总量80% 的豌豆一样自然。</p>
+<p>幂次法则（power law）都是宇宙的法则，是宇宙最强大的力量，之所以会取这样的名字，是因为指数方程描述的是最不平均的分配。它完整定义了我们周围的环境，而我们几乎毫无察觉。</p>
+<h2 id="风险投资中的幂次法则"><a href="#风险投资中的幂次法则" class="headerlink" title="风险投资中的幂次法则"></a>风险投资中的幂次法则</h2><p>风险投资家的任务是鉴定那些刚起步的前景光明的公司，投资这些公司并从中获利。他们从机构和富人那里筹到钱，以此为资本，投资到他们认为会升值的科技公司。如果结果证明他们的判断无误，他们就会获得一部分收益——通常是20%。如果一家风险投资基金所投资的公司升值，或是投资的公司上市，或是被更大的公司收购，风险投资基金都会得到回报。风险投资基金通常要10年之后才能退出，因为成功的公司需要时间成长。</p>
+<p>但是“撒网式投资，然后祈祷”这种方法通常会全盘皆输。这是因为风险投资的回报并不遵循正态分布，而是遵循幂次法则：一小部分公司完胜其他所有公司。如果你看重撒大网，而不是把注意力放在仅仅几个日后价值势不可当的公司上，一开始你就会与这些稀有公司失之交臂。</p>
+<p>图7–2清楚地展现出现实和错误认知之间的差异。</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120105209.png"></p>
+<p>Founders Fund的绩效表现解释了这个扭曲的模式：Facebook是我们2005年的投资组合里表现最好的公司，回报比其他所投资公司加起来的还要多。帕兰提尔，是表现第二好的公司，带来的回报比刨除Facebook外所有公司加起来的还要多。这个高度不平均的模式并非偶然：我们其他的基金也都出现过这种情况。风险投资中最大的秘密是：成功基金的最佳投资所获的回报要等于或超过其他所有投资对象的总和。</p>
+<p>这使风险投资家们总结了两个很奇怪的规则。<br>第一个规则，只投资给获利可达整个投资基金总值的有潜力公司。这个规则太可怕了，它一下子就把大多数可能的投资消除了。（要知道即便是很成功的公司，规模通常都不怎么大。）<br>这个规则引出了第二个规则：因为第一条规则太严苛，所以不需要其他规则。</p>
+<h2 id="为什么人们没有看到幂次法则"><a href="#为什么人们没有看到幂次法则" class="headerlink" title="为什么人们没有看到幂次法则"></a>为什么人们没有看到幂次法则</h2><p>为什么专业的风险投资家没有看到幂次法则？一是因为幂次法则要经过一段时间后才能清晰地显示出来，甚至科技投资者也通常活在当下，不能预知未来。设想一下，一家投资公司投资了10家有潜力成为垄断者的企业——这本身就已经是一种少见的相当有纪律的投资组合。那些公司在呈指数级增长前的早期阶段十分相似。</p>
+<p>在美国每年成立的新公司中，只有不到1% 能得到风险资本，而且所有的风险投资只占国内生产总值的不到0.2%。但是这些投资的结果不成比例地推动了整个经济的发展。风险投资基金支持的公司创造的工作岗位占私营公司全部工作岗位的11%。确实，12家大型科技公司都得到了风险投资基金的支持。那12家企业加起来价值超过2万亿美元，比其他所有科技公司加起来都多。</p>
+<h2 id="利用幂次法则的作用"><a href="#利用幂次法则的作用" class="headerlink" title="利用幂次法则的作用"></a>利用幂次法则的作用</h2><p>幂次法则不只对投资者很重要，它对每个人都很重要，因为每个人都是投资者。一个创业者做的最大投资，就是花时间成立新公司。因此每个创业者都必须思考他的公司以后是否会成功、会有价值。同样，每个人都是一个投资者。你之所以选择一份职业，是因为你相信自己选择的工作在今后的几十年中会变得很有价值。</p>
+<p>对于怎样保证未来价值这个问题，最普遍的回答是多样化的投资组合——“别把所有鸡蛋都放在一个篮子里”，每个人都被告知不要孤注一掷。像我们所说的，甚至是最好的风险投资者都会列出投资组合，但是懂得幂次法则的投资者所列的备选投资公司会尽可能少。投资组合的想法源于民间智慧和金融业惯例，而这些想法却认为最有利的做法是多元化下注。你投资的公司越多，在不确定的未来，你所承受的风险就越小。</p>
+<p>学校教给我们的却恰恰相反：体制化教育传授的是无差别的一般知识。每个身在美国教育体制中的人都没有学会用幂次法则来思考。每所中学不管什么课都一律上45分钟，每个学生都以相同的步伐向前迈进。<br>在大学中，模范学生痴迷于学习另类的冷门技能，想以此保证自己的未来发展。每所大学都相信“卓越”，教育部门随意给出的几百页按字母排序的课程表看起来就是为了确保“你做什么并不重要，重要的是你要把它做好”。<br><strong>你做什么并不重要？真是彻头彻尾的错误。你应该将全部注意力放在你擅长的事情上，而且在这之前要先仔细想一想未来这件事情是否会变得很有价值。</strong></p>
+<p>🌟<strong>思考：工作也是一样，做的工作对未来是否有价值很重要</strong></p>
+<h1 id="第8章-秘密"><a href="#第8章-秘密" class="headerlink" title="第8章 秘密"></a>第8章 秘密</h1><p>回忆一下商业版的反主流问题：哪些有价值的公司还没有人创建？每个正确回答都必定是个秘密：有些事很重要却无人知晓，有些事困难却可为。如果世界上还有很多秘密，那就还可能出现很多有望改变世界的企业。本章将帮助你思考秘密，并发现秘密。</p>
+<h2 id="为什么人们不探索秘密"><a href="#为什么人们不探索秘密" class="headerlink" title="为什么人们不探索秘密"></a>为什么人们不探索秘密</h2><p>1995年底，当局对“大学炸弹客”的身份及住所还一无所知。最大的线索是一篇出自卡辛斯基之手、匿名寄到报社的35 000字的声明。联邦调查局要求一些重要媒体发表此声明，希望从中找到突破。这个方法奏效了：卡辛斯基的兄弟认出了其写作风格并举报了他。</p>
+<p>你可能认为那篇声明的写作风格明显带有精神错乱的迹象，可是它却出奇地令人信服。卡辛斯基指出：为了幸福，每个人都“需要制定目标，并付诸努力，而且至少要实现几个这样的目标”。他将人们的目标分为三组：</p>
+<ol>
+<li><p>稍作努力即可达到的目标。</p>
+</li>
+<li><p>不懈努力才能达到的目标。</p>
+</li>
+<li><p>再怎么努力都不可能达到的目标。</p>
+</li>
+</ol>
+<p>伴随着地理隔阂的淡化，四种社会趋势已经合力瓦解了人们仍然相信秘密存在的信念。</p>
+<p>第一是渐进主义。从小我们便被教育做事的正确方法是积跬步以至千里。如果超过正常进度，且学到了考卷范围以外的知识，你并不能因此多拿学分。反之，如果严格做到所要求的事（而且做得比同学稍好一些），你将会得到好成绩。这种做法一直延续到工作阶段，这也就解释了为什么学者们通常争相发表无足轻重的论文而不去探索新的领域。</p>
+<p>第二是风险规避。人们害怕秘密是因为怕犯错。显然，秘密还没有经过主流的审查。如果你的目标是一生不犯错，你就不应该去探索秘密。将一生奉献于别人不相信的事情，在正确的路途上孑孓独行已是艰难，而在错误的路途上独自前行更是不可忍受。</p>
+<p>第三是自满。社会精英享有最大的自由，也最有能力去探索新想法，但是他们似乎最不相信秘密。既然能够舒舒服服地享用已有成果，为什么还要去探索秘密呢？每年秋天，顶尖的法学院和商学院的新生欢迎词都暗含了同样的信息：“进入了精英学校，你的人生就高枕无忧了。”但这件事也许只有你不相信它，它才是真的。</p>
+<p>第四是“扁平化”。随着全球化的推进，人们认为世界是一个同质的、激烈竞争的市场：世界是“平”的。鉴于这一假设，任何一个有雄心壮志的人，在探索秘密之前都会先问自己一个问题： 如果有可能发现新事物，难道全球人才库中更加聪明、更加有创造力的人还没有发现吗？这种怀疑的声音阻止了人们去探索秘密，因为身处的世界似乎大到任何个人都无法做出独特的贡献。</p>
+<p>现在，疯狂的异端教派越来越少，我们应该为之感到高兴，但是为了这一收获，我们付出了沉重的代价：丧失了对等待被挖掘的秘密的好奇之心。</p>
+<h2 id="恪守常规的世界"><a href="#恪守常规的世界" class="headerlink" title="恪守常规的世界"></a>恪守常规的世界</h2><p>在经济学方面，不相信秘密的存在，导致人们盲目相信市场的有效性。但是金融泡沫的存在表明市场有时根本不起作用。（相信市场作用的人越多，金融泡沫就越大。）1999年，没人愿意相信人们对互联网估计过高。无独有偶，2005年，房地产业遭遇了相同问题。美联储主席艾伦·格林斯潘不得不承认“当地市场出现了金融泡沫的迹象”，但声称“就整个国家而言，房地产价格泡沫不会出现”。市场反映所有可知信息，而且不容置疑。随后全美房价下跌，2008年的金融危机，使我们损失了几万亿美元。这一事实表明，未来仍存在很多秘密，仅靠忽略它们，经济学家是不能将这些秘密消灭的。</p>
+<p>当一个公司不再相信有秘密的存在，会有什么事发生呢？惠普的悲惨下滑就是个警告。1990年，这家公司有90亿美元的资产。接下来的10年是发明创造的10年。1991年，惠普发明了喷墨打印机（DeskJet 500c）——世界第一款价格亲民的彩色打印机。1993年，它推出了OmniBook笔记本电脑——早期“超便利”的便携式电脑之一。1994年，它推出了印表机（OfficeJet）——世界第一台集打印、传真、复印于一体的机器。不停地拓展产品最终得到了丰厚回报：到2000年年中，惠普资产达到1 350亿美元</p>
+<h2 id="相信秘密"><a href="#相信秘密" class="headerlink" title="相信秘密"></a>相信秘密</h2><p>不探索是发现不了秘密的。数学家安德鲁·怀尔斯的经历说明了这一点。在经过358年、许多数学家求证无果后（持续的失败似乎意味着这是一项根本无法完成的任务），怀尔斯终于证明了费马最后定理（Fermat’s Last Theorem）。皮埃尔·德·费马在1637年猜想： 当整数n &gt; 2时，关于a、b、c的方程an+bn&#x3D;cn没有正整数解。他宣称要写出证明，但是证明尚未写出，人却与世长辞，因此他的猜想长期以来成为数学界重要的未解难题。怀尔斯于1986年开始钻研此猜想，一直保守秘密，直到1993年他快找到答案时才说出来。经过9年的努力，怀尔斯在1995年证明了此猜想。他的成功需要智慧，更需要坚信秘密的存在。如果你认为有些困难的事情无法完成，就不会做出尝试。相信秘密才是探索有效进行的关键所在。</p>
+<h2 id="如何发现秘密"><a href="#如何发现秘密" class="headerlink" title="如何发现秘密"></a>如何发现秘密</h2><p>秘密分为两种：关于自然的和关于人的。自然界的秘密无处不在，想要发现，你必须探索物质世界的未知部分。关于人的秘密是不同的：是人类对自身认知的空白或者是人们以防他人知道而隐藏的事情。思考要创建哪种公司时，需要问自己两个不同的问题：自然没有告诉你的秘密是什么？人类没有告诉你的秘密是什么？</p>
+<p>探索秘密的最佳处所就是无人关注的地方。大多数人只以学校教授给他们的方式思考，而学校本身的目标在于传授常规知识。所以你可能会问：还有哪些重要领域没被标准化和制度化？</p>
+<h2 id="秘密的作用"><a href="#秘密的作用" class="headerlink" title="秘密的作用"></a>秘密的作用</h2><p>发现秘密时，你将面临选择：告诉别人？还是保守秘密？<br>这取决于秘密本身：有些秘密比其他的危险。正如浮士德对瓦格纳所说：<br>掌握秘密的极少数人，<br>愚蠢地将心扉全然洞开，<br>将自己的满腔热情示人，<br>总是惨遭迫害与火刑。</p>
+<p>除非你的理念完全符合习俗，否则将你所知道的一切告诉每个人绝不是什么好主意。<br>那么要告诉谁呢？不管你必须要对谁说，都不要多讲。实际上，选择谁也不告诉和选择人人都告诉之间有一个黄金平衡——那就是公司存在的秘密。最好的企业家深谙此理：所有成功的企业都是基于鲜为人知的秘密创立的。好企业是改变世界的密谋者，当你与人分享秘密时，听众就成为了你的谋士。</p>
+<h1 id="第9章-基础决定命运"><a href="#第9章-基础决定命运" class="headerlink" title="第9章 基础决定命运"></a>第9章 基础决定命运</h1><p>蒂尔定律”：基础没有打好的初创企业是无法挽救的。<br>200多年前，美国的建立也是一样：几个月里，制宪者们在制宪会议上一起公开讨论国家的根本问题。中央政府应拥有多大的权力？国会议员代表席位应如何分配？无论你对那个夏天在费城达成的协议有何种看法，此后想要改变它都是困难的，因为1791年批准《人权法案》后，美国《宪法》只修改过17次。</p>
+<h2 id="初创时的“联姻”"><a href="#初创时的“联姻”" class="headerlink" title="初创时的“联姻”"></a>初创时的“联姻”</h2><p>在一开始创业的时候，首先要做的至关重要的决定是——和谁一起做。选择合伙人就像结婚，而创始人之间闹矛盾就像离婚一样令人不快。每段关系开始的时候都很乐观，而冷静地思考以后可能会出现的问题就不那么令人愉悦了，因而人们都不去想。但如果创始人之间有不可调解的矛盾，公司将深受其害。</p>
+<p>现在我考虑投资一家初创公司时，会考察其创立团队。技术能力和才华互补固然重要，但创始人之间的了解程度和他们合作的默契程度也同样重要。创始人在共同创业前应有深厚的交情，否则就是在碰运气。</p>
+<h2 id="所有权、经营权和控制权"><a href="#所有权、经营权和控制权" class="headerlink" title="所有权、经营权和控制权"></a>所有权、经营权和控制权</h2><p>要找到公司内部不团结的原因，分清以下三个概念很有用：</p>
+<p>· 所有权：谁在法律上拥有公司的资产？</p>
+<p>· 经营权：谁实际上在管理着公司的日常事务？</p>
+<p>· 控制权：谁在形式上管理公司事务？</p>
+<p>早期的初创公司很小，因而创始人兼具所有权和经营权。初创公司的矛盾大多出现在所有权和控制权之间，即董事会的创始人和投资者之间。由于利益不同，潜在的冲突随着时间的推移会不断增加：董事会成员可能希望公司尽快上市，为公司赢利，而创始人则宁愿维持私有，拓展业务。</p>
+<h2 id="现金奖励不是王道"><a href="#现金奖励不是王道" class="headerlink" title="现金奖励不是王道"></a>现金奖励不是王道</h2><p>对全职人员，应该给予适当报酬。每当有企业家让我给他的公司投资时，我都会问他打算付给自己多少薪酬。公司做得越好，首席执行官的薪酬就越少——投资过数百家的初创公司，我发现这一点最为明确。任何情况下，有风险资本注入的初创企业的首席执行官，年薪都不应超过15万美元。他以前是否在谷歌赚更多钱，或者他是否有大额抵押贷款要偿还和高额私立学校学费要付，都不是重点。如果一个首席执行官的年薪为30万美元，那他就变成了政客而不是创始人。高薪会诱使他保持现状，维持目前的收入，而不是与其他人一起发现问题，积极解决问题。相比之下，低薪的首席执行官则致力于为公司创造更多价值。</p>
+<p>首席执行官的低薪也为别人设定了标准。Box公司的首席执行官阿龙·利维曾特意给自己全公司最低的工资——他创办Box公司4年后，依然居住在距离公司总部两个街区的一居室公寓内，那里除了床垫外，没有其他家具。员工看到他把全部身心都扑在公司的发展上，都纷纷仿效。首席执行官不一定要以领取低薪来树立榜样，对薪酬设下最高上限也有相同的效果。只要薪酬数额适度，就等于对现金报酬设了有效上限。</p>
+<p>现金报酬的魅力十足，它提供了纯粹的可选择性，也就是说，一旦你拿到手，想怎么花都可以。但是高额的现金报酬会让员工取走公司已有的价值，而不是投入时间为未来创造新的价值。现金红利比现金薪酬要好——它至少取决于工作完成的好坏。但即使是所谓的激励报酬，也鼓励了短期想法和价值掠夺。任何用现金支付的薪资都关乎现在，而非着眼未来。</p>
+<h2 id="股票报酬才能让员工全力以赴"><a href="#股票报酬才能让员工全力以赴" class="headerlink" title="股票报酬才能让员工全力以赴"></a>股票报酬才能让员工全力以赴</h2><p>初创公司不需要支付高薪，因为它们能提供更好的待遇：公司的部分所有权。股票是报酬的一种形式，它能有效引导人们在未来创造价值。<br>股票虽然不是激励员工的最佳方法，却是创始人使公司保持团结一致的最好方法。</p>
+<h2 id="让创业延续"><a href="#让创业延续" class="headerlink" title="让创业延续"></a>让创业延续</h2><p>公司的建立确实只有一次，只有在刚建立时，才有机会制定规则，使大家团结一致，共同创造价值。</p>
+<p>最有价值的公司始终鼓励发明创造，而这是开创阶段的典型特征。这使我想起另一种对于创业不太明显的第二层定义：只要公司创新，创业就还没结束，一旦创新停止，创业就结束了。如果创业时机正确，你能做的远不止创立一个有价值的公司：你可以把握其未来的发展方向，使其向着创新的道路发展，而不是囿于已有的成功。你甚至可以使创业无限延续下去。</p>
+<h1 id="第10章-打造帮派文化"><a href="#第10章-打造帮派文化" class="headerlink" title="第10章 打造帮派文化"></a>第10章 打造帮派文化</h1><h2 id="“PayPal黑帮”"><a href="#“PayPal黑帮”" class="headerlink" title="“PayPal黑帮”"></a>“PayPal黑帮”</h2><p>我创建的第一个团队在硅谷以“PayPal黑帮”而著称，许多前同事一直以来互相帮助，开办、投资成功的技术公司。2002年，我们以15亿美元将PayPal卖给了eBay公司。这之后，埃隆·马斯克创立了太空探索技术公司，并与别人合办了特斯拉汽车公司；里德·霍夫曼与别人共同创立了领英公司；陈士骏、查德·赫尔利和贾维德·卡里姆共创办了YouTube视频网站；杰里米·斯托普尔曼和拉塞尔·西蒙斯成立了Yelp点评网站；戴维·萨克斯与其他投资人共创了Yammer企业社交网络服务公司；而我与别人合作创办了帕兰提尔公司。如今这7家公司市值均超过10亿美元。在PayPal，我们并未刻意营造办公环境，但整个团队和个人都做得极其出色，这样的文化足以超越原来的公司。</p>
+<p>从一开始，我就想让PayPal员工紧密团结，而不是出于事务关系待在一起。我认为较为牢固的关系不仅能使我们更加开心、更加高效地工作，而且能使我们的职业生涯更成功，即使不在PayPal，亦是如此。因此我们打算雇用真正喜欢团队合作的人。他们必须有才华，但更为重要的是，他们要由衷地喜欢与我们共事。这就是“PayPal黑帮”的开端。</p>
+<h2 id="提供不可替代的工作机会"><a href="#提供不可替代的工作机会" class="headerlink" title="提供不可替代的工作机会"></a>提供不可替代的工作机会</h2><p>唯一的好答案必须针对你的公司量身定制，因此在本书里你找不到答案。但有两类好答案：一类是关于公司使命的，一类是关于团队的。<br>如果你能解释为什么公司使命激动人心，那么你就能吸引你需要的员工。不是解释工作的重要性，而是解释为什么你在做别人从未想过要做的重要事情。这是唯一能让你的理由变得独特的方法。在PayPal，如果你为创造虚拟货币来代替美元的想法而兴奋，那么我们愿意和你交谈，否则，你不适合这里。</p>
+<p>然而，仅有重大使命是不够的。将来有可能成为员工的应聘者仍会质疑：“我愿意和这些人共事吗？”因此，你还需要解释为什么你的公司适合他。如果你不能，可能他不是合适的人选。</p>
+<p>总之，不要打福利待遇之战。奔着免费洗衣或宠物看护而来的人是不会成为你团队中一名合格成员的。你只需提供健康保险之类的基本福利，并许之其他公司无法提供的，即同优秀同事一道完成不可替代工作的机会。在薪酬福利上你可能比不上2014年的谷歌，<strong>但如果能就公司使命和团队给出好的回答</strong>，你便与1999年的谷歌站在同一高度。</p>
+<h2 id="每个员工都与众不同"><a href="#每个员工都与众不同" class="headerlink" title="每个员工都与众不同"></a>每个员工都与众不同</h2><p>要保持公司的正常运转，员工的外貌和国籍并不重要，但他们必须同我们一样痴迷于数字货币。</p>
+<h2 id="每名员工只专注于一件事情"><a href="#每名员工只专注于一件事情" class="headerlink" title="每名员工只专注于一件事情"></a>每名员工只专注于一件事情</h2><p>公司里绝大多数矛盾是由同事竞争同一岗位引起的。由于初创公司初期的工作角色流动性大，所以面临很大的风险。消除竞争更易于建立长久的纯粹的工作关系以外的交情。<br>除此之外，内部和谐是初创公司存活的关键。<br>我们常常将初创公司的失败归咎于竞争体系中的强劲对手。但每个公司本身就是一个生态系统，派别冲突会使其无力应付外部威胁。<br>内部冲突就像是自体免疫系统疾病，致死的原因可能是肺炎，而真正的死因却隐藏在内部，无法一眼看出来。</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120140451.png"></p>
+<h1 id="第11章-顾客不会自动上门"><a href="#第11章-顾客不会自动上门" class="headerlink" title="第11章 顾客不会自动上门"></a>第11章 顾客不会自动上门</h1><h2 id="技术精英对阵销售人员"><a href="#技术精英对阵销售人员" class="headerlink" title="技术精英对阵销售人员"></a>技术精英对阵销售人员</h2><p>美国广告业的年收入为1 500亿美元，从业人数超过60万。而销售业的数字更为庞大，年收入为4 500亿美元。听说有320万美国人从事销售业，资深高管会认为该数字太小了，而工程师会深感困惑，发出叹息：如此多的销售人员在做什么呢？</p>
+<p>技术精英习惯透明直白的方式。他们通过精通如计算机编程这样的专业技能来增值<br>而销售则恰恰相反：他们精心设计活动来改变表象，但不修改实质内容。因此工程师觉得这种做法只是雕虫小技，甚至是极不诚实的。他们了解自己工作的辛苦，因而每当看见销售人员拿着电话与客户谈笑风生，或吃两个小时的午餐，就会认为这些销售员不务正业。事实正好相反，人们高估了科技与工程工作的难度，实在是因为这些领域的挑战显而易见。而销售人员在背后要付出很多才能使销售工作看起来容易进行，而这些往往被技术精英忽视。</p>
+<p>你发明了新产品却没有有效的方式推销，那么你的生意将很难做下去——无论你的产品质量有多好。</p>
+<h2 id="如何销售产品"><a href="#如何销售产品" class="headerlink" title="如何销售产品"></a>如何销售产品</h2><p>即使产品没有差异，高超的销售和推销自身也可以形成垄断，反之则不行。不管产品如何优良——即使它们可以轻松融入人们已有的习惯中，使试用过的人一见倾心，也必须要有完善的推广计划作为后盾。</p>
+<p>有效推广的界限可以从两个指标判定。在与客户保持联系期间，从每个客户那里赚取的平均总净利（客户生命期价值，CLV）必须超过赢得新客户的平均成本（客户获取成本，CAC）。总之，产品售价越高，销售成本越高——销售成本也越有意义。不同推广方法的比较如图11–1所示。<br><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120113355.png"></p>
+<h3 id="复杂销售-金额超100万"><a href="#复杂销售-金额超100万" class="headerlink" title="复杂销售-金额超100万"></a>复杂销售-金额超100万</h3><p>埃隆·马斯克这样的超级销售大师可以将时间花在最关键的人物身上——甚至去克服政治惰性。</p>
+<p>没有“专职销售员”的复杂销售效果最佳。我和法学院同学亚历克斯·卡普合办的数据分析公司帕兰提尔，并没有专门聘请销售人员。相反，作为首席执行官的亚历克斯一个月有25天在约见客户或潜在客户的路上。我们的交易额从100万到1亿美元不等。这么大的订单，客户通常不想和销售副总谈，而是要直接和首席执行官谈判。</p>
+<h3 id="市场营销和广告"><a href="#市场营销和广告" class="headerlink" title="市场营销和广告"></a>市场营销和广告</h3><p>市场营销和广告对有广泛吸引力却缺少病毒式推广方法的低价产品极为有效。宝洁公司（P&amp;G）无力支付销售员上门推销洗衣液的费用（宝洁公司却雇用销售员与连锁杂货店和大型零售商沟通，因为与这些客户的一单生意意味着10万瓶一加仑洗衣液的售卖）。为接触终端用户，消费性产品公司不得不投放电视广告、在报纸上印优惠券、精心设计包装盒以博眼球。</p>
+<p>广告对初创公司也奏效，但只有在客户获取成本和客户生命期价值在任何其他推广渠道都不经济的情况下才奏效。想想电商初创公司沃比派克（Warby Parker)，该公司在线设计并销售有度数的时尚眼镜，而并没有和眼镜零售商签约代销产品。每副眼镜100美元起售，因此假设每个客户一生中购买几副眼镜，那么公司的客户生命期价值只有几百美元，也就没有必要派销售人员去洽谈每笔交易，但另一方面，100美元的实体产品又不会像病毒一般流行开来。因此沃比派克公司通过策划广告活动和投放独特的电视广告，在数百万顾客面前展示物美价廉的选择。公司官网上直言，“电视是一个巨大的扩音器”，当你只能负担几十美元来赢取新客户时，你就需要尽力找到最大的扩音器。</p>
+<h3 id="病毒式营销"><a href="#病毒式营销" class="headerlink" title="病毒式营销"></a>病毒式营销</h3><p>跟人员销售差不多，把Box云计算、去存储卖给医院，学校，口碑传播，引起裂变</p>
+<p>如果产品的核心功能可以鼓励用户邀请其他朋友成为用户，那么这个产品才能进行病毒式营销。这是Facebook和PayPal快速增长的原因：每次只要有人与朋友分享或付款，他们自然而然会邀请更多的人加入。这不仅消耗低而且速度快。如果每个新用户再邀请一个以上的用户，你就能实现指数级增长的链式反应。理想的病毒式营销循环应该尽可能的快捷无阻。有趣的YouTube视频或网络热点很快就能有上百万的点击量，是因为其极短的循环周期：人们看见小猫，感受到温馨，几秒内就发送给朋友。</p>
+<p>在PayPal，我们最初的用户基础是24个人，都是PayPal员工。通过打广告吸引顾客成本太高。但是，通过直接付钱给注册用户，再让利给用户使其邀请伙伴注册，我们快速成长起来。这项策略每个顾客的获取成本是20美元，但带来了每天7% 的涨幅，意味着每10天用户就能翻番。4~5个月后，我们就有成千上万的用户。通过提供转账服务，收取小额手续费，我们利用切实可行的机会打造了一个一流的公司，收到的手续费最终大大超过客户获取成本。</p>
+<p>谁最先占领有病毒式营销前景的细分市场，谁就能成为整个市场的定局者。在PayPal我们不是随意增加客户，而是要最先赢得最有价值的客户。邮件支付系统最明显的细分市场是数百万的移民，他们仍然使用西联银行给家里汇钱。我们的产品简单方便，但是这群用户的使用频率太低。</p>
+<p><strong>销售的幂次法则，如果你有一条有效的销售渠道，你就能成功。如果你尝试了多种销售渠道，却没有一个有效，那你就等着关门吧。</strong></p>
+<h1 id="第12章-人类和机器"><a href="#第12章-人类和机器" class="headerlink" title="第12章 人类和机器"></a>第12章 人类和机器</h1><p>《福布斯》则显得忧心忡忡，向读者提出了如下问题：机器会取代你吗？</p>
+<p>未来主义者似乎期待肯定的回答。勒德分子则害怕被机器取代，宁可全面停止开发新技术。双方都未质疑好的计算机必然取代人工这一前提。然而，这个前提是错误的：计算机是辅助人类的工具，而非替代物。未来几十年，最具价值的产业还是由创业家建立，他们发展计算机是增强人类的能力，而不是淘汰人类。</p>
+<h2 id="全球化vs-科技"><a href="#全球化vs-科技" class="headerlink" title="全球化vs. 科技"></a>全球化vs. 科技</h2><p>全球化意味着替代，随着全球化的推进，人们的需求会不断增加。</p>
+<p>科技意味着补充，人类有意识，擅长在复杂情境下制订计划、做出决策，但不擅长大量数据的处理。计算机则恰恰相反，擅长高效的数据处理，却做不出人类很轻松就能做出的基本判断。</p>
+<p>人类和机器之间的显著差别意味着，和计算机合作得到的成果远高于与人交易得到的成果。正如我们不和家畜、灯具做交易一样，我们也不和计算机做交易。重点是：计算机是工具，不是竞争对手。</p>
+<p>我们开发新的计算机技术来解决问题，这意味着我们拥有了一个超级专业的伙伴为我们提供高效的服务，却不和我们争夺资源。准确地说，科技是在这个全球化的世界中逃避竞争的唯一方式。虽然计算机越来越强大，但它们不能取代人类：它们只起补充作用</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120131548.png"></p>
+<h2 id="人机互补之于企业"><a href="#人机互补之于企业" class="headerlink" title="人机互补之于企业"></a>人机互补之于企业</h2><p>人类与计算机的互补不仅仅是宏观事实，而且是创立伟大事业的途径。</p>
+<p>因此马克斯带领工程师用混合策略重写了软件：程序将可疑的交易标记在设计好的用户界面上，然后人工审核其合法性。多亏了这个混合系统，我们抓住了那个吹嘘自己无人能敌的俄罗斯窃贼，所以我们给这套系统起了个俄罗斯的名字——“Igor”。而且，有了这套系统，我们在2002第一季度扭亏为盈（而2001年的每季度我们还损失2 930万美元）。美国联邦调查局来问我们是否愿意出借Igor，以协助他们侦测金融犯罪。这让马克斯自诩为“网络密探福尔摩斯”，他也的确是。</p>
+<p>利用PayPal安全认证系统的人机复合模式来辨识恐怖分子和金融诈骗。我们知道美国联邦调查局兴趣正浓，于是2004年我们共同创办了帕兰提尔公司，一个帮助人们从不同信息来源提取有用信息的软件公司，到2014年，帕兰提尔公司的销售额已达到10亿美元。《福布斯》称帕兰提尔的软件是“杀手软件”，因为谣传它帮助美国政府找到了奥萨马·本·拉登。</p>
+<p>美国两个最大的情报机构使用的方法截然不同：中央情报局倾向于用人，而国家安全局倾向于使用计算机</p>
+<h3 id="对计算机科学的认识"><a href="#对计算机科学的认识" class="headerlink" title="对计算机科学的认识"></a>对计算机科学的认识</h3><p>在当今计算机科学最前沿，“机器学习能力”这一词语激起了机器代替人类的幻想，其宣扬者似乎相信只要输入足够的训练资料，计算机就可以执行任何任务。网飞公司（Netflix，网络影视光盘租赁公司）和亚马逊的用户亲身体验了计算机学习的效果：两家公司都依据消费者浏览及购买的历史，运用特定算法来推荐产品。输入的数据越多，得到的建议就越好。谷歌翻译也是如此，它支持80种语言的翻译，虽然粗糙，但勉强可用，这并不是软件懂得语言，而是它能对巨大语料库的文本进行统计分析，提取句型。</p>
+<p>另一个体现机器会取代人类的倾向的流行语是“大数据”。如今的公司对数据情有独钟，它们错误地认为数据越多，能创造的价值就越多。但大数据通常都是沉默的资料，计算机能找到人类没有注意到的模式，但无法比较不同资料来源整理出来的模式，也不能用这些资料解释人类复杂的行为。可行的见解只有人类分析师（或者说那种只存在于科幻小说中的人工智能）才能给出。</p>
+<p>我们痴迷于大数据仅仅是因为觉得科技很奇特。我们为计算机单独取得的一些小成就而惊叹，却忽视了人类在计算机的辅助下取得的巨大进步，因为人类的参与淡化了其神秘性。沃森、深蓝电脑和越来越厉害的算法虽然很酷，但未来最有价值的公司肯定不是靠计算机单独解决问题，而是关注计算机如何才能帮助人类解决难题。</p>
+<h2 id="聪明的计算机：是敌，还是友"><a href="#聪明的计算机：是敌，还是友" class="headerlink" title="聪明的计算机：是敌，还是友"></a>聪明的计算机：是敌，还是友</h2><p>在这两个极端之间还有巨大的空间，未来几十年，理智的人可以建设美好的世界。我们在计算机使用上的创新，不仅能够帮助人类做好已有工作，还能帮助人类做到之前不可想象的事情。</p>
+<h1 id="第13章-绿色能源与特斯拉"><a href="#第13章-绿色能源与特斯拉" class="headerlink" title="第13章 绿色能源与特斯拉"></a>第13章 绿色能源与特斯拉</h1><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120132312.png"><br>                    图13–1清洁技术泡沫</p>
+<h3 id="为什么清洁技术惨遭失败？"><a href="#为什么清洁技术惨遭失败？" class="headerlink" title="为什么清洁技术惨遭失败？"></a>为什么清洁技术惨遭失败？</h3><p>保守派认为他们已经知道了答案：一旦绿色能源成为政府要务，整个产业就一定会被扭曲。但过去有理由（现在也同样有理由）使能源成为重中之重。清洁技术失败的实际情况远比政府失灵复杂得多，也重要得多。多数能源公司折戟是因为至少忽略了以下7个问题之一，而这些问题是每个公司必须回答的：</p>
+<h3 id="1-工程问题："><a href="#1-工程问题：" class="headerlink" title="1. 工程问题："></a>1. 工程问题：</h3><p>你的技术具有突破性，而不仅仅是稍有改进吗？</p>
+<p>优秀的技术公司，其拥有的专有技术应该比最相近的技术高一个数量级。但清洁技术公司的产品鲜有两倍的改进，更别说10倍了。有时，它们的产品其实比原有产品还要糟糕。Solyndra公司开发了一种新型的圆柱形太阳能电池，但是圆柱形电池的效用只有扁平电池的1&#x2F;π——它们接受不到足够的直射阳光。公司试图通过镜子反射更多的阳光到面板底部来弥补这一缺陷，但很难挽回糟糕的开局。</p>
+<p>公司必须力争做到10倍的改进，稍有改进对终端用户来说就是毫无改进。假设你开发了新的风力涡轮机，比现有技术的效率高20%——这是实验室数据——乍一听很好，但实验数据还要扣除新产品在实际市场中面临的生产成本以及风险。而且即使你的产品确实给顾客带来20% 的改进，由于人们习惯了夸大其词的广告宣传，销售该产品时，你也一定会受到质疑。只有10倍的改进，你的产品才能给客户带来明显的优势。</p>
+<h3 id="2-时机问题："><a href="#2-时机问题：" class="headerlink" title="2. 时机问题："></a>2. 时机问题：</h3><p>现在开创事业，时机合适吗？</p>
+<p>清洁技术公司的企业家努力工作，以说服自己他们的时代已然到来。SpectraWatt的首席执行官安德鲁·威尔逊2008年宣布建立新公司时，表明“太阳能产业就像是20世纪70年代末的微处理器，还有很多有待解决和改善的地方”。后半句是对的，但是关于微处理器的类比却错得离谱。自从1970年第一台微处理器问世，计算技术不仅是飞速发展，而是呈指数级发展。表13–1是英特尔早期产品的开发史，就呈现出这样的进展。</p>
+<table>
+<thead>
+<tr>
+<th>代</th>
+<th>处理器型号</th>
+<th>年份</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>4比特</td>
+<td>4004</td>
+<td>1971</td>
+</tr>
+<tr>
+<td>8比特</td>
+<td>8008</td>
+<td>1972</td>
+</tr>
+<tr>
+<td>16比特</td>
+<td>8086</td>
+<td>1978</td>
+</tr>
+<tr>
+<td>32比特</td>
+<td>iAPX 432</td>
+<td>1981</td>
+</tr>
+</tbody></table>
+<pre><code>        表13–1英特尔早期产品的开发史
+</code></pre>
+<p>相比之下，1954年贝尔实验室发明的第一块硅太阳能电池，比威尔逊发布新闻稿的时间早了半个多世纪。相差的这几十年间，光电的转换效能虽有进展但速度缓慢：贝尔的第一块太阳能电池只有6% 的转换效能，当今的晶体硅电池和现代薄膜电池在此领域都未能超过25% 的转换效能。在2000年年中，还没有工程技术的发展能够预示新的飞跃即将到来。进入缓慢发展的市场是不错的策略，但是只有你有明确可行的计划来抢夺市场才行。那些失败的清洁技术公司显然毫无准备。</p>
+<h3 id="3-垄断问题："><a href="#3-垄断问题：" class="headerlink" title="3. 垄断问题："></a>3. 垄断问题：</h3><p>开创之初，是在一个小市场抢占大份额吗？</p>
+<p>2006年，技术投资家、亿万富翁约翰·杜尔宣称：“绿色（科技）是新的红、白、蓝。”（红、白、蓝为美国国旗的颜色，开发绿色能源为爱国表现。）他这句话应该以代表流血牺牲的“红色”结束。正如杜尔自己所说：“如果网络市场的规模是10亿美元级别，那么能源市场的规模就是万亿美元级别。”他未提及这个巨大的万亿市场还意味着残酷无情、血腥残忍的竞争。其他人不断对杜尔的观点进行附和：仅21世纪的前10年，我就听过几十个清洁技术公司的企业家怀着难以置信的乐观态度用精美的PPT展示这个万亿市场看似真实的故事——好像这是好事一样。</p>
+<p>薄膜电池只是众多太阳能电池的一种。只有某种技术极为高效地解决了某一特定问题，消费者才会有所关注。如果你不能就垄断小市场拿出独特的解决方案，就无法摆脱恶性竞争。</p>
+<p>清洁技术公司的企业家对市场的认识简直是无药可救的混乱。</p>
+<h3 id="4-人员问题："><a href="#4-人员问题：" class="headerlink" title="4. 人员问题："></a>4. 人员问题：</h3><p>你有合适的团队吗？</p>
+<p>能源问题属于工程问题，因此你可能以为工程技术人员在经营清洁技术公司。你错了，失败的公司是由非技术人员经营的。这些销售型高管们擅长募集资金、拿到政府补贴，但他们拙于创造顾客愿意购买的产品。</p>
+<p>团队洞见——绝不给首席执行官西装革履的技术公司投资——让我们更快地明白了真相。最佳销售总是深藏不露。擅长销售的首席执行官没有什么不对，但如果他的确看起来像销售员，那么他很可能拙于销售，更不擅长技术问题。</p>
+<h3 id="5-销售问题："><a href="#5-销售问题：" class="headerlink" title="5. 销售问题："></a>5. 销售问题：</h3><p>除了创造产品，你有没有办法销售产品？<br>清洁技术公司全力迎合政府和投资者，却忽略了消费者。消费者并不能确定你买的究竟是什么。你决定买车时，还有一大堆麻烦事要做。</p>
+<p>一位沮丧的顾客问道：“为什么特拉维夫市没有展示价值16万谢克尔的丰田普瑞斯的广告牌，并放上这辆车的照片，且强调此车型4年充电需16万谢克尔？”</p>
+<h3 id="6-持久问题："><a href="#6-持久问题：" class="headerlink" title="6. 持久问题："></a>6. 持久问题：</h3><p>未来10年或20年，你能保住自己的市场地位吗？<br>每个企业家都应该计划做自己特定市场的坚守者。一开始就要先自问：10年、20年后世界会是什么样的？我的公司如何才能与之相适应？</p>
+<p>清洁技术公司没人认真对待这一趋势：可再生能源是前进的唯一道路，化石燃料未来不可能更加便宜或更加洁净。事实却并非如此。到2013年，页岩气占美国天然气的34%，2008年天然气价格下降了70% 多，摧毁了多数可再生能源的商业模式。液压破碎法可能也不是持久的能源解决方案，但它足以摧毁未能预料到其出现的清洁技术公司。</p>
+<h3 id="7-秘密问题："><a href="#7-秘密问题：" class="headerlink" title="7. 秘密问题："></a>7. 秘密问题：</h3><p>你有没有找到一个其他人没有发现的独特机会？</p>
+<p>我们之前已经讨论过这些因素。无论从事哪个行业，成功的企业规划都必须解决这些问题。若你不能给出好的答案，便会厄运连连，最终公司倒闭。若7个问题你都能解决好，那你一定会获得成功。即使只解决好五六个问题，你也能取得成功。然而，清洁技术泡沫的明显问题在于清洁技术类初创公司创办时没有回答好上述任何一个问题——这意味着期待奇迹的出现。</p>
+<p>很难确切解释某一清洁技术公司失败的缘由，因为几乎所有的公司都犯了几个严重的错误。而任何一个错误都足以毁掉公司，所以值得仔细回顾其失败的原因。</p>
+<p>每个失败者都运用被普遍认可的观念来描述自己的璀璨未来。但是伟大企业是构筑在秘密之上，这是它们取得成功的独特原因，而别人对此却一无所知。</p>
+<h2 id="特斯拉如何脱颖而出？"><a href="#特斯拉如何脱颖而出？" class="headerlink" title="特斯拉如何脱颖而出？"></a>特斯拉如何脱颖而出？</h2><p>对清洁科技这一社会热潮驾驭得比其他公司要好，它成功解决了如下7个问题，因此其成功对我们颇有教益：</p>
+<p><strong>技术</strong>。特斯拉的技术很先进，<strong>其他汽车公司都依赖于它</strong>：戴姆勒采用特斯拉的电池组，奔驰采用特斯拉的动力系统，丰田采用特斯拉的发动机。通用汽车公司甚至组建了特别小组追踪特斯拉的动向。但是特斯拉的巨大技术成就不是单个的零件或组件，而是将许多组件融合为优良产品的能力。特斯拉S型轿车，从车头到车尾设计得都很优雅，它不是只把所有零件组合起来而已：《消费者报告》对它的评价是有史以来最高的，《机车潮流》和《环球车谈》杂志称其为2013年度风云汽车。</p>
+<p><strong>时机</strong>。2009年，根据大环境很容易推测出政府会继续支持清洁技术公司：“绿色工作”是政府要务，联邦基金早已指定要拨款，国会也看似要通过碳排放总量管制与碳交易方面的法案。当其他人认为巨额补贴将不断流入时，特斯拉首席执行官埃隆·马斯克看到的却是千载难逢的机会。2010年1月，也就是Solyndra在奥巴马执政期间爆出问题，<strong>并使补贴问题政治化的一年半以前，特斯拉成功地从美国能源局贷款4.65亿美元</strong>。在2000年年中，近5亿美元的资助是不可想象的，就算是现在也是不可想象的，而特斯拉抓住了那一稍纵即逝的时机。</p>
+<p><strong>垄断</strong>。特斯拉是从掌控小的次级市场起家的，即高端电动跑车市场。从2008年第一辆电动敞篷跑车（Roadster）下线，特斯拉的销量只有3 000台，但是按每台10.9万美元来算，就是个不小的数字。从小做起使特斯拉能够进行必要的研发，制造价格稍低的S型汽车，如今特斯拉依然拥有豪华电动轿车市场。2013年，特斯拉轿车销售量超过2万台，现在正处于扩大市场的关键时期。</p>
+<p><strong>团队</strong>。特斯拉的首席执行官是很棒的工程师，也是杰出的销售人员，因此，他建立的团队两者都很擅长，也就没什么可惊讶的了。埃隆如此描述他的员工：“进入特斯拉，如同你选择进入特种部队。进入普通军队也很好，但在特斯拉工作，你就选择了接受挑战。”</p>
+<p><strong>销售</strong>。多数公司低估了销售，但特斯拉认真对待，它拥有自己完整的销售链。其他汽车公司依赖于独立的代理商，就像福特和现代虽然制造汽车，却依赖别人销售汽车。而特斯拉在自己的店里销售、维修自己的汽车。这种做法让特斯拉的先期成本高于传统的代理商，但是长远来看，它能掌控客户体验，强化特斯拉品牌，为公司节省资金。</p>
+<p><strong>持久</strong>。特斯拉有先行一步的优势，而且比其他公司发展更快——这也就意味着其领先地位在未来几年将会扩大。成为别人梦寐以求的品牌极为清楚地表明特斯拉已经有所突破：买车是人们一生中做出的重大购买决定之一，所以要赢得客户信任实属不易。不像其他汽车公司，特斯拉的创始人依然掌管着公司，因此公司发展的速度不会很快就慢下来。</p>
+<p><strong>秘密</strong>。特斯拉明白，在清洁技术领域里是时尚在激发关注。富人尤其想要显示出够“绿”，即使这意味着要驾驶四四方方的普瑞斯或笨拙的本田音赛特。想到有生态意识的电影明星也拥有这样的车，车主会觉得很酷。所以特斯拉决定制造使车主看起来酷酷的汽车，莱昂纳多·迪卡普里奥甚至将他的普瑞斯换成了昂贵的（看似昂贵的）特斯拉电动跑车Roadster。<strong>普通的清洁技术公司围绕差异化进行竞争时</strong>，<strong>特斯拉则围绕如下秘密打造出独特品牌</strong>：清洁技术与其说是环保必需的技术，不如说是一种社会现象。</p>
+<h2 id="能源2-0"><a href="#能源2-0" class="headerlink" title="能源2.0"></a>能源2.0</h2><p>特斯拉的成功证明清洁技术的发展并没有问题。隐藏其后的大概念也没错：世界的确需要新能源。能源是主要资源，因为它关乎如何生存、如何建筑房屋、如何得到我们需要的东西使生活舒适。大多数国家的人梦想生活得和今天的美国人一样舒适，但除非开发新科技，否则全球化会带来越来越多严峻的能源挑战。世界上已经没有足够的能源来供人类重复旧技术，或者重新分配，以达到繁荣。<br><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120134039.png"></p>
+<p>清洁技术公司面临相同的难题：无论能源如何稀缺，只有对特定问题拿出最佳方案的公司才能赢利。还没有哪个产业能重要到只要参与其中就能建立卓越的企业。<br>想要建立能源2.0公司，企业家面临的挑战首先是找到小型市场。</p>
+<h1 id="第14章-创始人的悖论"><a href="#第14章-创始人的悖论" class="headerlink" title="第14章 创始人的悖论"></a>第14章 创始人的悖论</h1><h2 id="特立独行的个性是驱动公司进步的引擎"><a href="#特立独行的个性是驱动公司进步的引擎" class="headerlink" title="特立独行的个性是驱动公司进步的引擎"></a>特立独行的个性是驱动公司进步的引擎</h2><p>如果把创始人的特质以曲线展示，出现的是与常态分布完全相反的倒钟形曲线</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221120134435.png"></p>
+<p>这种奇特极端的特质组合从何而来呢？可能天生具有（天然的），或从环境中获得（后天的）。但是，创始人事实上并不像他们所表现的那么极端。或许他们巧妙地夸大了某种特质？或者可能是其他人夸大了他们的特质？这些影响可能会同时显现，而且不管何时显现，相互之间都会彼此强化。循环开始于不同寻常之人（发展为极端物质-&gt;他们自己将其夸大-&gt;其他人将其夸大-&gt;真正不同），最终这些人会表现得更加非比寻常。</p>
+<p>世界上最为著名的人许多都是创业者——他们不见得创立企业，但是每个名人都在建立并培养自己的个人品牌。比如Lady Gaga是最具影响力的当代人物之一</p>
+<h2 id="王者从何而来"><a href="#王者从何而来" class="headerlink" title="王者从何而来"></a>王者从何而来</h2><p>也许想要成为永远的摇滚之神，唯一的方法就是英年早逝。</p>
+<p>比如：迈克尔·杰克逊</p>
+<p>我们就像对待名人一样，崇拜或贬低科技界创业者。霍华德·休斯从轰轰烈烈到隐居世外，算得上20世纪最富传奇色彩的科技创业者。他出生富有，却喜欢工程甚于奢侈品。11岁时，他建造了休斯敦第一台无线电发射机，一年后，他造出了该市第一台摩托车。30岁时，他制作的9部商业电影均在好莱坞处于技术前沿时取得成功。但使休斯更著名的还是他的航空生涯，他设计飞机，生产飞机，驾驶飞机。休斯在最高航速、最快跨洲飞行、最快环球飞行方面创造了世界纪录。</p>
+<p>休斯的陨落始于1946年，当时他遭遇了第三次也是最严重的一次飞机失事。如果那时他去世了，将会流芳百世，成为美国史上最时尚、最成功的人士之一。但他活下来了——九死一生。他患上了强迫症，对止痛药上瘾，淡出公众视线，在自我强加的孤独隐居中度过了生命里的最后30年。休斯以前特意有些疯狂的时候，很少有人愿意打扰他这种疯狂的人。但当他有意的疯狂行为转变成真正的疯狂生活时，我们对他就会生出怜悯和唏嘘。</p>
+<h2 id="王者归来"><a href="#王者归来" class="headerlink" title="王者归来"></a>王者归来</h2><h3 id="比尔·盖茨"><a href="#比尔·盖茨" class="headerlink" title="比尔·盖茨"></a>比尔·盖茨</h3><p>比尔·盖茨证明了被高度关注的成功可以带来高度集中的攻击。盖茨具备典型的创始人特质：他既是笨手笨脚的书呆子式的大学辍学生，一个局外人，又是全球最富有的局内人。他刻意选择怪异的眼镜以装扮得与众不同吗？还是由于无药可救的愚笨，怪异的眼镜选择了他？我们无从得知。但其独霸市场的地位毋庸置疑：2000年，微软的Windows占据操作系统90% 的市场份额。那时，著名新闻主播彼得·詹宁斯可能会产生疑问： “当今世界是比尔·克林顿重要，还是比尔·盖茨重要？我不清楚。这是个好问题。”</p>
+<p>美国司法部没有止于这一问题，他们还展开了调查，并以“反竞争行为”为由起诉了微软。2000年6月法庭要求微软拆分。盖茨早在半年前就从微软首席执行官位置上退下来，被迫花费大量时间来应对法律威胁而非创造新技术。微软上诉，法庭撤回了拆分的判决，2001年微软和政府达成和解。但那时盖茨的对手已经成功阻止了他这位创始人全情投入地管理公司，微软由此进入相对低迷的时期。现在盖茨以慈善家而非技术专家闻名于世。</p>
+<h3 id="史蒂夫·乔布斯"><a href="#史蒂夫·乔布斯" class="headerlink" title="史蒂夫·乔布斯"></a>史蒂夫·乔布斯</h3><p>正当法律攻击结束了比尔·盖茨的主导地位，史蒂夫·乔布斯重回苹果，证明了其作为公司创始人无可替代的价值。某种程度上，史蒂夫·乔布斯和比尔·盖茨截然相反。乔布斯是艺术家，更喜欢较为封闭的体系，花时间构思超越别人的优秀产品；盖茨则是生意人，保持产品的开放性，想要主导世界。但他们都既是局内人又是局外人，都创立了自己的公司，并推动其取得了无人能及的成就。</p>
+<p>12年后乔布斯重返苹果，证明了为何公司的第一要务——创造新价值——不能简化为公式，交由职业经理人照章执行。1997年他被任命为苹果的临时首席执行官，而之前无可挑剔、备受信赖的前任首席执行官差点儿使公司濒临倒闭。那一年，迈克尔·戴尔评论苹果的名言是：“换成我会做什么？我会关闭公司，然后将钱退还给股东。”相反，乔布斯推出了iPod音乐播放器（2001年）、iPhone手机（2007年）、iPad平板电脑（2010年）。2011年，他因身体状况不得不辞职。2012年，苹果成为全球最有价值的公司。</p>
+<p>苹果的价值主要依赖于某个人的个人愿景。这表明公司创造新技术所运用的这种奇怪方式通常与封建君主制很像，而不是我们想象中的更“现代”的组织。独树一帜的创始人能做出权威决策，激发员工强烈的忠诚度，提前做出未来几十年的规划。自相矛盾的是，由训练有素的专业人士组成的毫无人情味的官僚机构虽能够长久持续下去，却鼠目寸光。</p>
+<p>创始人应该汲取的教训是不要沉醉于自己的声望和他人对自己的追捧，否则，会使自己臭名远播，或是被妖魔化——因此，要小心行事。</p>
+<p>总而言之，不要高估自己的个人能力。创始人的重要性并非源于自身工作带来的价值，事实上，优秀的创始人能使公司的每个人发挥所长。我们需要独特的创始人并不意味着我们需要崇拜美国小说家艾茵·兰德笔下那些不依赖周围任何人的“行动领导者”。在此方面，兰德只能算是半个好作家：她陛下的恶棍是真实的，但英雄是虚构的。现实生活中没有代表自由主义社区的高尔特峡谷，人也无法脱离社会。相信自己具有不依赖他人的神圣能力并不能表明个体的强大，而是表明你把人们的崇拜或嘲弄错认为事实。创始人最大的危险是对自己的神话过于肯定，因而迷失了方向。同样，对于公司，最大的危险是不再相信创始人的神话，错把不信神话当作一种智慧。</p>
+<h1 id="结语：停滞不前，还是临近奇点"><a href="#结语：停滞不前，还是临近奇点" class="headerlink" title="结语：停滞不前，还是临近奇点"></a>结语：停滞不前，还是临近奇点</h1><p>如果连最高瞻远瞩的创业者都无法规划未来二三十年的事情，对遥远的未来还有什么可说的呢？我们无法预知具体的细节，但可以勾勒出大致的轮廓。哲学家尼克·博斯特罗姆描述了人类的未来可能出现的四种模式。</p>
+<p>模式一：古人认为历史是兴衰的不断更替。直至最近，人们才敢于期待永远避免灾难，但还是怀疑我们视为理所当然的稳定能否持续。</p>
+<p>模式二：然而，我们常常抑制自己的怀疑。保守派的观点迥然相反，他们认为全世界会融合，最终达到一个稳定发展的状态，类似于今天最富有国家的生活。在这一情景下，未来与现在很相像。</p>
+<p>模式三：考虑到当今世界紧密相连的地理环境，以及现代武器史无前例的破坏力，能否阻止大规模的社会灾难发生，是必须要问的问题。以下是第三种情景，这是件令人恐惧的事情：毁灭性的衰落，我们无法幸免于难。</p>
+<p>模式四：最后一种可能是最难想象的：加速腾飞，奔向更美好的未来。这种突破可以有多种形式，但任何一种都与现在大相径庭，因而无法描述。</p>
+<p>未来会是这四种模式的哪一种呢？</p>
+<p>周而复始的衰落是不可能的：构成文明的知识体系如今传播甚广，以至于完全的毁灭相比长期黑暗之后的光明重现更为可能。如果彻底衰落了，人类就没有未来可言。</p>
+<p>如果我们将未来定义为看起来和现在不同的时代，那么多数人根本不会期待未来；相反，他们期待未来几十年能更加全球化、更为融合、更加相像。这种情景下，贫穷国家会迎头追上富裕国家，全球经济会稳定发展。但即使真正的全球化稳定发展是可能的，它能够持久吗？最佳状况是，经济竞争对每个人、每个公司而言都将史无前例的激烈。</p>
+<p>然而，加上对稀有资源的争夺，我们很难看到全球稳定能够无限存续。没有新技术来消除竞争压力，停滞很可能爆发为冲突。万一爆发全球范围的冲突，停滞最终会演变为灭绝。</p>
+<p>以上忽略了第四种情景。在这一情景中，我们创造新技术，打造更加美好的未来。此结果最为戏剧化的版本被称为“奇点”，这是尝试设想有个强大到超越我们理解范畴的新技术。雷·库兹韦尔，最负盛名的奇点理论家，从摩尔定律开始，在众多领域追求指数级增长，坚信能够建立人工智能超越人脑的未来。根据库兹韦尔的说法，“奇点已经临近”，这是不可避免的，我们能做的就是做好接受的准备。</p>
+<p>但无论有多少趋势可以追踪，未来都不是自行发生的。奇点描述的未来并不比我们今天面临的抉择重要：在两种最有可能发生的情景中做出选择，是无所作为，还是尽力而为，这取决于我们自己。我们不能理所当然地认为未来会更美好，而是要今天努力创造美好的未来。</p>
+<p>我们是否在整个宇宙范围实现“奇点”或许不重要，重要的是我们是否能抓住独一无二的机会，在日常工作中创新。对我们——全宇宙、全球、全国、全公司、整个人生乃至此刻最为重要的是——独特。</p>
+<p>我们当下的任务是找到创新的独特方式，使得未来不仅仅与众不同，而且更加美好，即从0到1。最重要的第一步是独立思考。只有重新认识世界，如同古人第一眼看见这个世界一样新奇，我们才能重构世界，守护未来。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">BinQ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kewbing.github.io/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/">https://kewbing.github.io/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kewbing.github.io" target="_blank">好学闻道</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BB%8F%E5%85%B8/">经典</a><a class="post-meta__tags" href="/tags/%E4%BA%A7%E5%93%81/">产品</a></div><div class="post_share"><div class="social-share" data-image="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/"><img class="prev-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">浮生六记</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/"><img class="next-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">哈佛商学院管理与MBA案例全书4-市场营销</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/06/21/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B-%E5%93%88%E9%93%82%E6%9D%8E/" title="《杀死一只知更鸟》-哈铂李"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220622121529.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-06-21</div><div class="title">《杀死一只知更鸟》-哈铂李</div></div></a></div><div><a href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-10</div><div class="title">《人类简史》-我们究竟希望自己想要什么</div></div></a></div><div><a href="/2022/09/11/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85-%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86/" title="聪明的投资者-格雷厄姆"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221204172950.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-11</div><div class="title">聪明的投资者-格雷厄姆</div></div></a></div><div><a href="/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/" title="《跨越鸿沟：如何应对结构性挑战》"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115141730.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-03-27</div><div class="title">《跨越鸿沟：如何应对结构性挑战》</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%9C%AA%E6%9D%A5%E7%9A%84%E6%8C%91%E6%88%98"><span class="toc-number">1.</span> <span class="toc-text">第一章 未来的挑战</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E4%B8%BB%E6%B5%81%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">反主流的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E0%E5%88%B01%EF%BC%9A%E8%BF%9B%E6%AD%A5%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="toc-number">1.2.</span> <span class="toc-text">从0到1：进步的未来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E4%B8%9A%E6%80%9D%E7%BB%B4"><span class="toc-number">1.3.</span> <span class="toc-text">创业思维</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0-%E5%83%8F1999%E5%B9%B4%E9%82%A3%E6%A0%B7%E7%8B%82%E6%AC%A2"><span class="toc-number">2.</span> <span class="toc-text">第2章 像1999年那样狂欢</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E5%9F%BA%E6%9C%AC%E7%9A%84%E9%97%AE%E9%A2%98%E5%BC%80%E5%A7%8B"><span class="toc-number">2.1.</span> <span class="toc-text">从基本的问题开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20%E4%B8%96%E7%BA%AA90%E5%B9%B4%E4%BB%A3%E7%9A%84%E4%BA%92%E8%81%94%E7%BD%91%E7%83%AD%E6%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">20世纪90年代的互联网热潮</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%85%E8%B0%B7%E6%B7%98%E9%87%91%E7%83%AD%EF%BC%9A1998%E5%B9%B49%E6%9C%88-2000%E5%B9%B43%E6%9C%88"><span class="toc-number">2.3.</span> <span class="toc-text">硅谷淘金热：1998年9月 ~2000年3月</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PayPal%E7%8B%82%E7%83%AD"><span class="toc-number">2.4.</span> <span class="toc-text">PayPal狂热</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC3%E7%AB%A0-%E6%89%80%E6%9C%89%E6%88%90%E5%8A%9F%E7%9A%84%E4%BC%81%E4%B8%9A%E9%83%BD%E6%98%AF%E4%B8%8D%E5%90%8C%E7%9A%84"><span class="toc-number">3.</span> <span class="toc-text">第3章 所有成功的企业都是不同的</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E4%B8%BB%E6%B5%81%E9%97%AE%E9%A2%98%E7%94%A8%E5%9C%A8%E5%95%86%E4%B8%9A%E4%B8%8A"><span class="toc-number">3.1.</span> <span class="toc-text">反主流问题用在商业上</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%89%E5%A4%9A%E5%B0%91%E7%9C%9F%E6%AD%A3%E5%9E%84%E6%96%AD%E7%9A%84%E5%B8%82%E5%9C%BA%EF%BC%9F%E5%8F%88%E6%9C%89%E5%A4%9A%E5%B0%91%E7%9C%9F%E6%AD%A3%E5%AE%8C%E5%85%A8%E7%AB%9E%E4%BA%89%E7%9A%84%E5%B8%82%E5%9C%BA%EF%BC%9F"><span class="toc-number">3.2.</span> <span class="toc-text">世界上有多少真正垄断的市场？又有多少真正完全竞争的市场？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9E%84%E6%96%AD%E8%80%85%E7%9A%84%E8%B0%8E%E8%A8%80"><span class="toc-number">3.3.</span> <span class="toc-text">垄断者的谎言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%9E%E5%9E%84%E6%96%AD%E8%80%85%E7%9A%84%E8%B0%8E%E8%A8%80"><span class="toc-number">3.4.</span> <span class="toc-text">非垄断者的谎言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B7%E9%85%B7%E6%97%A0%E6%83%85%E7%9A%84%E5%B8%82%E5%9C%BA%EF%BC%9A%E8%8E%B7%E5%8F%96%E5%9E%84%E6%96%AD%E5%88%A9%E6%B6%A6"><span class="toc-number">3.5.</span> <span class="toc-text">冷酷无情的市场：获取垄断利润</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9E%84%E6%96%AD%E8%B5%84%E6%9C%AC%E4%B8%BB%E4%B9%89"><span class="toc-number">3.6.</span> <span class="toc-text">垄断资本主义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E5%8D%B4%E7%97%B4%E8%BF%B7%E4%BA%8E%E4%BC%81%E4%B8%9A%E9%97%B4%E7%9A%84%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%8A%8A%E7%AB%9E%E4%BA%89%E5%BD%93%E6%88%90%E4%B8%80%E7%A7%8D%E7%90%86%E6%83%B3%E7%8A%B6%E6%80%81%E5%91%A2%EF%BC%9F"><span class="toc-number">3.6.1.</span> <span class="toc-text">为什么经济学家却痴迷于企业间的竞争，把竞争当成一种理想状态呢？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B8%E7%A6%8F%E7%9A%84%E5%AE%B6%E5%BA%AD%E6%80%BB%E6%98%AF%E7%9B%B8%E4%BC%BC%E7%9A%84%EF%BC%8C%E4%B8%8D%E5%B9%B8%E7%9A%84%E5%AE%B6%E5%BA%AD%E5%90%84%E6%9C%89%E5%90%84%E7%9A%84%E4%B8%8D%E5%B9%B8%E3%80%82"><span class="toc-number">3.6.2.</span> <span class="toc-text">幸福的家庭总是相似的，不幸的家庭各有各的不幸。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%81%E4%B8%9A%E6%88%90%E5%8A%9F%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">3.6.3.</span> <span class="toc-text">企业成功的原因</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC4%E7%AB%A0-%E7%AB%9E%E4%BA%89%E6%84%8F%E8%AF%86%EF%BC%9A%E6%88%91%E4%BB%AC%E6%8A%8A%E8%87%AA%E5%B7%B1%E5%9B%B0%E5%9C%A8%E4%BA%86%E7%AB%9E%E4%BA%89%E4%B8%AD"><span class="toc-number">4.</span> <span class="toc-text">第4章 竞争意识：我们把自己困在了竞争中</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E4%BB%AC%E7%9B%B8%E4%BF%A1%E7%AB%9E%E4%BA%89%E6%89%8D%E6%98%AF%E5%81%A5%E5%BA%B7%E7%8A%B6%E6%80%81%E5%91%A2%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">为什么人们相信竞争才是健康状态呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%98%E4%BA%89%E4%B8%8E%E5%92%8C%E5%B9%B3%EF%BC%9A%E5%BE%AE%E8%BD%AF%E4%B8%8E%E8%B0%B7%E6%AD%8C%E7%AB%9E%E4%BA%89%EF%BC%8C%E6%9C%80%E5%90%8E%E8%8B%B9%E6%9E%9C%E5%87%BA%E6%9D%A5%E4%BA%86"><span class="toc-number">4.2.</span> <span class="toc-text">战争与和平：微软与谷歌竞争，最后苹果出来了</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC5%E7%AB%A0-%E5%90%8E%E5%8F%91%E4%BC%98%E5%8A%BF"><span class="toc-number">5.</span> <span class="toc-text">第5章 后发优势</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E5%B0%B1%E6%9D%A5%E8%AE%A8%E8%AE%BA%E4%B8%80%E4%B8%8B%E5%A6%82%E4%BD%95%E4%BB%A5%E6%B8%85%E9%86%92%E7%9A%84%E5%A4%B4%E8%84%91%E5%8E%BB%E6%89%93%E9%80%A0%E5%9E%84%E6%96%AD%E7%9A%84%E4%BA%8B%E4%B8%9A%E3%80%82"><span class="toc-number">5.1.</span> <span class="toc-text">我们就来讨论一下如何以清醒的头脑去打造垄断的事业。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E8%A7%A3%E9%87%8A%E6%8E%A8%E7%89%B9%E5%85%AC%E5%8F%B8%E7%9A%84%E9%AB%98%E6%BA%A2%E4%BB%B7%E5%91%A2%EF%BC%9F"><span class="toc-number">5.2.</span> <span class="toc-text">怎么解释推特公司的高溢价呢？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E6%80%8E%E4%B9%88%E8%83%BD%E7%A1%AE%E5%AE%9A%E4%BD%A0%E5%88%9B%E9%80%A0%E7%9A%84%E6%B5%81%E8%A1%8C%E6%96%87%E5%8C%96%E5%8F%AF%E4%BB%A5%E4%B8%80%E7%9B%B4%E6%BB%A1%E8%B6%B3%E5%8F%98%E5%B9%BB%E6%97%A0%E5%B8%B8%E7%9A%84%E8%A7%82%E4%BC%97%E5%8F%A3%E5%91%B3%EF%BC%9F"><span class="toc-number">5.3.</span> <span class="toc-text">你怎么能确定你创造的流行文化可以一直满足变幻无常的观众口味？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9E%84%E6%96%AD%E4%BC%81%E4%B8%9A%E7%9A%84%E7%89%B9%E5%BE%81"><span class="toc-number">5.4.</span> <span class="toc-text">垄断企业的特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%93%E5%88%A9%E6%8A%80%E6%9C%AF"><span class="toc-number">5.4.1.</span> <span class="toc-text">专利技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%95%88%E5%BA%94"><span class="toc-number">5.4.2.</span> <span class="toc-text">网络效应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%84%E6%A8%A1%E7%BB%8F%E6%B5%8E"><span class="toc-number">5.4.3.</span> <span class="toc-text">规模经济</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%81%E7%89%8C%E4%BC%98%E5%8A%BF"><span class="toc-number">5.4.4.</span> <span class="toc-text">品牌优势</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E5%9E%84%E6%96%AD%E4%BC%81%E4%B8%9A%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">5.5.</span> <span class="toc-text">建立垄断企业的方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%A0%E9%A2%86%E5%B0%8F%E5%B8%82%E5%9C%BA"><span class="toc-number">5.5.1.</span> <span class="toc-text">占领小市场</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%A9%E5%A4%A7%E8%A7%84%E6%A8%A1"><span class="toc-number">5.5.2.</span> <span class="toc-text">扩大规模</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E8%A6%81%E6%90%9E%E7%A0%B4%E5%9D%8F"><span class="toc-number">5.5.3.</span> <span class="toc-text">不要搞破坏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E6%9D%A5%E8%80%85%E5%B1%85%E4%B8%8A"><span class="toc-number">5.5.4.</span> <span class="toc-text">后来者居上</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC6%E7%AB%A0-%E6%88%90%E5%8A%9F%E4%B8%8D%E6%98%AF%E4%B8%AD%E5%BD%A9%E7%A5%A8"><span class="toc-number">6.</span> <span class="toc-text">第6章 成功不是中彩票</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E8%83%BD%E6%8E%8C%E6%8E%A7%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%AA%E6%9D%A5%E5%90%97%EF%BC%9F"><span class="toc-number">6.1.</span> <span class="toc-text">你能掌控自己的未来吗？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%9C%AA%E6%9D%A5%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E6%82%B2%E8%A7%82%E4%B8%BB%E4%B9%89"><span class="toc-number">6.1.1.</span> <span class="toc-text">对未来不明确的悲观主义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%9C%AA%E6%9D%A5%E6%98%8E%E7%A1%AE%E7%9A%84%E6%82%B2%E8%A7%82%E4%B8%BB%E4%B9%89"><span class="toc-number">6.1.2.</span> <span class="toc-text">对未来明确的悲观主义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%9C%AA%E6%9D%A5%E6%98%8E%E7%A1%AE%E7%9A%84%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89%E8%80%85"><span class="toc-number">6.1.3.</span> <span class="toc-text">对未来明确的乐观主义者</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%9C%AA%E6%9D%A5%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89"><span class="toc-number">6.1.4.</span> <span class="toc-text">对未来不明确的乐观主义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%93%E4%BB%8A%E7%9A%84%E4%B8%96%E7%95%8C%E2%80%94%E2%80%94%E5%AF%B9%E6%9C%AA%E6%9D%A5%E4%B8%8D%E6%98%8E%E7%A1%AE%E5%8D%B4%E5%BE%88%E4%B9%90%E8%A7%82"><span class="toc-number">6.2.</span> <span class="toc-text">当今的世界——对未来不明确却很乐观</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E9%87%91%E8%9E%8D"><span class="toc-number">6.2.1.</span> <span class="toc-text">不明确的金融</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E6%94%BF%E6%B2%BB"><span class="toc-number">6.2.2.</span> <span class="toc-text">不明确的政治</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E5%93%B2%E5%AD%A6"><span class="toc-number">6.2.3.</span> <span class="toc-text">不明确的哲学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E4%BA%BA%E7%94%9F"><span class="toc-number">6.2.4.</span> <span class="toc-text">不明确的人生</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E6%9C%AA%E6%9D%A5%E4%B8%8D%E6%98%8E%E7%A1%AE%E7%9A%84%E4%B9%90%E8%A7%82%E4%B8%BB%E4%B9%89%E5%8F%AF%E8%83%BD%E6%8C%81%E4%B9%85%E5%90%97%EF%BC%9F"><span class="toc-number">6.3.</span> <span class="toc-text">对未来不明确的乐观主义可能持久吗？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%95%BF%E6%9C%9F%E8%A7%84%E5%88%92%E4%BB%8D%E6%98%AF%E6%9C%80%E9%87%8D%E8%A6%81%E7%9A%84"><span class="toc-number">6.4.</span> <span class="toc-text">长期规划仍是最重要的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%A0%E4%B8%8D%E6%98%AF%E4%B8%80%E5%BC%A0%E5%BD%A9%E7%A5%A8"><span class="toc-number">6.5.</span> <span class="toc-text">你不是一张彩票</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC7%E7%AB%A0-%E5%90%91%E9%92%B1%E7%9C%8B"><span class="toc-number">7.</span> <span class="toc-text">第7章 向钱看</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A3%8E%E9%99%A9%E6%8A%95%E8%B5%84%E4%B8%AD%E7%9A%84%E5%B9%82%E6%AC%A1%E6%B3%95%E5%88%99"><span class="toc-number">7.1.</span> <span class="toc-text">风险投资中的幂次法则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E4%BB%AC%E6%B2%A1%E6%9C%89%E7%9C%8B%E5%88%B0%E5%B9%82%E6%AC%A1%E6%B3%95%E5%88%99"><span class="toc-number">7.2.</span> <span class="toc-text">为什么人们没有看到幂次法则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E5%B9%82%E6%AC%A1%E6%B3%95%E5%88%99%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">7.3.</span> <span class="toc-text">利用幂次法则的作用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC8%E7%AB%A0-%E7%A7%98%E5%AF%86"><span class="toc-number">8.</span> <span class="toc-text">第8章 秘密</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BA%BA%E4%BB%AC%E4%B8%8D%E6%8E%A2%E7%B4%A2%E7%A7%98%E5%AF%86"><span class="toc-number">8.1.</span> <span class="toc-text">为什么人们不探索秘密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%81%AA%E5%AE%88%E5%B8%B8%E8%A7%84%E7%9A%84%E4%B8%96%E7%95%8C"><span class="toc-number">8.2.</span> <span class="toc-text">恪守常规的世界</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E4%BF%A1%E7%A7%98%E5%AF%86"><span class="toc-number">8.3.</span> <span class="toc-text">相信秘密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%8F%91%E7%8E%B0%E7%A7%98%E5%AF%86"><span class="toc-number">8.4.</span> <span class="toc-text">如何发现秘密</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%98%E5%AF%86%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-number">8.5.</span> <span class="toc-text">秘密的作用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC9%E7%AB%A0-%E5%9F%BA%E7%A1%80%E5%86%B3%E5%AE%9A%E5%91%BD%E8%BF%90"><span class="toc-number">9.</span> <span class="toc-text">第9章 基础决定命运</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E5%88%9B%E6%97%B6%E7%9A%84%E2%80%9C%E8%81%94%E5%A7%BB%E2%80%9D"><span class="toc-number">9.1.</span> <span class="toc-text">初创时的“联姻”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%80%E6%9C%89%E6%9D%83%E3%80%81%E7%BB%8F%E8%90%A5%E6%9D%83%E5%92%8C%E6%8E%A7%E5%88%B6%E6%9D%83"><span class="toc-number">9.2.</span> <span class="toc-text">所有权、经营权和控制权</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%B0%E9%87%91%E5%A5%96%E5%8A%B1%E4%B8%8D%E6%98%AF%E7%8E%8B%E9%81%93"><span class="toc-number">9.3.</span> <span class="toc-text">现金奖励不是王道</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%82%A1%E7%A5%A8%E6%8A%A5%E9%85%AC%E6%89%8D%E8%83%BD%E8%AE%A9%E5%91%98%E5%B7%A5%E5%85%A8%E5%8A%9B%E4%BB%A5%E8%B5%B4"><span class="toc-number">9.4.</span> <span class="toc-text">股票报酬才能让员工全力以赴</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A9%E5%88%9B%E4%B8%9A%E5%BB%B6%E7%BB%AD"><span class="toc-number">9.5.</span> <span class="toc-text">让创业延续</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC10%E7%AB%A0-%E6%89%93%E9%80%A0%E5%B8%AE%E6%B4%BE%E6%96%87%E5%8C%96"><span class="toc-number">10.</span> <span class="toc-text">第10章 打造帮派文化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%9CPayPal%E9%BB%91%E5%B8%AE%E2%80%9D"><span class="toc-number">10.1.</span> <span class="toc-text">“PayPal黑帮”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E4%BE%9B%E4%B8%8D%E5%8F%AF%E6%9B%BF%E4%BB%A3%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%9C%BA%E4%BC%9A"><span class="toc-number">10.2.</span> <span class="toc-text">提供不可替代的工作机会</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%8F%E4%B8%AA%E5%91%98%E5%B7%A5%E9%83%BD%E4%B8%8E%E4%BC%97%E4%B8%8D%E5%90%8C"><span class="toc-number">10.3.</span> <span class="toc-text">每个员工都与众不同</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%8F%E5%90%8D%E5%91%98%E5%B7%A5%E5%8F%AA%E4%B8%93%E6%B3%A8%E4%BA%8E%E4%B8%80%E4%BB%B6%E4%BA%8B%E6%83%85"><span class="toc-number">10.4.</span> <span class="toc-text">每名员工只专注于一件事情</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC11%E7%AB%A0-%E9%A1%BE%E5%AE%A2%E4%B8%8D%E4%BC%9A%E8%87%AA%E5%8A%A8%E4%B8%8A%E9%97%A8"><span class="toc-number">11.</span> <span class="toc-text">第11章 顾客不会自动上门</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E7%B2%BE%E8%8B%B1%E5%AF%B9%E9%98%B5%E9%94%80%E5%94%AE%E4%BA%BA%E5%91%98"><span class="toc-number">11.1.</span> <span class="toc-text">技术精英对阵销售人员</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E9%94%80%E5%94%AE%E4%BA%A7%E5%93%81"><span class="toc-number">11.2.</span> <span class="toc-text">如何销售产品</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E9%94%80%E5%94%AE-%E9%87%91%E9%A2%9D%E8%B6%85100%E4%B8%87"><span class="toc-number">11.2.1.</span> <span class="toc-text">复杂销售-金额超100万</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E5%92%8C%E5%B9%BF%E5%91%8A"><span class="toc-number">11.2.2.</span> <span class="toc-text">市场营销和广告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%97%85%E6%AF%92%E5%BC%8F%E8%90%A5%E9%94%80"><span class="toc-number">11.2.3.</span> <span class="toc-text">病毒式营销</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC12%E7%AB%A0-%E4%BA%BA%E7%B1%BB%E5%92%8C%E6%9C%BA%E5%99%A8"><span class="toc-number">12.</span> <span class="toc-text">第12章 人类和机器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%A8%E7%90%83%E5%8C%96vs-%E7%A7%91%E6%8A%80"><span class="toc-number">12.1.</span> <span class="toc-text">全球化vs. 科技</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%BA%E6%9C%BA%E4%BA%92%E8%A1%A5%E4%B9%8B%E4%BA%8E%E4%BC%81%E4%B8%9A"><span class="toc-number">12.2.</span> <span class="toc-text">人机互补之于企业</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E7%9A%84%E8%AE%A4%E8%AF%86"><span class="toc-number">12.2.1.</span> <span class="toc-text">对计算机科学的认识</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%AA%E6%98%8E%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%EF%BC%9A%E6%98%AF%E6%95%8C%EF%BC%8C%E8%BF%98%E6%98%AF%E5%8F%8B"><span class="toc-number">12.3.</span> <span class="toc-text">聪明的计算机：是敌，还是友</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC13%E7%AB%A0-%E7%BB%BF%E8%89%B2%E8%83%BD%E6%BA%90%E4%B8%8E%E7%89%B9%E6%96%AF%E6%8B%89"><span class="toc-number">13.</span> <span class="toc-text">第13章 绿色能源与特斯拉</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B8%85%E6%B4%81%E6%8A%80%E6%9C%AF%E6%83%A8%E9%81%AD%E5%A4%B1%E8%B4%A5%EF%BC%9F"><span class="toc-number">13.0.1.</span> <span class="toc-text">为什么清洁技术惨遭失败？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%B7%A5%E7%A8%8B%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.2.</span> <span class="toc-text">1. 工程问题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%97%B6%E6%9C%BA%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.3.</span> <span class="toc-text">2. 时机问题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9E%84%E6%96%AD%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.4.</span> <span class="toc-text">3. 垄断问题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BA%BA%E5%91%98%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.5.</span> <span class="toc-text">4. 人员问题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E9%94%80%E5%94%AE%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.6.</span> <span class="toc-text">5. 销售问题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%8C%81%E4%B9%85%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.7.</span> <span class="toc-text">6. 持久问题：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E7%A7%98%E5%AF%86%E9%97%AE%E9%A2%98%EF%BC%9A"><span class="toc-number">13.0.8.</span> <span class="toc-text">7. 秘密问题：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E6%96%AF%E6%8B%89%E5%A6%82%E4%BD%95%E8%84%B1%E9%A2%96%E8%80%8C%E5%87%BA%EF%BC%9F"><span class="toc-number">13.1.</span> <span class="toc-text">特斯拉如何脱颖而出？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%BD%E6%BA%902-0"><span class="toc-number">13.2.</span> <span class="toc-text">能源2.0</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC14%E7%AB%A0-%E5%88%9B%E5%A7%8B%E4%BA%BA%E7%9A%84%E6%82%96%E8%AE%BA"><span class="toc-number">14.</span> <span class="toc-text">第14章 创始人的悖论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E7%AB%8B%E7%8B%AC%E8%A1%8C%E7%9A%84%E4%B8%AA%E6%80%A7%E6%98%AF%E9%A9%B1%E5%8A%A8%E5%85%AC%E5%8F%B8%E8%BF%9B%E6%AD%A5%E7%9A%84%E5%BC%95%E6%93%8E"><span class="toc-number">14.1.</span> <span class="toc-text">特立独行的个性是驱动公司进步的引擎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%8B%E8%80%85%E4%BB%8E%E4%BD%95%E8%80%8C%E6%9D%A5"><span class="toc-number">14.2.</span> <span class="toc-text">王者从何而来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%8B%E8%80%85%E5%BD%92%E6%9D%A5"><span class="toc-number">14.3.</span> <span class="toc-text">王者归来</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AF%94%E5%B0%94%C2%B7%E7%9B%96%E8%8C%A8"><span class="toc-number">14.3.1.</span> <span class="toc-text">比尔·盖茨</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%B2%E8%92%82%E5%A4%AB%C2%B7%E4%B9%94%E5%B8%83%E6%96%AF"><span class="toc-number">14.3.2.</span> <span class="toc-text">史蒂夫·乔布斯</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD%EF%BC%9A%E5%81%9C%E6%BB%9E%E4%B8%8D%E5%89%8D%EF%BC%8C%E8%BF%98%E6%98%AF%E4%B8%B4%E8%BF%91%E5%A5%87%E7%82%B9"><span class="toc-number">15.</span> <span class="toc-text">结语：停滞不前，还是临近奇点</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: 'ec04a5a16c1f97fa4dfa76b22300ceb9',
+      updateCountCallback: commentCount
+    },null))
 
-    if theme.post_pagination
-      include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+    gitalk.render('gitalk-container')
+  }
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
-      
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

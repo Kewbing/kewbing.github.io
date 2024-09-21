@@ -1,20 +1,684 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好学闻道 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="菊与刀(鲁思·本尼迪克特) - 来自 Kindle 伴侣 	 	 	 	 	 	 	   	 		 			 				 菊与刀(鲁思·本尼迪克特) 55 			 		 		 			 				 					 返回目录 				 			 		 		 			 				 					 						等级体系的必要性和精神 的至高地位），">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好学闻道">
+<meta property="og:url" content="https://kewbing.github.io/kindle/html/%E8%8F%8A%E4%B8%8E%E5%88%80(%E9%B2%81%E6%80%9D%C2%B7%E6%9C%AC%E5%B0%BC%E8%BF%AA%E5%85%8B%E7%89%B9).html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="菊与刀(鲁思·本尼迪克特) - 来自 Kindle 伴侣 	 	 	 	 	 	 	   	 		 			 				 菊与刀(鲁思·本尼迪克特) 55 			 		 		 			 				 					 返回目录 				 			 		 		 			 				 					 						等级体系的必要性和精神 的至高地位），">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-21T15:55:15.190Z">
+<meta property="article:modified_time" content="2022-06-22T07:36:34.000Z">
+<meta property="article:author" content="BinQ">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/kindle/html/%E8%8F%8A%E4%B8%8E%E5%88%80(%E9%B2%81%E6%80%9D%C2%B7%E6%9C%AC%E5%B0%BC%E8%BF%AA%E5%85%8B%E7%89%B9)"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好学闻道',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-06-22 15:36:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #page
-    if top_img === false
-      h1.page-title= page.title
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    case page.type
-      when 'tags'
-        include includes/page/tags.pug
-      when 'link'
-        include includes/page/flink.pug
-      when 'categories'
-        include includes/page/categories.pug
-      default
-        include includes/page/default-page.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">好学闻道</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>菊与刀(鲁思·本尼迪克特) - 来自 Kindle 伴侣</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../style/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../style/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+	<link href="../style/css/custom.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../style/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../style/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../style/js/custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header col-md-12">
+			<div class="page-header">
+				<h1><small><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 菊与刀(鲁思·本尼迪克特)</small> <span class="badge">55</span></h1>
+			</div>
+		</header>
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active text-center">
+					<a href="../index.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 返回目录</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10">
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk383">
+						<p>等级体系的必要性和精神 的至高地位），</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk621">
+						<p>平等对美国人而言，意味着远离专制暴政，不受干涉，不被 强制；意味着在法律面前人人平等和人人拥有改善生活条件的权利。这 是当今世界人权的基石。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk837">
+						<p>四个世 袭阶层，根据顺序，依次为：士（武士）、农、工和商。排在他们后面 的则是贱民。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1092">
+						<p>现代社会中保留遵循“各就其位”的 优势，并且维护等级制习惯。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1395">
+						<p>在明治维新以前，最广为人知的一条法律 是：“当争吵或者纠纷发生时，旁人不应当加以非必要的干预。”有人</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1658">
+						<p>人们通过把自己受到过的照顾传递给子女，来偿还对祖先的亏欠。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1662">
+						<p>日本制度化家庭的严格限制，同时也控制了能被义务服务 的对象的人数。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1685">
+						<p>日本人格外尊重整个家庭，因而他们不大看重每个家庭成员，或 家庭成员之间的关系。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1686">
+						<p>日本家庭强调的是履行义务和回报恩情。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1691">
+						<p>日 本政治家们用尽心思把天皇塑造成一个神圣的领袖，并使他与喧闹平庸 的世俗生活隔离开来。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1710">
+						<p>明治维新正是尊王派的胜利。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1712">
+						<p>明治维新正是尊王派的胜利。正是从效忠将军到 效忠具有象征性的天皇的转变，才让1868年的事件可以被称为“王政复 古”。天皇依然继续遁世。他授予“阁下们”权力，但他本人并不执掌政 府或军队，也不颁布政策。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1758">
+						<p>日本人的观点是， 遵纪守法便是他们对最大的债务——皇恩的回报。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1765">
+						<p>两个国家公民的自尊关联着不同的 态度。在美国，一个人的自尊取决于他能否掌控自己的事务；在日本， 自尊则取决于他能否回报他所认可的施恩者。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1847">
+						<p>在封建时代的日本，一个入赘女婿为 了向新家庭证明自己，在打仗时要站在岳父的这一边，哪怕这意味着杀 死自己的父亲。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1850">
+						<p>若仍有三合余粮 （约0.47升），就绝不要入赘。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1893">
+						<p>在那个年代，义理中 没有“勉强”。如果义理和忠冲突，一个人可以坚持义理，并受到敬重。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk53">
+						<p>讲述一个民族是如何崇 尚唯美主义、如何尊敬演员和艺术家、如何热衷于菊花栽培艺术，他不 会同时写这个民族如何崇尚刀剑和给予武士们最高威望。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk58">
+						<p>菊与刀都是日本形象的一部分。日本人极度好战又极度温 和，极度黩武又极度爱美，极度粗鲁傲慢又极度彬彬有礼，极度死板又 极度灵活，极度恭顺又极度讨厌被使唤，极度忠诚又极度反叛，极度勇 敢而又极度胆小，极度保守而又极度喜欢新事物。他们非常在乎他人如 何看待自己的所作所为，但是，即便他们犯了错未被人发现，依然会有 罪恶感。他们的士兵接受过全面的训练，但依然桀骜不驯。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk83">
+						<p>我们必须试着去理解日本人的情感和思维习 惯，以及这些习惯的模式。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk83">
+						<p>对日本，当时有两大问题需要研究：第一，日本政府会不会投降？盟军是否要进攻日本本土而采用对付德国的办法？第二，假若日本投降，美国是否应当利用日本政府机构以至保存天皇？</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk94">
+						<p>“菊”本是日本皇家家徽，“刀”是武家文化的象征。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk95">
+						<p>亦即日本文化的双重性（如爱美而又黩武，尚礼而又好斗，喜新而又顽固，服从而又不驯等等），</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk165">
+						<p>矛盾却成为有关日本论著中纵横交织的经纬。而且，都是千真万确。刀与</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk167">
+						<p>日本人生性极其好斗而又非常温和；黩武而又爱美；倨傲自尊而又彬彬有礼；顽梗不化而又柔弱善变；驯服而又不愿受人摆布；忠贞而又易于叛变；勇敢而又懦怯；保守而又十分欢迎新的生活方式。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk415">
+						<p>在三十年代，前陆军大臣、狂热的军国主义分子荒木大将③在名叫《告日本国民书》的宣传小册子中写道：日本的“真正使命”在于“弘扬皇道于四海，力量悬殊不足忧，吾等何惧于物质！”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk423">
+						<p>以吾等之训练对抗敌军数量上之优势，以吾等之血肉对抗敌军之钢铁。”这是他们的传统口号，并不是为这次战争</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk423">
+						<p>战术手册中有一句口号：“以吾等之训练对抗敌军数量上之优势，以吾等之血肉对抗敌军之钢铁。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk431">
+						<p>日本当权者也推行精神优越于物质条件这一信条。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk486">
+						<p>美国人把自己的全部生活调节到经常应付挑战上，并且随时准备应战。日本人则把自己的信念建立在万事预先俱有安排的生活方式上，在他们那里，最大的威胁莫过于未曾料到。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk537">
+						<p>日本人“只要天皇有令，纵然只有一杆竹枪，也会毫不犹豫地投入战斗。同样，只要是天皇下令，也会立即停止战</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk580">
+						<p>《战阵训》：“生不受俘囚之辱” “死不留罪祸之污名”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk593">
+						<p>北缅会战中，被俘与战死者的比例为142比17, 166，也就是1比120。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk596">
+						<p>在西方国家的军队中，阵亡者如果达到全军兵力的四分之一或三分之一时，该部队罕有不停止抵抗的。投降者和阵亡者的比率大约是4比1。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk680">
+						<p>1940年日本签订的日德意三国同盟条约②前言中说：“大日本帝国政府、德国政府和意大利政府确信，使世界各国‘各得其所’乃持久和平之前提……”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk681">
+						<p>弘扬大义于八纮，缔造神舆为一宇，实我皇祖皇宗之大训，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk686">
+						<p>“八纮一宇”实“皇祖皇宗之大训” “万邦各得其所”乃“旷古之大业”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk693">
+						<p>赫尔国务卿提出了四项原则，即：各国主权及领土完整的不可侵犯；互不干涉内政；信赖国际合作及和解；平等的原则。这些都是美国人信奉平等及不可侵犯的权利的主要之点，也是我们认为不仅在国际关系中，即使是在日常生活中也必须同样遵循的准则。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk691">
+						<p>赫尔国务卿提出了四项原则，即：各国主权及领土完整的不可侵犯；互不干涉内政；信赖国际合作及和解；平等的原则。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk719">
+						<p>多少世纪以来，不平等已成为日本民族有组织的生活准则，既是最容易预计，也是最广泛被接受的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk750">
+						<p>不断更迭的政府所指派的、逍遥自在的</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk776">
+						<p>“各安其分”不仅意味着辈分差别，而且意味着年龄差别。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk879">
+						<p>丰臣秀吉⑲已经用著名的“刀狩令”⑳，完成了这两个阶级的分离。他收缴了农民的武器并规定只有武士才有佩刀的特权。武士再不能兼作农民、工匠或商人。即使身份最低的武士也不能合法地从事生产，他成了寄生阶级中的一分子，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk878">
+						<p>在德川家康平定天下之前，伟大的名将丰臣秀吉⑲已经用著名的“刀狩令”⑳，完成了这两个阶级的分离。他收缴了农民的武器并规定只有武士才有佩刀的特权。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk879">
+						<p>在德川家康平定天下之前，伟大的名将丰臣秀吉⑲已经用著名的“刀狩令”⑳，完成了这两个阶级的分离。他收缴了农民的武器并规定只有武士才有佩刀的特权。武士再不能兼作农民、工匠或商人。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk201">
+						<p>因此这本书并非专门 针对日本的宗教、经济生活、政治或家庭，它探讨的是日本人以何种信 念生活。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk312">
+						<p>日本99.5%的青少年在公立学校接受教 育。同时，依照等级体系观点，它应该去帮助落后的兄弟之邦——中 国。属于大东亚区的同一人种，应当一起把美国从这个区域中驱逐出</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk311">
+						<p>日本99.5%的青少年在公立学校接受教 育。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk312">
+						<p>依照等级体系观点，它应该去帮助落后的兄弟之邦——中 国。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk313">
+						<p>依照等级体系观点，它应该去帮助落后的兄弟之邦——中 国。属于大东亚区的同一人种，应当一起把美国从这个区域中驱逐出 去；</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk313">
+						<p>依照等级体系观点，它应该去帮助落后的兄弟之邦——中 国。属于大东亚区的同一人种，应当一起把美国从这个区域中驱逐出 去；其次是使英国和俄国“各就其位”。所有的国家将组成一个大世界，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk333">
+						<p>日本的“真正使 命”是“弘扬皇道于四海。武力欠缺实不足惧，吾人岂以俗物为忧”。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk337">
+						<p>日本精神”的外在表现和象征符号，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk344">
+						<p>日本人战争手册的第 一页上印着一行加粗的字：读之必胜。册子里有一句口号：“以我们的 训练成效对抗敌人的数量优势，以我们的血肉对抗敌人的钢铁。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk401">
+						<p>西乡隆盛的教诲：“世界上有两种机遇：一种是我 们赶上的，另一种是我们创造的。哪怕在极大的困境中，一个人也必须 给自己创造机遇。”</p>
+					</div>
+				</div>
+			</article>
+
+		</div>
+		<footer class="footer col-md-12">
+			<div class="text-center">
+				<a href="http://kindlefere.com" target="_blank">Kindle 伴侣 - 为静心阅读而生</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: 'b6c070eede68f2574dd7eecddb11f5fb',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

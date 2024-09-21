@@ -1,20 +1,723 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好学闻道 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="少有人走的路 (M·斯科特·派克) - 来自 Kindle 伴侣 	 	 	 	 	 	 	   	 		 			 				 少有人走的路 (M·斯科特·派克) 59 			 		 		 			 				 					 返回目录 				 			 		 		 			 				 					 						推迟满足感，意味着不贪图暂时的安逸，重新设置人生快乐与痛苦的次序：首先，面对问题">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好学闻道">
+<meta property="og:url" content="https://kewbing.github.io/kindle/html/%E5%B0%91%E6%9C%89%E4%BA%BA%E8%B5%B0%E7%9A%84%E8%B7%AF%20(M%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%C2%B7%E6%B4%BE%E5%85%8B).html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="少有人走的路 (M·斯科特·派克) - 来自 Kindle 伴侣 	 	 	 	 	 	 	   	 		 			 				 少有人走的路 (M·斯科特·派克) 59 			 		 		 			 				 					 返回目录 				 			 		 		 			 				 					 						推迟满足感，意味着不贪图暂时的安逸，重新设置人生快乐与痛苦的次序：首先，面对问题">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-21T15:55:15.204Z">
+<meta property="article:modified_time" content="2022-06-22T07:37:14.000Z">
+<meta property="article:author" content="BinQ">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/kindle/html/%E5%B0%91%E6%9C%89%E4%BA%BA%E8%B5%B0%E7%9A%84%E8%B7%AF%20(M%C2%B7%E6%96%AF%E7%A7%91%E7%89%B9%C2%B7%E6%B4%BE%E5%85%8B)"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好学闻道',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-06-22 15:37:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #page
-    if top_img === false
-      h1.page-title= page.title
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    case page.type
-      when 'tags'
-        include includes/page/tags.pug
-      when 'link'
-        include includes/page/flink.pug
-      when 'categories'
-        include includes/page/categories.pug
-      default
-        include includes/page/default-page.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">好学闻道</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>少有人走的路 (M·斯科特·派克) - 来自 Kindle 伴侣</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../style/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../style/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+	<link href="../style/css/custom.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../style/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../style/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../style/js/custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header col-md-12">
+			<div class="page-header">
+				<h1><small><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 少有人走的路 (M·斯科特·派克)</small> <span class="badge">59</span></h1>
+			</div>
+		</header>
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active text-center">
+					<a href="../index.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 返回目录</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10">
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk175">
+						<p>推迟满足感，意味着不贪图暂时的安逸，重新设置人生快乐与痛苦的次序：首先，面对问题并感受痛苦；然后，解决问题并享受更大的快乐，这是惟一可行的生活方式。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body nt175">
+						<p>先天下之优,而优</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk314">
+						<p>灵成长的永远</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2">
+						<p>少有人走的路 M·斯科特·派克</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7">
+						<p>本书处处透露出沟通与理解的意味，它跨越时代限制，帮助我们探索爱的本质，引导我们过上崭新，宁静而丰</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk8">
+						<p>的生活；它帮助我们学习爱，也学习独立；它教诲我们成为更称职的、更有理解心的父母。归根到底，它告诉我们怎样找到真正的自我。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk32">
+						<p>直面问题，我们的心智就会逐渐成熟：逃避问题．心灵就会永远停滞不前。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk124">
+						<p>少有人走的路解决人生问题的首要方案，乃是自律，缺少了这一环，你不可能解决任何麻烦和困难。局部的自律只能解决局部的问题，完整的自律才能解决所有的问题。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk143">
+						<p>神经官能症，是人生痛苦常见的替代品</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk154">
+						<p>去解决人生痛苦的重要原则，主要包括四个方面：推迟满足感、承担责任、尊重事实、僚持平衡。它们并不复杂，不过要想正确地运翔</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk153">
+						<p>人生痛苦的重要原则，主要包括四个方面：推迟满足感、承担责任、尊重事实、僚持平衡</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk175">
+						<p>推迟满足感，意味着不贪图暂时的安逸，重新设置人生快乐与痛苦的次序：首先，面对问题并感受痛苦；然后，解决问题并享受更大的快乐，这是惟一可行的生活方式。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk314">
+						<p>灵成长的永远</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk314">
+						<p>——问题没有消失，它们仍继续存在。它们是妨碍心灵成长的永远的障碍。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk325">
+						<p>忽视问题的存在．反映出入们不愿推迟满足感的心理。我说过：直面问题会使人感觉痛苦。问题通常不可能自行消失，若不解决，就会永远存在，阻碍心智的成熟。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk380">
+						<p>神经官能症与人格失调</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk382">
+						<p>神经官能症患者为自己强加责任，患有人格失调的人却不愿承担责任。<br /><br />“你不能解决问题，你就会成为问题。</p>
+<p>神经官能症患者<br />没事不惹事，有事不怕事。</p>
+<p>人格失调的人<br />卤水点豆腐，一物降一物’。</p>
+<p>人格失调的人<br /></p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk85">
+						<p>第一部分 自律 自律是解决人生问题最主要的工具，也是消除人生痛苦最重要的方 法。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk123">
+						<p>神经官能症才成为最棘手的问题。不少人还没有解决旧的问题和痛 苦，却又要逃避新的问题和痛苦，他们不断用神经官能症作蚕丝，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk130">
+						<p>自律是解决人生问题最主要的工具，也是消除人生痛苦最重要的方 法</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk135">
+						<p>自律有四个原则：推迟满足感、承担责任、忠于事实、保持平 衡。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk154">
+						<p>在上班第一个小时里，强迫自己先去解决那些棘手的差事，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk155">
+						<p>在上班第一个小时里，强迫自己先去解决那些棘手的差事， 而在剩下的时间里，工作就变得相对轻松了。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk157">
+						<p>按一天工作七个小时计算，一个小 时的痛苦，加上六个小时的幸福，显然要比一个小时的幸福加上六个小 时的痛苦划算。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk202">
+						<p>爱是心灵健康成长的动力。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk338">
+						<p>为逃避解决问题而忽视问题的存在，并 指望问题自行消失的倾向，是他人生中存在的重大问题</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk351">
+						<p>问题通常不可能自行消失，若不解决， 就会永远存在，阻碍心智的成熟。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk410">
+						<p>神经官能症与人格失调症 求助于心理医生的大多数人，所患的不是神经官能症，就是人格失</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk412">
+						<p>神经官 能症患者为自己强加责任，人格失调症患者则不愿承担原本属于自己的 责任</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk430">
+						<p>不少人兼具神经官能症和人格失调症，统称 为“人格神经官能症”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk474">
+						<p>你不能解决问题，你就会成为问题</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk522">
+						<p>两害相权取其轻”。我相信世界上存在压迫性的力量，可</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk536">
+						<p>忠于事实是自律的第三条原则。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk539">
+						<p>要实事求是，杜绝虚假，因为虚假与事实完全对立。我们越 是了解事实，处理问题就越是得心应手；对事实了解得越少，思维就越 是混乱。虚假、错觉和幻想只能让我们不知所措</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk551">
+						<p>绘制人生地图的艰难，不在于我们需要从头开始，而在于需要不断 修订，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk791">
+						<p>凡事直言不讳的人，极易被上司认为是桀骜不驯，甚至被视 为“捣乱分子”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk797">
+						<p>怎样做才不致违背忠于事实的自律精神呢？我</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk797">
+						<p>在日常交往中，我们有时要开诚布公，有时则要抑制倾吐想法和感 觉的欲望。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk805">
+						<p>首先，永远不要说假话，避免黑色谎言；其次，要牢牢 记住，除非是迫不得已，或者出于重大道德因素的考虑，否则，不说出 全部真相就等于说谎；第三，不可因个人自私自利的欲望，例如满足权 力欲、刻意讨上司的欢心、逃避修订心灵地图的挑战等，而将部分真相 隐瞒下来；第四，只有在对对方确有好处的情况下，才能有选择地隐瞒 部分真相；第五，尽可能忠实地评估对方的需要。这是一件极为复杂的 工作，只有以真爱为出发点，才能做出恰当的评判和选择；第六，评估 的要领在于，对方能否借助我们提供的事实获得心灵的成长。最后一点 需要铭记在心的是，我们通常会低估而不是高估别人运用事实使心灵获 得成长的能力。</p>
+<p>上</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk816">
+						<p>敢于面对事实的人，能够心胸坦荡地生活，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk822">
+						<p>我称之为“保持 平衡”，这也是自律的第四条原则。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk829">
+						<p>我们不但要有生气的能力</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk828">
+						<p>正面冲突只会使处境更加不利。大脑的高级中枢—— 判断力，必须约束低级中枢——情绪。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk830">
+						<p>要想 人生顺遂，我们不但要有生气的能力，还要具备克制脾气的能力。我们 要善于以不同的方式，恰当地表达生气的情绪</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk830">
+						<p>有时需要委婉，有时需 要直接；有时需要心平气和，有时不妨火冒三丈</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk856">
+						<p>失 去平衡远比放弃更为痛苦。我想不管是谁，经过人生旅途的急转弯时， 都必须放弃某些快乐，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk887">
+						<p>选择放弃是必须要 迈过的一步。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk998">
+						<p>爱，是为了促进自己和他人心智成熟，而不断拓展自我界 限，实现自我完善的一种意愿。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1012">
+						<p>爱在帮助别人进步和成长的同时，也会拓展自己的心 灵，使自我更加成熟。换言之，我们付出的爱，不仅能让他人的心智成 熟，同样也能使自己获益。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1013">
+						<p>真正意义上的爱，既是爱自己，也是爱他人</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1039">
+						<p>人们之所以坠入情网，是因为他们在意识和 潜意识里有一种性的冲动。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1095">
+						<p>幻觉破灭，就可能面临 劳燕分飞的局面。毋容置疑，若想避免这种情形，两人就必须面对现 实，学会真正的相知和相爱</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1178">
+						<p>精神贯注”。我们贯注的对象，就是我们所爱的人或事物。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1246">
+						<p>消极性依赖人格失调症”。他们无法忍受寂 寞，也没有自我认知；他们把自己的人生价值全都寄托在同别人的情感 关系上。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1361">
+						<p>不是所有的“精神贯注”都是爱，那些与心智成熟无关，不能给心灵带来 任何滋养的“精神贯注”，都不是真正意义上的爱。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1367">
+						<p>爱的唯一 目标，乃是促进心智的成熟和</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1367">
+						<p>爱的唯一 目标，乃是促进心智的成熟和人性的进步。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1370">
+						<p>我们要拥有充足的食物，给自己提供温暖的</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1371">
+						<p>我们必须爱惜 身体，好好照顾它；我们要拥有充足的食物，给自己提供温暖的住所； 我们也需要休息和运动，张弛有度，而不是永远处在繁忙状态。俗话 说：“圣人也需要睡眠。”合理而健康的爱好，是培养自尊自爱的必要手段</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1431">
+						<p>真正的爱，不是单纯的给予，还包括适当的拒绝、及时的赞美、得体的批评、 恰当的争论、必要的鼓励、温柔的安慰和有效的敦促。</p>
+					</div>
+				</div>
+			</article>
+
+		</div>
+		<footer class="footer col-md-12">
+			<div class="text-center">
+				<a href="http://kindlefere.com" target="_blank">Kindle 伴侣 - 为静心阅读而生</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: 'b14ebf6cbd94680f4729ddd74105ba9c',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

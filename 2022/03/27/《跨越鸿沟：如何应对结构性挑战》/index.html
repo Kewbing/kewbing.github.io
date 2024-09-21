@@ -1,32 +1,390 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>《跨越鸿沟：如何应对结构性挑战》 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="从看到陆奇的事迹后，开始去尝试读《 陆奇：数字化浪潮与创新机会》、《跨越鸿沟:颠覆性产品营销圣经》，之后又看到心理学中“达克效应”，从而也引发了信息陷阱、绝望低谷和鸿沟的联想，避免盲人摸象，冰山一角的问题出现。 智慧金字塔智慧与聪明无关，一个人可以非常聪明，但却不一定有智慧，那什么是智慧？要怎样才能掌握智慧？能够透过学习获得智慧吗？ 通过金字塔模型分析，我们将DIKW（数据，信息，知识，智慧）层次">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《跨越鸿沟：如何应对结构性挑战》">
+<meta property="og:url" content="https://kewbing.github.io/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/index.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="从看到陆奇的事迹后，开始去尝试读《 陆奇：数字化浪潮与创新机会》、《跨越鸿沟:颠覆性产品营销圣经》，之后又看到心理学中“达克效应”，从而也引发了信息陷阱、绝望低谷和鸿沟的联想，避免盲人摸象，冰山一角的问题出现。 智慧金字塔智慧与聪明无关，一个人可以非常聪明，但却不一定有智慧，那什么是智慧？要怎样才能掌握智慧？能够透过学习获得智慧吗？ 通过金字塔模型分析，我们将DIKW（数据，信息，知识，智慧）层次">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115141730.png">
+<meta property="article:published_time" content="2022-03-27T14:30:00.000Z">
+<meta property="article:modified_time" content="2023-06-18T07:34:24.000Z">
+<meta property="article:author" content="BinQ">
+<meta property="article:tag" content="产品">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115141730.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '《跨越鸿沟：如何应对结构性挑战》',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-18 15:34:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    if theme.reward.enable && theme.reward.QR_code
-      !=partial('includes/post/reward', {}, {cache: true})
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://www.ontotext.com/wp-content/uploads/2016/07/slide_02-1024x500.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">《跨越鸿沟：如何应对结构性挑战》</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-27T14:30:00.000Z" title="发表于 2022-03-27 22:30:00">2022-03-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-18T07:34:24.000Z" title="更新于 2023-06-18 15:34:24">2023-06-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="《跨越鸿沟：如何应对结构性挑战》"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>从看到陆奇的事迹后，开始去尝试读《 陆奇：数字化浪潮与创新机会》、《跨越鸿沟:颠覆性产品营销圣经》，之后又看到心理学中“达克效应”，从而也引发了信息陷阱、绝望低谷和鸿沟的联想，避免盲人摸象，冰山一角的问题出现。</p>
+<h1 id="智慧金字塔"><a href="#智慧金字塔" class="headerlink" title="智慧金字塔"></a>智慧金字塔</h1><p>智慧与聪明无关，一个人可以非常聪明，但却不一定有智慧，那什么是智慧？要怎样才能掌握智慧？能够透过学习获得智慧吗？</p>
+<p>通过金字塔模型分析，我们将<em>DIKW</em>（数据，信息，知识，智慧）层次结构分解为其构建块，从下往上逐步扩展才能成为智慧。</p>
+<p><img src="https://www.ontotext.com/wp-content/uploads/2016/07/slide_08-1024x500.png" alt="智慧金字塔"></p>
+<blockquote>
+<p>知识是知道西红柿是水果;智慧是知道不要把它们放在水果沙拉里，英国专栏作家迈尔斯·金顿（Miles Kington）如是说</p>
+</blockquote>
+<p>在信息时代，什么是知识，什么是智慧？我们如何利用信息来创造知识，然后将这些知识扩展到明智的决策和行动的智慧？</p>
+<p>信息是从通信系统中传送的本质内容，知识是个体所有的存储信息总和，一旦人站在智慧之颠从而获得了洞察力，他们就拥有了更多的资源和通过预测出来的选择来做出决策。</p>
+<p>下面从通信系统角度解读信息论的基础</p>
+<ul>
+<li><strong>信号（Data&#x2F;Signal）</strong>， 是消息传递的物理载体 ，比如是电信号 、光信号等。根据香农定理(<em>C&#x3D;wlog2 (1+S&#x2F;N)</em>)，信号跟噪声是同时存在的</li>
+<li><strong>消息（Message）</strong> ，是信号传输的内容，比如文字、图像、视频等<br>发送端需将信息表示成消息（文字、语言或图像等形式的消息），再将消息加载(模数转换)至信号上，才能在实际的通信系统中传输。</li>
+<li><strong>信息（Information）</strong>，消息当中有用的叫信息，信号在接收端（信息论里称为信宿）经过处理变成文字、语言或图像等形式的消息，将含有噪声的信号经过各种筛选和处理，人们再从中得到有用的信息。</li>
+</ul>
+<p>现代不用像古代远距离需要靠烽火狼烟、飞鸽传书，消息已经没有空间和时间的约束，互联网随时随地都能浏览到世界各地的新闻。我认为现在不是信息时代，而是消息满天飞的时代，消息传递从电和光的加速度，让人们的沟通方式在变化，工作效率在提高，遇到的问题也会越复杂多变。大脑需要处理的信息也越来越多。<br>处理噪音，才是应当避免掉进信息时代的陷阱，每个人对消息的判断和筛查能力也需要提高，才能把握住属于自己的机会，有效的缩小认知的鸿沟。</p>
+<h1 id="达克效应"><a href="#达克效应" class="headerlink" title="达克效应"></a>达克效应</h1><p>有了知识但错误的认识也会掉入到绝望之谷，心理学上的达克效应是认知自己能力差却不自知的现象</p>
+<blockquote>
+<p>达克效应的意思是：越是一知半解者、似乎越有一种「迷一般的自信」，觉得自己很懂;而真正的强者却似乎表现的非常谦卑，有时甚至会低估自己的能力。</p>
+</blockquote>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220327210826.png"></p>
+<p>邓宁教授和克鲁格教授于1999年在实验中首次观测到这个非常容易被用嘲讽他人的现象，他们透过对人们阅读、驾驶、下棋或打网球等各种技能的来研究，结果发现四点：</p>
+<blockquote>
+<ol>
+<li>能力差的人通常会高估自己的技能水平;</li>
+<li>能力差的人不能正确认识到其他真正有此技能的人的水平;</li>
+<li>能力差的人无法认知且正视自身的不足，及其不足之极端程度;</li>
+<li>如果能力差的人能够经过恰当训练大幅度提高能力水平，他们最终会认知到且能承认他们之前的无能程度。</li>
+</ol>
+</blockquote>
+<p>既然发现这是最容易发生的倾象，那我们更可以时时自省：「自己达克了吗？」</p>
+<p><strong>达克人生</strong></p>
+<blockquote>
+<p>阶段一：迷之自信<br>阶段二：绝望低谷<br>阶段三：觉悟之坡<br>阶段四：虚怀若谷</p>
+</blockquote>
+<h1 id="如何跨越鸿沟"><a href="#如何跨越鸿沟" class="headerlink" title="如何跨越鸿沟"></a>如何跨越鸿沟</h1><p>我们可以说数据和信息回答了”谁”，”什么”，”何时”和”何地”的问题。当我们爬上智慧的山峰时，背景和理解就会增加。<br>知识是”为什么”问题的答案，而智慧是关于”如何”，”接下来会发生什么”和”什么是最好的”。</p>
+<ul>
+<li>本章节内容来自陆奇的演讲内容</li>
+</ul>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220116223815.png"></p>
+<p>鸿沟（the chasm）之前有两群人：最开始的一群人（technology enthusiasts）乐于尝试新事物，只要是新的、和技术有关的都愿意去尝试；而第二群人（visionary）对企业有长期的想法，为了实现企业的长期愿景去找到和尝试新的产品和技术。</p>
+<p>而鸿沟出现在下一波采纳这个技术产品的人，他们都是务实者（Early Adopters），他们的判断标准是我身边的人用不用这个产品。</p>
+<h2 id="判断方向"><a href="#判断方向" class="headerlink" title="判断方向"></a>判断方向</h2><p>我们先判断方向，任何一个创新创业的机会永远是3个方向的交集：技术趋势、市场趋势、产品需求趋势。<br>技术趋势相对比较容易判断，任何一项技术都有一定的发展时间和发展规模。<br>市场也相对容易，一般一个大的市场有供给端、需求端、流通端，我们可以判断一些宏观驱动因素。<br>最难的是产品需求的判断，很大意义上（我个人认为）是我们人类整体对人本身的认知是不够的，我们对自己了解得非常少。</p>
+<p><strong>C端</strong><br>分析C端有一个长期结构和原则，</p>
+<ul>
+<li>1是马斯洛需求层次，</li>
+<li>2是近几年在业界越来越重要的一个认知——用户是永远不满足的，这是亚马逊的贝佐斯几年前在致股东信里写的</li>
+</ul>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115142600.png"></p>
+<p>把C端分为人群和时长，一个人只有24小时，第1个需求是通讯，2是娱乐</p>
+<p>C端有4大核心要素：用户，获客，变现，裂变</p>
+<p><strong>B端</strong><br>大B：第1代、第2代数字化基本都在大B里面掌握应用，特别是大B的信息化，最早期是OA，是办公效率提高。<br>后来是做资源管理，比如说人力资源等等，以后的进展是企业流程管理，像产品生命周期管理，<br>到了移动互联网之后是客户管理特别是CRM。<br>移动互联网带来的机会同时有很多垂直信息系统，比如说MES是制造业的，<br>基本上大B有比较系统的信息化技术的大量应用，然后再整体下沉，做的越来来越深入。<br>协同的软件：Notion、Zoom、Atlassian<br>接下来是企业自动化，人工智能会把企业自动化推到一个新的高度。<br>最后是数字孪生，未来企业里面任何一个设备都有一个数字化的模型，可以端到端地模拟、自动化、做分析和预判等等，所以工业4.0是长期的数字化B端的需求</p>
+<h2 id="判断时机"><a href="#判断时机" class="headerlink" title="判断时机"></a>判断时机</h2><p>Bill Gross做过大数据分析，任何创业公司成功要素最重要的是时机，什么时候进场是决定一切的因素。</p>
+<p>这里有结构化的原因，第一拨人是早期一些比较小众的人，只要是新的产品，再烂他也用，这些人就喜欢尝鲜。第二拨人对未来有一定的看法，想找新的技术、新的产品实现他对未来的理想。第三拨人是早期应用者，但这些人比较务实，采用的条件是我的竞争对手或同事们用不用。</p>
+<p>所以任何一个技术性的产品都要走过这样一个曲线，大部分产品都死在这个鸿沟里，关键要抓住时间点，基本上快要跨鸿沟的时候入场是最好的。以苹果公司为例，它永远不是第一个做产品的公司，手机、平板电脑、手表等都不是第一个做，但是它一旦做，都做得非常好，并在最佳的时机进场。</p>
+<p>那该什么时候进呢？应该看这条曲线——来自《跨越鸿沟》这本书，它是人的社会集体心理的反映——技术驱动型产品都会经历这个曲线。</p>
+<h2 id="决策"><a href="#决策" class="headerlink" title="决策"></a>决策</h2><p>判断方向和时机之后，大公司和小公司一样，要做进和出的决策。这个决定分5个层次，第1层最重要，依次类推：</p>
+<ul>
+<li>赛道一定要看风口的大小，增长速度和发展规模</li>
+<li>选好赛道后要看公司是否有这个实力，创业公司就看创始人跟所选的赛道是不是符合</li>
+<li>第三重要的是市场，这非常重要，第一名的毛利会比其它高很多，第二名、第三名会非常非常苦和难。</li>
+<li>第四看产品是不是有差异化的能力。</li>
+<li>第五看团队的执行能力是不是够强。</li>
+</ul>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115143222.png"></p>
+<h2 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h2><p>新产品尽快找到市场反馈，尽可能久地活着</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220116223755.png"></p>
+<p>在找到自己的真正的PMF（Product Market Fit）之前，是没有办法养活自己的，你的收入，大部分是在Product Market Fit后面。</p>
+<p>这是一条平均曲线，你唯一可以活的是靠融资，所以融资的能力，是核心的。</p>
+<p>迭代、融资，就这两件事情。</p>
+<p>创业者如何应对结构性挑战<br>第一是产品的挑战，唯一的解决办法就是快速迭代。<br>第二是产品市场匹配（Product Market Fit，简称PMF）的挑战。还是要跨越鸿沟<br><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220116223500.png"></p>
+<p>早期创业，迭代越快越好，融资活下去，活得越久越好，只有这两件事情。</p>
+<p>在产品端，客户满意度就是指买单人的满意度是关键，一定要看复购率和NPS（净推荐值(NPS)&#x3D;(推荐者数&#x2F;总样本数)×100%-(贬损者数&#x2F;总样本数)×100%）。</p>
+<p>早期这是最重要的，NPS这个数字几乎很难动，除非买单的人是真正满意。形式与交付方面，产品在早期基本是解决方案，很难过早地产品化，因为客户满意度很重要。</p>
+<p><strong>在销售端一定要找到可行的收费模式</strong>，保证高的毛利。要保证给到渠道足够的返点，很多产品都是卡在渠道上推不下去。销售端非常重要，To B的产品往往一个80分的产品可以打败100分的产品。最关键的是要跑通盈利模式，是要全方位的产品和业务一起开发，快速迭代。<br>    Zoom，为什么它到40分钟开始收费，就是不断迭代和AB test出来的。<br>    Atlassian，创始人一开始说公司不雇任何一个销售人员，产品必须自己卖掉，端到端地开发，推行的三点营销策略，全程自助、薄利多销和用户口碑宣传。Atlassian还提供免费试用，方便用户根据试用结果按需购买。</p>
+<h1 id="相关书本推荐"><a href="#相关书本推荐" class="headerlink" title="相关书本推荐"></a>相关书本推荐</h1><p>Geoffery Moore，他写过五本书，最有名的是《跨越鸿沟:颠覆性产品营销圣经》(Crossing the chasm)。另外一本是《对付达尔文》（dealing with Darwin）企业老了会死，就像达尔文进化论说的一样，如何对抗达尔文（进化规律），他给了一个系统化的方法，让达尔文现象可以被控制住。</p>
+<p>《跨越鸿沟:颠覆性产品营销圣经》读书笔记：</p>
+<ul>
+<li><p>市场打不开的局面：如果企业无法建立这种关系，它通常会在目标行业中雇用一位人脉极广的人，委托他带领自己的销售团队进入目标市场。</p>
+</li>
+<li><p>定价：整体产品的价格是否与目标顾客的预算相一致，是否与它将要带来的经济回报(帮助顾客解决那些出问题的业务流程）相一致？包括销售渠道在内的所有合作伙伴是否得到了足够的酬劳以保证他们继续对企业保持关注和忠诚？</p>
+</li>
+<li><p>定位：作为产品供应商，我们的企业是否已经获得了目标市场空白中所有顾客的信任呢？</p>
+</li>
+<li><p>保龄球瓶模型<br>有很多企业仅仅是把自己的产品毫不费力地扔到市场中，就像把一捆捆的干草随意堆进卡车的后车厢中，再也不管不问。下一个目标顾客：如果我们成功地占领了这个市场空白，那么我们的成功是否具有明显的“保龄球瓶”潜力呢？保龄球砸中了第一个瓶，这个瓶砸到了剩下的瓶，商机也是如此</p>
+</li>
+<li><p>你应当在目标顾客情景刻画过程的一开始就委托专业人士进行一些市场调研，确保你创建的情景刻画能够为你带来成功</p>
+</li>
+<li><p>因此无论何时你都要保持前进的脚步，即使当你心中充满疑虑的时候也一样不能停下来，因为你的按兵不动反而会为那些实力雄厚的竞争者提供机会。</p>
+</li>
+<li><p>为了长久地维持自己在市场中的地位，你需要拥有一个忠诚的顾客市场，其中的所有顾客都认为你提供的产品能够有效地帮助他们解决某些关键的业务流程中出现的问题，他们会将你的产品视为业界内的事实标准。但如果你想成为业界内的标准，你在将来一年的时间里从目标市场细分中争取到的新订单应当达到你接到的所有新订单的一半，而且是越多越好</p>
+</li>
+<li><p>你必须时刻鳘惕，不要跨越口碑营销的边界《&gt;无可否认，我们的目标是成为小池塘里的大鱼，但我们也不想被困在一两个小水洼里艰难地游行。在这种情况下，最明智的一个方法应当是根据属于某个大群体的几个特殊的利益集团进行划分</p>
+</li>
+<li><p>目标市场的选择主要包括以下一系列行动。<br> (1)创造出一组目标顾客的情景刻画<br> (2)指定一个小组委员会，由他们来承担目标市场选择这项任务<br> (3)对所有的情景刻画进行编号，然后将每个情景刻画用一张纸打印出来<br> (4)让小组委员会中的每一个成员根据第一部分中四个至关重要的因素各自对每一个情景刻画进行评分。<br> (5)对评分结果进行排序，然后把没有通过第一轮考验的情景刻画剔除掉<br> (6)把微波炉调到400度，开始烤</p>
+</li>
+<li><p>委员会的所有成员对最后确定的前沿阵地目标达成了一致意见。</p>
+</li>
+<li><p>工作流软件就能够确保新的业务流程可以与现有的财务和资料管理系统可以相互融合，在合作中不至于出现太大的分歧。</p>
+</li>
+<li><p>企业就必须制定一个合理的整体产品营销计划，将自己不擯长的产品和服务委托给自己的合作者和同盟。</p>
+</li>
+<li><p>整体产品的管理过程中应当注意的八个方面。<br> (1)利用圆环图(见图5-2)来定义整体产品，然后与其他员工进行交流。<br> (2)认真回顾整体产品，确保你已经对这个组合进行了最大限度的精简。这就是所谓的KISS哲学(越简单越好）<br> (3)从企业中每个参与者的角度对整体产品进行仔细的检査<br> (4)逐步形成整体产品开发的合作关系，努力将现有的合作协议转变成一种更加正式更加具体的合作项目<br> (5)与大规模的合作者一起工作时，要从最基本的任务开始做起，与小规模的合作者一起工作时，则应当从最重要的工作开始<br> (6)正式的合作关系一旦形成，你就要马上利用它作为你与合作者之间进行沟通的手段。</p>
+</li>
+<li><p>髙科技营销中一共包括四个价值领域：技术、产品、市场和企业</p>
+</li>
+<li><p>“定位”视为一种行动的时候，它指的就是一个营销传播过程，并且主要由以下四个关键的部分组成：</p>
+</li>
+<li><p>1.声明 这里的关键是将最基本的定位陈述——即宣称自己在某个特定的市场细分中占据着一种毋庸置疑的领导者地位</p>
+</li>
+<li><p>2.证据 如果对领导者地位的宣称受到了周遭的质疑，那么这种声明其实是不具有任何意义的</p>
+</li>
+<li><p>有了声明和证据的帮助，企业在这一步的目标就是按照正确的顺序确定目标顾客，并凭借恰当的营销理念来征服不同的目标顾客群体。</p>
+</li>
+<li><p>反馈和调整<br> 我们知道，在足球比赛的中场休息时，教联会召集球员对下半场的作战策略进行调整。同样，当企业的定位遇到激烈竞争的时候，经销商也要对自己的营销策略进行调整。</p>
+</li>
+<li><p>一种相互信任的长期关系才是持续获得成功的关键所在而不仅仅是让目标顾客感到一时的开心。</p>
+</li>
+<li><p>声明：顺利通过电梯测试。一种电梯测试：你能够在电梯从一楼运行到顶楼的这段时间内清楚地解释你的产品吗？风险资本家一直用这个测试来衡量企业的投资潜力。</p>
+</li>
+<li><p>口碑传播对于髙科技营销的成功发挥着关键的作用，无论你的定位声明是什么，它都不能借着人们的口耳相传进行传播，营铕传播信息是随意拼凑而成的，你的研发成果也是随意拼凑的。你将无法争取到任何合作者和同盟的支持，因为他们根本无法确定你的目标，你将无法从任何有经验的投资者那里获得资金支持。</p>
+</li>
+<li><p>你可以选择你自己的公司提供的某一款核心产品，然后用这个办法让围绕这款产品的定位声明变得更加精炼。首先，你要填好以下几个空格：</p>
+</li>
+<li><p>这款产品是为(目标顾客——并且仅仅是前沿阵地市场细分中的顾客）而提供的,</p>
+</li>
+<li><p>他们对目前的市场替代选择感到不满意，</p>
+</li>
+<li><p>我们的产品是一种(新的产品类别）, 它具有解决现有问题的强大能力；我们的产品与产品替代选择不同，</p>
+</li>
+<li><p>我们已经针对顾客的具体应用在这款新产品中配备了关键的整体产品特征</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">BinQ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kewbing.github.io/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/">https://kewbing.github.io/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kewbing.github.io" target="_blank">好学闻道</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%BA%A7%E5%93%81/">产品</a></div><div class="post_share"><div class="social-share" data-image="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115141730.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/07/%E4%BF%A1%E6%81%AF%E6%88%98%EF%BC%9A%E6%B0%B8%E4%B8%8D%E6%B6%88%E9%80%9D%E7%9A%84%E7%94%B5%E6%B3%A2/"><img class="prev-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220608200118.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">信息化：永不消逝的电波</div></div></a></div><div class="next-post pull-right"><a href="/2022/01/23/%E5%A6%82%E4%BD%95%E7%94%A8Markdown%E5%8F%91%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"><img class="next-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/v2-b8cfb751b887f3881da4f62ab2101d99_1440w.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">如何用Markdown发一篇文章</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-20</div><div class="title">从0到1：开启商业与未来的秘密-彼得·蒂尔</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%99%BA%E6%85%A7%E9%87%91%E5%AD%97%E5%A1%94"><span class="toc-number">1.</span> <span class="toc-text">智慧金字塔</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BE%BE%E5%85%8B%E6%95%88%E5%BA%94"><span class="toc-number">2.</span> <span class="toc-text">达克效应</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F"><span class="toc-number">3.</span> <span class="toc-text">如何跨越鸿沟</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%96%B9%E5%90%91"><span class="toc-number">3.1.</span> <span class="toc-text">判断方向</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%97%B6%E6%9C%BA"><span class="toc-number">3.2.</span> <span class="toc-text">判断时机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B3%E7%AD%96"><span class="toc-number">3.3.</span> <span class="toc-text">决策</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C"><span class="toc-number">3.4.</span> <span class="toc-text">执行</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E4%B9%A6%E6%9C%AC%E6%8E%A8%E8%8D%90"><span class="toc-number">4.</span> <span class="toc-text">相关书本推荐</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: 'df38d54b0dd2fc31c96c704d364b02d3',
+      updateCountCallback: commentCount
+    },null))
 
-    if theme.post_pagination
-      include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+    gitalk.render('gitalk-container')
+  }
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
-      
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

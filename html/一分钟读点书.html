@@ -1,20 +1,414 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>一分钟读点书 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="我的藏书阁 历史  《古文观止》，诗词的集大成者《史记》 ，已购《人类简史》，能让你打开眼界的书《苏世民，我的经验和教训》，能让你打开眼界的书《百年孤独》，天道轮回《万历十五年》  经济  《聪明的投资者》《穷查理宝典》  德智体美  《营养健身全书》  小说  《小王子》《杀死一只知更鸟》  经济篇-三把斧《聪明的投资者》，教你管理资产控制风险不吃亏，如何做价值投资《穷查理宝典》，价值门徒，包含">
+<meta property="og:type" content="website">
+<meta property="og:title" content="一分钟读点书">
+<meta property="og:url" content="https://kewbing.github.io/html/%E4%B8%80%E5%88%86%E9%92%9F%E8%AF%BB%E7%82%B9%E4%B9%A6.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="我的藏书阁 历史  《古文观止》，诗词的集大成者《史记》 ，已购《人类简史》，能让你打开眼界的书《苏世民，我的经验和教训》，能让你打开眼界的书《百年孤独》，天道轮回《万历十五年》  经济  《聪明的投资者》《穷查理宝典》  德智体美  《营养健身全书》  小说  《小王子》《杀死一只知更鸟》  经济篇-三把斧《聪明的投资者》，教你管理资产控制风险不吃亏，如何做价值投资《穷查理宝典》，价值门徒，包含">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221125223306.png">
+<meta property="article:published_time" content="2022-11-25T14:30:00.000Z">
+<meta property="article:modified_time" content="2022-11-29T01:57:39.000Z">
+<meta property="article:author" content="BinQ">
+<meta property="article:tag" content="持续">
+<meta property="article:tag" content="阅读">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221125223306.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/html/%E4%B8%80%E5%88%86%E9%92%9F%E8%AF%BB%E7%82%B9%E4%B9%A6"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '一分钟读点书',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-11-29 09:57:39'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #page
-    if top_img === false
-      h1.page-title= page.title
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    case page.type
-      when 'tags'
-        include includes/page/tags.pug
-      when 'link'
-        include includes/page/flink.pug
-      when 'categories'
-        include includes/page/categories.pug
-      default
-        include includes/page/default-page.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">一分钟读点书</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><p>我的藏书阁</p>
+<p>历史</p>
+<blockquote>
+<p>《古文观止》，诗词的集大成者<br>《史记》 ，已购<br>《人类简史》，能让你打开眼界的书<br>《苏世民，我的经验和教训》，能让你打开眼界的书<br>《百年孤独》，天道轮回<br>《万历十五年》</p>
+</blockquote>
+<p>经济</p>
+<blockquote>
+<p>《聪明的投资者》<br>《穷查理宝典》</p>
+</blockquote>
+<p>德智体美</p>
+<blockquote>
+<p>《营养健身全书》</p>
+</blockquote>
+<p>小说</p>
+<blockquote>
+<p>《小王子》<br>《杀死一只知更鸟》</p>
+</blockquote>
+<h1 id="经济篇-三把斧"><a href="#经济篇-三把斧" class="headerlink" title="经济篇-三把斧"></a>经济篇-三把斧</h1><p>《聪明的投资者》，教你管理资产控制风险不吃亏，如何做价值投资<br>《穷查理宝典》，价值门徒，包含巴菲特。继续把价值投资理论发扬光大<br>《苏世民，我的经验和教训》，教你怎么空手套白狼，管理资本和玩弄政治的高手</p>
+<h1 id="小说篇-去发现"><a href="#小说篇-去发现" class="headerlink" title="小说篇-去发现"></a>小说篇-去发现</h1><h2 id="《钢铁是怎样炼成的》人最宝贵的是生命"><a href="#《钢铁是怎样炼成的》人最宝贵的是生命" class="headerlink" title="《钢铁是怎样炼成的》人最宝贵的是生命"></a>《钢铁是怎样炼成的》人最宝贵的是生命</h2><p>人最宝贵的是生命。生命属于人只有一次。人的一生应当这样度过：当他回首往事的时候，不会因为碌碌无为、虚度年华而悔恨，也不会因为为人卑劣、生活庸俗而愧疚。这样，在临终的时候，他就能够说：‘我已把自己整个的生命和全部的精力献给了世界上最壮丽的事业——为人类的解放而奋斗。</p>
+<h2 id="《白夜行》我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借着这份光，我便能把黑夜当成白天。我从来就没有太阳，所以不怕失去。"><a href="#《白夜行》我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借着这份光，我便能把黑夜当成白天。我从来就没有太阳，所以不怕失去。" class="headerlink" title="《白夜行》我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借着这份光，我便能把黑夜当成白天。我从来就没有太阳，所以不怕失去。"></a>《白夜行》我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。凭借着这份光，我便能把黑夜当成白天。我从来就没有太阳，所以不怕失去。</h2><h2 id="《牛奶可乐经济学》-你知道为什么牛奶装在方盒子里卖，可乐却装在圆瓶子里卖？"><a href="#《牛奶可乐经济学》-你知道为什么牛奶装在方盒子里卖，可乐却装在圆瓶子里卖？" class="headerlink" title="《牛奶可乐经济学》 你知道为什么牛奶装在方盒子里卖，可乐却装在圆瓶子里卖？"></a>《牛奶可乐经济学》 你知道为什么牛奶装在方盒子里卖，可乐却装在圆瓶子里卖？</h2><p>原因之一可能是，可乐大多是直接就着容器喝的，所以，由于圆柱形容器更称手，抵消了它所带来的额外存储成本。而牛奶却不是这样，人们大多不会直接就着盒子喝牛奶。同时，由于牛奶则需专门装在冰柜里，冰柜很贵，冰柜里的存储空间相当宝贵，用方形容器更能节省存储空间的成本。</p>
+<h2 id="《独处是一种能力》-寂寞三种状态：无头绪、习惯、成为一片诗意的土壤"><a href="#《独处是一种能力》-寂寞三种状态：无头绪、习惯、成为一片诗意的土壤" class="headerlink" title="《独处是一种能力》  寂寞三种状态：无头绪、习惯、成为一片诗意的土壤"></a>《独处是一种能力》  寂寞三种状态：无头绪、习惯、成为一片诗意的土壤</h2><p>人在寂寞中有三种状态。<br>一是惶惶不安，茫无头绪，百事无心，一心逃出寂寞。<br>二是渐渐习惯于寂寞，安下心来，建立起生活的条理，用读书、写作或别的事务来驱逐寂寞。<br>三是寂寞本身成为一片诗意的土壤，一种创造的契机，诱发出关于存在、生命、自我的深邃思考和体验。</p>
+<h2 id="《非暴力沟通》-非暴力沟通的四个要素：-1-观察2-感受3-需要4-请求"><a href="#《非暴力沟通》-非暴力沟通的四个要素：-1-观察2-感受3-需要4-请求" class="headerlink" title="《非暴力沟通》  非暴力沟通的四个要素：  1.观察2.感受3.需要4.请求"></a>《非暴力沟通》  非暴力沟通的四个要素：  1.观察2.感受3.需要4.请求</h2><p>如何区分命令和请求：请求没有得到满足时，提出请求的人如果批评和指责，那就是命令；如果想利用对方的内疚来达到目的，也是命令。 我们越是将他人的不顺从看作是对我们的排斥，我们所表达的愿望就越有可能被看作是命令。这将导致恶性循环，因为一旦人们认为我们是在强迫他们，他们就会不太想满足我们的愿望。</p>
+<p>国庆回家了吗？之前想通过你发的朋友圈风景照片来找到你，去白云海珠找了几次，像大海捞针一样，没有谁是一座孤岛，独处是一种能力你可能已经适应了，这世界那么大需要你去看看，希望国庆能再见一面</p>
+<h2 id="《安娜·卡列尼娜》列夫·托尔斯泰，幸福的家庭是相同的，不幸的家庭各有各的不同。"><a href="#《安娜·卡列尼娜》列夫·托尔斯泰，幸福的家庭是相同的，不幸的家庭各有各的不同。" class="headerlink" title="《安娜·卡列尼娜》列夫·托尔斯泰，幸福的家庭是相同的，不幸的家庭各有各的不同。"></a>《安娜·卡列尼娜》列夫·托尔斯泰，幸福的家庭是相同的，不幸的家庭各有各的不同。</h2><h2 id="《月亮与六便士》追逐梦想就是追逐自己的厄运-在满地都是六便士的街上-他抬起头看到了月光。"><a href="#《月亮与六便士》追逐梦想就是追逐自己的厄运-在满地都是六便士的街上-他抬起头看到了月光。" class="headerlink" title="《月亮与六便士》追逐梦想就是追逐自己的厄运,在满地都是六便士的街上,他抬起头看到了月光。"></a>《月亮与六便士》追逐梦想就是追逐自己的厄运,在满地都是六便士的街上,他抬起头看到了月光。</h2><h2 id="《追风筝的人》要鼓起勇气去追寻那飘落在远方的风筝，这样才能获得内心的安宁。"><a href="#《追风筝的人》要鼓起勇气去追寻那飘落在远方的风筝，这样才能获得内心的安宁。" class="headerlink" title="《追风筝的人》要鼓起勇气去追寻那飘落在远方的风筝，这样才能获得内心的安宁。"></a>《追风筝的人》要鼓起勇气去追寻那飘落在远方的风筝，这样才能获得内心的安宁。</h2><p>每个人的命运都像风筝一样，它往更高更远的天空，但却受着那根细细丝线的牵引而无法摆脱。但也正因有这根丝线的牵引，它才不至于消失在天际或跌落尘埃，而是在空中划出优美的人生轨迹。当这根丝线被割断，就要鼓起勇气去追寻那飘落在远方的风筝，这样才能获得内心的安宁。</p>
+<h2 id="《你当像鸟飞往你的山》-我被山间的节律养育，在这节律中没有根本性的变化，只有周而复始的转变"><a href="#《你当像鸟飞往你的山》-我被山间的节律养育，在这节律中没有根本性的变化，只有周而复始的转变" class="headerlink" title="《你当像鸟飞往你的山》  我被山间的节律养育，在这节律中没有根本性的变化，只有周而复始的转变"></a>《你当像鸟飞往你的山》  我被山间的节律养育，在这节律中没有根本性的变化，只有周而复始的转变</h2><p>我被山间的节律养育，在这节律中没有根本性的变化，只有周而复始的转变。太阳每天清晨照常升起，扫过山谷，最后坠入山峰后面。冬天落下的雪总是在春天融化。我们的生活在轮回——四季轮回，昼夜轮回——在永恒的变换中轮回，每完成一次轮回，就意味着一切未有任何改变。我曾相信我们一家是这不朽模式中的一部分，相信从某种意义上来说，我们会永生。但永生只属于大山。</p>
+<h2 id="《平凡的世界》-路遥，其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗"><a href="#《平凡的世界》-路遥，其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗" class="headerlink" title="《平凡的世界》-路遥，其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗"></a>《平凡的世界》-路遥，其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗</h2><p>其实我们每个人的生活都是一个世界，即使最平凡的人也要为他生活的那个世界而奋斗。<br>命运总是不如人愿。但往往是在无数的痛苦中，在重重的矛盾和艰辛中，才使人成熟起来。</p>
+<p><a target="_blank" rel="noopener" href="https://www.mingyantong.com/ju/54329">生活不能等待别人来安排，要自己去争取和奋斗；而不论其结果是喜是悲，但可以慰藉的是，你总不枉在这世界上活了一场。有了这样的认识，你就会珍重生活，而不会玩世不恭；同时，也会给人自身注入一种强大的内在力量。</a></p>
+<h2 id="《百年孤独》生命中曾经经历过的所有绚烂，终究都要用寂寞来偿还。"><a href="#《百年孤独》生命中曾经经历过的所有绚烂，终究都要用寂寞来偿还。" class="headerlink" title="《百年孤独》生命中曾经经历过的所有绚烂，终究都要用寂寞来偿还。"></a>《百年孤独》生命中曾经经历过的所有绚烂，终究都要用寂寞来偿还。</h2><h2 id="《三体》弱小和无知不是生存的障碍，傲慢才是"><a href="#《三体》弱小和无知不是生存的障碍，傲慢才是" class="headerlink" title="《三体》弱小和无知不是生存的障碍，傲慢才是"></a>《三体》弱小和无知不是生存的障碍，傲慢才是</h2><h2 id="《上瘾》习惯就像是珍珠"><a href="#《上瘾》习惯就像是珍珠" class="headerlink" title="《上瘾》习惯就像是珍珠"></a>《上瘾》习惯就像是珍珠</h2><p>习惯就像是珍珠。牡蛎中之所以能形成天然珍珠，是因为进入牡蛎的小沙粒被其中的珍珠质 层层包裹起来，经年累月之后最终变为光滑的珍珠。是什么开启了这个过程？是因为微小异 物的“ 入侵” 。一颗沙粒，或是一个不受欢迎的寄生物，触发牡蛎的生理系统做出了反应，用 一层层发亮的外膜将入侵者紧紧包裹起来。</p>
+<h2 id="《老人与海》一个人并不是生来要给打败的-你尽可把他消灭-可就是打不败他。"><a href="#《老人与海》一个人并不是生来要给打败的-你尽可把他消灭-可就是打不败他。" class="headerlink" title="《老人与海》一个人并不是生来要给打败的,你尽可把他消灭,可就是打不败他。"></a>《老人与海》一个人并不是生来要给打败的,你尽可把他消灭,可就是打不败他。</h2><h2 id="《简爱》爱情可以跨越年龄的鸿沟，只要是真挚的。心灵契合才是最终归宿。"><a href="#《简爱》爱情可以跨越年龄的鸿沟，只要是真挚的。心灵契合才是最终归宿。" class="headerlink" title="《简爱》爱情可以跨越年龄的鸿沟，只要是真挚的。心灵契合才是最终归宿。"></a>《简爱》爱情可以跨越年龄的鸿沟，只要是真挚的。心灵契合才是最终归宿。</h2><p>你以为我贫穷、相貌平平就没有感情吗？我向你发誓，如果上帝赋予我财富和美貌我会让你无法离开我，就像我现在无法离开你一样。虽然上帝没有这么做，可我们在精神上依然是平等的。</p>
+<h2 id="《岛上书店-》没有谁是一座孤岛，每本书都是一个世界。"><a href="#《岛上书店-》没有谁是一座孤岛，每本书都是一个世界。" class="headerlink" title="《岛上书店 》没有谁是一座孤岛，每本书都是一个世界。"></a>《岛上书店 》没有谁是一座孤岛，每本书都是一个世界。</h2><p>岛上书店是间维多利亚风格的小屋，门廊上挂着褪色的招牌，上面写着：没有谁是一座孤岛，每本书都是一个世界。</p>
+<h2 id="《假如给我三天光明》看到那些鼓励我生活下去的、去看黑夜变成白昼的动人奇迹、我将在当前的日常生活中度过"><a href="#《假如给我三天光明》看到那些鼓励我生活下去的、去看黑夜变成白昼的动人奇迹、我将在当前的日常生活中度过" class="headerlink" title="《假如给我三天光明》看到那些鼓励我生活下去的、去看黑夜变成白昼的动人奇迹、我将在当前的日常生活中度过"></a>《假如给我三天光明》看到那些鼓励我生活下去的、去看黑夜变成白昼的动人奇迹、我将在当前的日常生活中度过</h2><p>第一天：我要透过“灵魂之窗”看到那些鼓励我生活下去的善良、温厚与心怀感动的人们。<br>第二天：我要在黎明起身，去看黑夜变成白昼的动人奇迹。我将怀着敬畏之心，仰望壮丽的曙光全景，去看太阳如何唤醒了沉睡的大地。<br>第三天：我将在当前的日常生活中度过，到为生活而奔忙的人们经常去的地方去体验他们的快乐、忧伤、感动与善良。</p>
+<h2 id="《挪威的森林》村上春树，每个人都有属于自己的一片森林"><a href="#《挪威的森林》村上春树，每个人都有属于自己的一片森林" class="headerlink" title="《挪威的森林》村上春树，每个人都有属于自己的一片森林"></a>《挪威的森林》村上春树，每个人都有属于自己的一片森林</h2><p>，也许我们从来不曾走过，但它一直在那里，总会在那里。迷失的人迷失了，相逢的人会再相逢。</p>
+<h2 id="《像火箭科学家一样思考》-我们要系统的怀疑你可能怀疑的一切事物，直到你获得无可置疑的真相。"><a href="#《像火箭科学家一样思考》-我们要系统的怀疑你可能怀疑的一切事物，直到你获得无可置疑的真相。" class="headerlink" title="《像火箭科学家一样思考》     我们要系统的怀疑你可能怀疑的一切事物，直到你获得无可置疑的真相。"></a>《像火箭科学家一样思考》     我们要系统的怀疑你可能怀疑的一切事物，直到你获得无可置疑的真相。</h2><p>我们在真实生活中是很容易略过发散思维，转而求取收敛思维的。我们会评估什么是可行的，什么是容易的，然后依赖过去的经验做出判断。采用发散思维之所以重要，还因为创意刚刚形成的时候，我们其实很难判断出哪些东西有用，哪些东西没用。<br>   我们要系统的怀疑你可能怀疑的一切事物，直到你获得无可置疑的真相。
+   </p>
+<h2 id="《灰犀牛》无视十拿九稳的事情也可能出错的事实"><a href="#《灰犀牛》无视十拿九稳的事情也可能出错的事实" class="headerlink" title="《灰犀牛》无视十拿九稳的事情也可能出错的事实"></a>《灰犀牛》无视十拿九稳的事情也可能出错的事实</h2><p>事故最终之所以会发生，就是因为我们不愿意正视它，我们不做任何进一步的追问，因为我们不愿意知道答案，我们害怕知道答案后，就不得不去处理各种麻烦棘手的问题，更害怕事情不能像我们期待的那样往好的方向发展。面对将要发生的事情，我们总是过于乐观，无视十拿九稳的事情也可能出错的事实。</p>
+<h2 id="假如生活欺骗了你，而那过去了的，就会成为亲切的怀恋。"><a href="#假如生活欺骗了你，而那过去了的，就会成为亲切的怀恋。" class="headerlink" title="假如生活欺骗了你，而那过去了的，就会成为亲切的怀恋。"></a>假如生活欺骗了你，而那过去了的，就会成为亲切的怀恋。</h2><p>假如生活欺骗了你，<br>不要悲伤，不要心急！<br>忧郁的日子里须要镇静：<br>相信吧，快乐的日子将会来临！<br>心儿永远向往着未来；<br>现在却常是忧郁：<br>一切都是瞬息，一切都将会过去；<br>而那过去了的，就会成为亲切的怀恋。</p>
+<h2 id="《人间值得》我认为在工作时就不要过于思考是喜欢还是讨厌它，适当忙碌的状态反而更好"><a href="#《人间值得》我认为在工作时就不要过于思考是喜欢还是讨厌它，适当忙碌的状态反而更好" class="headerlink" title="《人间值得》我认为在工作时就不要过于思考是喜欢还是讨厌它，适当忙碌的状态反而更好"></a>《人间值得》我认为在工作时就不要过于思考是喜欢还是讨厌它，适当忙碌的状态反而更好</h2><p>如果你能遇到自己理想的工作，那再好不过，但这种情况就像买彩票，是可遇而不可求的。不断工作着，或许哪一天就会遇到一份让你喜欢的工作……带着这样的心态，工作中莫名的压力和烦恼就会烟消云散。</p>
+<p>不喜欢工作的大多数是人际关系出了问题。对有些人而言，不管他们做什么工作，他们都讨厌工作，这也许是与人交往上出现了问题。</p>
+<p>遇到这种情况，我认为在工作时就不要过于思考是喜欢还是讨厌它。</p>
+<p>无论何种工作都有可能进入忘我的状态。过多的空闲有时会带来负面影响，适当忙碌的状态反而更好。</p>
+<h2 id="《原则》达利欧人生原则的“五步流程”方法，这五步分别是：确定目标，发现问题，诊断问题，设计方案，行动起来达成结果。"><a href="#《原则》达利欧人生原则的“五步流程”方法，这五步分别是：确定目标，发现问题，诊断问题，设计方案，行动起来达成结果。" class="headerlink" title="《原则》达利欧人生原则的“五步流程”方法，这五步分别是：确定目标，发现问题，诊断问题，设计方案，行动起来达成结果。"></a>《原则》达利欧人生原则的“五步流程”方法，这五步分别是：确定目标，发现问题，诊断问题，设计方案，行动起来达成结果。</h2><p>其中的要点是，直面问题，不忽视问题，从痛苦中反思学习成长。</p>
+<p>第一步，确定目标；<br>第二步，发现遇到问题；<br>第三步，对问题进行诊断；<br>第四步，设计方案；<br>第五步，实际执行，达成成果。</p>
+<p>看这个五步流程的图示，你会发现，它不是一个持续向上的直线，而是在问题、诊断那个地方向下折回来，然后重新向上。</p>
+<h2 id="《围城》婚姻是一座围城，城外的人想进去，城里的人想出来"><a href="#《围城》婚姻是一座围城，城外的人想进去，城里的人想出来" class="headerlink" title="《围城》婚姻是一座围城，城外的人想进去，城里的人想出来"></a>《围城》婚姻是一座围城，城外的人想进去，城里的人想出来</h2><h2 id="《货币战争》经济增长模式两种，一种是由储蓄积累起真正的财富，二种是由债务拉动型经济增长"><a href="#《货币战争》经济增长模式两种，一种是由储蓄积累起真正的财富，二种是由债务拉动型经济增长" class="headerlink" title="《货币战争》经济增长模式两种，一种是由储蓄积累起真正的财富，二种是由债务拉动型经济增长"></a>《货币战争》经济增长模式两种，一种是由储蓄积累起真正的财富，二种是由债务拉动型经济增长</h2><p>经济增长模式两种：<br>一种是由储蓄积累起真正的财富，然后这些真金白银的资本被用于投资，从而产生更多的财富，这种财富是实实在在的，虽然见效慢，但增长的质量高，副作用小。<br>二种是由债务拉动型经济增长，国家、企业、个人大量负债，这些债务经过银行系统的货币化之后，巨额债务货币增发产生了泡沫财富，货币贬值，市场资源配置扭曲。 </p>
+<p>债务货币首先产生的是通货膨胀现象，另一方面在生产领域造成产能过剩<br>通货膨胀现象，尤其是资产通货膨胀。另一方面在生产领域造成产能过剩，重复建设严重，极大了浪费了资源，压低了市场价格，使资产通货膨胀和货币紧缩同时进行。 另一个债务货币造成经济血液高血脂。货币发行泛滥，钱越来越多. *建立一个以金银为支撑的稳定的中国货币度量衡体系，将债务一步步从货币流通中驱逐出去，稳步提高银行储备金比例作为金融宏观调控的重要手段，使金融行业的利润率保持在社会各行业的平均利润率水平上。</p>
+<h2 id="《龙族》关于死亡"><a href="#《龙族》关于死亡" class="headerlink" title="《龙族》关于死亡"></a>《龙族》关于死亡</h2><p>可人不是断气的时候才真的死了。有人说人会死三次，第一次是他断气的时候 ，从生物学上他死了；第二次是他下葬的时候，人们来参加他的葬礼，怀念他的一生，然后在社会上他死了，不再会有他的位置；第三次是最后一个记得他的人把他忘记的时候，那时候他才真正的死了。</p>
+<h2 id="《源泉》像个大人一样生存，像个孩子一样生活。"><a href="#《源泉》像个大人一样生存，像个孩子一样生活。" class="headerlink" title="《源泉》像个大人一样生存，像个孩子一样生活。"></a>《源泉》像个大人一样生存，像个孩子一样生活。</h2><h2 id="《追风筝的人》为你，千千万万遍。"><a href="#《追风筝的人》为你，千千万万遍。" class="headerlink" title="《追风筝的人》为你，千千万万遍。"></a>《追风筝的人》为你，千千万万遍。</h2><h2 id="《遇见未知的自己》但是我们仍然保有一个基本的内在真我的感觉。-这个内在真我不会随你的身体而生，也不随着死亡而消失，它可以观察人世百态，欣赏日出月落，云起云灭，而岁月的流转，环境的变迁，都不会改变它。"><a href="#《遇见未知的自己》但是我们仍然保有一个基本的内在真我的感觉。-这个内在真我不会随你的身体而生，也不随着死亡而消失，它可以观察人世百态，欣赏日出月落，云起云灭，而岁月的流转，环境的变迁，都不会改变它。" class="headerlink" title="《遇见未知的自己》但是我们仍然保有一个基本的内在真我的感觉。  这个内在真我不会随你的身体而生，也不随着死亡而消失，它可以观察人世百态，欣赏日出月落，云起云灭，而岁月的流转，环境的变迁，都不会改变它。"></a>《遇见未知的自己》但是我们仍然保有一个基本的内在真我的感觉。  这个内在真我不会随你的身体而生，也不随着死亡而消失，它可以观察人世百态，欣赏日出月落，云起云灭，而岁月的流转，环境的变迁，都不会改变它。</h2><p>这个内在真我不会随你的身体而生<br>我们从小到大，都有一个意识，那个意识在你小时候有记忆以来，就一直存在，  陪着你上学、读书、结婚、做事。所以，有一个东西，在我们里面是一直没有 变的，尽管我们的身体、感情、感受、知识和经验都一直在改变，</p>
+<h2 id="《热风·随感录四十一》-鲁迅，愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话"><a href="#《热风·随感录四十一》-鲁迅，愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话" class="headerlink" title="《热风·随感录四十一》-鲁迅，愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话"></a>《热风·随感录四十一》-鲁迅，愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话</h2><p>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光，就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。此后如竟没有炬火，我便是唯一的光。</p>
+<h2 id="《喜宝》有能力的人影响别人，没能力的一群受人影响。"><a href="#《喜宝》有能力的人影响别人，没能力的一群受人影响。" class="headerlink" title="《喜宝》有能力的人影响别人，没能力的一群受人影响。"></a>《喜宝》有能力的人影响别人，没能力的一群受人影响。</h2><h2 id="“少不读水浒，老不看三国”后还有下句，下句才是老祖宗的大智慧，却少有人知，那就是“男不看西游，女不读红楼”"><a href="#“少不读水浒，老不看三国”后还有下句，下句才是老祖宗的大智慧，却少有人知，那就是“男不看西游，女不读红楼”" class="headerlink" title="“少不读水浒，老不看三国”后还有下句，下句才是老祖宗的大智慧，却少有人知，那就是“男不看西游，女不读红楼”"></a>“少不读水浒，老不看三国”后还有下句，下句才是老祖宗的大智慧，却少有人知，那就是“男不看西游，女不读红楼”</h2><h2 id="《明朝那些事儿》朱元璋只是历史的执行者，他并不是历史的创造者"><a href="#《明朝那些事儿》朱元璋只是历史的执行者，他并不是历史的创造者" class="headerlink" title="《明朝那些事儿》朱元璋只是历史的执行者，他并不是历史的创造者"></a>《明朝那些事儿》朱元璋只是历史的执行者，他并不是历史的创造者</h2><p>毫无疑问，朱元璋是那个时代最杰出的人物，他有着卓越的军事和政治天赋，精力充沛，他执政三十一年，勤勤恳恳日夜不息的处理政务，一个天才加上勤奋，世上还有什么事情是他做不成的呢？</p>
+<p>　　他相信自己能够操控一切、改变一切，他已经凭借自己的才能获得了命运之神的垂青，成为了这片广阔大地的统治者。但他并不满足，所以他按照自己的设想创造了一整套独特的社会体系和架构。他相信，就如同以往一样，他会胜利的，事情是会按照他的设想进行下去的。</p>
+<p>　　可是历史规则这个对手与之前的都不相同，他无影无形却又无处不在。他没有去招惹朱元璋这位猛人，却不断的缠扰着朱元璋的子孙，而朱元璋的体系也在时间的磨砺下变得千疮百孔，最终失去了控制力和约束力，历史固执的按照自己的逻辑方式走了下去。</p>
+<p>　　事实证明，在这场斗争中，朱元璋失败了。</p>
+<p>　　原因何在呢，答案看起来似乎深不可测，其实很简单：</p>
+<p>　　因为朱元璋只是历史的执行者，他并不是历史的创造者。</p>
+<p>　　即使没有朱元璋，也会有李元璋、王元璋来完成历史的使命，推翻旧的王朝，建立新的帝国。历史是一个好客的主人，但却从不容许客人取代它的位置。历史也从来就不是一个人或是几个人可以支配创造的。所谓时势造英雄，实乃至理名言。</p>
+<p>　　那么谁才是历史的创造者？又是谁支配着这些历史规则呢？</p>
+<p>　　真正创造支配历史的是稻田里辛勤劳作的老农，是官道上来往的商贾，是朝堂上进言的官员，是孤灯下苦读的学子。</p>
+<p>　　是的，正是这些普通人创造和支配着历史，他们中的大多数人注定默默无闻，都无法在历史上留下自己的名字，但他们也是伟大的，他们用自己勤奋的工作不断推动着历史的前进，他们才是历史真正的主人。</p>
+<p>　　从古至今，从无例外。</p>
+<h2 id="《平凡的世界》-无论幸福还是苦难，无论光荣还是屈辱，你都要自己遭遇与承受。，我想你只享有苦难和屈辱。"><a href="#《平凡的世界》-无论幸福还是苦难，无论光荣还是屈辱，你都要自己遭遇与承受。，我想你只享有苦难和屈辱。" class="headerlink" title="《平凡的世界》  无论幸福还是苦难，无论光荣还是屈辱，你都要自己遭遇与承受。，我想你只享有苦难和屈辱。"></a>《平凡的世界》  无论幸福还是苦难，无论光荣还是屈辱，你都要自己遭遇与承受。，我想你只享有苦难和屈辱。</h2><p>生活中真正的勇士向来默默无闻，喧哗不止的永远是自视高贵的一群。</p>
+<h2 id="《悲惨世界》世界上最宽阔的是海洋，比海洋更宽阔的是天空，比天空更宽阔的是人的心灵。"><a href="#《悲惨世界》世界上最宽阔的是海洋，比海洋更宽阔的是天空，比天空更宽阔的是人的心灵。" class="headerlink" title="《悲惨世界》世界上最宽阔的是海洋，比海洋更宽阔的是天空，比天空更宽阔的是人的心灵。"></a>《悲惨世界》世界上最宽阔的是海洋，比海洋更宽阔的是天空，比天空更宽阔的是人的心灵。</h2><h2 id="《喜欢一个人》-始于颜值，陷于才华，忠于人品"><a href="#《喜欢一个人》-始于颜值，陷于才华，忠于人品" class="headerlink" title="《喜欢一个人》+始于颜值，陷于才华，忠于人品"></a>《喜欢一个人》+始于颜值，陷于才华，忠于人品</h2><h2 id="《对不起，我控制了你的大脑》黑客的目标是找到某个系统的薄弱环节"><a href="#《对不起，我控制了你的大脑》黑客的目标是找到某个系统的薄弱环节" class="headerlink" title="《对不起，我控制了你的大脑》黑客的目标是找到某个系统的薄弱环节"></a>《对不起，我控制了你的大脑》黑客的目标是找到某个系统的<strong>薄弱环节</strong></h2><p>而后加以利用。在心理战中，薄弱环节是人们的思维缺陷。如果你试图黑进一个人的思想，你得先识别出这个人的认知偏差，然后才能加以利用。</p>
+<h2 id="《人工科学》-赫伯特·西蒙"><a href="#《人工科学》-赫伯特·西蒙" class="headerlink" title="《人工科学》 赫伯特·西蒙"></a>《人工科学》 赫伯特·西蒙</h2><p>我们的时代是人们动辄表达悲观情绪与忧虑的时代，人类从来就面临很多问题，但如果我们认识到，我们不必解决所有问题，也许就能更乐观一些。我们的根本任务就是保证留给未来的各种选择不减少，甚至在增加一些选择。要是不留给子孙后代同样多的冒险机会，同样多的从事新颖而有趣的设计机会，他们是无从获得它们的。</p>
+<p>人工科学，就提供了这样的机会。</p>
+<h2 id="《遥远的救世主》出处：豆豆的长篇小说"><a href="#《遥远的救世主》出处：豆豆的长篇小说" class="headerlink" title="《遥远的救世主》出处：豆豆的长篇小说"></a>《遥远的救世主》出处：豆豆的长篇小说</h2><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221117230815.png"></p>
+<p>解释：</p>
+<p>本是后山人：没见过世面、没有学识的人。<br>偶做前堂客：偶然的机会登上大雅之堂。<br>醉舞经阁半卷书：自我陶醉地卖弄藏经阁万卷之一的皮毛学问。  <br>坐井说天阔：坐井观天的一孔之见。  <br>大志戏功名：志向远大不把功名放在眼里，彻底超脱的至高境界。  <br>海斗量福祸：心胸有如海斗那么宽广，可以度量福祸之事。  <br>论到囊中羞涩时：但是谈到自己连饭都吃不饱的贫穷境地时。  <br>怒指乾坤错：却指着手指发怒说是天地的错。  讽刺那些眼高手低，好高骛远的人。</p>
+<p>说人话就是：<br>本是在小城里长大没见过大世面的人，偶然的机会站上讲台，<br>醉里看书学了一点点知识，然后开始说脱口秀，<br>志向远大不把功名放在眼里，不管是祸是福都不是我所能估量的，<br>可是说到身上荷包空空如也的时候，就对老天说“我是真的穷”</p>
+<p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221117230431.png"></p>
+<h1 id="诗词篇-精髓"><a href="#诗词篇-精髓" class="headerlink" title="诗词篇-精髓"></a>诗词篇-精髓</h1><h2 id="文章开头的句子：山色苍翠，已无挂绿，湖水清洌，已无冰渍"><a href="#文章开头的句子：山色苍翠，已无挂绿，湖水清洌，已无冰渍" class="headerlink" title="文章开头的句子：山色苍翠，已无挂绿，湖水清洌，已无冰渍"></a>文章开头的句子：山色苍翠，已无挂绿，湖水清洌，已无冰渍</h2><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220617215929.png"></p>
+<h2 id="青玉案·元夕-宋-辛弃疾-众里寻他千百度-蓦然回首-那人却在-灯火阑珊处。"><a href="#青玉案·元夕-宋-辛弃疾-众里寻他千百度-蓦然回首-那人却在-灯火阑珊处。" class="headerlink" title="青玉案·元夕 (宋)辛弃疾 ,众里寻他千百度,蓦然回首,那人却在,灯火阑珊处。"></a>青玉案·元夕 (宋)辛弃疾 ,众里寻他千百度,蓦然回首,那人却在,灯火阑珊处。</h2><p><strong>东风</strong>夜放花千树,更吹落,星如雨。<strong>宝马</strong>雕车香满路。凤箫声动,玉壶光转,一夜鱼龙舞。 蛾儿雪柳黄金缕,笑语盈盈暗香去。众里寻他千<strong>百度</strong>,蓦然回首,那人却在,灯火阑珊处。<br>宋代词人辛弃疾创作的一首词，元夕指元宵节。此词从极力渲染元宵节绚丽多彩的热闹场面，一首词出了多个名词：东风、宝马、百度<br>秋水文章不染尘”,即谓文辞笔墨如秋水一般清澈明净,不沾染半点世俗尘埃,其深刻的潜藏蕴含了一种脱俗无尘的境界</p>
+<h2 id="兰亭序-流觞曲水-群贤毕至"><a href="#兰亭序-流觞曲水-群贤毕至" class="headerlink" title="兰亭序,流觞曲水,群贤毕至"></a>兰亭序,流觞曲水,群贤毕至</h2><h2 id="《滕王阁序》达人知命，宁移白首之心，不坠青云之志"><a href="#《滕王阁序》达人知命，宁移白首之心，不坠青云之志" class="headerlink" title="《滕王阁序》达人知命，宁移白首之心，不坠青云之志"></a>《滕王阁序》达人知命，宁移白首之心，不坠青云之志</h2><p>时维九月，序属三秋。潦水尽而寒潭清，烟光凝而暮山紫。俨骖騑于上路，访风景于崇阿。临帝子之长洲，得天人之旧馆。层峦耸翠，上出重霄；飞阁流丹，下临无地。鹤汀凫渚，穷岛屿之萦回；桂殿兰宫，即冈峦之体势。披绣闼，俯雕甍，山原旷其盈视，川泽纡其骇瞩。闾阎扑地，钟鸣鼎食之家；舸舰弥津，青雀黄龙之舳。云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色。渔舟唱晚，响穷彭蠡之滨，雁阵惊寒，声断<strong>衡阳</strong>之浦。</p>
+<p>所赖君子见机，达人知命。<br>老当益壮，宁移白首之心。<br>穷且宜坚，不坠青云之志。</p>
+<h2 id="《论语》曾子曰：“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”"><a href="#《论语》曾子曰：“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”" class="headerlink" title="《论语》曾子曰：“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”"></a>《论语》曾子曰：“吾日三省吾身：为人谋而不忠乎？与朋友交而不信乎？传不习乎？”</h2><h2 id="左宗棠题于江苏无锡梅园的诗句"><a href="#左宗棠题于江苏无锡梅园的诗句" class="headerlink" title="左宗棠题于江苏无锡梅园的诗句"></a>左宗棠题于江苏无锡梅园的诗句</h2><p>李嘉诚办公室悬挂的唯一的一幅对联，是清代儒将左宗棠题于江苏无锡梅园的诗句：</p>
+<p>发上等愿，结中等缘，享下等福；<br>择高处立，寻平处住，向宽处行。</p>
+<h2 id="题衡阳石鼓书院"><a href="#题衡阳石鼓书院" class="headerlink" title="题衡阳石鼓书院"></a>题衡阳石鼓书院</h2><p>学贯九流，汇此地人文法海；<br>秀冠三湘，看群贤事业名山。</p>
+<h2 id="出自宋代朱熹《出山道中口占》"><a href="#出自宋代朱熹《出山道中口占》" class="headerlink" title="出自宋代朱熹《出山道中口占》"></a>出自宋代朱熹《出山道中口占》</h2><p>川原红绿一时新，暮雨朝晴更可人。<br>书册埋头无了日，不如抛却去寻春。</p>
+<h2 id="《为学》人之为学有难易乎-学之，则难者亦易矣；不学，则易者亦难矣。"><a href="#《为学》人之为学有难易乎-学之，则难者亦易矣；不学，则易者亦难矣。" class="headerlink" title="《为学》人之为学有难易乎? 学之，则难者亦易矣；不学，则易者亦难矣。"></a>《为学》人之为学有难易乎? 学之，则难者亦易矣；不学，则易者亦难矣。</h2><p>吾资之昏，不逮人也；吾材之庸，不逮人也。旦旦而学之，久而不怠焉，迄乎成，而亦不知其昏与庸也。吾资之聪，倍人也；吾材之敏，倍人也；屏弃而不用，其与昏与庸无以异也。圣人之道，卒于鲁也传之。然则昏庸聪敏之用，岂有常哉?</p>
+<h2 id="《劝学》积土成山，风雨兴焉"><a href="#《劝学》积土成山，风雨兴焉" class="headerlink" title="《劝学》积土成山，风雨兴焉"></a>《劝学》积土成山，风雨兴焉</h2><p> 积土成山，风雨兴焉；积水成渊，蛟龙生焉；积善成德，而神明自得，圣心备焉。故不积跬步，无以至千里；不积小流，无以成江海。骐骥一跃，不能十步；驽马十驾，功在不舍。锲而舍之，朽木不折；锲而不舍，金石可镂。蚓无爪牙之利，筋骨之强，上食埃土，下饮黄泉，用心一也。蟹六跪而二螯，非蛇鳝之穴无可寄托者，用心躁也。</p>
+<h2 id="《-宋书·沈攸之传-》攸之晚好读书，手不释卷，《史》、《汉》多所谙忆，常叹曰：‘早知穷达有命，恨不十年读书。"><a href="#《-宋书·沈攸之传-》攸之晚好读书，手不释卷，《史》、《汉》多所谙忆，常叹曰：‘早知穷达有命，恨不十年读书。" class="headerlink" title="《 宋书·沈攸之传 》攸之晚好读书，手不释卷，《史》、《汉》多所谙忆，常叹曰：‘早知穷达有命，恨不十年读书。"></a>《 宋书·沈攸之传 》攸之晚好读书，手不释卷，《史》、《汉》多所谙忆，常叹曰：‘早知穷达有命，恨不十年读书。</h2><h2 id="《荀子·修身》"><a href="#《荀子·修身》" class="headerlink" title="《荀子·修身》"></a>《荀子·修身》</h2><p>治气养心之术：血气刚强，则柔之以调和；知虑渐深，则一之以易良；勇胆猛戾，则辅之以道顺；齐给便利，则节之以动止；狭隘褊小，则廓之以广大；卑湿重迟贪利，则抗之以高志；<mark style="background: #FF5582A6;">庸众驽散，则刦之以师友</mark> ；怠慢僄弃，则照之以祸灾；愚款端悫，则合之以礼乐，通之以思索。凡治气养心之术，莫径由礼，莫要得师，莫 神一好。夫是之谓治气养心之术也。</p>
+<p>调理血气，修养思想的方法是：对血气刚强的，就用心平气和使其顺服；<mark style="background: #BBFABBA6;">思想深沉而不明朗的，就用坦率、平易的方法去同化他</mark> ；勇猛乖张的，就用疏导的方式辅助他；对性急嘴快的，就用动静相辅相成的方式去节制他；对心胸狭窄的，就用宽宏大量来开导他；对于卑下、迟钝、贪图小利的，就用高尚的志向去提高他；对庸俗散漫的，就用良师益友去改造他；对怠慢、轻薄、自暴自弃的，就用招致灾祸后果使他明了；<mark style="background: #BBFABBA6;">对于愚钝、朴实、端庄、拘谨的，就用礼仪音乐去协调他，用深思熟虑去开导他</mark> 。凡是调理血气、修养思想的方法，最直接的就是遵循礼义，得到好的老师的指导更重要的了，没有什么比专心一致更神妙的了。这就是所说的调理血气、修养思想的方法。</p>
+<p>以梦为马，不负韶华</p>
+<p>子在川上曰：“逝者如斯夫，不舍昼夜”。</p>
+<h2 id="《邹忌讽齐王纳谏》吾妻之美我者，私我也；妾之美我者，畏我也；客之美我者，欲有求于我也。"><a href="#《邹忌讽齐王纳谏》吾妻之美我者，私我也；妾之美我者，畏我也；客之美我者，欲有求于我也。" class="headerlink" title="《邹忌讽齐王纳谏》吾妻之美我者，私我也；妾之美我者，畏我也；客之美我者，欲有求于我也。"></a>《邹忌讽齐王纳谏》吾妻之美我者，私我也；妾之美我者，畏我也；客之美我者，欲有求于我也。</h2><p>邹忌修5八尺6有余，而形貌昳丽7。朝服衣冠8，窥镜9，谓其妻曰：“我孰10 与11城北徐公美？”其妻曰：“君美甚，徐公何能及12君也？”城北徐公，齐国之美丽者也。忌不自信，而复问其妾曰：“吾孰与徐公美？”妾曰：“徐公何能及君也？”旦日13，客从外来，与坐谈，问之客曰：“吾与徐公孰美？”客曰：“徐公不若君之美也。”明日徐公来，孰视之14，自以为不如；窥镜而自视，又弗如远甚15。暮寝16而思之，曰：“<strong>吾妻之美我者，私我也；妾之美我者，畏我也；客之美我者，欲有求于我也。</strong>”</p>
+<p>于是入朝见威王，曰：“臣诚知不如徐公美。臣之妻私臣，臣之妾畏臣，臣之客欲有求于臣，皆以美于徐公20。今齐地21方22千里，百二十城，宫妇23左右24莫不私王，朝廷之臣莫不畏王，四境之内25莫不有求于王：由此观之26，王之蔽27甚矣。”</p>
+<p>王曰：“善28。”乃29下令：“<strong>群臣吏民，能面刺30寡人之过者，受上赏31；上书谏寡人者，受中赏；能谤讥于市朝32，闻33寡人之耳者，受下赏。</strong>”令初下，群臣进谏，门庭若市；数月之后，时时而间进34；期35年之后，虽欲言，无可进者。</p>
+<p>燕、赵、韩、魏闻之，皆朝于齐。此所谓战胜于朝廷</p>
+<h2 id="《人间词话》王国维眼中的三境界"><a href="#《人间词话》王国维眼中的三境界" class="headerlink" title="《人间词话》王国维眼中的三境界"></a>《人间词话》王国维眼中的三境界</h2><p>“昨夜西风凋碧树，独上高楼，望尽天涯路”（晏殊《蝶恋花》）– 比喻人在逆境中，心志不衰，精神不倒，勤于探索的精神<br>“衣带渐宽终不悔，为伊消得人憔悴”（柳永《蝶恋花》）   –为了实现远大的志向和理想，甘愿吃苦，不怕劳其筋骨，饿其体肤，历经磨难，终不后悔的精神<br>“众里寻他千百度，蓦然回首，那人却在灯火阑珊处”（辛弃疾《青玉案》） –比喻经过艰苦的探求，豁然有所领悟，有了突破，终于取得了成功的喜悦。</p>
+<h2 id="《归园田居·其一》"><a href="#《归园田居·其一》" class="headerlink" title="《归园田居·其一》"></a>《归园田居·其一》</h2><p>少无适俗韵，性本爱丘山。 误落尘网中，一去三十年。  <br>羁鸟恋旧林，池鱼思故渊。  开荒南野际，守拙归园田。  <br>方宅十余亩，草屋八九间。  榆柳荫后檐，桃李罗堂前。  <br>暧暧远人村，依依墟里烟。  狗吠深巷中，鸡鸣桑树颠。  <br>户庭无尘杂，虚室有余闲。  久在樊笼里，复得返自然。  </p>
+<h2 id="《归园田居-其三-》"><a href="#《归园田居-其三-》" class="headerlink" title="《归园田居.其三 》"></a>《归园田居.其三 》</h2><p>种豆南山下，草盛豆苗稀。  晨兴理荒秽，带月荷锄归。  <br>道狭草木长，夕露沾我衣。  衣沾不足惜，但使愿无违。  </p>
+<h2 id="《归园田居·其四》"><a href="#《归园田居·其四》" class="headerlink" title="《归园田居·其四》"></a>《归园田居·其四》</h2><p>久去山泽游，浪莽林野娱。  试携子侄辈，披榛步荒墟。<br>徘徊丘陇间，依依昔人居。  井灶有遗处，桑竹残朽株。<br>借问采薪者，此人皆焉如。  薪者向我言，死没无复余。<br>一世弃朝市，此语真不虚。  人生似幻化，终当归空无。   </p>
+<p>【译文】：</p>
+<p>其一</p>
+<p>少小时就没有随俗气韵，自己的天性是热爱自然。</p>
+<p>偶失足落入了仕途罗网，转眼间离田园已十余年。</p>
+<p>笼中鸟常依恋往日山林，池里鱼向往着从前深渊。</p>
+<p>我愿在南野际开垦荒地，保持着拙朴性归耕田园。</p>
+<p>绕房宅方圆有十余亩地，还有那茅屋草舍八九间。</p>
+<p>榆柳树荫盖着房屋后檐，争春的桃与李列满院前。</p>
+<p>远处的邻村舍依稀可见，村落里飘荡着袅袅炊烟。</p>
+<p>深巷中传来了几声狗吠，桑树顶有雄鸡不停啼唤。</p>
+<p>庭院内没有那尘杂干扰，静室里有的是安适悠闲。</p>
+<p>久困于樊笼里毫无自由，我今日总算又归返林山。</p>
+<p>其二</p>
+<p>我住在郊野外很少交住，僻巷里难闻到车马声响。</p>
+<p>白天里经常地关闭柴门，独处在空室中不生杂想。</p>
+<p>偏远的村落里人情淳厚，拨开草丛不时互相来往。</p>
+<p>相见时不谈论世俗之事，只说道桑麻的生长情况。</p>
+<p>我种植的桑麻不断长高，我开垦的土地日益增广。</p>
+<p>常担心严霜雪突然早降，使桑麻也像那零落草莽。</p>
+<p>其三</p>
+<p>南山下田野里种植豆子，结果是草茂盛豆苗疏稀。</p>
+<p>清晨起下田地铲除杂草，暮色降披月光扛锄回去。</p>
+<p>狭窄的小路上草木丛生，傍晚时有露水沾湿我衣。</p>
+<p>身上衣沾湿了并不可惜，只愿我不违背归隐心意。</p>
+<p>其四</p>
+<p>离山泽去做官已经很久，现在又返林野尝到欢娱。</p>
+<p>且携着我的儿女侄子们，拨开那乱草木寻访废墟。</p>
+<p>我往返在荒野墓地之间，依稀地可认出往日旧居。</p>
+<p>房屋的井灶下留有遗迹，桑和竹残存着枯朽干株。</p>
+<p>我打听在这里打柴的人：过去的居住者都到哪里？</p>
+<p>这里的打柴人便对我说：都死光了没有留下后裔。</p>
+<p>三十年就改变朝市面貌，这句话可真是一点不虚！</p>
+<p>人一生就好似虚幻变化，到最终都不免归于空无。</p>
+<p>其五</p>
+<p>我怀着怅恨情拄杖回家，崎岖的小路上长满荆榛。</p>
+<p>山洞里的流水又清又浅，可用来洗我足振奋精神。</p>
+<p>滤一滤我那新酿造的酒，杀一只小鸡儿招待近邻。</p>
+<p>日落后房屋里已经昏暗，没明烛也只好点燃柴薪。</p>
+<p>欢乐时都怨恨夜间大短，不觉中又看到旭日照临。</p>
+<p>其六</p>
+<p>在东边高地上种植禾苗，禾苗生长茂盛遍布田野。</p>
+<p>虽然劳作辛苦有些疲倦，但家酿浊酒还满可解乏。</p>
+<p>傍晚时分驾着车子回来，山路也渐渐地变得幽暗。</p>
+<p>望着前村已是袅袅炊烟，孩子们在家门等我回家。</p>
+<p>要问我这样做是为什么？人的一生总要从事劳作。</p>
+<p>我只希望桑麻农事兴旺，蚕事之月纺绩事务顺遂。</p>
+<p>我不求闻达心愿就这样，望结交志趣相投的朋友。</p>
+<p>【作者】</p>
+<p>陶渊明（约365年—427年），字元亮，（又一说名潜，字渊明）号五柳先生，私谥“靖节”，东晋末期南朝宋初期诗人、文学家、辞赋家、散文家。汉族，东晋浔阳柴桑人（今江西九江）。曾做过几年小官，后辞官回家，从此隐居，田园生活是陶渊明诗的主要题材，相关作品有《饮酒》、《归园田居》、《桃花源记》、《五柳先生传》、《归去来兮辞》等</p>
+<h1 id="历史-教训"><a href="#历史-教训" class="headerlink" title="历史-教训"></a>历史-教训</h1><p>葛兆光</p>
+<h2 id="《毛泽东传》-“没有调查，没有发言权。”“你对于某个问题没有调查，就停止你对于某个问题的发言权。”"><a href="#《毛泽东传》-“没有调查，没有发言权。”“你对于某个问题没有调查，就停止你对于某个问题的发言权。”" class="headerlink" title="《毛泽东传》 “没有调查，没有发言权。”“你对于某个问题没有调查，就停止你对于某个问题的发言权。”"></a>《毛泽东传》 “没有调查，没有发言权。”“你对于某个问题没有调查，就停止你对于某个问题的发言权。”</h2><h2 id="《曾国藩》"><a href="#《曾国藩》" class="headerlink" title="《曾国藩》"></a>《曾国藩》</h2><p>方正<br>士人读书，第一要有志，第二要有识，第三要有恒心<br>士人读书，第一要有志，第二要有识，第三要有恒心。有志则决不甘心为下流；有识则知道学问没有止境，不敢以一得就自足。如河伯观海，如井蛙看天，都是无识之人。有恒心则决无不成功的事。这三条缺一不可。</p>
+<h2 id="左宗棠"><a href="#左宗棠" class="headerlink" title="左宗棠"></a>左宗棠</h2><p>文忠<br>湘阴县左宗棠故居柳庄</p>
+<p>“左公克勤克俭，舍小家为大家，‘克家不私’体现他的廉政思想。<br>“经济以诗书为鹄，文章得山海之华”<br>“天下不可一日无湖南，湖南不可一日无左宗棠”</p>
+<p>1864年（同治三年）3月，左宗棠攻陷杭州，加太子少保衔，赐黄马褂。</p>
+<p>左宗棠提出了仿效戚继光“束伍”之法编练军队的主张，这与曾国藩等人的见解相合，由此推动了湘军的建立。 [109-110]  左宗棠将“练兵”视为治军的关键，其中除加强军事技术的<strong>训练</strong>外，还要对官兵进行”孝弟忠信礼义廉耻”方面的<strong>训导</strong></p>
+<p>曾国藩：论兵战，吾不如左宗棠；为国尽忠，亦以季高为冠。国幸有左宗棠也。 [156] <br>李鸿章：周旋三十年，和而不同，矜而不争，唯先生知我；焜耀九重诏，文以治内，武以治外，为天下惜公。</p>
+<p>一、好便宜者，不可与之交财。多狐疑者，不可与之谋事。<br>二、身无半亩，心忧天下；读破千卷，神交古人。<br>三、发上等愿，结中等缘，享下等福；择高处立，就平处坐，向宽处行。<br>四、穷困潦倒之时，不被人欺；飞黄腾达之日，不被人嫉。<br>五、能受天磨真铁汉，不遭人嫉是庸才。<br>七、读未见书，如得良友；读已见书，如逢故人。学问如逆水行舟，不进则退<br>八、自奉宁过于俭，待人宁过于厚。一切均从简省，断不可浪用。此惜福之道，保家之道也。<br>　　<br>清风拂柳，碧波微漾，青瓦砖房古色古香</p>
+<h2 id="《万历十五年》看问题要有宏观面"><a href="#《万历十五年》看问题要有宏观面" class="headerlink" title="《万历十五年》看问题要有宏观面"></a>《万历十五年》看问题要有宏观面</h2><p>“我们这个帝国在制度上长期存在的困难：以熟读诗书的文人治理农民，他们不可能改进这个司法制度，更谈不上保障人权。法律的解释和执行离不开传统的伦理，组织上也没有对付复杂的因素和多元关系的能力。”</p>
+</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: '451440344ce50531dc3d49327517d2fb',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,6 +1,318 @@
-extends includes/layout.pug
-block content
-  include ./includes/mixins/post-ui.pug
-  #recent-posts.recent-posts
-    +postUI
-    include includes/pagination.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta property="og:type" content="website">
+<meta property="og:title" content="好学闻道">
+<meta property="og:url" content="https://kewbing.github.io/index.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome%20(1).jpg">
+<meta property="article:author" content="BinQ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome%20(1).jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好学闻道',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-09-22 00:25:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://qiubit.oss-cn-hongkong.aliyuncs.com/wallhaven-earth.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">好学闻道</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%B0%8F%E8%AF%B4/">小说</a></span></div><div class="content">《浮生六记》是沈复（1763年—1832年），作者生活在余裕的人家，居住在苏州的沧浪亭，“事如春梦了无痕”，这本书正是沈复“浮生”的缩影，摘取了人生中最难忘的时刻缀集而成。它以夫妇二人的生活为主线，记录了平凡而又充满情趣的居家生活以及漫游经历，并没有遮掩家庭内部的龃龉，将夫妇二人不为家人所容，以致客居在外的感伤经历都记录了下来，真实而丰富地展示了当时普通人的人生际遇与生活环境。这种对家庭内部矛盾的直接书写，其中涉及古代生活艺术、家庭伦理、经济文化、山水游历等多方面的内容，使得这本书被人们称为“小《红楼梦》”。
+一部秀恩爱的小说，前半生，狗粮中的极品、古代爱情小说的奇葩、宠妻狂魔。一部后半生如列夫-托尔斯泰（1828年9月9日-1910年11月20日）《安娜-卡列尼娜》所说的一样，幸福的家庭都是相似的，不幸的家庭各有各的不幸 
+
+文学大家俞平伯说：“《浮生六记》俨如一块纯美的水晶，只见明莹，不见衬露明莹的颜色；只见精微，不见制作精微的痕迹。然而我自信这种说法不至于是溢美。想读这书的，有能辨别的罢。”
+浮生若梦，为欢几何林语堂赞芸娘(沈复的妻子)为“中国文学及中国历史上一个最可爱的女人”。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BB%8F%E5%85%B8/">经典</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81/">产品</a></span></div><div class="content">
+彼得·蒂尔，硅谷著名的创业者，曾在1998年创办了 PayPal，并在2002年以15亿美元出售给 eBay。后专注于金融投资和创业投资，曾投资过 Facebook 等著名企业。这本《从0到1》不是一本单纯讲述创业方法论的工具书，而是一本创业哲学书，书中对创业圈的很多流行观念做了深刻的反思。
+彼得·蒂尔闯入硅谷投资界，本身就以一个颠覆者的形象出现。他有一句非常著名的对硅谷投资者的批评：“We wanted flying cars, instead we got 140 characters.”（我们需要能飞的汽车，但结果却得到了140个字符——指技术含量不高的推特。）
+《从0到1》在传统时代，成功企业的商业模式是一个从1到 N 的过程，也就是在现有的基础上，复制之前的经验，通过竞争不断扩大自己的市场影响力。而在互联网时代，成功的企业却是一个从无到有、从0到1创造市场的过程，要实现这个过程，必须规避竞争、建立垄断。
+有一个笑话说，如果你发现路上所有的车都在违规逆行，那大概是你自己开反了。而彼得·蒂尔就像这样一辆车，他不仅一往无前、无所畏惧地逆向而行，还让路上所有其他的车困惑和怀疑是不是 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B4%A2%E7%BB%8F/">财经</a></span></div><div class="content">哈佛商学院，商业神话中的圣殿，商界的梵蒂冈。哈佛大学（Harvard University），简称哈佛，诞生于1636年
+这里是培养年薪10万美元工商管理硕士 （MBA）的成功摇篮，是造就总经理人才的精英工厂。30%的哈佛MBA毕业生25年后都成为公司总裁、董事长、合营企业主或自办企业主；20%的毕业生在美国500家最大的公司担任要职。另一项统计表明，美国500家大财团中2&#x2F;3的决策经理有哈佛商学院的学习背景。
+
+市场营销理论与模式一、4P理论（一）什么是4P理论4P理论即产品（Product）、价格（Price）、分销（Place）、促销（Promotion）四要素，由密西根大学教授杰罗姆·麦卡锡1960年提出。4P理论的伟大在于它把营销简化并便于记忆和传播。二、4C理论在以消费者为核心的商业世界中，厂商所面临的最大挑战之一便是：这是一个充满个性化的社会，消费者的形态差异太大，随着这一以消费者为中心时代的来临，传统的营销组合4P似乎已无法完全顺应时代的要求，于是营销学者提出了新的营销要素。
+劳特朗先生20世纪90年在对应传统的4P提出了新的观点：“营销的4C。”它强调企业首 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B4%A2%E7%BB%8F/">财经</a></span></div><div class="content">财务规划第一节　整体规划：基于企业的目标利润一、本量利的相互关系管理人员需要一个数学模型，人们首先研究成本和业务量之间的关系，并确立了按成本性态的分类，然后在此基础上明确成本、数量和利润之间的相互关系。本量利关系的数学表达，主要有三种形式。
+（一）损益方程式
+1．基本的损益方程式
+目前多数企业都使用损益法来计算利润，即首先确定一定期间的收入，然后计算与这些收入相配合的成本，两者之差为期间利润：
+                利润=销售收入-总成本
+
+第一，高利潤代表了高實力，說明你是一個擁有核心能力的人，有超過常人的技能，比如說你很厲害編程，常常會用最簡短最高效的代碼來完成一個作品，這就是你的核心競爭力。
+由于：
+总成本&#x3D;变动成本+固定成本&#x3D;单位变动成本×产量+固定成本
+                销售收入=单价×销量
+
+假设产量和销量相同，则有：
+                利润=单价×销量－单位变动成本×销量－固定成本
+
+2．损益方程式的变换形式
+基本的损益方程式把“利润”放在等号的左边，其他变量放在等号的右边，这种形式便于计算预期利润。如果待求的数值 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BB%8F%E5%85%B8/">经典</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%8E%86%E5%8F%B2/">历史</a></span></div><div class="content">人类简史：从动物到上帝-尤瓦尔·赫拉利赫拉利1976年生于以色列海法，2002年获牛津大学博士学位，专研中世纪史与军事史，现任教于耶路撒冷希伯来大学历史系。在《人类简史：从动物到上帝》中，赫拉利向古远的过去追溯，从宇宙大爆炸开始讲述人类历史的完整故事，用大历史的视角理清了人类从一种没什么特别的动物到成为地球主宰者的关键脉络。他认为，在人类历史上，有三次重要的革命：认知革命、农业革命和科学革命。认知革命使人类有了想象和虚构的能力，超越其他物种，能够进行大规模的有效合作；农业革命使人类从游猎走向定居，生产生活方式和社会组织关系发生革命性的转变；科学革命使人类成为神一样的“造物主”。正是经历了这三次革命，人类最终成为整个世界的统治者。
+认知革命part1~4
+
+
+时间线
+事件
+备注
+
+
+
+135亿年前
+“大爆炸”
+宇宙的物质、能量、时间和空间才成了现在的样子。宇宙的这些基本特征，就成了“物理学”。
+
+
+100亿年前
+宇宙的演化
+物质和能量开始形成复杂的结构，称为“原子”，再进一步构成“分子”。这些原子和分子的故事以及它们如何互动，就成了“化学”。
+
+
+大约38亿年前
+地球
+在地球上有些分子结 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/11/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85-%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86/" title="聪明的投资者-格雷厄姆"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221204172950.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="聪明的投资者-格雷厄姆"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/11/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85-%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86/" title="聪明的投资者-格雷厄姆">聪明的投资者-格雷厄姆</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-09-11T13:55:00.000Z" title="发表于 2022-09-11 21:55:00">2022-09-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%BB%8F%E5%85%B8/">经典</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E8%82%A1%E7%A5%A8/">股票</a></span></div><div class="content">这是一本投资实务领域的世界级和世纪级的经典著作，自从1949年首次出版以来，本书即成为股市上的《圣经》。本杰明•格雷厄姆（Benjamin Graham，1894～1976年）美国经济学家和投资思想家，投资大师， “现代证券分析之父”， 价值投资理论奠基人。格雷厄姆生于伦敦，成长于纽约，毕业于哥伦比亚大学。著有《证券分析》(1934年)和《聪明的投资者》(1949年)，这两本书被公认为“划时代的、里程碑式的投资圣经”，至今仍极为畅销。格雷厄姆是沃伦•巴菲特就读哥伦比亚大学经济学院的研究生导师
+华尔街有两条古老的谚语，对这种出售股票的行为给予了忠告：一、”The trees do not grow up to the sky“，树高不过天——任何事都有一个限度二、”Bulls make money, bears make money, pigs get slaughtered“，牛市能赚钱，熊市能赚钱，但猪市(被宰)从来也赚不到钱
+本书的目的，是为普通人在投资策略的选择和执行方面提供相应的指导。
+这本书主要直接写给两类人:“防御型投资者”和“进攻型投资者”。是防御型还是进攻型：过往业绩是 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/08/29/%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/" title="从头来学通信原理"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/c0eb8abda126ae51b71867cd9bb9391d.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从头来学通信原理"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/08/29/%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/" title="从头来学通信原理">从头来学通信原理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-08-29T09:30:00.000Z" title="发表于 2022-08-29 17:30:00">2022-08-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%80%9A%E4%BF%A1/">通信</a></span></div><div class="content">从头来学通信原理无线通信追求的永恒目标是：逼近甚或突破香农C&#x3D;B*log2(1+S&#x2F;N)信道容量极限无线通信的基础是“玄学”？——来自华为一名无线高级专家的说法为什么这么说呢？因为，无线电波是看不见摸不着的。从3G时代的Rake接收机、信道编译码、再到5G NR时代的毫米波Massive MIMO等关键技术，都致力于这一目标。但这些关键技术要解决的基础问题只有一个：克服或利用无线传播信道的随机衰落。“风会熄灭蜡烛，却能使火越烧越旺”，利用不确定性而不是躲避它们，才能不断进步、成长。
+无线通信原理-Chap1.3
+                    图一、无线收发信机原理
+
+信源-Chap1
+                    图二、无线通信原理
+
+💚无线电通信定义，是利用空间为信道，以电磁波的形式传播信息的通信方式。
+
+1831年，英国法拉第发现电磁感应现象1864年  英国麦克斯韦完成电磁波论1887年 德国赫兹用实验证明了电磁波的存在
+
+
+电磁波形成，是电磁场的一种运动形态。变化的电场附近会产生磁场，变化的磁场附近会产生电场 。电磁波方向，横波，变化的 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/08/12/%E3%80%8A%E7%99%BD%E5%A4%9C%E8%A1%8C%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/" title="《白夜行》-东野圭吾"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220811124429.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《白夜行》-东野圭吾"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/08/12/%E3%80%8A%E7%99%BD%E5%A4%9C%E8%A1%8C%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/" title="《白夜行》-东野圭吾">《白夜行》-东野圭吾</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-08-12T10:30:00.000Z" title="发表于 2022-08-12 18:30:00">2022-08-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%B0%8F%E8%AF%B4/">小说</a></span></div><div class="content">白夜行共生其实是一种相互依附，相互附着的关系，就是缺一不可，两者必须要共生共存，缺少其中一个都会让另一个人无法继续生存下去。其实这种关系在很多生物中经常会发现。不仅是在人的身上，生物也会经常如此。
+枪虾通常是盲的，枪虾每天持续性得花大量时间在清理洞穴而虾虎鱼一点儿都不用帮着打扫。这也像极了当代社会男主外，女主内的夫妻搭档配合，但枪虾的“家务活”并不是强迫症，如果枪虾不持续疏通砂砾、碎石等杂物，“小巢”便会有面临崩塌的风险。
+ 🗞️ 日本人生性极其好斗而又非常温和；黩武而爱美；倨傲自尊而又彬彬有礼；顽梗不化而又柔弱善变；驯服而又不愿受人摆布；忠贞而又易于叛变；勇敢而又懦弱；保守而又十分欢迎新的生活方式。——鲁思·本尼迪克特《菊与刀》
+
+
+
+他们也不敢冲破黎明与黑暗的界限，在太阳底下相拥。因为他们的内心便是悲观和绝望的，这绝望之感从他们杀父弑母之后便开始了，而这悲观的情怀则是根植在他们骨子里的文化情怀，是日本文化的魂。从他们出生起，这悲观的魂已经存在，所以他们注定无法走在阳光下。
+绝望的念想，悲恸的守望
+枪虾和虾虎鱼，互利共生。
+1234“你知道枪虾吗？”“枪虾会挖洞，住在洞里。可有个家 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/08/12/%E3%80%8A%E7%BA%A2%E6%89%8B%E6%8C%87%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/" title="《红手指》-东野圭吾"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903163354.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《红手指》-东野圭吾"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/08/12/%E3%80%8A%E7%BA%A2%E6%89%8B%E6%8C%87%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/" title="《红手指》-东野圭吾">《红手指》-东野圭吾</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-08-12T10:30:00.000Z" title="发表于 2022-08-12 18:30:00">2022-08-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%B0%8F%E8%AF%B4/">小说</a></span></div><div class="content">前原的方法昭夫，打算把刚刚产生的想法抹去，这想法太邪恶了，连思考这个动作本身都令人厌恶，更让产生了这个想法的身体变得肮脏前原想到了一个邪恶的想法以为可以瞒天过海
+妹妹的做法”你打来电话之前我们还什么都不知道，听到你叙述时也没发现矛盾的地方。“”那是怎么发现的？““因为红手指”，因为尸体上没有红手指留下的痕迹，所以可以排除母亲的责任
+母亲的做法-提供了多种让儿子回头是案的线索线索1-打电话给女儿春美到院子里拿口红，以此证明自己是案发前涂红的手指，凶手不是母亲。线索2-母亲装痴呆是为了让儿子良心发现，原因就是（p72.家庭成员之间完全没有心灵上的纽带，家庭的温暖在这里不存在，最后选择的道路就是创造一个自己的世界，不让其它家庭成员进来）线索3-捡手套的情景，手套上沾着恶臭，就是告诉警察那里就是犯罪现场，世界上没有哪个母亲会把自己的儿子送入罗网，她是为了让你回头线索4-玩化妆，也是她的暗示，等平原发现母亲手指涂了口红，一定会擦去，从而才能让继续假装痴呆的情况下让你放弃计划线索5-眼神告诉警察，像是在说些什么，那不是没有意识的人的眼睛，“前原先生，你认真地看过你母亲的眼睛吗？”线索6-拐杖，那个 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/08/12/%E7%86%B5%E5%87%8F-%E6%88%91%E4%BB%AC%E7%9A%84%E6%B4%BB%E5%8A%9B%E4%B9%8B%E6%BA%90/" title="熵减——我们的活力之源"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/SJ.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="熵减——我们的活力之源"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/08/12/%E7%86%B5%E5%87%8F-%E6%88%91%E4%BB%AC%E7%9A%84%E6%B4%BB%E5%8A%9B%E4%B9%8B%E6%BA%90/" title="熵减——我们的活力之源">熵减——我们的活力之源</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-08-12T10:30:00.000Z" title="发表于 2022-08-12 18:30:00">2022-08-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BF%AE%E8%BA%AB/">修身</a></span></div><div class="content">——全文摘抄自华为
+引 言    没有正确的假设，就没有正确的方向；    没有正确的方向，就没有正确的思想；    没有正确的思想，就没有正确的理论；    没有正确的理论，就不会有正确的战略。
+——《任总与Fellow座谈会上的讲话》（2016）
+先分享几个分析数据。企业的寿命和人类的寿命在过去50年正好形成了一个剪刀差。与50年前相比，人类的寿命得到大大的提高，平均寿命从32岁，现在已经到了55岁。而企业恰恰相反，在过去50年里，企业的平均寿命从55岁变成了32岁。这里人类的平均寿命的数据来自世界安全卫生组织，企业寿命的数据来自美国证券交易所上市公司情况统计。
+再来看我们公司所处的ICT行业。我把成长达到领导地位的公司分成三代，爱立信、诺基亚都是100多岁，IBM是快100岁，惠普78岁，这些我们称之为是爷爷辈；大叔这一辈主要是三个70后和两个80后，微软、苹果、Oracle依次是75、76、77年成立的，三个70后，84年成立的思科和87年注册的华为，这两个是80后。还有一批就是小鲜肉，包括Facebook、谷歌、亚马逊，以及中国的BAT，这些都是2000年以后成立的，到现在不 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["孔子曰：邱少而好学，晚而闻道，从此博矣"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '孔子曰：邱少而好学，晚而闻道，从此博矣'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

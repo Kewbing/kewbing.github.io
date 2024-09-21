@@ -1,20 +1,1546 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好学闻道 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="穷查理宝典：查理·芒格智慧箴言录 (查理·芒格) - 来自 Kindle 伴侣 	 	 	 	 	 	 	   	 		 			 				 穷查理宝典：查理·芒格智慧箴言录 (查理·芒格) 169 			 		 		 			 				 					 返回目录 				 			 		 		 			 				 					 						我只想知道将来我会死在什么地方，这样我就不去那儿了">
+<meta property="og:type" content="website">
+<meta property="og:title" content="好学闻道">
+<meta property="og:url" content="https://kewbing.github.io/kindle/html/%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8%EF%BC%9A%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC%E6%99%BA%E6%85%A7%E7%AE%B4%E8%A8%80%E5%BD%95%20(%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC).html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="穷查理宝典：查理·芒格智慧箴言录 (查理·芒格) - 来自 Kindle 伴侣 	 	 	 	 	 	 	   	 		 			 				 穷查理宝典：查理·芒格智慧箴言录 (查理·芒格) 169 			 		 		 			 				 					 返回目录 				 			 		 		 			 				 					 						我只想知道将来我会死在什么地方，这样我就不去那儿了">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-09-21T15:55:15.205Z">
+<meta property="article:modified_time" content="2022-06-22T07:36:10.000Z">
+<meta property="article:author" content="BinQ">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/kindle/html/%E7%A9%B7%E6%9F%A5%E7%90%86%E5%AE%9D%E5%85%B8%EF%BC%9A%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC%E6%99%BA%E6%85%A7%E7%AE%B4%E8%A8%80%E5%BD%95%20(%E6%9F%A5%E7%90%86%C2%B7%E8%8A%92%E6%A0%BC)"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好学闻道',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-06-22 15:36:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #page
-    if top_img === false
-      h1.page-title= page.title
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    case page.type
-      when 'tags'
-        include includes/page/tags.pug
-      when 'link'
-        include includes/page/flink.pug
-      when 'categories'
-        include includes/page/categories.pug
-      default
-        include includes/page/default-page.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">好学闻道</h1></div></header><main class="layout" id="content-inner"><div id="page"><div id="article-container"><!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>穷查理宝典：查理·芒格智慧箴言录 (查理·芒格) - 来自 Kindle 伴侣</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../style/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="../style/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+	<link href="../style/css/custom.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../style/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="../style/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../style/js/custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header col-md-12">
+			<div class="page-header">
+				<h1><small><span class="glyphicon glyphicon-book" aria-hidden="true"></span> 穷查理宝典：查理·芒格智慧箴言录 (查理·芒格)</small> <span class="badge">169</span></h1>
+			</div>
+		</header>
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active text-center">
+					<a href="../index.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 返回目录</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10">
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk180">
+						<p>我只想知道将来我会死在什么地方，这样我就不去那儿了。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk297">
+						<p>过程。《大学》曰：正心，修身，齐家，治国，平天下。这套价值系统在之后的儒家各派中都得到了广泛的阐述。这应该说是中国文明最核心的灵魂价值所在。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk345">
+						<p>无论顺境、逆境，都保持客观积极的心态——这就是查理。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk371">
+						<p>查尔斯·赫尔曼·利亚曾经说：“一般人们都会承认，对一切图书的真正考验是在于它们给读者的生活和行为带来了怎样的影响。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk375">
+						<p>从1733年到1758年，本杰明·富兰克林借由《穷理查年鉴》传播了许多有用且永恒的建议。他赞扬的美德包括节俭、负责、勤奋和简朴。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk394">
+						<p>要找比你更聪明、更有智慧的人。找到他之后，请他别炫耀他比你高明，这样你就能够因为许多源自他的想法和建议的成就而得到赞扬。你要找这样的合伙人，在你犯下损失惨重的错误时，他既不会事后诸葛亮，也不会生你的气。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk431">
+						<p>查理正是以这种价值观闻名的：活到老学到老，对知识抱有好奇心，遇事冷静镇定，不心生妒忌和仇恨，言出必行，能从别人的错误中吸取教训，有毅力恒心，拥有</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk431">
+						<p>查理正是以这种价值观闻名的：活到老学到老，对知识抱有好奇心，遇事冷静镇定，不心生妒忌和仇恨，言出必行，能从别人的错误中吸取教训，有毅力恒心，拥有客观的态度，愿意检验自己的信念等等。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk433">
+						<p>查理利用幽默、逆向思维（遵从伟大的代数学家雅各比的指示，“反过来想，总是反过来想”）和悖论来提供睿智的忠告，引导人们应付最棘手的生活难题</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk923">
+						<p>凡自高的，必降为卑；自卑的，必升为高。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk943">
+						<p>梭伦经常说的话：“活到老，学到老。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk949">
+						<p>关于杠杆原理阿基米德曾经说：“给我一根足够长的杠杆和一个支点，我能撬动整个地球。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk989">
+						<p>太过贫穷会让晚年的生活变得很艰难。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk995">
+						<p>《论老年》最著名的段落当属下面这段了不起的总结：“晚年的最佳保护铠甲是一段在它之前被悉心度过的生活，一段被用于追求有益的知识、光荣的功绩和高尚的举止的生活；过着这种生活的人从青年时代就致力于提升他自己，而且将会在晚年收获它们产生的最幸福的果实；这不仅是因为有益的知识、光荣的功绩和高尚的举止将会陪伴他终生，甚至直到他生命的最后一刻，也会因为见证了正直的人生的良心和对过往美好功绩的回忆将会给灵魂带来无上的安慰。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1079">
+						<p>1.把工作一次就做好 2. 承担责任</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1117">
+						<p>遇事要抱怀疑态度，甚至逆其道而行，这种思维方式在面对20世纪60年代末期的混乱局面时特别有帮助。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1225">
+						<p>遇事喜欢穷根究底，无论该事跟他有密切关系与否。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1251">
+						<p>找出你最擅长的事情，然后持之以恒、乐此不疲地去把它做好。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1284">
+						<p>凡事往简单处想，往认真处行。</p>
+<p>——查理·芒格</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1433">
+						<p>迅速歼灭不该做的事情，接着对该做的事情发起熟练的、跨学科的攻击，然后，当合适的机会来临——只有当合适的机会来临——就采取果断的行动。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1457">
+						<p>“一般来说，股票的估值方式有两种。第一种是人们</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1458">
+						<p>双轨分析 “一般来说，股票的估值方式有两种。第一种是人们评估小麦价值的方法——在使用者看来，小麦有多少实际的使用价值。第二种方法是人们评估伦勃朗等艺术家的价值的方法。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1493">
+						<p>在现实世界，弄清楚你何时是“马克斯·普朗克”、何时是“司机”是很关键的。如果无法称职地回答下一个问题，那么你就缺乏真正的本领，非常有可能处在你的“能力圈”之外。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1532">
+						<p>独立思考 你是正确的或错误的，并不取决于大家是否同意你。你是正确的，是因为你的资料和推理是正确的。</p>
+<p>——本杰明·格拉汉姆</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1541">
+						<p>安全边际 安全边际总是取决于付出的价格。它在某个价格会很大，在其他一些价格会很小，而价格更高时，它便不复存在。</p>
+<p>——本杰明·格拉汉姆</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1543">
+						<p>（关于安全边际，查理经常说，投资者能够从工程学的“冗余思维模型”中获益。工程师设计桥梁时，会给它一个后备支撑系统以及额外的保护性力量，以防倒塌——投资策略也应该如此。）</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1557">
+						<p>检查清单上的项目如下：目前的价格和成交量是多少？交易行情如何？经营年报何时披露？是否存在其他敏感因素？是否存在随时退出投资的策略？用来买股票的钱现在或将来有更好的用途吗？手头上有足够的流动资金吗？或者必须借贷？这笔资金的机会成本是多少？诸如此类。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1564">
+						<p>但准备不足和仓促决策是不可原谅的，因为这些因素是可以控制的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1586">
+						<p>投资就像打棒球，你要让记分牌上的得分增加，就必须盯着球场，而不是盯着记分牌。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1620">
+						<p>1803年，托马斯·杰弗逊政府花费1500万美元</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1623">
+						<p>价格是你付出的， 价值是你得到的 价值投资者往往会招致别人的怀疑，美国几次精明的土地收购就是这样的。1803年，托马斯·杰弗逊政府花费1500万美元和拿破仑的法国政府达成了路易斯安那交易，平均每英亩土地的价格是2.9美分。1867年，美国政府用价值720万美元的黄金向俄罗斯收购了阿拉斯加地区，每英亩土地的价格大约是2.5美分，这在当时被称为“锡瓦德的愚蠢交易”。相比之下，在2006年，阿拉斯加交易所涉及土地的价格等于16700亿美元，根据美国获得的石油、矿产价值和战略优势来衡量的话，这桩交易当然不是愚蠢的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1612">
+						<p>的。你必须估算公司从现在到无限的将来能挣到的所有现金，再把它们折回到现值。像市盈率这样的标尺本身是不够的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1664">
+						<p>在大多数时候，你什么也不用做，只要看着就好了。每隔一段时间，你将会发现一个速度很慢、线路又直，而且正好落在你最爱的格子中间的“好球”，那时你就全力出击。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1665">
+						<p>成功率。作为一个证券投资者，你可以一直观察各种企业的证券价格，把它们当成一些格子。在大多数时候，你什么也不用做，只要看着就好了。每隔一段时间，你将会发现一个速度很慢、线路又直，而且正好落在你最爱的格子中间的“好球”，那时你就全力出击。这样呢，不管你的天分如何，你都能极大地提高你的上垒率。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1672">
+						<p>投资原则检查清单 “聪明的飞行员即使才华再过人，经验再丰富，也决不会不使用检查清单。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1686">
+						<p>每个原则都必须被视为整个复杂的投资分析过程的一部分，就像整幅马赛克图案中每个单独的小块那样。</p>
+<p>■风险——所有投资评估应该从测量风险（尤其是信用的风险）开始 ●测算合适的安全边际 ●避免和道德品质有问题的人交易 ●坚持为预定的风险要求合适的补偿 ●永远记住通货膨胀和利率的风险 ●避免犯下大错；避免资本金持续亏损 ■独立——“唯有在童话中，皇帝才会被告知自己没穿衣服” ●客观和理性的态度需要独立思考 ●记住，你是对是错，并不取决于别人同意你还是反对你——惟一重要的是你的分析和判断是否正确 复利</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1697">
+						<p>知道如何避免 “只要得到严格的遵守，光是‘避免犯傻的芒格体系’就能帮助你超越许多在你之上的人，无论他们有多么聪明。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1694">
+						<p>反过来想，总是反过来想</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1714">
+						<p>■严格分析——使用科学方法和有效的检查清单能够最大限度地减少错误和疏忽 ●区分价值和价格、过程和行动、财富和规模 ●记住浅显的好过掌握深奥的 ●成为一名商业分析家，而不是市场、宏观经济或者证券分析家 ●考虑总体的风险和效益，永远关注潜在的二阶效应和更高层次的影响 ●要朝前想、往后想——反过来想，总是反过来想</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1702">
+						<p>■准备——“惟一的获胜方法是工作、工作、工作、工作，并希望拥有一点洞察力。” ●通过广泛的阅读把自己培养成一个终生自学者；培养好奇心，每天努力使自己聪明一点点</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1708">
+						<p>谦虚——承认自己的无知是智慧的开端 ●只在自己明确界定的能力圈内行事 ●辨认和核查否定性的证据 ●抵制追求虚假的精确和错误的确定性的欲望 ●最重要的是，别愚弄你自己，而且要记住，你是最容易被自己愚弄的人</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1718">
+						<p>配置——正确地配置资本是投资者最重要的工作 ●记住，最好的用途总是由第二好的用途衡量出来的（机会成本） ●好主意特别少——当时机对你有利时，狠狠地下赌注吧（配置资本） ●别“爱上”投资项目——要依情况而定，照机会而行</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1721">
+						<p>耐心——克制人类天生爱行动的偏好 ●“复利是世界第八大奇迹”（爱因斯坦），不到必要的时候，别去打断它 ●避免多余的交易税和摩擦成本，永远别为了行动而行动 ●幸运来临时要保持头脑清醒</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1742">
+						<p>当别人贪婪时，要害怕；当别人害怕时，要贪婪 ●机会来临的次数不多，所以当它来临时，抓住它 ●机会只眷顾有准备的人：投资就是这样的游戏</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1745">
+						<p>改变——在生活中要学会改变和接受无法消除的复杂性 ●认识和适应你身边的世界的真实本质，别指望它来适应你 ●不断地挑战和主动地修正你“最爱的观念” ●正视现实，即使你并不喜欢它——尤其当你不喜欢它的时候</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1750">
+						<p>专注——别把事情搞复杂，记住你原来要做的事 ●记住，声誉和正直是你最有价值的财产——而且能够在瞬间化为乌有 ●避免妄自尊大和厌倦无聊的情绪 ●别因为过度关心细节而忽略了显而易见的东西 ●千万要排除不需要的信息：“千里之堤，溃于蚁穴” ●直面你的大问题，别把它们藏起来</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1771">
+						<p>做正确的事情能给个人的品格和事业带来很大的好处。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1795">
+						<p>“查理很爱对我说一句他非常喜欢的台词：‘我是对的，你很聪明，迟早你将会明白我是对的。’”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1795">
+						<p>我是对的，你很聪明，迟早你将会明白我是对的。’”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1798">
+						<p>“能力会让你到达巅峰，但只有品德才能让你留在那里。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1891">
+						<p>我们从来不去试图成为非常聪明的人，而是持续地试图别变成蠢货，久而久之，我们这种人便能获得非常大的优势。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1898">
+						<p>说真话，你将无须记住你的谎言。就是这么简单的一个概念。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk1898">
+						<p>记住路易斯·文森狄的规则：说真话，你将无须记住你的谎言。就是这么简单的一个概念。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2041">
+						<p>美泰克家电维修员 自1967年起，演员杰西·怀特在美泰克公司的广告中扮演了家电维修员的角色，由于美泰克产品经久耐用，这位维修员变成了“镇上最孤独的人”。怀特饰演这个角色直到1989年，继任者是戈登·詹普。2003年詹普退休，该角色由演过通用汽车的好扳手先生的哈代·罗尔斯接替。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2120">
+						<p>一件事情如果不值得做，就不值得把它做好。’”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2465">
+						<p>股票期权不但会增加企业的成本，还会稀释股权。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2466">
+						<p>股票期权不但会增加企业的成本，还会稀释股权。任何反对这种看法的人都是神经病。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2593">
+						<p>思维模型 多元思维模型的重要性</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2596">
+						<p>你必须知道重要学科的重要理论，并经常使用它们——要全部都用上，而不是只用几种。大多数人都只养成一个学科——比如说经济学——的思维模型，试图用一种方法来解决所有问题。你知道谚语是怎么说的：“在手里拿着铁锤的人看来，世界就像一颗钉子。”这是一种处理问题的笨方法。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2605">
+						<p>查理通常会对知识面狭窄作出如下的诊断“在手里拿着铁锤的人看来，世界就像一颗钉子。” 顺便说一下，没有规则要求你不能增加一两个新的模型，即使你已经步入晚年。实际上，我现在还在不断学习。不过大多数有用的模型是在年</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2610">
+						<p>常（非常）识</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2612">
+						<p>得到系统的常（非常）识——非常基础的知识——是一种威力巨大的工具。电脑带来的危险非常多。人们计算得太多，思考得太少。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2613">
+						<p>拥有常识不但意味着有能力辨认智慧，也意味着有能力拒绝愚蠢。如果排除了许多事情，你就不会把自己搞得一团糟。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2615">
+						<p>但光看书还不够：你必须拥有一种能够掌握思想和做合理事情的性格。大多数人无法掌握正确的思想，或者不知道该怎么应用它们。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2624">
+						<p>马可·波罗、克里斯托弗·哥伦布、瓦斯科·达·伽马——完成了发现之旅。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2624">
+						<p>但从14世纪开始，海洋探险活动此起彼伏——众多岛屿、国家和大陆都被发现了。许多探险家——马可·波罗、克里斯托弗·哥伦布、瓦斯科·达·伽马——完成了发现之旅。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2660">
+						<p>生活和生意上的大多数成功来自你知道应该避免哪些事情：过早死亡、糟糕的婚姻等等。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2662">
+						<p>避免邪恶之人，尤其是那些性感诱人的异性。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2684">
+						<p>每天起床的时候，争取变得比你从前更聪明一点。认真地、出色地完成你的任务。慢慢地，你会有所进步，但这种进步不一定很快。但你这样能够为快速进步打好基础……每天慢慢向前挪一点。到最后——如果你足够长寿的话——大多数人得到了他们应得的东西。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2684">
+						<p>每天起床的时候，争取变得比你从前更聪明一点。认真地、出色地完成你的任务。慢慢地，你会有所进步，但这种进步不一定很快。但你这样能够为快速进步打好基础……每天慢慢向前挪一点。到最后——如果你足够长寿的话——大多数人得到了他们应得的东西。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2686">
+						<p>如何找到好配偶 找到好配偶的最佳方法是什么呢？惟一的最佳方法是你首先必须值得拥有好配偶，因为从定义上来说，好配偶可绝不是傻瓜。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body nt2684">
+						<p>如何致富</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body nt2684">
+						<p>如何致富,怎么样才能追随芒格</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2695">
+						<p>和“已逝的伟人”交朋友，这听起来很好玩，但如果你确实在生活中与已逝的伟人成为朋友，那么我认为你会过上更好的生活，得到更好的教育。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body nt2695">
+						<p>阅读的重要性</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2699">
+						<p>减少物质需求 大多数人将会发现回报率下降了（由于通货膨胀）。如果你担心通货膨胀，最好的预防手段之一就是在你的生活中别拥有大量愚蠢的需求——你不需要很多物质的商品。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2704">
+						<p>避免欠债 你一旦走进负债的怪圈，就很难走出来。千万别欠信用卡的钱。你无法在支付18%的利息的情况下取得进展。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2721">
+						<p>※如果你把葡萄干和大便搅在一起，你得到的仍然是大便。（这是他在将互联网与科技给社会带来的好处和这些行业的股票投机的恶果进行对比时所说的话。）</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2748">
+						<p>最适合投资的理想性格：毫不妥协的耐心，自律，自控——无论遭受多大的压力，查理从来不会动摇或者改变他的原则。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2786">
+						<p>下面是查理十一次最好的演讲，其中有一讲是他特意为本书而精心准备的。请尽情享受吧。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2787">
+						<p>第一讲 在哈佛学校毕业典礼上的演讲</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2839">
+						<p>1. 为了改变心情或者感觉而使用化学物质； 2. 妒忌，以及 3. 怨恨。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body nt2838">
+						<p>痛苦</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2896">
+						<p>“如果说我比其他人看得更远，那是因为我站在巨人的肩膀上。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2938">
+						<p>成功的理论来自“好奇、专注、毅力和自省”。他所说的自省，就是不停地试验与推翻他自己深爱的想法。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2987">
+						<p>避开生活的圈套 以吉卜林的方式 如果你能保持冷静，当你身边的人们 都变得疯狂，纷纷指责你， 如果你能相信自己，当所有人怀疑你 但且让他们怀疑去吧， 如果你遭等待，却不因等待而疲倦， 或者遭受欺骗，却不用谎言回敬， 或者遭到憎恨，却不用憎恨反击， 能够不得意忘形，也能够不巧言令色…… 如果你能与凡人交谈，且彬彬有礼， 或与国王同行——而不奴颜婢膝， 如果仇敌和密友都无法伤害你； 如果你在乎每个人，但不会缺了谁就不行， 如果你在想发泄愤怒的那一分钟 去进行六十秒的跑步， 大地以及大地上的万物都将属于你， 而更重要的是，你将是真正的男人，我的孩子！ ——摘自查理向来欣赏的诗歌</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk2996">
+						<p>第二讲 论基本的、普世的智慧，及其与投资管理和商业的关系</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3015">
+						<p>思维模型是什么呢？这么说吧，第一条规则是，你必须拥有多元思维模型——</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3035">
+						<p>求学之道无坦途，问艺之路无捷径。</p>
+<p>——安东尼·特罗洛普</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3081">
+						<p>如果你告诉人们事情的时候，总是告诉他们原因，他们就能更深刻地理解你说的话，就会更加重视你说的话，也会更倾向于听从你说的话。就算他们不理解你的理由，他们也会更倾向于听你的话。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3104">
+						<p>安全装置促进生产效率”。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3144">
+						<p>一种方法是理性分析法——就是你在打桥牌时所用的方法，认准真正的利益，找对真正的机会，等等。另一种方法是评估哪些因素造成潜意识结论——大多数情况下是错误的结论。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3139">
+						<p>我现在使用一种双轨分析。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3165">
+						<p>规模优势理论的本质是，你生产的商品越多，你就能更好地生产这种商品。那是个巨大的优势。它跟商业的成败有很大的关系。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3258">
+						<p>巴甫洛夫联想。如果人们说了你确实不想听的话——也就是让你不高兴的话——你会自然而然地生出抵触情绪。你必须训练自己摆脱这种反应。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3387">
+						<p>使用新技术将会为你节省多少成本。然而，他们并没有进行第二步分析——也就是弄清楚有多少钱会落在你手里，多少钱会流向消费者。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3430">
+						<p>有些人虽然无法在国际象棋大赛上获胜，也无缘站在网球大赛的球场上与对手比试高低，但却可以通过慢慢培养一个能力圈而在生活中取得很高的成就——个人成就既取决于天资，也取决于后天的努力。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3494">
+						<p>聪明人在发现这样的机会之后会狠狠地下注。他们碰到好机会就下重注，其他时间则按兵不动。就是这么简单。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3493">
+						<p>上天并没有赐予人类在所有时刻掌握所有事情的本领。但如果人们努力在世界上寻找定错价格的赌注，上天有时会让他们找得到。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3553">
+						<p>叫做“行业轮换”的标准技巧。你只要弄清楚石油业什么时候比零售业表现得更好就行了，诸如此类的。你只要永远在市场上最火爆的行业里打转，比其他人做出更好的选择就可以。依照这个假定，经过一段漫长的时间之后，你的业绩就会很出色。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3555">
+						<p>然而，我不知道有谁通过行业轮换而真正发大财。也许有些人能够做到。我并不是说没有人能做到。我只知道，我认识的富人——我认识的富人非常多——并不那么做。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3002">
+						<p>的“祖母的规矩”——这个规矩来自祖母的智慧，她说你们必须先吃完胡萝卜，然后才准吃甜点。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3078">
+						<p>你们也许会问，这有那么重要吗？嗯，这也跟</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3076">
+						<p>要求布劳恩公司所有的交流必须遵守“五何”原则——你必须说明何人因何故在何时何地做了何事。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3104">
+						<p>德明质量奖最早只在日本颁发，但现在被世界各国认可。上面那张日本海报上写着“安全装置促进生产效率”。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3107">
+						<p>你们可以轻而易举地证明这一点：在座各位只要看过一个非常普通的职业魔术师的表演，就肯定曾经看见许多其实并没有发生的事情正在发生，也肯定曾经看不见其实正在发生的事情。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3109">
+						<p>我认为第二种可靠的思维模型来自生物学/生理学，因为我们大家毕竟在基因构造方面都是相同的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3117">
+						<p>一个使用工具的人应该了解它的局限，同样道理，一个使用认知工具的人也应该了解它的局限。顺便说一声，这种知识可以用来操控和激励别人。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3141">
+						<p>我已经养成了使用一种双轨分析的习惯。首先，理性地看，哪些因素真正控制了涉及的利益？其次，当大脑处于潜意识状态时，会自动形成哪些潜意识因素——</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3237">
+						<p>所以缩小规模、加强专业化程度能够给你带来巨大的优势。大未必就是好。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3720">
+						<p>在成长股票模式中，有这样一个子模式：在你们的一生当中，你们能够找到少数几家企业，它们的管理者仅通过提高价格就能极大地提升利润——然而他们还没有这么做。所以他们拥有尚未利用的提价能力。人们不用动脑筋也知道这是好股票。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3756">
+						<p>望着这团乱麻，看是否把某些</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3757">
+						<p>癌症手术法。</p>
+<p>他们望着这团乱麻，看是否把某些业务砍掉，剩下的健康业务会值得保留下来。如果他们发现确实有，就会把其他的都砍掉。当然，如果这种方法行不通，他们就会让该企业破产。但它往往是奏效的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3846">
+						<p>·别兜售你自己不会购买的东西。</p>
+<p>·别为你不尊敬和钦佩的人工作。</p>
+<p>·只跟你喜欢的人同事。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3858">
+						<p>人生在不同阶段会遇到不同的难题，非常棘手的难题。我认为有三点有助于应付这些困难：</p>
+<p>·期望别太高； ·拥有幽默感； ·让自己置身于朋友和家人的爱之中。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3878">
+						<p>你们需要的是在头脑里形成一个由各种思维模型构成的框架。然后将你们的实际经验和间接经验（通过阅读等手段得来的经验）悬挂在这个强大的思维模型架上。使用这种方法可以让你们将各种知识融会贯通，加深对现实的认知。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk3912">
+						<p>功能失调，是因为人们将现实分割为各自为政、互不相干的独立部门。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4103">
+						<p>掌握所有主要的心理学模型，把它们当作检查清单，用来审视各种复杂系统的结果。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4105">
+						<p>没有哪个飞行员在起飞前不核对他的检查清单：A、B、C、D……没有牌手在需要另外两张墩的时候不迅速地查对他的检查清单，看看有什么办法可以把它们弄到手。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4369">
+						<p>《聪明的投资者》仍是最好的投资书籍。</p>
+<p>它只有三个你们真正需要的思想：</p>
+<p>1.市场先生比喻； 2.股票是企业的一部分； 3.安全边际。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4642">
+						<p>不管你的船是因为什么原因搁浅的，反正你的生涯结束了。没有人对你的错误（原因）感兴趣。那就是海军的规则——</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4834">
+						<p>识字不读好书，等于白识字。</p>
+<p>——马克·吐温</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4868">
+						<p>第一个有用的观念是，简化任务的最佳方法一般是先解决那些答案显而易见的大问题。<br /><br />第二个有用的观念跟伽利略的论断如出一辙。伽利略说，惟有数学才能揭示科学的真实面貌，因为数学似乎是上帝的语言。伽利略的看法在乱糟糟的日常生活中同样有用。如果缺乏数学运算能力，在我们大多数人所过的生活中，你们将会像一个参加踢屁股比赛的独腿人。<br /><br />第三个有用的观念是，光是正面思考问题是不够的，你必须进行反面思考。<br />像有个乡下人说过的，他要是知道他的死亡地点就好了，那他就永远不去那里。<br /><br />第四个有用的观念是，最好的、最具有实践性的智慧是基本的学术智慧。但有一个极其重要的前提：你必须以跨学科的方式思考。<br /><br />第五个有用的观念是，真正的大效应，也就是lollapalooza效应，通常在几种因素的共同作用下才会出现。例如，多年以来，许多人的肺结核之所以能够治愈，是因为他们同时服用了三种药物。其他的lollapalooza效应，比如说飞机的飞行，也是遵守同样的模式。<br /></p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4941">
+						<p>第一，在这150年里，我们必须创造一个新的饮料市场，让它能够占到全世界水摄入总量的1/4；第二，我们必须经营有方，能够占有一半的市场，而我们所有的竞争对手加起来只占有另外一半的市场。这些结果称得上是lollapalooza效应。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4946">
+						<p>条件反射。“可口可乐”的商标名称和商标形象将会扮演刺激因素的角色，购买和喝下我们的饮料则是我们想要的反应。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4957">
+						<p>就操作性条件反射的回报而言，只有几类对我们是现实的：<br />（1）饮料中所含的卡路里和其他成分的营养价值；<br />（2）在通过达尔文的自然选择而形成的人类神经系统的影响下起到刺激消费作用的味道、口感和香气； 如果你认为你是一个有些影响力的人，试试看能不能指使别人的狗。</p>
+<p>——威尔 · 罗格斯<br />（3）刺激品，比如糖和咖啡因；<br />（4）当人们觉得太热时的凉爽效应，或者当人们觉得太冷时的温暖效应。<br /></p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4983">
+						<p>这种强烈的巴甫洛夫条件反射需要花费很多钱，尤其是要支付许多广告费。我们将会预先花费比我们可以想像到的多得多的钱，但这些钱将会花得很有效。随着我们在新饮料市场上迅速扩张，我们的竞争对手将会面临巨大的竞争劣势，他们无法购买广告来引发他们需要的巴甫洛夫条件反射。这种结果和其他“产量创造力量”等效应相结合，应该能够帮助我们在各地赢得和保持至少50%的市场。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4992">
+						<p>可口可乐”，而不是一个街头小贩的名字，比如说“格罗兹的咖啡因糖水”。出于同样的巴甫洛夫原因，明智的做法是让我们的饮料看起来很像红酒，而不是糖水。所以如果这种饮料生产出来很清澈，我们将会给它添加人工色素。我们将会给这种饮料充气，让我们的产品看起来像是香槟或者其他昂贵的饮料，同时把它的味道调制得更好，让竞争产品难以模仿。因为我们准备将许多昂贵的心理效应和我们的味道联系起来，所以它应该不同于任何标准味道，这样我们就能给竞争对手制造最大的困难，并确保绝无现有的饮料因为味道碰巧和我们的产品相同而获益。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4999">
+						<p>社会认同，仅仅由于看到别人的消费而引起的模仿性消费，不但能够让消费者更加容易接受我们的产品，而且还能让消费者觉得自己得到了更多的回报。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5005">
+						<p>格罗兹，我们现在可以明白，如果将以下因素结合起来，（1）巴甫洛夫条件反射，（2）强大的社会认同效应，（3）一种口感出色、提神醒脑、冰凉爽口、能够引起操作性条件反射的饮料，这三种因素产生的巨大合力将会让我们的销量在很长的时间内节节升高。这跟化学里面的自我催化反应差不多，这恰恰是我们需要的那种由多因素引发的lollapalooza效应。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body nt5004">
+						<p>好上加好,令人羡慕的人或物</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5023">
+						<p>我们必须避开哪些我们不想遇到的情况呢？有四种情况明显是我们应该避免的：</p>
+<p>第一，我们必须避免消费者喝了饮料之后感到腻烦的情况，因为根据现代达尔文主义的理论，消费者一旦感到腻烦，其生理机制就会对我们的饮料产生抵抗作用，促使消费者不再继续消费它。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5024">
+						<p>我们必须让消费者在大热天一瓶接一瓶地喝我们的产品，完全</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5025">
+						<p>我们必须避开哪些我们不想遇到的情况呢？有四种情况明显是我们应该避免的：</p>
+<p>第一，我们必须避免消费者喝了饮料之后感到腻烦的情况，因为根据现代达尔文主义的理论，消费者一旦感到腻烦，其生理机制就会对我们的饮料产生抵抗作用，促使消费者不再继续消费它。为了达到我们的目标，我们必须让消费者在大热天一瓶接一瓶地喝我们的产品，完全不会因为觉得腻而不喝。我们将会通过实验找到一种很棒的、不会腻的味道，从而解决这个问题。<br />第二，我们必须避免失去我们强大的商标名称的情况，哪怕失去一半也不行。<br />第三，由于获得巨大的成功，我们必须避免妒忌产生的恶果。<br />避免妒忌的最佳方法是做到名副其实。我们将会致力于提高产品的质量，制定合理的价格，以及为消费者提供无害的快乐。<br /><br />第四，等到我们这个品牌的味道占领新市场之后，我们必须避免突然对产品的味道做出重大的改变。<br /></p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5038">
+						<p>剥夺性超级反应综合征使人们因难以接受“损失”而没有任何商量的余地，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5025">
+						<p>我们必须避开哪些我们不想遇到的情况呢？有四种情况明显是我们应该避免的：</p>
+<p>第一，我们必须避免消费者喝了饮料之后感到腻烦的情况，因为根据现代达尔文主义的理论，消费者一旦感到腻烦，其生理机制就会对我们的饮料产生抵抗作用，促使消费者不再继续消费它。为了达到我们的目标，我们必须让消费者在大热天一瓶接一瓶地喝我们的产品，完全不会因为觉得腻而不喝。我们将会通过实验找到一种很棒的、不会腻的味道，从而解决这个问题。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk4992">
+						<p>可口可乐”，而不是一个街头小贩的名字，比如说“格罗兹的咖啡因糖水”。出于同样的巴甫洛夫原因，明智的做法是让我们的饮料看起来很像红酒，而不是糖水。所以如果这种饮料生产出来很清澈，我们将会给它添加人工色素。我们将会给这种饮料充气，让我们的产品看起来像是香槟或者其他昂贵的饮料，同时把它的味道调制得更好，让竞争产品难以模仿。因为我们准备将许多昂贵的心理效应和我们的味道联系起来，所以它应该不同于任何标准味道，这样我们就能给竞争对手制造最大的困难，并确保绝无现有的饮料因为味道碰巧和我们的产品相同而获益。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5127">
+						<p>爱因斯坦这样的大人物也说过，他的成就取决于四个因素，首先是自我批评，然后才是好奇心、专注和毅力。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5469">
+						<p>聪明人怎么会经常犯错呢？他们并没有做到我让你们做的事情：使用一张检查清单，确保你们掌握了所有的主要模型，并以一种多元的方式使用它们。</p>
+<p>——芒格</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk5488">
+						<p>四种基本的检查清单，它们的内容有所重叠并互相加强。</p>
+<p>1. 双轨分析 ·理性地看，哪些因素真正主导了牵涉到的利益？（例如，宏观的和微观的经济因素。） ·当大脑处于潜意识状态时，有哪些潜意识因素会自动以各种方式形成虽然有用但往往失灵的结论？（本能、情绪、贪婪等等的影响） 2. 投资和决策检查清单 ·查理的非正式检查清单，详细地列出了各种值得考虑的因素。</p>
+<p>3. 超级简单的普通观念 ·先解决那些答案显而易见的问题。</p>
+<p>·利用数学运算能力。</p>
+<p>·逆向思考（反过来考虑问题）。</p>
+<p>·应用基本的跨学科智慧，永远不要完全依赖他人。</p>
+<p>·注意多种因素的共同作用——也就是lollapalooza效应。</p>
+<p>4. 基于心理学的倾向 ·他那著名的人类误判的25个标准原因。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6300">
+						<p>经济学有哪些缺陷呢？<br />1. 致命的自闭，导致“铁锤人综合征”，通常会引起经济学家过度强调某些可以量化的因素<br />2. 没有采用硬科学基本的全归因治学方法。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6347">
+						<p>凡他所需用的思想，他便采撷自己用，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6345">
+						<p>拿来主义”，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6345">
+						<p>吉卜林主义”（Kiplingism）。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6347">
+						<p>当荷马拨弄他灿烂的竖琴时，他早已听过人们沿着陆地和海洋的歌唱；</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6347">
+						<p>当荷马拨弄他灿烂的竖琴时，他早已听过人们沿着陆地和海洋的歌唱；凡他所需用的思想，他便采撷自己用，和我一样！”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6355">
+						<p>3.物理学妒忌。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6381">
+						<p>即追求可靠的、精神的公式的倾向，</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6405">
+						<p>4.太过强调宏观经济学。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6406">
+						<p>经济学界太过强调宏观经济学，而对微观经济学的重视程度不够。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6418">
+						<p>它提供大量的选择。所以除了是一</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6415">
+						<p>这是一家廉价商店</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6418">
+						<p>它提供大量的选择。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6438">
+						<p>赶上了卖日本轮胎的潮流。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6440">
+						<p>肯定有一套非常棒的激励机制来驱动他的员工。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6440">
+						<p>必定非常善于做广告。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6441">
+						<p>肯定是率先出售日本轮胎的。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6447">
+						<p>极度的成功很可能是由下面这些因素共同造成的：</p>
+<p>1. 将一到两个因素最大化或者最小化。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6447">
+						<p>极度的成功很可能是由下面这些因素共同造成的：</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6448">
+						<p>1.将一到两个因素最大化或者最小化。例如，好市多或者我们的家具电器商店。<br />2.增加一些成功的因素，以便取得更大的成效，这种成效的提高通常是非线性的，让人想起有关临界点或者物理学中的临界物质的理论。<br />3.将几个优点发挥得淋漓尽致。例如，丰田或者勒斯·施瓦伯。<br />4.顺应某些重大的潮流。例如，甲骨文。<br />遇到问题要进行正向思考和逆向思考。<br />5. 经济学的综合太少。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6514">
+						<p>1. 是李嘉图提出的贸易中的比较优势原理，另外那个是亚当·斯密的图钉工厂。<br />2. 第二个和综合相关的有趣问题涉及经济学中两个最著名的范例。第一个是李嘉图提出的贸易中的比较优势原理，另外那个是亚当·斯密的图钉工厂。<br />3. 实行专门化劳动的图钉工厂极大地提高了生产力，代表了经济发展的方向<br />4. 只要体会到综合的乐趣，你们就会立刻想：“这些事情相互影响吗？”它们当然相互影响，相互之间有很大的影响。<br />5. 对心理学的极度无知及其造成的负面后果。<br />6. 对二级或者更高级别的效应关注太少。<br />7. 对“捞灰金”的概念关注太少。<br />国家之间相互“委派”任务能够获得比较优势，同样地，管理人员在安排工作时也可以利用李嘉图的这个原理，而这是很多人都没想到的。即使一个管理人员能够亲自更好地完成各种工作，把这些工作分散到各人手里仍然是对大家都有利的做法。<br />8. 对美德效应和恶行效应不够重视。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6744">
+						<p>宗教的负罪感极大地推动了诚信精神的发展，对提高人类的经济产出非常有帮助。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk6789">
+						<p>妒忌既是摩西十诫严厉禁止的糟糕恶行，却又是促使经济增长的驱动力。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7136">
+						<p>“如果你想要说服别人，要诉诸利益，而非诉诸理性。”</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7231">
+						<p>爱比克泰德的道德观 控制你的情欲，以免它们报复你。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7232">
+						<p>别根据你的愿望来要求现实，应该依据现实来确定你的愿望。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7234">
+						<p>说话之前，先理解你要说的话。</p>
+<p>智者不为他缺少的东西悲哀，而为他所拥有的东西高兴。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7236">
+						<p>如果你想要进步，别在意别人觉得你很愚蠢。</p>
+<p>自以为什么都懂的人不可能开始学习。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7237">
+						<p>你遇到什么事并不重要，重要的是你做出了什么反应。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7238">
+						<p>凡事尽力而为，别计较结果。</p>
+<p>人若控制不了自己，自由便无从谈起。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7240">
+						<p>唯有受过教育的人是自由的。</p>
+<p>困扰人们的并非事物，而是他们对事物的看法。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7237">
+						<p>你遇到什么事并不重要，重要的是你做出了什么反应。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7241">
+						<p>要和那些比你优秀的人为伴，他们能促使你做到最好。</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="panel panel-default">
+					<div class="panel-body mk7242">
+						<p>富裕并非拥有许多财产，而是拥有很少需求。</p>
+					</div>
+				</div>
+			</article>
+
+		</div>
+		<footer class="footer col-md-12">
+			<div class="text-center">
+				<a href="http://kindlefere.com" target="_blank">Kindle 伴侣 - 为静心阅读而生</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: '414026155ff1895450362b50860b4a93',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,32 +1,376 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>从头来学通信原理 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="从头来学通信原理无线通信追求的永恒目标是：逼近甚或突破香农C&#x3D;B*log2(1+S&#x2F;N)信道容量极限无线通信的基础是“玄学”？——来自华为一名无线高级专家的说法为什么这么说呢？因为，无线电波是看不见摸不着的。从3G时代的Rake接收机、信道编译码、再到5G NR时代的毫米波Massive MIMO等关键技术，都致力于这一目标。但这些关键技术要解决的基础问题只有一个：克服或利用无">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从头来学通信原理">
+<meta property="og:url" content="https://kewbing.github.io/2022/08/29/%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/index.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="从头来学通信原理无线通信追求的永恒目标是：逼近甚或突破香农C&#x3D;B*log2(1+S&#x2F;N)信道容量极限无线通信的基础是“玄学”？——来自华为一名无线高级专家的说法为什么这么说呢？因为，无线电波是看不见摸不着的。从3G时代的Rake接收机、信道编译码、再到5G NR时代的毫米波Massive MIMO等关键技术，都致力于这一目标。但这些关键技术要解决的基础问题只有一个：克服或利用无">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/c0eb8abda126ae51b71867cd9bb9391d.jpeg">
+<meta property="article:published_time" content="2022-08-29T09:30:00.000Z">
+<meta property="article:modified_time" content="2022-11-18T06:48:50.000Z">
+<meta property="article:author" content="BinQ">
+<meta property="article:tag" content="通信">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/c0eb8abda126ae51b71867cd9bb9391d.jpeg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/2022/08/29/%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '从头来学通信原理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-18 14:48:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    if theme.reward.enable && theme.reward.QR_code
-      !=partial('includes/post/reward', {}, {cache: true})
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://qiubit.oss-cn-hongkong.aliyuncs.com/20220829163700.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">从头来学通信原理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-29T09:30:00.000Z" title="发表于 2022-08-29 17:30:00">2022-08-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-11-18T06:48:50.000Z" title="更新于 2022-11-18 14:48:50">2022-11-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="从头来学通信原理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="从头来学通信原理"><a href="#从头来学通信原理" class="headerlink" title="从头来学通信原理"></a>从头来学通信原理</h1><p>无线通信追求的永恒目标是：逼近甚或突破香农C&#x3D;B*log2(1+S&#x2F;N)信道容量极限<br>无线通信的基础是“玄学”？——来自华为一名无线高级专家的说法<br>为什么这么说呢？因为，无线电波是看不见摸不着的。<br>从3G时代的Rake接收机、信道编译码、再到5G NR时代的毫米波Massive MIMO等关键技术，都致力于这一目标。但这些关键技术要解决的基础问题只有一个：克服或利用无线传播信道的随机衰落。<br>“风会熄灭蜡烛，却能使火越烧越旺”，利用不确定性而不是躲避它们，才能不断进步、成长。</p>
+<h1 id="无线通信原理-Chap1-3"><a href="#无线通信原理-Chap1-3" class="headerlink" title="无线通信原理-Chap1.3"></a>无线通信原理-Chap1.3</h1><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/%E6%94%B6%E5%8F%91%E4%BF%A1%E6%9C%BA.png"></p>
+<pre><code>                    图一、无线收发信机原理
+</code></pre>
+<h2 id="信源-Chap1"><a href="#信源-Chap1" class="headerlink" title="信源-Chap1"></a>信源-Chap1</h2><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220828121744.png"></p>
+<pre><code>                    图二、无线通信原理
+</code></pre>
+<p><strong>💚无线电通信定义</strong>，是利用空间为信道，以电磁波的形式传播信息的通信方式。</p>
+<blockquote>
+<p>1831年，英国法拉第发现电磁感应现象<br>1864年  英国麦克斯韦完成电磁波论<br>1887年 德国赫兹用实验证明了电磁波的存在</p>
+</blockquote>
+<blockquote>
+<p>电磁波形成，是电磁场的一种运动形态。变化的电场附近会产生磁场，变化的磁场附近会产生电场 。<br>电磁波方向，横波，变化的电磁场在空间的传播形成 了电磁波。电磁波的磁场、电场及其行进方向三者互相垂直。<br>电磁波速率，不同介质中传播速率不同，v&#x3D;λf；理想介质速度是光速</p>
+</blockquote>
+<p><strong>🧡电磁波谱和传播模式</strong></p>
+<blockquote>
+<p>空间波，用大气层的折射、反射和散射作用进行传播，所有米波<br>地表波，沿地球表面传播，长中波<br>天波，用电离层的折射、反射和散射作用进行传播，短波</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>频段</th>
+<th>波长范围</th>
+<th>波长名称</th>
+<th>应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>甚低频~高频</td>
+<td>3KHz~3MHz</td>
+<td>10km~10m</td>
+<td>超长~短波</td>
+<td>空（海陆超远距离导航）地（地下远洋）天（AM无线电船）天（远距离短波+定点）</td>
+</tr>
+<tr>
+<td>甚高频~极高频</td>
+<td>30MHz~30GHz</td>
+<td>1m~1mm</td>
+<td>米波、分米(微波)、厘米、毫米</td>
+<td>空(电离层FM电视) 空(中小容量微波对流层) 空(大容量微波卫星) 空(大气层波导)</td>
+</tr>
+</tbody></table>
+<h2 id="基带电路-Chap2-3-1"><a href="#基带电路-Chap2-3-1" class="headerlink" title="基带电路-Chap2.3.1"></a>基带电路-Chap2.3.1</h2><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86.png"></p>
+<pre><code>                            图三、基站原理
+</code></pre>
+<p><strong>信源编码</strong><br>💛信源编码的作用之一是，即通常所说的数据压缩；作用之二是将信源的模拟信号转化成数字信号，以实现模拟信号的数字化传输。</p>
+<p>最原始的信源编码就是莫尔斯电码，另外还有ASCII码和电报码都是信源编码。但现代通信应用中常见的信源编码方式有：Huffman编码、算术编码、L-Z编码，这三种都是无损编码，另外还有一些有损的编码方式。信源编码的目标就是使信源减少冗余，更加有效、经济地传输，最常见的应用形式就是压缩。<br>另外，在数字电视领域，信源编码包括 通用的MPEG—2编码和H.264（MPEG—Part10 AVC）编码等。<br>相应地，信道编码是为了对抗信道中的噪音和衰减，通过增加冗余，如校验码等，来提高抗干扰能力以及纠错能力。</p>
+<p><strong>信道编码</strong><br>💛目的是通过收发的配合，进行差错控制 ，减少误码率，保证通信质量<br>差错控制：自动 请求重发、前向纠错、混合纠错<br>几种常用的信道编码：奇偶检验、循环冗余、卷积、Turbo</p>
+<h2 id="调制-Chap2-1"><a href="#调制-Chap2-1" class="headerlink" title="调制-Chap2.1"></a>调制-Chap2.1</h2><p>调制就是通过改变高频载波的幅度、相位、频率。使其随着基带信号幅度的变化而变化来实现的，<br>解调就是将基站信号从载波中提取出来 以便预定的接收者（信宿）处理和理解 的过程<br>分为模拟调制AM、FM、PM，数字调制：ASK、FSK、PSK，现代数字调制技术：MQAM、DQPSK</p>
+<h2 id="振荡器-Chap1-3-1"><a href="#振荡器-Chap1-3-1" class="headerlink" title="振荡器-Chap1.3.1"></a>振荡器-Chap1.3.1</h2><p>图3中的ADC、DAC功能可以看成是振荡器<br>振荡器是射频系统中最基本的电路之一，它可以将直流功率转换成低频功率，在特定频率点建立稳定的正弦振荡，所需要的射频信号源。<br>混频电路和振荡器组成变频电路，实现上、下行混频的作用</p>
+<h2 id="天馈线特性-Chap1-4"><a href="#天馈线特性-Chap1-4" class="headerlink" title="天馈线特性-Chap1.4"></a>天馈线特性-Chap1.4</h2><p>💛天线知识点：天线是一种变换器，把传输线上传播的导行波变换成在无界媒介中传播的电磁波，或进行相反的变换，<br><strong>关键词</strong>：导行波、无源器件、互易的<br>天线的分类：工作性质、用途、<strong>方向性</strong>、工作波长、结构、维数、使用场合</p>
+<table>
+<thead>
+<tr>
+<th>天线的特征</th>
+<th>机械、电气</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>天线的方向性</td>
+<td>全向性（理想点馈源天线、半波对称振子天线）、方向性（对数周期天线、窄带天线）</td>
+</tr>
+<tr>
+<td>天线的增益</td>
+<td>dBi（全向天线如点源天线）、dBd（对称振子天线），只能转换不能放大</td>
+</tr>
+<tr>
+<td>天线的阻抗</td>
+<td>50\75欧姆</td>
+</tr>
+<tr>
+<td>天线的极化方式</td>
+<td>垂直、水平、圆极化</td>
+</tr>
+<tr>
+<td>天线的频率和带宽</td>
+<td>带宽和天线的型式、结构、材料都有关，天线振子越粗带宽越宽，增益越高带宽越窄</td>
+</tr>
+<tr>
+<td>天线的极化方式</td>
+<td>水平极化、垂直极化、圆极化</td>
+</tr>
+<tr>
+<td>天线的倾角</td>
+<td>天线主瓣方向与水平面的夹角，是辐射电波的倾角</td>
+</tr>
+<tr>
+<td>驻波比</td>
+<td>电压驻波比，天馈线与基站的匹配程度的指标，峰值&#x3D;正向传输电压+反射波 ，谷值是减</td>
+</tr>
+</tbody></table>
+<p>💛馈线知识点：连接发信机与发信天线、收信机与收信天线的传输线为馈线<br>馈线尺寸与传输线的电磁波波长可相比拟为长线，反之为短线<br>分布参数效应：电阻、电导、电感、电容<br>传输线等效电路：分布电阻、分布电导、分布电感、分布电容等集成元件构成T型电路<br>传输线上的：入射波、反射波，常数：传输、衰减、相移<br>输入阻抗、负载阻抗、电压反射系统、驻波系数（行波、驻波、行驻波）</p>
+<h1 id="无线通信关键技术-Chap2"><a href="#无线通信关键技术-Chap2" class="headerlink" title="无线通信关键技术-Chap2"></a>无线通信关键技术-Chap2</h1><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/%E6%8A%97%E5%B9%B2%E6%89%B0%E8%A1%B0%E8%90%BD.png"></p>
+<h3 id="噪声和干扰-chap1-5-1"><a href="#噪声和干扰-chap1-5-1" class="headerlink" title="噪声和干扰-chap1.5.1"></a>噪声和干扰-chap1.5.1</h3><p><strong>电波传播机制</strong>，直散绕折反<br>外部噪声、内部噪声、热噪声（白噪声，导体中的电子热震动引起的）<br>干扰：交调、互调、邻道、同频、镜像</p>
+<h2 id="✨抗干扰和衰落技术-Chap2-3"><a href="#✨抗干扰和衰落技术-Chap2-3" class="headerlink" title="✨抗干扰和衰落技术-Chap2.3"></a>✨抗干扰和衰落技术-Chap2.3</h2><p>⭐<strong>信道编码</strong>：通过收发两端的配合，进行差错控制、降低误码、提高信道利用率，掌握以下几种：</p>
+<blockquote>
+<p><strong>奇偶校验</strong>（线性）：只有检错能力、没有纠错能力，可以配合ARQ实现差错控制，实现简单。<br><strong>循环冗余校验</strong>（CRC，线性）：在发送端产生一个冗余码，附加在信息后面，接收端收到的信息进行检验，如果发现错误则通知重发。<br><strong>卷积编码和交积</strong>（非线性）：其编码结果不仅与本组码的码元有关，还与之前的多个码组有关；交织编码主要用来纠正突发差错，交织的深度越大，抗突发差错能力越强，随机和突发都能纠正。<br><strong>Turbo编码</strong>：是一种并行级联卷积码，接近香农理论极限的译码能力，具有搞衰落、搞干扰能力，性能远远超过其它编码方式。</p>
+</blockquote>
+<p>⭐<strong>调制</strong>：就是通过改变高频载波的幅度、相位、频率。使其随着基带信号幅度的变化而变化来实现的。<br><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF.png"><br>⭐<strong>均衡技术</strong>：通过均衡滤波器的作用，增强小振幅的频率分量并衰减大振幅的频率分量，从而获得平坦的接收频率，以消除频率选择性失真，在时域和频域两个方面进行均衡；线性均衡器通常采用的算法：迫零法、最小方误差法；线性均衡能很好的消除不严重的信道衰落，消除相邻符号间的码间干扰，提高系统性能。</p>
+<p>⭐<strong>分集技术</strong>：接收端将它收到的多个衰落特性互相独立的携带同一信息的信号进行特定处理，以降低信号电平起伏的方法</p>
+<blockquote>
+<p><strong>两重含义</strong>：分散传输、集中处理<br><strong>两种分集方式</strong>：<br>宏分集（“多基站分集”，不同方向上多个基站同时与小区内的移动台通信，只要不是所有基站都受<strong>阴影效应</strong>影响这种方法能能保持通信不中断）<br>微分集（减小快衰落的分集技术，包含空间（快衰落）、时间（多谱勒频移）、频率、极化、场分量（低频）、角度（高频）等）<br><strong>合并方式</strong>：选择性合并 、最大比值合并、等增益合并</p>
+</blockquote>
+<p>⭐<strong>扩频技术</strong>：频率资源有限，将发送的信息扩展到一个很宽的频带上，以很宽的信道传送信息；在接收端通过相关检测从很宽的频带中恢复出基带信号<br><strong>特点：</strong></p>
+<blockquote>
+<ol>
+<li>抗干扰、衰落和抗阻抗能力强</li>
+<li>采用码分多址时，频谱利用率高</li>
+<li>信号功率密度很低，有利于信号隐蔽<br><strong>两种方式</strong>：直接序列跳频（处理增益越高抗带内干扰强，占用整个频段）和跳频扩频（占用一小部分而且频谱位置随时间而改变）</li>
+</ol>
+</blockquote>
+<p>⭐<strong>Rake接收技术</strong>:能分离多径信号并有效合并多径信号能量的接收机，<strong>抗多径干扰</strong></p>
+<p>⭐<strong>联合检测技术</strong>：利用造成多址干扰的所有用户信号及其多径的先验信息，把用户信号的分离当作一个统一的相互关联的联合检测过程来完成，<strong>从而具有良好的抗干扰性能</strong>，<strong>降低对功率控制要求</strong>，<strong>有效利用上行资源</strong>，<strong>提高系统容量</strong>，<strong>并削弱了远近效应</strong></p>
+<p>⭐<strong>MIMO技术</strong>：空间分集（将相同的用户信息通过不同的路径发送出去）、空间复用（数据流分割为多个子数据流，分别在不同的天线并行发送出去，在不增加带宽的条件下，成倍提高信息传输速率）<br>优点：提高信道容量、提高信道的可靠性</p>
+<p>⭐<strong>正交频分复用（OFDM）</strong>：是一种多载波调制方式，通过减小和消除码间串扰的影响来克服信道的频率选择性衰落，</p>
+<blockquote>
+<p>基本原理：将信号分割为N个子信号，然后用N个子信号分别调制到N个相互正交的子载波。傅里叶变换FFT允许将频分复用的各个子载波重叠排列<br>优点：频谱利用率高、资源资源 、带宽扩展性强、抗多径衰落、实现MIMO简单</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">BinQ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kewbing.github.io/2022/08/29/%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/">https://kewbing.github.io/2022/08/29/%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kewbing.github.io" target="_blank">好学闻道</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%80%9A%E4%BF%A1/">通信</a></div><div class="post_share"><div class="social-share" data-image="https://qiubit.oss-cn-hongkong.aliyuncs.com/c0eb8abda126ae51b71867cd9bb9391d.jpeg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/09/11/%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85-%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86/"><img class="prev-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221204172950.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">聪明的投资者-格雷厄姆</div></div></a></div><div class="next-post pull-right"><a href="/2022/08/12/%E3%80%8A%E7%99%BD%E5%A4%9C%E8%A1%8C%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE/"><img class="next-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220811124429.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">《白夜行》-东野圭吾</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/23/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E4%B8%9A%E7%BB%A9%E4%BB%A5%E5%8F%8A%E9%87%87%E8%B4%AD%E9%87%8F%E5%88%86%E6%9E%90-2021/" title="中国移动业绩以及采购量分析-2021"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220423234605.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-23</div><div class="title">中国移动业绩以及采购量分析-2021</div></div></a></div><div><a href="/2022/04/07/%E4%BF%A1%E6%81%AF%E6%88%98%EF%BC%9A%E6%B0%B8%E4%B8%8D%E6%B6%88%E9%80%9D%E7%9A%84%E7%94%B5%E6%B3%A2/" title="信息化：永不消逝的电波"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220608200118.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">信息化：永不消逝的电波</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8E%E5%A4%B4%E6%9D%A5%E5%AD%A6%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">从头来学通信原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86-Chap1-3"><span class="toc-number">2.</span> <span class="toc-text">无线通信原理-Chap1.3</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%BA%90-Chap1"><span class="toc-number">2.1.</span> <span class="toc-text">信源-Chap1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E5%B8%A6%E7%94%B5%E8%B7%AF-Chap2-3-1"><span class="toc-number">2.2.</span> <span class="toc-text">基带电路-Chap2.3.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E5%88%B6-Chap2-1"><span class="toc-number">2.3.</span> <span class="toc-text">调制-Chap2.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%AF%E8%8D%A1%E5%99%A8-Chap1-3-1"><span class="toc-number">2.4.</span> <span class="toc-text">振荡器-Chap1.3.1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A9%E9%A6%88%E7%BA%BF%E7%89%B9%E6%80%A7-Chap1-4"><span class="toc-number">2.5.</span> <span class="toc-text">天馈线特性-Chap1.4</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF-Chap2"><span class="toc-number">3.</span> <span class="toc-text">无线通信关键技术-Chap2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%99%AA%E5%A3%B0%E5%92%8C%E5%B9%B2%E6%89%B0-chap1-5-1"><span class="toc-number">3.0.1.</span> <span class="toc-text">噪声和干扰-chap1.5.1</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9C%A8%E6%8A%97%E5%B9%B2%E6%89%B0%E5%92%8C%E8%A1%B0%E8%90%BD%E6%8A%80%E6%9C%AF-Chap2-3"><span class="toc-number">3.1.</span> <span class="toc-text">✨抗干扰和衰落技术-Chap2.3</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: '22785c448ff93006c75b8de24a7ce914',
+      updateCountCallback: commentCount
+    },null))
 
-    if theme.post_pagination
-      include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+    gitalk.render('gitalk-container')
+  }
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
-      
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

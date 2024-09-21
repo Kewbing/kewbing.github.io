@@ -1,32 +1,402 @@
-extends includes/layout.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>《叛逆者》笔记整理 | 好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta name="description" content="22年6月7日电视剧由朱一龙主演的《叛逆者》上映一周年，顺便整理下之前的资料 近代历史大事件1932年，成立蓝衣社强调“一个主义、一个政党、一个领袖”，1936年10月19日鲁迅去世，12月西安事变。1937年7月7日,日军制造卢沟桥事变;8月13日,日军发动“八一三”事变淞沪战争爆发;9月25日,平型关大战告捷;12月13日南京大屠杀。1937年南京沦陷前夕国民政府移驻重庆办公。1938年，国民">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《叛逆者》笔记整理">
+<meta property="og:url" content="https://kewbing.github.io/2022/06/07/%E3%80%8A%E5%8F%9B%E9%80%86%E8%80%85%E3%80%8B%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/index.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:description" content="22年6月7日电视剧由朱一龙主演的《叛逆者》上映一周年，顺便整理下之前的资料 近代历史大事件1932年，成立蓝衣社强调“一个主义、一个政党、一个领袖”，1936年10月19日鲁迅去世，12月西安事变。1937年7月7日,日军制造卢沟桥事变;8月13日,日军发动“八一三”事变淞沪战争爆发;9月25日,平型关大战告捷;12月13日南京大屠杀。1937年南京沦陷前夕国民政府移驻重庆办公。1938年，国民">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903161540.png">
+<meta property="article:published_time" content="2022-06-07T14:30:00.000Z">
+<meta property="article:modified_time" content="2023-06-18T07:35:09.000Z">
+<meta property="article:author" content="BinQ">
+<meta property="article:tag" content="影视">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903161540.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/2022/06/07/%E3%80%8A%E5%8F%9B%E9%80%86%E8%80%85%E3%80%8B%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '《叛逆者》笔记整理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-18 15:35:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-block content
-  #post
-    if top_img === false
-      include includes/header/post-info.pug
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-    article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    if theme.reward.enable && theme.reward.QR_code
-      !=partial('includes/post/reward', {}, {cache: true})
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903162335.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">《叛逆者》笔记整理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-06-07T14:30:00.000Z" title="发表于 2022-06-07 22:30:00">2022-06-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-18T07:35:09.000Z" title="更新于 2023-06-18 15:35:09">2023-06-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="《叛逆者》笔记整理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>22年6月7日电视剧由朱一龙主演的《叛逆者》上映一周年，顺便整理下之前的资料</p>
+<h1 id="近代历史大事件"><a href="#近代历史大事件" class="headerlink" title="近代历史大事件"></a>近代历史大事件</h1><p>1932年，成立蓝衣社强调“一个主义、一个政党、一个领袖”，<br>1936年10月19日鲁迅去世，12月西安事变。<br>1937年7月7日,日军制造卢沟桥事变;8月13日,日军发动“八一三”事变淞沪战争爆发;9月25日,平型关大战告捷;12月13日南京大屠杀。1937年南京沦陷前夕国民政府移驻重庆办公。<br>1938年，国民党正式成立军统中统，抗日局势主要是三个大的战役，凇沪会战，8月3日日军向武汉合围，重庆就成为抗战大后方的政治、经济、文化中心，自然也成为谍战的主战场。10月21日广州保卫战<br>1938年，毛泽东延安抗日战争研究会上作了《论持久战》的讲演<br>1939年，3月27日，日军占领南昌，5月3日，日军轰炸重庆，10月7日，第一次长沙战役结束<br>1940年，毛泽东发表《新民主主义论》，8月20日百团大战，10月19日新四军皖南事变，叶挺<br>1941年，1月豫南会战，6月5日重庆较场口惨案，11月香港保卫战，12月7日日本突袭珍珠港，太平洋战争爆发。1941年12月9日中华民国政府对日宣战布告。<br>1942年，河南发生严重饥荒，超过300万人被饿死<br>1944年，豫湘桂战役1944年4月至12月期间贯穿中国河南、湖南和广西三地进行的大规模进攻战役，衡阳保卫战发生时间1944.6.23～1944.8.8，共战斗47天<br>1945年，1945年9月2日上午9时日本投降<br>1949年，4月22日我军攻占南京</p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>国民党大陆时代素有蒋家天下陈家党之说，财政金融方面一直是宋家和孔家的地盘，而党务方面，陈果夫陈立夫常年把持党务，占据国民党中组部长的高位，控制了全国国民党的人事组织关系</p>
+<p>蒋介石借口抗日战争时期国难当头，为了防止日谍汉奸活动，提高工作效率，增强抗战力量故成立中统军统</p>
+<p>1938年3月，中国国民党中央执行委员会调查统计局（简称为“中统（局）”）是国民党CC系领导人陈果夫、陈立夫所控制的全国性特务组织，抗日胜利后中统核心部分改为中国国民党党员通讯局，中统的任务主要是负责搜集党情和有关政治情报，</p>
+<p>1938年8月，国民政府军事委员会调查统计局（简称军统局，BIS），是中华民国情报机关之一，前身为复兴社，复兴社 ：中华民族复兴社简称复兴社，又称蓝衣社，军统是戴笠，后来主要就是毛人凤了。抗日胜利后军统改为国防部保密局。军统集中负责军事情报，相互配合却也相互监督拆台。</p>
+<p>1937年11月1日，“保联”，中共上海地下党组织，开展组织抗日民族统一战线和广泛发动群众的工作。</p>
+<h1 id="剧情"><a href="#剧情" class="headerlink" title="剧情"></a>剧情</h1><p><strong>小说剧情</strong></p>
+<table rules="none" align="center">
+    <tr>
+        <td>
+            <center>
+                <img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220623102447.png" width="60%" />
+                <br/>
+                <font color="AAAAAA">001.jpg</font>
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220623102457.png" width="60%" />
+                <br/>
+                <font color="AAAAAA">002.jpg</font>
+            </center>
+        </td>
+    </tr>
+</table>
 
-    //- ad
-    if theme.ad && theme.ad.post
-      .ads-wrap!=theme.ad.post
+<p><strong>电视剧</strong></p>
+<p>1936年到1949年，悬疑片，历史正剧，而不仅仅是谍战，三观很正，男女平等的爱情观念，政治上追求民主</p>
+<p>推荐理由<strong>看了非常值得，遇见你“我也非常荣幸”！！！</strong></p>
+<p>此剧细节拉满，智商在线，比如打扫卫生名正言顺的把顾的办公室仔细察看一遍又不会引起怀疑。海量细节(墙上挂的、桌上摆的、书中写的、嘴里说的、地上跑的以及演员的弹幕脸⋯）</p>
+<p>这么多谍战剧，主角都神勇过人，开篇即全能。而林楠笙却是一点点被磨出锋芒，一步步从那个不太自信、还带着犹豫和仁慈的学生，变成最终那个一身伤病，利用身边所有人去完成任务的“叛逆者”。</p>
+<p>来到上海后穿西装提两把冲锋枪开始996</p>
+<p>对这部剧会多了些许期待，像玩游戏一路在打Boss</p>
+<p>另外剧中还有很多文艺展示(吃喝有昂列咖啡(lait拿铁)，布里昂牛排，文学有草叶集世说新语，音乐有四季六月船歌，绘画有良友报刊，还有舞蹈，洗照片)，慢慢欣赏吧</p>
+<h1 id="还原深度"><a href="#还原深度" class="headerlink" title="还原深度"></a>还原深度</h1><p><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220623102523.png"></p>
+<p><strong>林楠笙</strong>-叛逆者</p>
+<p>寡言、细心、性格温和的人，甚至早期还带着一丝不自信，需要被指引，他当然不可能在开篇就呈现超强的气势，处处去主动占先。表演出来的状态是没问题的。并且，往后看就会发现，林楠笙其实很适合做特工。</p>
+<p>男主人设这个在谍战题材中很新颖，主演从青涩到老练，从摸索迷茫到坚定无比⋯代入感极强！</p>
+<p>他这样的个性，要是生活在和平年代，合该去大学里教书，或者做个考验耐心和细心的审计工作。可他偏偏活在家国即将大乱的前夕。</p>
+<p>优点越强记忆力观察力，毛病也有容易冲动</p>
+<p>情绪表演到位，眼睛都在放光的人，紧张的连太阳穴都会突起</p>
+<p>拍摄是现场录音，部分由原配后期补录，画面跟声音同步，听得非常舒服</p>
+<p><strong>陈默群</strong>-雷厉风行</p>
+<p>先给林楠笙一通疾风骤雨的下马威，心狠手辣</p>
+<p>历史原型，陈默群，这个名字取得很有意思，名，是丁墨邨（梁朝伟）丶李士群二人名字中各取一个字，再加上军统四大杀手之一，后也落水76号的陈恭澍的姓，才变成这个角色。历史上，创建76号这俩大汉奸，丁墨邨和李士群，其经历也确实像一本谍战小说。</p>
+<p>76号（日本扶持），名义上的上司是周佛海。丁默邨为主任，李士群为副主任，实际主持是李士群，行动队长是个帮会分子吴四宝。后来是万里浪。而76号真正的主子，是日本在上海的特务机关－梅机关。负责人是影佐桢昭。</p>
+<p><strong>顾主任</strong>-滴水不漏</p>
+<p>演员高超的把控度和大局观。顾慎言对于男主来说既是引路人又是灯塔</p>
+<p>夹在中间，这样就呈现出一个微妙的状态：箭已在弦上，而箭尖还未打磨锋利。</p>
+<p>还有老纪的稳，阿木的绝，孙福云的变，左秋明的爱⋯尤其是男主与左秋明戏份不多，但真的回味悠长，处理得太让人难忘又深刻了。这些角色都完成得很好，点赞！</p>
+<h1 id="爱情深度"><a href="#爱情深度" class="headerlink" title="爱情深度"></a>爱情深度</h1><p><strong>草叶集，“我歌唱个人，单一的独立的人，发出民主的声音、大众的声音。我歌唱从头到脚的身体，不仅歌唱相貌和大脑，整个形体更值得歌唱，我平等地歌唱女性和男性。无限的生命充满激情、脉动和能力，愉快地在神圣法律之下最自由地行动，我歌唱这现代的人。”</strong></p>
+<p>听到一句类似的台词，瞬间豁然开朗，是啊，真理路上的人不多。而我，认为人始终是要保持敏感度，一旦麻木，那将变得很可怕。</p>
+<p><strong>不是爱情让我们找到了信仰，而是信仰让我们彼此靠近。</strong></p>
+<table rules="none" align="center">
+    <tr>
+        <td>
+            <center>
+                <img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220623102537.png" width="60%" />
+                <br/>
+                <font color="AAAAAA">001.jpg</font>
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220623102541.png" width="60%" />
+                <br/>
+                <font color="AAAAAA">002.jpg</font>
+            </center>
+        </td>
+    </tr>
+</table>
 
-    if theme.post_pagination
-      include includes/pagination.pug
-    if theme.related_post && theme.related_post.enable
-      != related_posts(page,site.posts)
+<h1 id="政治深度"><a href="#政治深度" class="headerlink" title="政治深度"></a>政治深度</h1><table rules="none" align="center">
+    <tr>
+        <td>
+            <center>
+                <img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903160742.png" width="60%" />
+                <br/>
+                <font color="AAAAAA">会相逢.jpg</font>
+            </center>
+        </td>
+        <td>
+            <center>
+                <img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903160626.png" width="60%" />
+                <br/>
+                <font color="BBBBBB">持久战.jpg</font>
+            </center>
+        </td>
+    </tr>
+</table>
 
-    if page.comments !== false && theme.comments && theme.comments.use
-      - var commentsJsLoad = true
-      !=partial('includes/third-party/comments/index', {}, {cache: true})
-      
+
+<p><strong>只要还在一条路上，终究会相逢</strong></p>
+<p>左秋明，他是男主角林楠笙最终选择正确道路的重要决定力量之一。</p>
+<p>悲壮感，让观众们肃然起敬。喊必胜时 阳光都突然明媚起来</p>
+<p>而在林楠笙精神信仰最迷茫的时刻，他通过电台的方式，收听到了延安的广播，尤其是毛主席关于《论持久战》的内容。早在抗战爆发后不久，毛主席就对中国人民的抗战指明了方向。这一信仰明灯，让绝望与迷惘当中的林楠笙，再次获得了斗争的信心。</p>
+<p>他唤醒了千千万万个叛逆者⋯《论持久战》牛！这总剧可以当作小说慢慢的读和品味</p>
+<pre><code>1、如果绝对忠诚，就不怕任何人怀疑。 
+2、无畏暗夜，逐光而行。 
+3、我是一个独立的个体，我只属于我自己。 
+4、像是灰烬中拢着的星火，压不住，捂不灭。 
+5、很多时候，你只能是一个人；但更多的时候，你还有我们。 
+6、一座城市，如果没有你牵挂的人，住再久也不过是个地名而已。 
+7、我歌唱个人，单一的独立的人，发出民主的声音，大众的声音。 
+8、今天短暂的离别，是为了明天更好的相逢，只要我们还在一条路上我们终究会相逢的。 
+9、好人往往被暗算，因为在人生的战场上，好人永远不会使用最有力的武器——卑鄙。
+10、你的信仰不该依附于任何一个人，信仰就是要在不断的实践和战斗中得到检验，最终方能达到坚定。 
+11、不要太在意眼下的成败，我们发出的每一颗子弹，都是不屈的宣言”
+</code></pre>
+<h1 id="主题曲"><a href="#主题曲" class="headerlink" title="主题曲"></a>主题曲</h1><p>哥特风-特殊的和声加小调有独特的旋律，因为故事发生在战争期间，而且在最危险的上海进行的一块斗志斗勇的谍战；给大家渲染出一种阴森的气氛</p>
+<p>它的主题也经常涉及到生死，而且它更多的是对现世的教条的一种叛逆</p>
+<pre><code>叛逆者 - 朱一龙 / 郎朗
+
+相聚时 何必多言
+借一场过往给 坎坷路上
+照散些许彷徨
+离别时只需 默默隔岸 相望
+给一丝希望 挂在脸上
+给那些 爱过的人啊 一些力量
+在硝烟滚滚的动荡中 奋力起航
+给那些 勇敢的人啊 多些不朽
+在无悔的路上 点燃理想
+只怕殊途没有同归
+只怕别离不再相会
+我的苦涩仍是苦涩
+化不成甜蜜 
+和你干一杯
+相聚时 无需多言
+借一场勇敢给相伴的路上
+生死无常
+将一腔冰冷换成热血沸腾
+在路上 点燃理想
+哪怕殊途没有同归
+哪怕别离不再相会
+我将苦涩换成快乐
+化成甜蜜
+和你干一杯
+只盼云散重见青天
+只盼花开你就出现
+你的泪目使我泪目
+手牵手一起
+放声歌唱
+又见理想
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">BinQ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kewbing.github.io/2022/06/07/%E3%80%8A%E5%8F%9B%E9%80%86%E8%80%85%E3%80%8B%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/">https://kewbing.github.io/2022/06/07/%E3%80%8A%E5%8F%9B%E9%80%86%E8%80%85%E3%80%8B%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kewbing.github.io" target="_blank">好学闻道</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%BD%B1%E8%A7%86/">影视</a></div><div class="post_share"><div class="social-share" data-image="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903161540.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/06/10/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8AI%E6%8A%8A%E6%A2%A6%E5%A2%83%E5%8F%98%E6%88%90%E7%94%BB%E4%BD%9C/"><img class="prev-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220610161541.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">人人都能用AI把梦境变成画作</div></div></a></div><div class="next-post pull-right"><a href="/2022/05/30/%E9%A2%84%E6%B5%8B-%E6%96%B9%E6%B3%95%E8%AE%BA%E4%B8%8E%E6%8E%A2%E7%B4%A2/"><img class="next-cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220608113545.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">预测-方法论与探索</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/07/%E4%BF%A1%E6%81%AF%E6%88%98%EF%BC%9A%E6%B0%B8%E4%B8%8D%E6%B6%88%E9%80%9D%E7%9A%84%E7%94%B5%E6%B3%A2/" title="信息化：永不消逝的电波"><img class="cover" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220608200118.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-07</div><div class="title">信息化：永不消逝的电波</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%91%E4%BB%A3%E5%8E%86%E5%8F%B2%E5%A4%A7%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">近代历史大事件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">2.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%A7%E6%83%85"><span class="toc-number">3.</span> <span class="toc-text">剧情</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%98%E5%8E%9F%E6%B7%B1%E5%BA%A6"><span class="toc-number">4.</span> <span class="toc-text">还原深度</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%B1%E6%83%85%E6%B7%B1%E5%BA%A6"><span class="toc-number">5.</span> <span class="toc-text">爱情深度</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%94%BF%E6%B2%BB%E6%B7%B1%E5%BA%A6"><span class="toc-number">6.</span> <span class="toc-text">政治深度</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E6%9B%B2"><span class="toc-number">7.</span> <span class="toc-text">主题曲</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '8a05eb2e0a96fd32859f',
+      clientSecret: 'bb31ec0e2526d8feaf0c46b828d645b41ce72a57',
+      repo: 'kewbing.github.io',
+      owner: 'kewbing',
+      admin: ['kewbing'],
+      id: '00e4153187df735f31b1faa688e2b0de',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,6 +1,287 @@
-extends includes/layout.pug
-block content
-  include ./includes/mixins/post-ui.pug
-  #recent-posts.recent-posts
-    +postUI
-    include includes/pagination.pug
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好学闻道</title><meta name="author" content="BinQ"><meta name="copyright" content="BinQ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="referrer" content="no-referrer"><meta property="og:type" content="website">
+<meta property="og:title" content="好学闻道">
+<meta property="og:url" content="https://kewbing.github.io/page/2/index.html">
+<meta property="og:site_name" content="好学闻道">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome%20(1).jpg">
+<meta property="article:author" content="BinQ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome%20(1).jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kewbing.github.io/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好学闻道',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-09-22 00:25:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://qiubit.oss-cn-hongkong.aliyuncs.com/wallhaven-earth.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">好学闻道</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 数据</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/FinancialData-2204.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2203.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q3</span></a></li><li><a class="site-page child" href="/html/FinancialData-2202.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q2</span></a></li><li><a class="site-page child" href="/html/FinancialData-2201.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据22Q1</span></a></li><li><a class="site-page child" href="/html/FinancialData-2104.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q4</span></a></li><li><a class="site-page child" href="/html/FinancialData-2103.html"><i class="fa-fw fas fa-coins"></i><span> 经济数据21Q3</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 文字</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95.html"><i class="fa-fw fas fa-tablet"></i><span> 阅读清单</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/html/一分钟读点书/"><i class="fa-fw fas fa-book"></i><span> 一分钟读点书</span></a></li><li><a class="site-page child" href="https://kewbing.github.io/kindle/index.html"><i class="fa-fw fas fa-tablet"></i><span> Kindle笔记</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 乐读</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 歌单</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 游戏</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/html/the%20firework.html"><i class="fa-fw fas fa-fire"></i><span> 3D烟花</span></a></li><li><a class="site-page child" href="/html/the%20matrix.html"><i class="fa-fw fas fa-hat-cowboy"></i><span> 黑客帝国</span></a></li><li><a class="site-page child" href="/html/Catch%20The%20Cat.html"><i class="fa-fw fas fa-cat"></i><span> 圈小猫</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://liferestart.syaro.io/public/index.html"><i class="fa-fw fas fa-people-arrows-left-right"></i><span> 模拟人生重启</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">好学闻道</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/21/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B-%E5%93%88%E9%93%82%E6%9D%8E/" title="《杀死一只知更鸟》-哈铂李"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220622121529.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《杀死一只知更鸟》-哈铂李"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/21/%E3%80%8A%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F%E3%80%8B-%E5%93%88%E9%93%82%E6%9D%8E/" title="《杀死一只知更鸟》-哈铂李">《杀死一只知更鸟》-哈铂李</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-21T14:30:00.000Z" title="发表于 2022-06-21 22:30:00">2022-06-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BF%AE%E8%BA%AB/">修身</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%BB%8F%E5%85%B8/">经典</a></span></div><div class="content">畅销全球的”良知“启蒙，善良与爱不可辜负《杀死一只知更鸟》倒叙手法，开放式结局，以孩子的视角看各种社会面的问题，以及律师父亲、邻居、长辈是如何解决问题教育小孩的，作者是一名女作家，希望每个母亲、孩子、家长都看看这本伟大的作品
+内容简介故事发生在大萧条时期美国南方一个静谧的小镇，几桩离奇的疑案彻底打破了几个孩子平静的生活：事件的真凶、怪人的谜底、传言背后的真相·等等，在父亲的指导下，他们在迷雾中寻找真相，在磨难中历练风度，在不公中积累正义，经历了暴风雨骤雨般的成长，也感受到了人间的温暖与真情。
+人物：超过50岁中年的父亲阿迪克斯.芬奇、不到9岁的露易丝.芬奇、13岁的哥哥迪尔.芬奇、伙伴杰姆.芬奇、邻居莫迪小姐、邻居怪人内森.拉德利
+part1 家长们对孩子的教育每个人的童年的记忆会有一个怪人第1章，回首往事
+那是个盲目乐观的时代：梅科姆县的人们刚刚被告知，除了恐惧本身没有什么可恐惧的。回忆我哥哥迪尔快十三岁时胳膊肘严重骨折的原因；回忆怎么认识杰姆以及孤儿的身世；回忆怪人拉德利为什么整天待在家里不出来；
+与他人相处更好的技巧，就是要从他的角度看问题第2~3章，9月学校生活
+学校开始推广杜 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/06/10/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8AI%E6%8A%8A%E6%A2%A6%E5%A2%83%E5%8F%98%E6%88%90%E7%94%BB%E4%BD%9C/" title="人人都能用AI把梦境变成画作"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220610161541.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人人都能用AI把梦境变成画作"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/10/%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%83%BD%E7%94%A8AI%E6%8A%8A%E6%A2%A6%E5%A2%83%E5%8F%98%E6%88%90%E7%94%BB%E4%BD%9C/" title="人人都能用AI把梦境变成画作">人人都能用AI把梦境变成画作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-10T15:35:30.000Z" title="发表于 2022-06-10 23:35:30">2022-06-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></span></div><div class="content">[[产品]]
+Ai学习画画Disco Diffusion (DD)一个可以在Google Colab上运行的代码，其原理是使用了CLIP-Guided Diffusion，从而让你可以仅仅通过文字输入，就能让AI产生相应的输出。个人猜想原理是基于Trending on artstation 画作平台根据关键词+画家风格+参数形成一幅画作
+项目地址：https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb#scrollTo=Prompts
+在代码里面更改一段话，运行后等12分钟左右就会自动绘画了
+12345678910text_prompts = &#123;	0: [&quot;A beautiful painting of a singular lighthouse, shining its light across a tumultuous sea of blood by greg rutkowski and thomas kinkade, Tr ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/07/%E3%80%8A%E5%8F%9B%E9%80%86%E8%80%85%E3%80%8B%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" title="《叛逆者》笔记整理"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220903161540.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《叛逆者》笔记整理"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/07/%E3%80%8A%E5%8F%9B%E9%80%86%E8%80%85%E3%80%8B%E7%AC%94%E8%AE%B0%E6%95%B4%E7%90%86/" title="《叛逆者》笔记整理">《叛逆者》笔记整理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-07T14:30:00.000Z" title="发表于 2022-06-07 22:30:00">2022-06-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BD%B1%E8%A7%86/">影视</a></span></div><div class="content">22年6月7日电视剧由朱一龙主演的《叛逆者》上映一周年，顺便整理下之前的资料
+近代历史大事件1932年，成立蓝衣社强调“一个主义、一个政党、一个领袖”，1936年10月19日鲁迅去世，12月西安事变。1937年7月7日,日军制造卢沟桥事变;8月13日,日军发动“八一三”事变淞沪战争爆发;9月25日,平型关大战告捷;12月13日南京大屠杀。1937年南京沦陷前夕国民政府移驻重庆办公。1938年，国民党正式成立军统中统，抗日局势主要是三个大的战役，凇沪会战，8月3日日军向武汉合围，重庆就成为抗战大后方的政治、经济、文化中心，自然也成为谍战的主战场。10月21日广州保卫战1938年，毛泽东延安抗日战争研究会上作了《论持久战》的讲演1939年，3月27日，日军占领南昌，5月3日，日军轰炸重庆，10月7日，第一次长沙战役结束1940年，毛泽东发表《新民主主义论》，8月20日百团大战，10月19日新四军皖南事变，叶挺1941年，1月豫南会战，6月5日重庆较场口惨案，11月香港保卫战，12月7日日本突袭珍珠港，太平洋战争爆发。1941年12月9日中华民国政府对日宣战布告。1942年，河南发生严重饥荒 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/05/30/%E9%A2%84%E6%B5%8B-%E6%96%B9%E6%B3%95%E8%AE%BA%E4%B8%8E%E6%8E%A2%E7%B4%A2/" title="预测-方法论与探索"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220608113545.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="预测-方法论与探索"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/30/%E9%A2%84%E6%B5%8B-%E6%96%B9%E6%B3%95%E8%AE%BA%E4%B8%8E%E6%8E%A2%E7%B4%A2/" title="预测-方法论与探索">预测-方法论与探索</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-30T03:30:00.000Z" title="发表于 2022-05-30 11:30:00">2022-05-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a></span></div><div class="content">认识预测出自于《礼记·中庸》：“凡事豫则立，不豫则废。言前定则不跲(jiá，绊倒)，事前定则不困，行前定则不疚，道前定则不穷。”豫，亦作“ 预 ”。
+写作跟说话做这个动作前，需要定义好框架、多深度思考再加上平常的持续训练，“读书破万卷，下笔如有神”，先要多读多看多记，才能思如泉涌，快速的表达
+《零秒思考》中描述的观点：“随着不断尝试用语言表达自己脑海中的意象和感觉，渐渐就会对此有所适应并逐步成型。”工作中解决问题，建议这样说：”为了能让双方都到得一个满意的结果，我们会对交付期和费用充分地确认来推进合作。”“对于转化成语言的犹豫心理也会渐渐消失，写起来也就会更容易了。在不知觉中会变得可以轻松言谈书写，可以在不伤害对方情绪的情况下表达自我。”
+本文关键词：预见、预测、机器学习预测
+预测的含义4G网络的到来让人们沟通方式从语音变成图像，从听的见-&gt;看得见, 通信速度由64Kb&#x2F;s(65536字符)上升到1.65Mb&#x2F;s(1280x*720y*24fps*102(h.264压缩比)*8b)，速度提升了25倍，单位时间交互的信息量指数级上升，未来人类所有的沟通需求（听觉 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/04/23/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E4%B8%9A%E7%BB%A9%E4%BB%A5%E5%8F%8A%E9%87%87%E8%B4%AD%E9%87%8F%E5%88%86%E6%9E%90-2021/" title="中国移动业绩以及采购量分析-2021"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220423234605.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中国移动业绩以及采购量分析-2021"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/23/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E4%B8%9A%E7%BB%A9%E4%BB%A5%E5%8F%8A%E9%87%87%E8%B4%AD%E9%87%8F%E5%88%86%E6%9E%90-2021/" title="中国移动业绩以及采购量分析-2021">中国移动业绩以及采购量分析-2021</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-04-23T15:32:41.000Z" title="发表于 2022-04-23 23:32:41">2022-04-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%80%9A%E4%BF%A1/">通信</a></span></div><div class="content">中国移动2021年全年业绩2021年，中国移动全年营业收入达到人民币8,483亿元，同比增长10.4%，其中通信服务收入达到人民币7,514亿元，同比增长8.0%，增速较2020年提升4.8个百分点。
+根据市场划分，个人市场收入达到4834亿元，同比增长1.4%，其中5G套餐客户达到3.87亿户，净增2.22亿户，规模保持行业领先，得益于客户升级5G以及融合运营的价值增长拉动，移动ARPU为人民币48.8元，同比增长3.0%。
+其中家庭市场收入1005亿元，增长20.8%; 增势强势，量收双升
+政企市场收入1371亿元，增长21.4%; 增收引擎，动能强势
+面对疫情防控、产业供给、企业转型等方面困难和挑战，中国移动收入增速还能创十年新高。主要得益于数字化转型收入（包括个人市场新业务（和彩云等）收入，家庭市场智慧家庭增值业务收入，政企市场DICT收入、物联网收入、专线收入，以及新兴市场收入）达到1,594亿元，同比增长26.3%，对通信服务收入增量贡献达到59.5%，是推动公司收入增长的第一驱动力。
+注：2022年1季度，营收同比增长14.56%，利润同比增长6.52%。
+2021年5G ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/04/07/%E4%BF%A1%E6%81%AF%E6%88%98%EF%BC%9A%E6%B0%B8%E4%B8%8D%E6%B6%88%E9%80%9D%E7%9A%84%E7%94%B5%E6%B3%A2/" title="信息化：永不消逝的电波"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220608200118.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="信息化：永不消逝的电波"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/04/07/%E4%BF%A1%E6%81%AF%E6%88%98%EF%BC%9A%E6%B0%B8%E4%B8%8D%E6%B6%88%E9%80%9D%E7%9A%84%E7%94%B5%E6%B3%A2/" title="信息化：永不消逝的电波">信息化：永不消逝的电波</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-04-07T15:23:00.000Z" title="发表于 2022-04-07 23:23:00">2022-04-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BD%B1%E8%A7%86/">影视</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E9%80%9A%E4%BF%A1/">通信</a></span></div><div class="content">无线电站，竟然也会成为战争利器？不错，在内战的那段岁月，干戈与纸墨共舞，枪杆子与笔杆子齐飞，电报的作用并不逊色于那些坚船利炮
+本文从一个收音机的线圈变成无线电站说起，2021年推出了一部建党100周年献礼的电视剧-《叛逆者》,改编自茅盾文学奖得主畀愚的同名作品，讲述了主人公林楠笙（朱一龙饰）从国民党军统转变成革命者的经历。而在林楠笙精神信仰最迷茫的时刻，他通过电台的方式，收听到了延安的广播，尤其是毛主席关于《论持久战》的内容。早在抗战爆发后不久，毛主席就对中国人民的抗战指明了方向。这一信仰明灯，让绝望与迷惘当中的林楠笙，再次获得了斗争的信心。他唤醒了千千万万个叛逆者⋯《论持久战》牛！剧中地下工作者为了降低“卧底”现身的风险，战争时期很多关键的情报需要通过无线电台传输，无线电的保护工作甚至比地下工作者的命还重要。
+剧中出现的其中一个紧迫的情节，林楠笙赶在特务之前奔到朱怡贞家拆去收音机线圈的那一幕。朱怡贞是不是党的地下工作者，决定性证据就在那个收音机里，改装用的线圈如果被特务发现，她就彻底救不回来了。
+很多人对无线电台出现的环节持有怀疑态度，比如：收音机加线圈改成电站是否可行、无线电台测向 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/" title="《跨越鸿沟：如何应对结构性挑战》"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20220115141730.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《跨越鸿沟：如何应对结构性挑战》"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/27/%E3%80%8A%E8%B7%A8%E8%B6%8A%E9%B8%BF%E6%B2%9F%EF%BC%9A%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E7%BB%93%E6%9E%84%E6%80%A7%E6%8C%91%E6%88%98%E3%80%8B/" title="《跨越鸿沟：如何应对结构性挑战》">《跨越鸿沟：如何应对结构性挑战》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-27T14:30:00.000Z" title="发表于 2022-03-27 22:30:00">2022-03-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%BB%E9%81%93/">闻道</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BA%A7%E5%93%81/">产品</a></span></div><div class="content">从看到陆奇的事迹后，开始去尝试读《 陆奇：数字化浪潮与创新机会》、《跨越鸿沟:颠覆性产品营销圣经》，之后又看到心理学中“达克效应”，从而也引发了信息陷阱、绝望低谷和鸿沟的联想，避免盲人摸象，冰山一角的问题出现。
+智慧金字塔智慧与聪明无关，一个人可以非常聪明，但却不一定有智慧，那什么是智慧？要怎样才能掌握智慧？能够透过学习获得智慧吗？
+通过金字塔模型分析，我们将DIKW（数据，信息，知识，智慧）层次结构分解为其构建块，从下往上逐步扩展才能成为智慧。
+
+
+知识是知道西红柿是水果;智慧是知道不要把它们放在水果沙拉里，英国专栏作家迈尔斯·金顿（Miles Kington）如是说
+
+在信息时代，什么是知识，什么是智慧？我们如何利用信息来创造知识，然后将这些知识扩展到明智的决策和行动的智慧？
+信息是从通信系统中传送的本质内容，知识是个体所有的存储信息总和，一旦人站在智慧之颠从而获得了洞察力，他们就拥有了更多的资源和通过预测出来的选择来做出决策。
+下面从通信系统角度解读信息论的基础
+
+信号（Data&#x2F;Signal）， 是消息传递的物理载体 ，比如是电信号 、光信号等。根据香农定理(C&#x ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/01/23/%E5%A6%82%E4%BD%95%E7%94%A8Markdown%E5%8F%91%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" title="如何用Markdown发一篇文章"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/v2-b8cfb751b887f3881da4f62ab2101d99_1440w.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何用Markdown发一篇文章"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/23/%E5%A6%82%E4%BD%95%E7%94%A8Markdown%E5%8F%91%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" title="如何用Markdown发一篇文章">如何用Markdown发一篇文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-23T10:46:41.000Z" title="发表于 2022-01-23 18:46:41">2022-01-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BF%AE%E8%BA%AB/">修身</a></span></div><div class="content">选择Markdown工具本文推荐两款，Obsidian是一直在用的，笔记之间的软链功能特别好用，很容易将不同的知识串联起来， Typora真的非常好用界面也很简洁，唯一缺少Obsidian软链接功能，另外需要购买正版所以我最终放弃了
+Obsidian软件有开源社区，主题多插件多，适合动手能力强喜欢折腾的同学
+Typora界面简洁可以直接在预览模式下修改，但是软件收费，另外没有手机版
+
+学习Markdown教程Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版如果会Word就一定会用Markdown，而且用完之后就回不去了特点：
+
+编辑模式和渲染(阅读)模式快速切换，在发布前就可以看到网页上呈现的效果
+支持同步，Obsidian支持手机、电脑同步防止资料丢失，我用的是Win10+iCloud同步
+All in One，所有笔记或者文章只需要一个软件管理
+图文兼容性强，通过图床功能将本地图片或截图实现自动上云，能兼容各种文本格式（标题段落\强调引用\表格列表\代码公式\待办事项\转义字符内嵌HTML\表情❤️，从Emoj网站复制：📙 😃💁👌🎍😍 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/01/22/%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8EGitee+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="如何基于Gitee+Hexo搭建个人博客"><img class="post_bg" src="https://qiubit.oss-cn-hongkong.aliyuncs.com/hexo.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何基于Gitee+Hexo搭建个人博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/22/%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8EGitee+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="如何基于Gitee+Hexo搭建个人博客">如何基于Gitee+Hexo搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-22T04:46:41.000Z" title="发表于 2022-01-22 12:46:41">2022-01-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%A5%BD%E5%AD%A6/">好学</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E4%BF%AE%E8%BA%AB/">修身</a></span></div><div class="content">用什么平台(What) 1、简单入门，使用方便    支持中文，有网络就能用，使用免费云平台的托管服务支持同步，没有地域限制
+2、选择开源，选择未来    Gitee 是开源中国推出的基于Git的代码云端托管平台。目前已经有注册开发者 600 万，托管超过 1500 万代码仓库。    Gitee Pages 是面向 Gitee 用户开放的静态页面搭建托管服务，用户可以通过默认提供的域名 gitee.io 来发布自己的站点。 目前，Gitee Pages 已支持 Jekyll 、 Hugo 、 Hexo等静态网站生成引擎，可以很方便的在线编译这几类静态站点项目。
+2020 年 7 月 14 日，工业和信息化部技术发展司公布了“2020年开源托管平台项目”的招标结果，由国家工业信息安全发展研究中心、工信部电子五所、中国电子技术标准化研究院、华为等 10 家单位组成的联合体中标该项目，联合体将依托码云 Gitee 建设中国独立的开源托管平台。
+
+**2022 年 5 月 18 日,Gitee 突然推出了一条新政策：开源库必须得先审核再上线。本人申明今天开始放弃该平台转到Github，从此不 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/default_handsome (1).jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BinQ</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/iWECUvAFjx1Tvy2J3ZuKEw"><i class="fab fa-weixin"></i><span>公众号</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/caigentang3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="浮生六记"/></a><div class="content"><a class="title" href="/2023/02/17/%E6%B5%AE%E7%94%9F%E5%85%AD%E8%AE%B0/" title="浮生六记">浮生六记</a><time datetime="2023-02-17T15:11:00.000Z" title="发表于 2023-02-17 23:11:00">2023-02-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221119225138.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="从0到1：开启商业与未来的秘密-彼得·蒂尔"/></a><div class="content"><a class="title" href="/2022/11/20/%E4%BB%8E0%E5%88%B01%E5%BC%80%E5%90%AF%E5%95%86%E4%B8%9A%E4%B8%8E%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%A7%98%E5%AF%86-%E5%BD%BC%E5%BE%97%C2%B7%E8%92%82%E5%B0%94/" title="从0到1：开启商业与未来的秘密-彼得·蒂尔">从0到1：开启商业与未来的秘密-彼得·蒂尔</a><time datetime="2022-11-20T05:56:00.000Z" title="发表于 2022-11-20 13:56:00">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221118151841.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书4-市场营销"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A64-%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80/" title="哈佛商学院管理与MBA案例全书4-市场营销">哈佛商学院管理与MBA案例全书4-市场营销</a><time datetime="2022-11-18T05:30:00.000Z" title="发表于 2022-11-18 13:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/harvard-business-school.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="哈佛商学院管理与MBA案例全书6-财务规划篇"/></a><div class="content"><a class="title" href="/2022/11/18/%E5%93%88%E4%BD%9B%E5%95%86%E5%AD%A6%E9%99%A2%E7%AE%A1%E7%90%86%E4%B8%8EMBA%E6%A1%88%E4%BE%8B%E5%85%A8%E4%B9%A66-%E8%B4%A2%E5%8A%A1%E8%A7%84%E5%88%92%E7%AF%87/" title="哈佛商学院管理与MBA案例全书6-财务规划篇">哈佛商学院管理与MBA案例全书6-财务规划篇</a><time datetime="2022-11-18T04:30:00.000Z" title="发表于 2022-11-18 12:30:00">2022-11-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么"><img src="https://qiubit.oss-cn-hongkong.aliyuncs.com/20221010163904.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="《人类简史》-我们究竟希望自己想要什么"/></a><div class="content"><a class="title" href="/2022/10/10/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E6%88%91%E4%BB%AC%E7%A9%B6%E7%AB%9F%E5%B8%8C%E6%9C%9B%E8%87%AA%E5%B7%B1%E6%83%B3%E8%A6%81%E4%BB%80%E4%B9%88/" title="《人类简史》-我们究竟希望自己想要什么">《人类简史》-我们究竟希望自己想要什么</a><time datetime="2022-10-10T10:30:00.000Z" title="发表于 2022-10-10 18:30:00">2022-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A5%BD%E5%AD%A6/"><span class="card-category-list-name">好学</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%BB%E9%81%93/"><span class="card-category-list-name">闻道</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BD%B1%E8%A7%86/" style="font-size: 1.25em; color: rgb(113, 98, 127)">影视</a><a href="/tags/%E4%BF%AE%E8%BA%AB/" style="font-size: 1.45em; color: rgb(14, 122, 182)">修身</a><a href="/tags/%E7%BB%8F%E5%85%B8/" style="font-size: 1.45em; color: rgb(166, 56, 108)">经典</a><a href="/tags/%E5%B0%8F%E8%AF%B4/" style="font-size: 1.35em; color: rgb(120, 155, 171)">小说</a><a href="/tags/%E4%BA%A7%E5%93%81/" style="font-size: 1.25em; color: rgb(8, 163, 150)">产品</a><a href="/tags/%E9%80%9A%E4%BF%A1/" style="font-size: 1.35em; color: rgb(180, 74, 23)">通信</a><a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" style="font-size: 1.25em; color: rgb(175, 169, 42)">人工智能</a><a href="/tags/%E8%B4%A2%E7%BB%8F/" style="font-size: 1.25em; color: rgb(63, 151, 147)">财经</a><a href="/tags/%E5%8E%86%E5%8F%B2/" style="font-size: 1.15em; color: rgb(9, 167, 169)">历史</a><a href="/tags/%E8%82%A1%E7%A5%A8/" style="font-size: 1.15em; color: rgb(95, 74, 13)">股票</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">十月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/08/"><span class="card-archive-list-date">八月 2022</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">19</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-21T16:25:56.039Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By BinQ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["孔子曰：邱少而好学，晚而闻道，从此博矣"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '孔子曰：邱少而好学，晚而闻道，从此博矣'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
